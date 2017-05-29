@@ -8,34 +8,61 @@ Sass
 Handlebars
 NodeJs
 
+## Mini intro
+¿Que es Node?
+¿Para que lo usamos en MercadoLibre?
+Como bajaron los tiempos de apps usando Nordic
+
 ## Ej1 : Modulo FS
 Ejercicio Dictado:
 - Sincronico: Leer archivo, quitar vocales, imprimir por consola resultado.
+- Asincronico: Leer archivo, quitar vocales, imprimir por consola resultado.
 
-
-Ver métodos sincrónicos y asincrónicos.
-
--Leer un archivo
--Modificar una cadena
--Grabar un nuevo archivo
-
+Ejercicio Participantes: Cambiador de palabras
+-Crear un json, que contenga:
+```{ 
+  "palabra-a-cambiar" : "resultado",
+  "palabra-a-cambiar" : "resultado",
+  "palabra-a-cambiar" : "resultado"
+}```
+-Leer un archivo, ejecutar todas las modificaciones, grabar un archivo y mostrar en pantalla.
+Hacerlo primero sincrónico y luego asincronico.
 
 ## Ej2 : Módulos
--Crear distintos módulos
--Modularizar el Ej1: Crear módulo que permita leer y grabar archivos.
+Ejercicio Dictado:
+Crear un Módulo replacer
+Reemplazar vocales
+Reemplazar consonantes
+
+Ejercicio Participantes: Calculadora.
+Crear una calculadora con los métodos.
+Sumar(a, b)
+Restar(a, b)
+Multiplicar(a, b)
+Dividir(a, b)
 
 ## Ej3 : Request
 -Crear un módulo que permita hacer requests.
--MImplementarlo en Ej1.
+
+Ejercicio Participantes: 
+-Crear módulo
+-Pegarle a la api de mercadolibre.
+-Imprimir json respuesta.
 
 ## Ej4 : Promises
 -Como se usa una promise (then - catch)
 -Como crear una promise.
--EJ: Transformar el objeto request en una promise.
+
+Ejercicio Participantes: 
+Transformar el objeto request en una promise.
+Cambiar las callbacks por then y catch.
 
 ## Ej5 : Npm Scripts
-Generar proceso de buildeo de estaticos con npm scripts.
--Compilar Sass, autoprefix y minificación.
+Ejercicio Dictado:
+Explicar el buildeo de Sass, autoprefix y minificación. 
+Crear un watch de Sass.
+
+Ejercicio Participantes: 
 -Comprimir imágenes.
 -Compilar y minificar código JS.
 -Generar Watchers
