@@ -1,0 +1,24 @@
+<div class="item">
+	<div class="item__picture">
+		<img src="{{pictures.0.url}}" alt="{{title}}" />
+	</div>
+	<div class="item__info">
+		<span class="item__condition">
+			{{itemCondition condition}} - {{sold_quantity}} vendidos
+			<i class="item__freeshipment"></i>
+		</span>
+		<span class="item__title">{{title}}</span>
+		<span class="item__price">$ {{price}}<sup>00</sup></span>
+		<a class="item__buy" href="">Comprar</a>
+	</div>
+	<div class="item__description">
+		<h2 class="item__description-title">Descripción del producto</h2>
+		<div class="item__description-content">
+		{{#if text}}
+			{{{text}}}
+		{{else}}
+			El item no cuenta con una descripción.
+		{{/if}}
+		</div>
+	</div>
+</div>

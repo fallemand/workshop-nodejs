@@ -1,0 +1,33 @@
+$breadcrum-font-size: 13px;
+
+.breadcrum {
+    margin: 16px 0;
+    list-style-type: none;
+    padding: 0;
+
+    .breadcrum__element {
+        color: #999;
+        font-size: $breadcrum-font-size;
+        display: inline-block;
+        padding: 0 2px;
+
+        &:after {
+            content: ">";
+            padding: 0 0 0 6px;
+        }
+    }
+
+    .breadcrum__element:last-child {
+        font-weight: 400;
+        
+        &:after {
+            content: "";
+        }
+    }
+
+    a,
+    a:visited {
+        text-decoration: none;
+        color: #999;
+    }
+}
