@@ -33,7 +33,6 @@
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel-eslint": "6.1.2",
-    "browser-sync": "^2.18.12",
     "chai": "^3.5.0",
     "eslint": "3.5.0",
     "eslint-config-airbnb-base": "7.1.0",

@@ -1,8 +1,8 @@
-var express = require('express');
-var app = express();
-var exphbs = require('express-handlebars');
-var router = require('./routers/router');
-var helmet = require('helmet');
+const express = require('express');
+const app = express();
+const exphbs = require('express-handlebars');
+const router = require('./routers/router');
+const helmet = require('helmet');
 
 //Helmet - For Security
 app.use(helmet());
@@ -11,8 +11,11 @@ app.use(helmet());
 app.engine('.hbs', exphbs({
 	defaultLayout: 'main',
 	extname: '.hbs',
+    layoutsDir: 'views/layouts/',
+    partialsDir: 'views/partials/',
 	helpers: require('./views/helpers')
 }));
+app.set('views', 'views/pages/');
 app.set('view engine', '.hbs');
 
 //Define al routes

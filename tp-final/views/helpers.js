@@ -5,4 +5,7 @@ module.exports = {
 	quote : (value) => {
 		return (value) ? '"' + value +'"' : '';
 	},
+    price : (price) => {
+        return price;
+    },
 };
