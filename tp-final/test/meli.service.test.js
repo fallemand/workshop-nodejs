@@ -1,4 +1,4 @@
-var expect = require('chai').expect;;
+var expect = require('chai').expect;
 var nock = require('nock');
 var mocks = require('./meli.service.mocks');
 

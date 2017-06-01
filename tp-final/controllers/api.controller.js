@@ -1,23 +1,21 @@
 var meliService = require('../services/meli.service');
 
-exports.items = (req, res) => {
+exports.items = (req, res, next) => {
 	var query = req.query.q;
 	meliService.items(query)
 		.then(data => {
-			res.json(data);	
+            data.author = req.author;
+			res.json(data);
 		})
-		.catch(err => {
-			res.json(err);
-		});
+		.catch(next);
 }
 
-exports.item = (req, res) => {
+exports.item = (req, res, next) => {
 	var id = req.params.id;
 	meliService.item(id)
 		.then(data => {
-			res.json(data);	
+            data.author = req.author;
+			res.json(data);
 		})
-		.catch(err => {
-			res.json(err);
-		});
+		.catch(next);
 }

@@ -1,25 +1,7 @@
-@import 'layout';
-@import 'breadcrum';
-@import 'header';
-@import 'search-item';
-@import 'item';
-@import 'error';
-
-.search-hero {
-    text-align: center;
-    padding: 40px;
-
-    .seach-hero__image {
-        width: 128px;
-        height: 128px;
-    }
-
-    .seach-hero__title {
-        font-size: 30px;
-        max-width: 600px;
-        margin: 0 auto;
-        color: #999;
-        display: block;
-        font-weight: 100;
-    }
-}
+@import 'components/layout';
+@import 'components/breadcrum';
+@import 'components/header';
+@import 'pages/search';
+@import 'pages/item';
+@import 'pages/error';
+@import 'pages/index';
