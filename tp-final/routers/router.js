@@ -6,16 +6,12 @@ var middleware = require('../services/middleware.service');
 exports.init = function(app, basePath) {
 
     //Set App routes
-    app.use('/app', middleware, routerApp);
-    app.use('/app', (err, req, res, next) => {
-        res.render('error', {message : JSON.stringify(err, null, 4)});
-    });
+    app.use('/app', middleware.author, routerApp);
+    app.use('/app', middleware.appErrors);
 
     //Set App routes
-    app.use('/api', middleware, routerApi);
-    app.use('/api', (err, req, res, next) => {
-        res.json(err);
-    });
+    app.use('/api', middleware.author, routerApi);
+    app.use('/api', middleware.apiErrors);
 
     //Set statics path
 	app.use('/assets', express.static(basePath + '/assets'));

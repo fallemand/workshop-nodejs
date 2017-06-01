@@ -25,7 +25,7 @@ var options = {
 	})
 }
 
-exports.items = (query) => {
+exports.search = (query) => {
 	options.path = `/sites/MLA/search?limit=6&q=${escape(query)}`;
 	return request(options);
 }
