@@ -1,17 +1,20 @@
 var routerApi = require('./api.router');
 var routerApp = require('./app.router');
 var express = require('express');
-var middleware = require('../services/middleware.service');
+var errorManager = require('../services/errors.middleware');
+var author = require('../services/author.middleware');
+
+
 
 exports.init = function(app, basePath) {
 
     //Set App routes
-    app.use('/app', middleware.author, routerApp);
-    app.use('/app', middleware.appErrors);
+    app.use('/app', author, routerApp);
+    app.use('/app', errorManager.appErrors);
 
     //Set App routes
-    app.use('/api', middleware.author, routerApi);
-    app.use('/api', middleware.apiErrors);
+    app.use('/api', author, routerApi);
+    app.use('/api', errorManager.apiErrors);
 
     //Set statics path
 	app.use('/assets', express.static(basePath + '/assets'));
