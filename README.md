@@ -10,7 +10,7 @@ Hay una serie de ejercicios iniciales, y luego se empieza a desarrollar un ejerc
 - [Trabajo Integrador](https://github.com/fallemand/workshop-nodejs/tree/master/tp)
   * [Npm Scripts](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-1--npm-scripts) 
   * [Express](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-2--express) 
-    - [Server](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-1--npm-scripts)
+    - [Server](https://github.com/fallemand/workshop-nodejs/tree/master/tp#a-configurar-server)
     - [Routes](https://github.com/fallemand/workshop-nodejs/tree/master/tp#b-router)
     - [Controllers](https://github.com/fallemand/workshop-nodejs/tree/master/tp#c-controllers)
     - [Middleware](https://github.com/fallemand/workshop-nodejs/tree/master/tp#c-middleware)
