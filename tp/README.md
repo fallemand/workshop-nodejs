@@ -101,7 +101,7 @@ Modificar:
 ## Parte 5 : Unit Test (Mocha - Chai)
 -Crear el test de meli.service.
 
-## Parte 5 : Environments
+## Parte 6 : Environments
 Explicar como diferenciar los distintos entornos.
 
 #### Ejercicio Participantes:   
