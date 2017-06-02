@@ -8,6 +8,17 @@ Hay una serie de ejercicios iniciales, y luego se empieza a desarrollar un ejerc
 - [TP3-Request](https://github.com/fallemand/workshop-nodejs/tree/master/ej3-request)
 - [TP4-Promises](https://github.com/fallemand/workshop-nodejs/tree/master/ej4-promises)
 - [Trabajo Integrador](https://github.com/fallemand/workshop-nodejs/tree/master/tp)
+  * [Npm Scripts](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-1--npm-scripts) 
+  * [Express](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-2--express) 
+    - [Server](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-1--npm-scripts)
+    - [Routes](https://github.com/fallemand/workshop-nodejs/tree/master/tp#b-router)
+    - [Controllers](https://github.com/fallemand/workshop-nodejs/tree/master/tp#c-controllers)
+    - [Middleware](https://github.com/fallemand/workshop-nodejs/tree/master/tp#c-middleware)
+    - [Handlebars](https://github.com/fallemand/workshop-nodejs/tree/master/tp#d-handlebars)
+  * [Mocks](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-4--mocks-nock) 
+  * [Unit Test](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-5--unit-test-mocha---chai) 
+  * [Environments](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-6--environments) 
+  
 
 ## Configurando el entorno.
 Modulos Sublime sugeridos:   
