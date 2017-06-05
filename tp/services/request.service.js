@@ -2,29 +2,29 @@ var https = require('https');
 
 //With Promise
 module.exports = (options) => {
-	return new Promise((resolve, reject) => {
-		https.request(options, response => {
+    return new Promise((resolve, reject) => {
+        https.request(options, response => {
 
-			// Temporary data holder
-			var result = [];
-			response.on('data', chunk => {
-				result.push(chunk);
-			})
+            // Temporary data holder
+            var result = [];
+            response.on('data', chunk => {
+                result.push(chunk);
+            })
 
-			// Resolve promise
-			response.on('end', () => {
-				result = JSON.parse(result.join(''));
-				// Handle http errors
-				if (response.statusCode < 200 || response.statusCode > 299) {
-					reject(result);
-				}
-				else {
-					resolve(result);
-				}
-			})
+            // Resolve promise
+            response.on('end', () => {
+                result = JSON.parse(result.join(''));
+                // Handle http errors
+                if (response.statusCode < 200 || response.statusCode > 299) {
+                    reject(result);
+                }
+                else {
+                    resolve(result);
+                }
+            })
 
-		}).on('error', function(err) {
-	    	reject(err);
-		}).end();
-	})
+        }).on('error', function(err) {
+            reject(err);
+        }).end();
+    })
 }

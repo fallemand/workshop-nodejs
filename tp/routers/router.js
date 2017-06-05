@@ -4,8 +4,6 @@ var express = require('express');
 var errorManager = require('../services/errors.middleware');
 var author = require('../services/author.middleware');
 
-
-
 exports.init = function(app, basePath) {
 
     //Set App routes
