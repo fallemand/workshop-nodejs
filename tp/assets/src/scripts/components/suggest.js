@@ -1,7 +1,7 @@
-var request = require('./request.js').request;
+var request = require('./request.js');
 var template = require('../../../../views/partials/suggest.hbs');
 
-export var suggest = (input, container) => {
+module.exports = (input, container) => {
 
     //Define Callbacks
     //-------------------------------------------------------------

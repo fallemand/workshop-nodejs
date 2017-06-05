@@ -1,4 +1,4 @@
-export var request = (url, callback, error) => {
+module.exports = (url, callback, error) => {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", url, true);
     xhr.onload = function(e) {

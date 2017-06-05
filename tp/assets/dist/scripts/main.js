@@ -374,13 +374,10 @@ exports.logger = _logger2['default'];
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-var request = __webpack_require__(4).request;
+var request = __webpack_require__(4);
 var template = __webpack_require__(23);
 
-var suggest = exports.suggest = function suggest(input, container) {
+module.exports = function (input, container) {
 
     //Define Callbacks
     //-------------------------------------------------------------
@@ -425,10 +422,7 @@ var suggest = exports.suggest = function suggest(input, container) {
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-var request = exports.request = function request(url, callback, error) {
+module.exports = function (url, callback, error) {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", url, true);
     xhr.onload = function (e) {
@@ -453,7 +447,7 @@ var request = exports.request = function request(url, callback, error) {
 "use strict";
 
 
-var suggest = __webpack_require__(3).suggest;
+var suggest = __webpack_require__(3);
 
 window.onload = function () {
     var input = document.querySelector('[data-js="search"]');

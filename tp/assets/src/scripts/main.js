@@ -1,4 +1,4 @@
-var suggest = require('./components/suggest.js').suggest;
+var suggest = require('./components/suggest.js');
 
 window.onload = () => {
     var input = document.querySelector('[data-js="search"]');

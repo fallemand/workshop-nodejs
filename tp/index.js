@@ -18,6 +18,11 @@ app.engine('.hbs', exphbs({
 app.set('views', 'views/pages/');
 app.set('view engine', '.hbs');
 
+//Use mocks
+// if(process.env.NODE_ENV !== 'production') {
+//     require('./mocks');
+// }
+
 //Define al routes
 router.init(app, __dirname);
 
