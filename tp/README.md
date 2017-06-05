@@ -68,11 +68,12 @@ Modificar:
 -Crear un middleware para manejo de errores.  
 
 #### Entregables:  
-`services/middleware.service.js`  
-Modificar:
+`services/author.middleware.js`  
+`services/errors.middleware.js`  
+Modificar:   
 `routers/router.js`  
 `controllers/app.controller.js`  
-`controllers/app.controller.js`  
+`controllers/api.controller.js`  
 
 ### D: Handlebars
 -Implementar handlebars.  
@@ -85,25 +86,44 @@ Modificar:
 `views/pages/index.hbs`  
 `views/pages/search.hbs`  
 `views/pages/error.hbs`  
-`views/pages/item.hbs` 
+`views/pages/item.hbs`  
 `views/partials/breadcrum.hbs`  
 `views/partials/header.hbs`  
 
-## Parte 4 : Mocks (Nock)
+## Parte 3 : Mocks (Nock)
 -Explicar como crear mocks.  
 -Setear mocks para desarrollo.    
 
 #### Entregables:  
+`mocks/index.js`  
 `mocks/search.js`  
 `mocks/item.js`  
-`views/pages/index.hbs`  
+`mocks/item-description.js`  
+`mocks/item-category.js`  
+Modificar:  
+`index.js` Agregar lógica para que use los mocks.   
+
+## Parte 4 : Environments
+Explicar como diferenciar los distintos entornos.
+
+#### Ejercicio Participantes:   
+-Que en desarrollo use los mocks.
+
+#### Entregables:  
+Modificar:  
+`index.js` Agregar lógica para que use los mocks solo en desarrollo   
+`package.json` Setear las variables en cada entorno.  
 
 ## Parte 5 : Unit Test (Mocha - Chai)
 -Crear el test de meli.service.
 
-## Parte 6 : Environments
-Explicar como diferenciar los distintos entornos.
+#### Entregables:  
+Modificar:  
+`meli.service.spec.js`   
 
 #### Ejercicio Participantes:   
 -Producción: Usar assets minificados.
 -Desarrollo: Usar assets no minificados.
+
+## Parte 6 : ES6 - Babel - Webpack
+-Escribir en scripts código en ES6, y que el bundle generado sea ES5.
