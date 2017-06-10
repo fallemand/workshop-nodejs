@@ -6,6 +6,7 @@
   "scripts": {
     "test": "NODE_ENV=test mocha",
     "webpack": "webpack",
+    "start": "NODE_ENV=production node index.js",
     "clean": "rimraf assets/dist/**/*",
     "autoprefixer": "postcss -u autoprefixer -r assets/dist/styles/*",
     "scss": "node-sass --output-style compressed -o assets/dist/styles assets/src/styles",
