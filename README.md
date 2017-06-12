@@ -15,9 +15,10 @@ Hay una serie de ejercicios iniciales, y luego se empieza a desarrollar un ejerc
     - [Controllers](https://github.com/fallemand/workshop-nodejs/tree/master/tp#c-controllers)
     - [Middleware](https://github.com/fallemand/workshop-nodejs/tree/master/tp#c-middleware)
     - [Handlebars](https://github.com/fallemand/workshop-nodejs/tree/master/tp#d-handlebars)
-  * [Mocks](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-4--mocks-nock) 
-  * [Unit Test](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-5--unit-test-mocha---chai) 
-  * [Environments](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-6--environments) 
+  * [Mocks](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-3--mocks-nock) 
+  * [Environments](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-4--environments) 
+  * [ES6 Babel Webpack](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-6--es6---babel---webpack) 
+  * [Test Funcionales](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-7--test-funcionales-con-nightwatch) 
   
 
 ## Configurando el entorno.
