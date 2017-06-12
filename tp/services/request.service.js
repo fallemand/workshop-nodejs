@@ -1,9 +1,9 @@
-var https = require('https');
-
 //With Promise
 module.exports = (options) => {
+    var protocol = (options.protocol === 'http') ? require('http') : require('https');
+    delete options.protocol;
     return new Promise((resolve, reject) => {
-        https.request(options, response => {
+        protocol.request(options, response => {
 
             // Temporary data holder
             var result = [];

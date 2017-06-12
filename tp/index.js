@@ -29,4 +29,6 @@ router.init(app, __dirname);
 //Start
 app.listen(3000, () => {
 	console.log('servidor escuchando el 3000');
-})
+});
+global.port = listener.address().port;
+global.address = listener.address().address;

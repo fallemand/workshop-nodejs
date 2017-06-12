@@ -1,21 +1,28 @@
-var meliService = require('../services/meli.service');
+var request = require('../services/request.service');
 
 exports.search = (req, res, next) => {
-	var query = req.query.q;
-	meliService.search(query)
-		.then(data => {
-            data.author = res.locals.author;
-			res.render('search', data);
-		})
-		.catch(next);
+    var options = getOptions(`/api/search?q=${escape(req.query.q)}`)
+    request(options).then(data => {
+        res.render('search', data);
+    })
+    .catch(next);
 }
 
 exports.items = (req, res, next) => {
-	var id = req.params.id;
-	meliService.item(id)
-		.then(item => {
-            item.author = req.author;
-			res.render('item', item);
-		})
-		.catch(next);
+    var options = getOptions('/api/items/' + req.params.id)
+    request(options).then(item => {
+        res.render('item', item);
+    })
+    .catch(next);
+}
+
+function getOptions(path) {
+    return {
+        method: 'GET',
+        headers: {'Content-type': 'application/json'},
+        hostname: global.address,
+        port: global.port,
+        protocol: 'http',
+        path: path
+    }
 }
