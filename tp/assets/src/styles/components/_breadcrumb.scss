@@ -1,13 +1,13 @@
-$breadcrum-font-size: 13px;
+$breadcrumb-font-size: 13px;
 
-.breadcrum {
+.breadcrumb {
     margin: 16px 0;
     list-style-type: none;
     padding: 0;
 
-    .breadcrum__element {
+    .breadcrumb__element {
         color: #999;
-        font-size: $breadcrum-font-size;
+        font-size: $breadcrumb-font-size;
         display: inline-block;
         padding: 0 2px;
 
@@ -17,9 +17,9 @@ $breadcrum-font-size: 13px;
         }
     }
 
-    .breadcrum__element:last-child {
+    .breadcrumb__element:last-child {
         font-weight: 400;
-        
+
         &:after {
             content: "";
         }

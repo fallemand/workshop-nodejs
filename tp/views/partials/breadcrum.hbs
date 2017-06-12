@@ -1,12 +1,12 @@
-<ul class="breadcrum">
-    <li class="breadcrum__element"><a href="/">Inicio</a></li>
+<ul class="breadcrumb">
+    <li class="breadcrumb__element"><a href="/">Inicio</a></li>
 {{#each filters.0.values.0.path_from_root}}
-    <li class="breadcrum__element">{{name}}</li>
+    <li class="breadcrumb__element">{{name}}</li>
 {{/each}}
 {{#each path_from_root}}
-    <li class="breadcrum__element">{{name}}</li>
+    <li class="breadcrumb__element">{{name}}</li>
 {{/each}}
 {{#if query}}
-    <li class="breadcrum__element">{{quote query}}</li>
+    <li class="breadcrumb__element">{{quote query}}</li>
 {{/if}}
 </ul>

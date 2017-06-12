@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=test mocha",
+    "setup-e2e": "./node_modules/.bin/selenium-standalone install",
+    "e2e": "nightwatch",
     "webpack": "webpack",
     "clean": "rimraf assets/dist/**/*",
     "autoprefixer": "postcss -u autoprefixer -r assets/dist/styles/*",
@@ -23,7 +25,7 @@
     "watch:scripts": "onchange \"assets/src/scripts\" -- npm run build:scripts",
     "watch:images": "onchange \"assets/src/images\" -- npm run build:images",
     "watch": "npm-run-all -p watch:styles watch:scripts watch:images",
-    "postinstall": "npm run build && npm run watch"
+    "postinstall": "npm run build"
   },
   "author": "Facundo Allemand (facundo.allemand@mercadolibre.com)",
   "license": "ISC",
@@ -48,14 +50,18 @@
     "imagemin-cli": "^3.0.0",
     "mkdirp": "^0.5.1",
     "mocha": "^3.3.0",
+    "nightwatch": "0.9.12",
+    "nwjs-reporter": "0.0.7",
     "nock": "^9.0.13",
     "node-sass": "^4.5.3",
     "nodemon": "^1.11.0",
     "npm-run-all": "^2.1.1",
+    "nwjs-reporter": "0.0.7",
     "onchange": "^2.4.0",
     "postcss-cli": "^2.5.2",
     "rimraf": "^2.5.4",
     "sass-lint": "^1.10.2",
+    "selenium-standalone": "5.8.0",
     "uglify-js": "^2.6.2",
     "webpack": "^2.6.1"
   }

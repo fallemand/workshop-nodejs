@@ -14,7 +14,7 @@ Crear un watch de Sass.
 #### Entregables: 
 `package.json`
 `assets/scr/styles/components/_layout.scss` 
-`assets/scr/styles/components/_breadcrum.scss` 
+`assets/scr/styles/components/_breadcrumb.scss` 
 `assets/scr/styles/components/_header.scss`  
 `assets/scr/styles/pages/_item.scss`  
 `assets/scr/styles/pages/_index.scss`  
@@ -87,7 +87,7 @@ Modificar:
 `views/pages/search.hbs`  
 `views/pages/error.hbs`  
 `views/pages/item.hbs`  
-`views/partials/breadcrum.hbs`  
+`views/partials/breadcrumb.hbs`  
 `views/partials/header.hbs`  
 
 ## Parte 3 : Mocks (Nock)
@@ -127,3 +127,17 @@ Modificar:
 
 ## Parte 6 : ES6 - Babel - Webpack
 -Escribir en scripts código en ES6, y que el bundle generado sea ES5.
+-Generar un componente de suggest, que a medida vayamos escribiendo en el searchbar nos sugiera resultados.
+
+#### Entregables:  
+`webpack.config.js`  
+Modificar:  
+
+
+## Parte 7 : Test funcionales con NightWatch
+#### Ejercicio Dictado:   
+-Configurar el entorno para poder generar una suite de test funcionales.
+
+#### Ejercicio Participantes:   
+-Generar un test que:
+    -
