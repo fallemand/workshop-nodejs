@@ -1,12 +1,12 @@
 var expect = require('chai').expect;
 var nock = require('nock');
-var mocks = require('../mocks');
+var mocks = require('../../mocks');
 
-var meliService = require('../services/meli.service');
+var meliService = require('../../services/meli.service');
 
 describe('meli.service', () => {
 	it('should search items', () => {
-		return meliService.items('Iphone 7').then(result => {
+		return meliService.search('Iphone 7').then(result => {
              expect(result).has.property('results');
         })
     })

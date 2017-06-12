@@ -12,9 +12,9 @@ Crear un watch de Sass.
 -Generar Watchers  
 
 #### Entregables: 
-`package.json`
-`assets/scr/styles/components/_layout.scss` 
-`assets/scr/styles/components/_breadcrumb.scss` 
+`package.json`  
+`assets/scr/styles/components/_layout.scss`  
+`assets/scr/styles/components/_breadcrumb.scss`  
 `assets/scr/styles/components/_header.scss`  
 `assets/scr/styles/pages/_item.scss`  
 `assets/scr/styles/pages/_index.scss`  
@@ -111,7 +111,7 @@ Explicar como diferenciar los distintos entornos.
 
 #### Entregables:  
 Modificar:  
-`index.js` Agregar lógica para que use los mocks solo en desarrollo   
+`index.js` Agregar lógica para que use los mocks solo en desarrollo  
 `package.json` Setear las variables en cada entorno.  
 
 ## Parte 5 : Unit Test (Mocha - Chai)
@@ -119,11 +119,11 @@ Modificar:
 
 #### Entregables:  
 Modificar:  
-`meli.service.spec.js`   
+`test/unit/meli.service.spec.js`   
 
 #### Ejercicio Participantes:   
--Producción: Usar assets minificados.
--Desarrollo: Usar assets no minificados.
+-Producción: Usar assets minificados.  
+-Desarrollo: Usar assets no minificados.  
 
 ## Parte 6 : ES6 - Babel - Webpack
 -Escribir en scripts código en ES6, y que el bundle generado sea ES5.
@@ -143,9 +143,9 @@ Modificar:
 -Crear test de ejemplo para el search.
 
 #### Ejercicio Participantes:   
--Generar test que valide que funciona correctamente:
-    -Autocomplete search
-    -Página del item
+-Generar test que valide que funciona correctamente:  
+    - Autocomplete search  
+    - Página del item  
 
 #### Entregables:  
 `test/e2e/pages/HomePage.js`  
