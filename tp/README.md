@@ -127,17 +127,32 @@ Modificar:
 
 ## Parte 6 : ES6 - Babel - Webpack
 -Escribir en scripts código en ES6, y que el bundle generado sea ES5.
--Generar un componente de suggest, que a medida vayamos escribiendo en el searchbar nos sugiera resultados.
+-Generar un componente de suggest, que a medida vayamos escribiendo en el searchBar nos sugiera resultados.
 
 #### Entregables:  
 `webpack.config.js`  
+`assets/src/scripts/main.js`  
+`assets/src/scripts/components/suggest.js`  
+`assets/src/scripts/components/request.js`  
 Modificar:  
-
+`package.json`  
 
 ## Parte 7 : Test funcionales con NightWatch
 #### Ejercicio Dictado:   
 -Configurar el entorno para poder generar una suite de test funcionales.
+-Crear test de ejemplo para el search.
 
 #### Ejercicio Participantes:   
--Generar un test que:
-    -
+-Generar test que valide que funciona correctamente:
+    -Autocomplete search
+    -Página del item
+
+#### Entregables:  
+`test/e2e/pages/HomePage.js`  
+`test/e2e/pages/SearchPage.js`  
+`test/e2e/globals.js`  
+`test/e2e/groups/searchSpec.js`  
+`test/e2e/groups/itemSpec.js`  
+`nightwatch.json`  
+Modificar:  
+`package.json`  

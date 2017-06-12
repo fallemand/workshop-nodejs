@@ -5,9 +5,9 @@
 
   <testsuite name="searchSpec"
     errors="0" failures="0" hostname="" id="" package="searchSpec" skipped="0"
-    tests="1" time="4.689" timestamp="Fri, 09 Jun 2017 20:50:01 GMT">
+    tests="1" time="6.967" timestamp="Mon, 12 Jun 2017 12:52:03 GMT">
   
-    <testcase name="Should search TV LED 4K" time="4.689" assertions="4">
+    <testcase name="Should search TV LED 4K" time="6.967" assertions="4">
 
     
 
