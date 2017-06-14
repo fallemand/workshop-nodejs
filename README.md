@@ -3,7 +3,7 @@ Listado de ejercicios a desarrollar en el Workshop de Node.js
 Hay una serie de ejercicios iniciales, y luego se desarrolla un ejercicio integrador donde se van agregando funcionalidades a medida se avanza en los temas.
 
 ## Listado de Ejercicios
-- [Requirement Exercise](https://github.com/fallemand/workshop-nodejs/tree/master/ej0-requirement)
+- [EJ Requisito](https://github.com/fallemand/workshop-nodejs/tree/master/ej0-requirement)
 - [TP1-FileSystem](https://github.com/fallemand/workshop-nodejs/tree/master/ej1-filesystem)
 - [TP2-Modules](https://github.com/fallemand/workshop-nodejs/tree/master/ej2-modules)
 - [TP3-Request](https://github.com/fallemand/workshop-nodejs/tree/master/ej3-request)
