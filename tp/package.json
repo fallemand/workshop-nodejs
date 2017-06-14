@@ -24,8 +24,7 @@
     "watch:styles": "onchange \"assets/src/styles\" -- npm run build:styles",
     "watch:scripts": "onchange \"assets/src/scripts\" -- npm run build:scripts",
     "watch:images": "onchange \"assets/src/images\" -- npm run build:images",
-    "watch": "npm-run-all -p watch:styles watch:scripts watch:images",
-    "postinstall": "npm run build"
+    "watch": "npm-run-all -p watch:styles watch:scripts watch:images"
   },
   "author": "Facundo Allemand (facundo.allemand@mercadolibre.com)",
   "license": "ISC",
