@@ -116,6 +116,9 @@ Modificar:
 
 ## Parte 5 : Unit Test (Mocha - Chai)
 -Crear el test de meli.service.
+-Test a desarrollar
+    - Que traiga la información del item, la descripción y la categoría.
+    - Que obtenga resultados en base al search.
 
 #### Entregables:  
 Modificar:  
@@ -143,7 +146,7 @@ Modificar:
 -Crear test de ejemplo para el search.
 
 #### Ejercicio Participantes:   
--Generar test que valide que funciona correctamente:  
+- Generar test que valide que funciona correctamente:  
     - Autocomplete search  
     - Página del item  
 
