@@ -27,8 +27,8 @@ app.set('view engine', '.hbs');
 router.init(app, __dirname);
 
 //Start
-app.listen(3000, () => {
-	console.log('servidor escuchando el 3000');
+global.port = process.env.OPENSHIFT_NODEJS_PORT || 3000
+global.address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
+app.listen(global.port, global.address, function () {
+  console.log( "Listening on " + global.address + ", port " + global.port )
 });
-global.port = listener.address().port;
-global.address = listener.address().address;
