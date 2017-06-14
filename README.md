@@ -20,6 +20,7 @@ Hay una serie de ejercicios iniciales, y luego se desarrolla un ejercicio integr
   * [Environments](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-4--environments) 
   * [ES6 Babel Webpack](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-6--es6---babel---webpack) 
   * [Test Funcionales](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-7--test-funcionales-con-nightwatch) 
+  * [Deploy Cloud](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-8--clould-deploy--openshift) 
   
 ## Requisitos Técnicos
 - RESTful Apis.  
