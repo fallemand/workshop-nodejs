@@ -2,6 +2,14 @@
 Listado de ejercicios a desarrollar en el Workshop de Node.js  
 Hay una serie de ejercicios iniciales, y luego se desarrolla un ejercicio integrador donde se van agregando funcionalidades a medida se avanza en los temas.
 
+## Requisitos Técnicos
+- RESTful Apis.  
+- Javascript Asicronico. Manejo de callbacks. Scopes.  
+- ECMA 6.  
+- Handlebars (Uso de partials, helpers, each, if, etc).  
+- SASS.  
+- Conocimiento básico de mocks, tests, npm, etc.  
+
 ## Listado de Ejercicios
 - [EJ Requisito](https://github.com/fallemand/workshop-nodejs/tree/master/ej0-requirement)
 - [TP1-FileSystem](https://github.com/fallemand/workshop-nodejs/tree/master/ej1-filesystem)
@@ -22,14 +30,6 @@ Hay una serie de ejercicios iniciales, y luego se desarrolla un ejercicio integr
   * [Test Funcionales](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-7--test-funcionales-con-nightwatch) 
   * [Deploy Cloud](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-8--cloud-deploy-openshift) 
   
-## Requisitos Técnicos
-- RESTful Apis.  
-- Javascript Asicronico. Manejo de callbacks. Scopes.  
-- ECMA 6.  
-- Handlebars (Uso de partials, helpers, each, if, etc).  
-- SASS.  
-- Conocimiento básico de mocks, tests, npm, etc.  
-
 ## Configurando el entorno.
 NVM + Node 6.9.2  
 Modulos Sublime sugeridos:   

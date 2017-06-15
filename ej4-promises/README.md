@@ -2,6 +2,9 @@
 -Como se usa una promise (then - catch)   
 -Como crear una promise.  
 
+#### Bibliografía:
+[Promises](https://strongloop.com/strongblog/promises-in-node-js-an-alternative-to-callbacks/)
+
 #### Ejercicio Dictado:
 Pensar ejercicio promises. 
 

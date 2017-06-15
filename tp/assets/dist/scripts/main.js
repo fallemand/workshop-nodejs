@@ -404,10 +404,10 @@ module.exports = function (input, container) {
             input.form.submit();
         }
         hideMenuListener();
-    });
+    }
 
     //Suggest on every key
-    input.addEventListener('keyup', function () {
+    );input.addEventListener('keyup', function () {
         if (input.value.length > 2) {
             var url = '/api/suggest?q=' + input.value + '&v=1';
             request(url, success, err);

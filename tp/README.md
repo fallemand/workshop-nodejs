@@ -18,6 +18,15 @@ En cada parte vamos a ir agregando código que se integre al trabajo final.
 - [Deploy Cloud](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-8--cloud-deploy-openshift) 
 
 ## Parte 1 : Npm Scripts
+
+#### Dependencias:
+Watchers: [onchange](https://github.com/Qard/onchange)  
+Buildeo Sass: [node-sass](https://github.com/sass/node-sass), [postcss](https://github.com/postcss/postcss) (Autoprefix)  
+Buildeo Imágenes: [imagemin](https://github.com/imagemin/imagemin)  
+Buildeo Scripts: [uglifyjs](https://github.com/mishoo/UglifyJS)  
+Utils:  
+[npm-run-all](https://github.com/mysticatea/npm-run-all) (Correr varias tareas al mismo tiempo)  
+[nodemon](https://nodemon.io/) (Detecta cambios en el código y reinicia server)  
 #### Ejercicio Dictado:  
 Explicar el buildeo de Sass, autoprefix y minificación. 
 Crear un watch de Sass.  
@@ -26,6 +35,19 @@ Crear un watch de Sass.
 -Comprimir imágenes.  
 -Compilar y minificar código JS.  
 -Generar Watchers  
+
+Tareas:  
+``` 
+build:styles
+build:scripts
+build:images
+build
+watch:styles
+watch:scripts
+watch:images
+watch
+start 
+```
 
 #### Entregables: 
 `package.json`  
@@ -47,6 +69,9 @@ Crear un watch de Sass.
 
 ### B: Router
 -Configurar rutas  
+
+#### Bibliografía:  
+[Express Router](http://expressjs.com/es/guide/routing.html)  
 
 #### Ejercicio Dictado:  
 /app/items/MLA1232323   
@@ -83,6 +108,9 @@ Modificar:
 -Crear un middleware para que cada request contengan los datos del autor del ejercicio.  
 -Crear un middleware para manejo de errores.  
 
+#### Bibliografía:  
+[Express Middlewares](http://expressjs.com/es/guide/using-middleware.html)  
+
 #### Entregables:  
 `services/author.middleware.js`  
 `services/errors.middleware.js`  
@@ -109,6 +137,9 @@ Modificar:
 ## Parte 3 : Mocks (Nock)
 -Explicar como crear mocks.  
 -Setear mocks para desarrollo.    
+
+#### Dependencias:
+Watchers: [nock](https://github.com/node-nock/nock)  
 
 #### Entregables:  
 `mocks/index.js`  
