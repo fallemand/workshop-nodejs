@@ -13,7 +13,7 @@
     "scss": "node-sass --output-style compressed -o assets/dist/styles assets/src/styles",
     "lint-scripts": "eslint assets/src/scripts || true",
     "lint-styles": "sass-lint assets/src/styles/*.scss -v -q",
-    "uglify": "mkdirp assets/dist/scripts -p && uglifyjs assets/src/scripts/*.js -m -o assets/dist/scripts/app.js && uglifyjs assets/src/scripts/*.js -m -c -o assets/dist/scripts/app.min.js",
+    "uglify": "uglifyjs assets/src/scripts/*.js -m -o assets/dist/scripts/app.js && uglifyjs assets/src/scripts/*.js -m -c -o assets/dist/scripts/app.min.js",
     "imagemin": "imagemin assets/src/images/* -o assets/dist/images",
     "start-dev": "NODE_ENV=development ./node_modules/.bin/nodemon index.js",
     "start": "NODE_ENV=production ./node_modules/.bin/nodemon index.js",
@@ -49,11 +49,8 @@
     "handlebars": "^4.0.10",
     "handlebars-loader": "^1.5.0",
     "imagemin-cli": "^3.0.0",
-    "mkdirp": "^0.5.1",
     "mocha": "^3.3.0",
     "nightwatch": "0.9.12",
-    "nwjs-reporter": "0.0.7",
-    "nock": "^9.0.13",
     "node-sass": "^4.5.3",
     "npm-run-all": "^2.1.1",
     "onchange": "^2.4.0",
@@ -63,5 +60,8 @@
     "selenium-standalone": "5.8.0",
     "uglify-js": "^2.6.2",
     "webpack": "^2.6.1"
+  },
+  "optionalDependencies": {
+   "fsevents": "*"
   }
 }
