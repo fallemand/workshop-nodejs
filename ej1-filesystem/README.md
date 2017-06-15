@@ -1,7 +1,7 @@
 ## Ej1 : Modulo FS
 
 #### Bibliografía:
-[EJ Requisito](https://nodejs.org/api/fs.html)
+[Modulo FileSystem](https://nodejs.org/api/fs.html)
 
 #### Ejercicio Dictado:
 - Sincronico: Leer archivo, quitar vocales, imprimir por consola resultado.   
