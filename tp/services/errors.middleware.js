@@ -1,5 +1,5 @@
 exports.apiErrors = (err, req, res, next) => {
-    res.json(err);
+    res.status(err.status || 500).json(err);
 }
 
 exports.appErrors = (err, req, res, next) => {
