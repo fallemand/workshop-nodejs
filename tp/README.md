@@ -4,6 +4,20 @@ En cada parte vamos a ir agregando código que se integre al trabajo final.
 
 ## [Demo](http://app-workshop.7e14.starter-us-west-2.openshiftapps.com)
 
+## Índice 
+- [Npm Scripts](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-1--npm-scripts) 
+- [Express](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-2--express) 
+    * [Server](https://github.com/fallemand/workshop-nodejs/tree/master/tp#a-configurar-server)
+    * [Routes](https://github.com/fallemand/workshop-nodejs/tree/master/tp#b-router)
+    * [Controllers](https://github.com/fallemand/workshop-nodejs/tree/master/tp#c-controllers)
+    * [Middleware](https://github.com/fallemand/workshop-nodejs/tree/master/tp#c-middleware)
+    * [Handlebars](https://github.com/fallemand/workshop-nodejs/tree/master/tp#d-handlebars)
+- [Mocks](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-3--mocks-nock) 
+- [Environments](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-4--environments) 
+- [ES6 Babel Webpack](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-6--es6---babel---webpack) 
+- [Test Funcionales](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-7--test-funcionales-con-nightwatch) 
+- [Deploy Cloud](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-8--cloud-deploy-openshift) 
+
 ## Parte 1 : Npm Scripts
 #### Ejercicio Dictado:  
 Explicar el buildeo de Sass, autoprefix y minificación. 
