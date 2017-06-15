@@ -8,7 +8,7 @@ Hay una serie de ejercicios iniciales, y luego se desarrolla un ejercicio integr
 - ECMA 6.  
 - Handlebars (Uso de partials, helpers, each, if, etc).  
 - SASS.  
-- Conocimiento básico de mocks, tests, npm, etc.  
+- Conocimiento básico de mocks (¿Que son? ¿Para que sirven?) , tests (diferencias entre test funcionales y unitarios), npm (Manejo de dependencias en Node)
 
 ## Listado de Ejercicios
 - [EJ Requisito](https://github.com/fallemand/workshop-nodejs/tree/master/ej0-requirement)
