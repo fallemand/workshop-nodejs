@@ -6,6 +6,7 @@ Se debe realizar lo siguiente:
 
 #### Atención: 
 - Las llamadas deben ser asincronicas utilizando javascript.
+- Tanto el breadcrumb como el item de resultado (`.search-item`) deben ser templates de Handlebards.
 - Los template pueden ser definidos en el index.html de la siguiente forma:
 ```
 <script id="entry-template" type="text/x-handlebars-template">
@@ -17,13 +18,8 @@ Se debe realizar lo siguiente:
   </div>
 </script>
 ```
+- Info sobre [Handlebars](http://handlebarsjs.com)
 
 #### Bibliografía:
-[Handlebars](http://handlebarsjs.com)
-[API MercadoLibre](http://developers.mercadolibre.com/es/items-y-busquedas/)
 
 #### Resultado esperado:
-- Tanto el breadcrumb como el item de resultado (`.search-item`) deben ser templates de Handlebards.
-- Se debe usar un helper de HandleBars para formatear el precio. 
-![catalog1](https://image.prntscr.com/image/rlMakPCrQzqOJCN1O-s6pA.png)
-(El precio debe estar separado en miles por puntos, y los centavos tienen que estar más chiquitos arriba)

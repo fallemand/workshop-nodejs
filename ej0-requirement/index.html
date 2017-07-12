@@ -118,39 +118,6 @@
                     Templates
     ######################################## -->
 
-    <script id="breadcrumb-template" type="text/x-handlebars-template">
-        <ul class="breadcrumb">
-            <li class="breadcrumb__element"><a href="/">Inicio</a></li>
-            {{#each filters.0.values.0.path_from_root}}
-            <li class="breadcrumb__element">{{name}}</li>
-            {{/each}}
-            {{#each path_from_root}}
-            <li class="breadcrumb__element">{{name}}</li>
-            {{/each}}
-            {{#if query}}
-            <li class="breadcrumb__element">{{quote query}}</li>
-            {{/if}}
-        </ul>
-    </script>
-
-    <script id="search-item-template" type="text/x-handlebars-template">
-        {{#each results}}
-        <a class="search-item" href="#">
-            <div class="search-item__picture">
-                <img src="{{thumbnail}}" alt="{{title}}" />
-            </div>
-            <div class="search-item__description">
-                <span class="search-item__price">$ {{price price}}</span>
-                {{#if shipping.free_shipping}}
-                    <i class="search-item__freeshipment"></i>
-                {{/if}}
-                <p class="search-item__title">{{title}}<p>
-            </div>
-            <div class="search-item__location">{{address.state_name}}</div>
-        </a>
-        {{/each}}
-    </script>
-
     <script src="assets/scripts/handlebars.min-latest.js"></script>
     <script src="assets/scripts/main.js"></script>
 </body>
