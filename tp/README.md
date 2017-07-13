@@ -26,8 +26,12 @@ Buildeo Imágenes: [imagemin](https://github.com/imagemin/imagemin)
 Buildeo Scripts: [uglifyjs](https://github.com/mishoo/UglifyJS)  
 Utils:  
 [npm-run-all](https://github.com/mysticatea/npm-run-all) (Correr varias tareas al mismo tiempo)  
-[nodemon](https://nodemon.io/) (Detecta cambios en el código y reinicia server)  
+[onchange](https://github.com/Qard/onchange) (Detecta cambios en directorios y ejecuta los comandos que querramos)  
+[rimraf](https://github.com/isaacs/rimraf) (Utilidad para borrar directorios en todos los SO)  
+[nodemon](https://nodemon.io/) (Detecta cambios en el código y reinicia server para aplicarlos)
+
 #### Ejercicio Dictado:  
+Explicar nodemon
 Explicar el buildeo de Sass, autoprefix y minificación. 
 Crear un watch de Sass.  
 
@@ -38,6 +42,11 @@ Crear un watch de Sass.
 
 Tareas:  
 ``` 
+clean
+autoprefixer
+scss
+uglify
+imagemin
 build:styles
 build:scripts
 build:images
