@@ -4,9 +4,10 @@
 
 #### Bibliografía:
 [Promises](https://strongloop.com/strongblog/promises-in-node-js-an-alternative-to-callbacks/)
+[Promse](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Promise)
 
 #### Ejercicio Dictado:
-Pensar ejercicio promises. 
+-Crear una función que devuelva un objeto Promise y reciba como parámetro un argumento, utilizando un timeout dentro de la misma (para mostrar que es asincrónica) y según el parámetro resolver o rejectar la misma.
 
 #### Ejercicio Participantes:  
 -Transformar el objeto `request.js` en una promise.  
