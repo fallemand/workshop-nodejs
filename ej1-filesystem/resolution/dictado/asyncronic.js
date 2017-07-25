@@ -4,7 +4,7 @@ const vowels = new RegExp(/a|e|i|o|u|á|é|í|ó|ú/, 'ig');
 /*
  * Manipulating a stream asynchronously
  */
-fs.readFile('text.txt', 'utf8', (err, data) => {
+fs.readFile('../text.txt', 'utf8', (err, data) => {
    if (err) throw err;
 
    console.log(data.replace(vowels, ''));

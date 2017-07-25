@@ -4,7 +4,7 @@ const vowels = new RegExp(/a|e|i|o|u|á|é|í|ó|ú/, 'ig');
 /*
  * Easy way synchronously
  */
-const output = fs.readFileSync('text.txt', 'utf8');
+const output = fs.readFileSync('../text.txt', 'utf8');
 
 const text = output.replace(vowels, '');
 

@@ -5,7 +5,7 @@ const vowels = new RegExp(/a|e|i|o|u|á|é|í|ó|ú/, 'ig');
 /*
  * Manipulating a stream synchronously
  */
-const stream = fs.createReadStream('text.txt');
+const stream = fs.createReadStream('../text.txt');
 
 stream.on('data', textChunk => {
   console.log(textChunk.toString('utf8').replace(vowels, ''));
