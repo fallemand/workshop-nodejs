@@ -1,7 +1,7 @@
 # Ejercicio Final
 La idea de este ejercicio es armar un mini sitio de Mercado Libre con Home, Search, Vip, página de error, y Api.
 En cada parte vamos a ir agregando código que se integre al trabajo final.
-- **[Site Demo](https://workshop-node.herokuapp.com/)**
+- **[Site Demo](http://app-workshop.7e14.starter-us-west-2.openshiftapps.com)**
 
 ## Índice 
 - [Npm Scripts](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-1--npm-scripts) 
