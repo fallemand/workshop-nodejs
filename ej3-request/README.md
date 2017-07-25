@@ -1,4 +1,11 @@
 ## Ej3 : Request
+
+#### Bibliografía:
+
+[Modulo http](https://nodejs.org/api/http.html#http_http_get_options_callback)
+
+#### Objetivo:
+
 -Crear un módulo que permita hacer requests.
 
 #### Ejercicio Dictado:  
