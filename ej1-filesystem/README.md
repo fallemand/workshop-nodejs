@@ -8,7 +8,7 @@
 - Asincronico: Leer archivo, quitar vocales, imprimir por consola resultado.
 
 #### Ejercicio Participantes: Cambiador de palabras   
--Crear un json, que contenga:
+- Crear un json, que contenga:
 ```javascript
 { 
   "parado" : "sentado",   
