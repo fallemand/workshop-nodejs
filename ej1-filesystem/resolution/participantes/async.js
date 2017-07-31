@@ -16,6 +16,10 @@ fs.readFile('../../replaces.json', 'utf8', (err, data) => {
     });
 
     console.log(data);
+    fs.writeFile('output.txt', data, (err) => {
+      if (err) throw err;
+      console.log('El archivo se guardó exitosamente!');
+    });
   });
 });
 

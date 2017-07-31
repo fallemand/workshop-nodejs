@@ -12,3 +12,8 @@ Object.keys(replaces).forEach(prop => {
 
 console.log(output);
 console.log('\x1b[33m%s\x1b[0m', 'Me muestro cuando termina lo anterior.');
+
+fs.writeFile('output.txt', output, (err) => {
+  if (err) throw err;
+  console.log('El archivo se guardó exitosamente!');
+});

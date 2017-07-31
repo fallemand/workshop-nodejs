@@ -10,3 +10,8 @@ const text = output.replace(vowels, 'i');
 
 console.log(text);
 console.log('\x1b[33m%s\x1b[0m', 'Me muestro cuando termina lo anterior.');
+
+fs.writeFile('output.txt', text, (err) => {
+  if (err) throw err;
+  console.log('El archivo se guardó exitosamente!');
+});
