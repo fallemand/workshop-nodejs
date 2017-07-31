@@ -13,12 +13,13 @@ module.exports = (options) => {
 
             // Resolve promise
             response.on('end', () => {
-                result = JSON.parse(result.join(''));
+                result = result.join('');
                 // Handle http errors
                 if (response.statusCode < 200 || response.statusCode > 299) {
                     reject(result);
                 }
                 else {
+                    result = JSON.parse(result);
                     resolve(result);
                 }
             })
