@@ -2,8 +2,8 @@
 Listado de ejercicios a desarrollar en el Workshop de Node.js  
 Hay una serie de ejercicios iniciales, y luego se desarrolla un ejercicio integrador donde se van agregando funcionalidades a medida se avanza en los temas.
 
-**[Notas para el Instructor](https://docs.google.com/document/d/1J7d2IMq4y3iUmN40U_P_lBVnjfcVfQXF7tmeSfROuWc/edit)**  
-**[Demo Resultado Final](https://workshop-node.herokuapp.com/)**
+[Notas para el Instructor](https://docs.google.com/document/d/1J7d2IMq4y3iUmN40U_P_lBVnjfcVfQXF7tmeSfROuWc/edit)  
+[Demo Resultado Final](https://workshop-node.herokuapp.com/)
 
 ## Requisitos Técnicos
 - RESTful Apis.  
