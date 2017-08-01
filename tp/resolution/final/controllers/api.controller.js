@@ -1,7 +1,7 @@
-var meliService = require('../services/meli.service');
+const meliService = require('../services/meli.service');
 
 exports.search = (req, res, next) => {
-	var query = req.query.q;
+	const query = req.query.q;
     meliService.search(query)
         .then(data => {
             data.author = res.locals.author;
@@ -11,7 +11,7 @@ exports.search = (req, res, next) => {
 }
 
 exports.items = (req, res, next) => {
-    var id = req.params.id;
+    const id = req.params.id;
     meliService.item(id)
         .then(item => {
             item.author = res.locals.author;
@@ -21,7 +21,7 @@ exports.items = (req, res, next) => {
 }
 
 exports.suggest = (req, res, next) => {
-	var query = req.query.q;
+	const query = req.query.q;
 	meliService.suggest(query)
 		.then(results => {
             results.author = res.locals.author;

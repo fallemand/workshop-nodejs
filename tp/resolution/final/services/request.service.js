@@ -1,12 +1,12 @@
 //With Promise
 module.exports = (options) => {
-    var protocol = (options.protocol === 'http') ? require('http') : require('https');
+    let protocol = (options.protocol === 'http') ? require('http') : require('https');
     delete options.protocol;
     return new Promise((resolve, reject) => {
         protocol.request(options, response => {
 
             // Temporary data holder
-            var result = [];
+            let result = [];
             response.on('data', chunk => {
                 result.push(chunk);
             })

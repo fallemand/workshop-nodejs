@@ -30,6 +30,6 @@ router.init(app, __dirname);
 global.port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 3000
 global.address = process.env.IP || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0'
 
-app.listen(global.port, global.address, function () {
+app.listen(global.port, global.address, () => {
   console.log( "Listening on " + global.address + ", port " + global.port )
 });

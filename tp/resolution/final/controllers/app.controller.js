@@ -1,7 +1,7 @@
-var request = require('../services/request.service');
+const request = require('../services/request.service');
 
 exports.search = (req, res, next) => {
-    var options = getOptions(`/api/search?q=${escape(req.query.q)}`)
+    const options = getOptions(`/api/search?q=${escape(req.query.q)}`)
     request(options).then(data => {
         res.render('search', data);
     })
@@ -9,7 +9,7 @@ exports.search = (req, res, next) => {
 }
 
 exports.items = (req, res, next) => {
-    var options = getOptions('/api/items/' + req.params.id)
+    const options = getOptions('/api/items/' + req.params.id)
     request(options).then(item => {
         res.render('item', item);
     })

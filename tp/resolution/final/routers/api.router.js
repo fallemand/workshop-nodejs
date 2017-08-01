@@ -1,6 +1,6 @@
-var express = require('express');
-var router = express.Router();
-var apiController = require('../controllers/api.controller');
+const express = require('express');
+const router = express.Router();
+const apiController = require('../controllers/api.controller');
 
 router.get('/items/:id', apiController.items)
 router.get('/search', apiController.search)

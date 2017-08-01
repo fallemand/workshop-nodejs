@@ -1,6 +1,6 @@
-var request = require('./request.service');
+const request = require('./request.service');
 
-var options = {
+let options = {
 	method: 'GET',
 	headers: {'Content-type': 'application/json'}
  };
