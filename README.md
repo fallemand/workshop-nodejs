@@ -1,12 +1,10 @@
 # Workshop Node.js
 Este curso esta apuntado a personas que se estan iniciando en el mundo de Node.js    
-Se plantean una serie de ejercicios introductorios simples, y luego se avanza sobre un trabajo integrador. 
-Este trabajo integrador va siendo iterado y agregando las funcionalidades que se van viendo en el curso.  
+Se plantea una serie de ejercicios introductorios, y luego se avanza sobre un trabajo integrador. 
+Este trabajo integrador se va iterado y completando a medida se va desarrollado el curso.  
 Se busca que los asistentes tengan un comprendimiento completo del stack, por lo que se inicia con una carpeta completamente vacía, y clase a clase van a ir agregando funcionalidades, hasta lograr un proyecto completo deployado en la nube con una url productiva.  
+
 [Demo Resultado Final](https://workshop-node.herokuapp.com/)
-
-[Notas para el Instructor](https://docs.google.com/document/d/1J7d2IMq4y3iUmN40U_P_lBVnjfcVfQXF7tmeSfROuWc/edit)  
-
 
 ## Requisitos Técnicos
 - RESTful Apis.  
@@ -17,6 +15,8 @@ Se busca que los asistentes tengan un comprendimiento completo del stack, por lo
 - Conocimiento básico de mocks (¿Que son? ¿Para que sirven?) , tests (diferencias entre test funcionales y unitarios), npm (Manejo de dependencias en Node)
 
 ## Listado de Ejercicios
+[Notas para el Instructor](https://docs.google.com/document/d/1J7d2IMq4y3iUmN40U_P_lBVnjfcVfQXF7tmeSfROuWc/edit)  
+
 - [EJ Requisito](https://github.com/fallemand/workshop-nodejs/tree/master/ej0-requirement)
 - [TP1-FileSystem](https://github.com/fallemand/workshop-nodejs/tree/master/ej1-filesystem)
 - [TP2-Modules](https://github.com/fallemand/workshop-nodejs/tree/master/ej2-modules)
