@@ -100,11 +100,11 @@ start
 
 #### Ejercicio Dictado:  
 /app/items/MLA1232323  
-/api/items/MLA1232323  
+/app/search?q="iphone" 
 
 #### Ejercicio Participantes: 
 /api/search?q="iphone"  
-/app/search?q="iphone"  
+/api/items/MLA1232323  
 
 #### Entregables:  
 `controllers/app.controller.js`  
@@ -113,7 +113,7 @@ start
 Modificar:  
 `routers/router.js`  
 
-### C: Middleware
+### D: Middleware
 -Crear un middleware para que cada request contengan los datos del autor del ejercicio.  
 -Crear un middleware para manejo de errores.  
 
@@ -121,14 +121,12 @@ Modificar:
 [Express Middlewares](http://expressjs.com/es/guide/using-middleware.html)  
 
 #### Entregables:  
-`services/author.middleware.js`  
-`services/errors.middleware.js`  
+`middleware/author.middleware.js`  
+`middleware/errors.middleware.js`  
 Modificar:   
 `routers/router.js`  
-`controllers/app.controller.js`  
-`controllers/api.controller.js`  
 
-### D: Handlebars
+### E: Handlebars
 -Implementar handlebars.  
 -Definir un layout.  
 -Definir una page.  
