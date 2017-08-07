@@ -2,12 +2,12 @@ const routerApi = require('./api.router');
 const routerApp = require('./app.router');
 const express = require('express');
 const errorManager = require('../middlewares/errors.middleware');
-const author = require('../services/author.middleware');
+const author = require('../middlewares/author.middleware');
 
 exports.init = function(app, basePath) {
 
     //Set App routes
-    app.use('/app', author, routerApp, errorManager.appErrors);
+    app.use('/app', routerApp, errorManager.appErrors);
 
     //Set App routes
     app.use('/api', author, routerApi, errorManager.apiErrors);
@@ -17,6 +17,6 @@ exports.init = function(app, basePath) {
 
 	//Set default url
 	app.use('/*', function (req, res, next) {
-	    res.render('index');
+	    res.send('Ruta por defecto');
 	});
 }
