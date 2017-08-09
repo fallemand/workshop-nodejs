@@ -1,0 +1,14 @@
+{
+    "extends": "airbnb",
+    "rules": {
+        "max-len": ["warn", 120, 2, {
+            "ignoreUrls": true,
+            "ignoreComments": false
+        }],
+        "no-param-reassign": ["error", { "props": false }],
+        "class-methods-use-this": 0,
+        "arrow-body-style": "off",
+        "padded-blocks": "off"
+    },
+    "parser": "babel-eslint"
+}
