@@ -1,8 +1,7 @@
 # Workshop Node.js
 Este curso esta apuntado a personas que se estan iniciando en el mundo de Node.js    
-Se plantea una serie de ejercicios introductorios, y luego se avanza sobre un trabajo integrador. 
-Este trabajo integrador se va iterado y completando a medida se va desarrollado el curso.  
-Se busca que los asistentes tengan un comprendimiento completo del stack, por lo que se inicia con una carpeta completamente vacía, y clase a clase van a ir agregando funcionalidades, hasta lograr un proyecto completo deployado en la nube con una url productiva.  
+Se plantea una serie de ejercicios introductorios, y luego se avanza sobre un trabajo integrador que se va iterado y completando a medida se desarrolla el curso.  
+Se busca que los asistentes obtengan una compresión completa del stack, por lo que se inicia con una carpeta vacía, y clase a clase se va agregando funcionalidad, hasta lograr un proyecto completo (con módulos, servicios, middlewares, test unitarios y funcionales, buildeo de assets, etc) deployado en la nube con una url productiva.  
 
 [Demo Resultado Final](https://workshop-node.herokuapp.com/)
 
