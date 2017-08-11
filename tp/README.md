@@ -9,8 +9,8 @@ En cada parte vamos a ir agregando código que se integre al trabajo final.
     * [Server](https://github.com/fallemand/workshop-nodejs/tree/master/tp#a-configurar-server)
     * [Routes](https://github.com/fallemand/workshop-nodejs/tree/master/tp#b-router)
     * [Controllers](https://github.com/fallemand/workshop-nodejs/tree/master/tp#c-controllers)
-    * [Middleware](https://github.com/fallemand/workshop-nodejs/tree/master/tp#c-middleware)
-    * [Services](https://github.com/fallemand/workshop-nodejs/tree/master/tp#c-middleware)
+    * [Middleware](https://github.com/fallemand/workshop-nodejs/tree/master/tp#d-middleware)
+    * [Services](https://github.com/fallemand/workshop-nodejs/tree/master/tp#e-services)
     * [Handlebars](https://github.com/fallemand/workshop-nodejs/tree/master/tp#d-handlebars)
 - [Mocks](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-3--mocks-nock) 
 - [Environments](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-4--environments) 
@@ -143,18 +143,18 @@ Deberan dejar funcionando todas las llamadas.
 
 `api/item/MLA2314234234` Retorna `JSON`: Debe devolver todos los datos de un item, incluida la description en el atributo `text`  
 `api/search?q=iphone` Retorna `JSON`: Debe retornar los resultados del search de MercadoLibre  
-`api/suggest?q=iphone` Retorna `JSON`: Debe retornar las sugerencias de búsqueda
+`api/suggest?q=iphone` Retorna `JSON`: Debe retornar las sugerencias de búsqueda  
 `app/item/MLA2314234234` Retorna `TXT`: Debe devolver todos los datos de un item, incluida la description en el atributo `text`  
 `app/search?q=iphone` Retorna `TXT`: Debe retornar los resultados del search de MercadoLibre  
 
 #### Entregables:  
 `services/request.service.js`  
-`services/meli.service.js` 
+`services/meli.service.js`  
 Modificar:   
 `controllers/app.controller.js`  
 `controllers/api.controller.js`  
 
-### E: Handlebars
+### F: Handlebars
 -Implementar handlebars.  
 -Definir un layout.  
 -Definir una page.  
