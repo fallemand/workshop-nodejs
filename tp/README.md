@@ -10,6 +10,7 @@ En cada parte vamos a ir agregando código que se integre al trabajo final.
     * [Routes](https://github.com/fallemand/workshop-nodejs/tree/master/tp#b-router)
     * [Controllers](https://github.com/fallemand/workshop-nodejs/tree/master/tp#c-controllers)
     * [Middleware](https://github.com/fallemand/workshop-nodejs/tree/master/tp#c-middleware)
+    * [Services](https://github.com/fallemand/workshop-nodejs/tree/master/tp#c-middleware)
     * [Handlebars](https://github.com/fallemand/workshop-nodejs/tree/master/tp#d-handlebars)
 - [Mocks](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-3--mocks-nock) 
 - [Environments](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-4--environments) 
@@ -68,6 +69,10 @@ start
 `assets/scr/styles/pages/_search.scss`  
 `assets/scr/styles/pages/_error.scss`  
 `assets/scr/styles/main.scss`  
+`assets/scr/scripts/main.js`  
+`assets/scr/scripts/file1.js`  
+`assets/scr/scripts/file2.js`  
+`assets/scr/images/test.jpg`  
 
 ## Parte 2 : Express
 ### A: Configurar Server
@@ -121,10 +126,33 @@ Modificar:
 [Express Middlewares](http://expressjs.com/es/guide/using-middleware.html)  
 
 #### Entregables:  
-`middleware/author.middleware.js`  
-`middleware/errors.middleware.js`  
+`middlewares/author.middleware.js`  
+`middlewares/errors.middleware.js`  
 Modificar:   
 `routers/router.js`  
+`controllers/api.controller.js`  
+
+### E: Services
+-Integrar el archivo `meli.service.js` y `request.js`  
+
+#### Ejercicio Dictado:  
+Mostramos como hacer para que la llamada a `api/search?q=iphone` devuelva el json con los resultados de la api de mercadolibre.
+
+#### Ejercicio Participantes: 
+Deberan dejar funcionando todas las llamadas.
+
+`api/item/MLA2314234234` Retorna `JSON`: Debe devolver todos los datos de un item, incluida la description en el atributo `text`  
+`api/search?q=iphone` Retorna `JSON`: Debe retornar los resultados del search de MercadoLibre  
+`api/suggest?q=iphone` Retorna `JSON`: Debe retornar las sugerencias de búsqueda
+`app/item/MLA2314234234` Retorna `TXT`: Debe devolver todos los datos de un item, incluida la description en el atributo `text`  
+`app/search?q=iphone` Retorna `TXT`: Debe retornar los resultados del search de MercadoLibre  
+
+#### Entregables:  
+`services/request.service.js`  
+`services/meli.service.js` 
+Modificar:   
+`controllers/app.controller.js`  
+`controllers/api.controller.js`  
 
 ### E: Handlebars
 -Implementar handlebars.  
