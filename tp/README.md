@@ -144,8 +144,8 @@ Deberan dejar funcionando todas las llamadas.
 `api/item/MLA2314234234` Retorna `JSON`: Debe devolver todos los datos de un item, incluida la description en el atributo `text`  
 `api/search?q=iphone` Retorna `JSON`: Debe retornar los resultados del search de MercadoLibre  
 `api/suggest?q=iphone` Retorna `JSON`: Debe retornar las sugerencias de búsqueda  
-`app/item/MLA2314234234` Retorna `TXT`: Debe devolver todos los datos de un item, incluida la description en el atributo `text`  
-`app/search?q=iphone` Retorna `TXT`: Debe retornar los resultados del search de MercadoLibre  
+`app/item/MLA2314234234` Retorna `TXT`: Por ahora solo imprime en pantalla el resultado a la llamada a la api  
+`app/search?q=iphone` Retorna `TXT`: Por ahora solo imprime en pantalla el resultado a la llamada a la api  
 
 #### Entregables:  
 `services/request.service.js`  
