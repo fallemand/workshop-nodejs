@@ -11,7 +11,7 @@ En cada parte vamos a ir agregando código que se integre al trabajo final.
     * [Controllers](https://github.com/fallemand/workshop-nodejs/tree/master/tp#c-controllers)
     * [Middleware](https://github.com/fallemand/workshop-nodejs/tree/master/tp#d-middleware)
     * [Services](https://github.com/fallemand/workshop-nodejs/tree/master/tp#e-services)
-    * [Handlebars](https://github.com/fallemand/workshop-nodejs/tree/master/tp#d-handlebars)
+    * [Handlebars](https://github.com/fallemand/workshop-nodejs/tree/master/tp#f-handlebars)
 - [Mocks](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-3--mocks-nock) 
 - [Environments](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-4--environments) 
 - [ES6 Babel Webpack](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-6--es6---babel---webpack) 
