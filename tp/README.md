@@ -155,10 +155,15 @@ Modificar:
 `controllers/api.controller.js`  
 
 ### F: Handlebars
--Implementar handlebars.  
--Definir un layout.  
--Definir una page.  
--Definir un partial.  
+Vamos a configurar handlebars para utilizar en las vistas.  
+
+#### Ejercicio Dictado:  
+-Crearemos un layout.
+-Crearemos una page
+-Haremos que la ruta `app/search?q=iphone` sea renderizada utilizando una page .hbs
+
+#### Ejercicio Participantes: 
+Completar todas las vistas restantes.  
 
 #### Entregables:  
 `views/layouts/main.hbs`  
@@ -168,6 +173,11 @@ Modificar:
 `views/pages/item.hbs`  
 `views/partials/breadcrumb.hbs`  
 `views/partials/header.hbs`  
+Modificar:  
+`package.json`  
+`index.js`  
+`controllers/app.controller.js`  
+`routers/reouter.js`  
 
 ## Parte 3 : Mocks (Nock)
 -Explicar como crear mocks.  
