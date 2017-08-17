@@ -14,9 +14,9 @@ app.set('views', __dirname + '/views/');
 app.set('view engine', 'jsx');
 
 //Use mocks
-// if(process.env.NODE_ENV !== 'production') {
-//     require('./mocks');
-// }
+if(process.env.NODE_ENV !== 'production') {
+    require('./mocks');
+}
 
 //Define al routes
 router.init(app, __dirname);
