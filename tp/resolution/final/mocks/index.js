@@ -1,44 +1,21 @@
-var nock = require('nock');
-melinock = nock('https://api.mercadolibre.com');
+const nock = require('nock');
+const melinock = nock('https://api.mercadolibre.com');
+const searchMock = require('./search.json');
+const itemMock = require('./item.json');
+const itemDescriptionMock = require('./item-description.json');
+const categoryMock = require('./category.json');
 
 //Search mocks
 melinock
     .get('/sites/MLA/search')
-    .query({
-        q: 'Iphone 7',
-        limit: '6',
-    })
-    .reply(200, {
-        results: [{
-            title: 'Sitio ML 1'
-        }, {
-            title: 'Sitio ML 2'
-        }]
-    });
+    .query(true)
+    .reply(200, searchMock);
 
 //Item mocks
 melinock
-    .get('/items/MLM571268838')
-    .reply(200, {
-        "id": "MLM571268838",
-        "site_id": "MLM",
-        "title": "Item De Testeo, Por Favor No Ofertar!",
-        "category_id": "MLM92311"
-    })
-    .get('/items/MLM571268838/description')
-    .reply(200, {
-        "text": "Descripción del item"
-    })
-    .get('/categories/MLM92311')
-    .reply(200, {
-        "path_from_root": [{
-            "id": "MLM1540",
-            "name": "Servicios"
-        }, {
-            "id": "MLM92303",
-            "name": "Hogar"
-        }, {
-            "id": "MLM92311",
-            "name": "Otros"
-        }]
-    })
+    .get(/\/items\/.*/)
+    .reply(200, itemMock)
+    .get(/\/items\/.*\/description/)
+    .reply(200, itemDescriptionMock)
+    .get(/\/categories\/.*/)
+    .reply(200, categoryMock);
