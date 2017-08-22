@@ -1,5 +1,5 @@
 const nock = require('nock');
-const melinock = nock('https://api.mercadolibre.com').persist();
+const melinock = nock('https://api.mercadolibre.com/').persist();
 const searchMock = require('./search.json');
 const itemMock = require('./item.json');
 const itemDescriptionMock = require('./item-description.json');
