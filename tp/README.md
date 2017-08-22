@@ -191,7 +191,7 @@ Modificar:
 
 #### Ejercicio Participantes: 
 -Completar los mocks de la vista del item. Para lo cual, deberán mockear 3 llamadas:  
-`/items/*` -> Obtener item  
+`/items/*` -> Obtener item  
 `/items/*/description` -> Obtener descripción de la publicación.  
 `/categories/*` -> Obtener el path de la categoría.  
 
