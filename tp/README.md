@@ -183,14 +183,14 @@ Modificar:
 -Vemos como generar mocks con Nock.   
 
 #### Dependencias:
-Watchers: [nock](https://github.com/node-nock/nock)  
+[nock](https://github.com/node-nock/nock)  
 
 #### Ejercicio Dictado:  
 -Explicamos como crear mocks para el caso del search de forma genérica, es decir, que para cualquier búsqueda, retorne los resultados del mock.  
 `/sites/MLA/search/*`  
 
 #### Ejercicio Participantes: 
--Completar los mocks de la vista del item. Para lo cual, deberán mockear 3 llamadas:
+-Completar los mocks de la vista del item. Para lo cual, deberán mockear 3 llamadas:  
 `/items/*` -> Obtener item  
 `/items/*/description` -> Obtener descripción de la publicación.  
 `/categories/*` -> Obtener el path de la categoría.  
