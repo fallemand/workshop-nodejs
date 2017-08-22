@@ -180,11 +180,20 @@ Modificar:
 `routers/reouter.js`  
 
 ## Parte 3 : Mocks (Nock)
--Explicar como crear mocks.  
--Setear mocks para desarrollo.    
+-Vemos como generar mocks con Nock.   
 
 #### Dependencias:
 Watchers: [nock](https://github.com/node-nock/nock)  
+
+#### Ejercicio Dictado:  
+-Explicamos como crear mocks para el caso del search de forma genérica, es decir, que para cualquier búsqueda, retorne los resultados del mock.  
+`/sites/MLA/search/*`  
+
+#### Ejercicio Participantes: 
+-Completar los mocks de la vista del item. Para lo cual, deberán mockear 3 llamadas:
+`/items/*` -> Obtener item  
+`/items/*/description` -> Obtener descripción de la publicación.  
+`/categories/*` -> Obtener el path de la categoría.  
 
 #### Entregables:  
 `mocks/index.js`  
@@ -198,7 +207,7 @@ Modificar:
 ## Parte 4 : Environments
 Explicar como diferenciar los distintos entornos.
 
-#### Ejercicio Participantes:   
+#### Ejercicio Dictado:   
 -Que en desarrollo use los mocks.
 
 #### Entregables:  
