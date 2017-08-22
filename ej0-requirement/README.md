@@ -4,12 +4,14 @@ Se debe realizar lo siguiente:
 `https://api.mercadolibre.com/sites/MLA/search?q=iphone7`  
 -Renderizar los resultados obtenidos con el campo de resultado.  
 
+Aclaración: Se entrega ya realizado todo el markup con los estilos.  
+
 #### Funcionalidad: 
 ![funcionalidad](http://g.recordit.co/643HOyHklQ.gif)
 
 #### Atención: 
 - Las llamadas deben ser asincronicas utilizando javascript.  
-- Los template pueden ser definidos en el index.html de la siguiente forma:  
+- Los templates pueden ser definidos en el index.html de la siguiente forma:  
 ```
 <script id="entry-template" type="text/x-handlebars-template">
   <div class="entry">
