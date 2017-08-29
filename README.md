@@ -1,7 +1,8 @@
 # Workshop Node.js
 Este curso esta apuntado a personas que se estan iniciando en el mundo de Node.js    
 Se plantea una serie de ejercicios introductorios, y luego se avanza sobre un trabajo integrador que se va iterado y completando a medida se desarrolla el curso.  
-Se busca que los asistentes obtengan una compresión completa del stack, por lo que se inicia con una carpeta vacía, y clase a clase se va agregando funcionalidad, hasta lograr un proyecto completo (con módulos, servicios, middlewares, test unitarios y funcionales, buildeo de assets, etc) deployado en la nube con una url productiva.  
+Se busca que los asistentes obtengan una compresión completa del stack, por lo que se inicia con una carpeta vacía, y clase a clase se va agregando funcionalidad, hasta lograr un proyecto completo deployado en la nube con una url productiva.  
+El proyecto incluirá módulos, servicios, middlewares, controllers, routers, ES6 en el cliente, mocks, test unitarios y funcionales, buildeo de assets, entre otros.  
 
 [Demo Resultado Final](https://workshop-node.herokuapp.com/)
 
@@ -37,7 +38,7 @@ Se busca que los asistentes obtengan una compresión completa del stack, por lo 
   * [Deploy Cloud](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-8--cloud-deploy-openshift) 
   
 ## Configurando el entorno.
-NVM + Node 6.9.2  
+NVM + Node 6.11.0  
 Modulos Sublime sugeridos:   
 - EditorConfig   
 - Sass   

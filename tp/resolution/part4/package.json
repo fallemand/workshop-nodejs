@@ -7,7 +7,7 @@
     "clean": "rimraf assets/dist/**/*",
     "autoprefixer": "postcss -u autoprefixer -r assets/dist/styles/*",
     "scss": "node-sass --output-style compressed -o assets/dist/styles assets/src/styles",
-    "lint-scripts": "eslint assets/src/scripts || true",
+    "lint-scripts": "./node_modules/.bin/eslint -c .eslintrc assets/src/scripts || true",
     "lint-styles": "sass-lint assets/src/styles/*.scss -v -q",
     "uglify": "uglifyjs assets/src/scripts/*.js -b -o assets/dist/scripts/app.js && uglifyjs assets/src/scripts/*.js -m -c -o assets/dist/scripts/app.min.js",
     "imagemin": "imagemin assets/src/images/* -o assets/dist/images",
@@ -27,8 +27,8 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
+    "babel-eslint": "6.1.2",
     "eslint": "3.5.0",
-    "eslint-config-airbnb": "^15.1.0",
     "eslint-config-airbnb-base": "7.1.0",
     "eslint-plugin-import": "1.15.0",
     "handlebars": "^4.0.10",
