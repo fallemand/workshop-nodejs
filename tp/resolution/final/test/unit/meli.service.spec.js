@@ -1,8 +1,5 @@
-var expect = require('chai').expect;
-var nock = require('nock');
-var mocks = require('../../mocks');
-
-var meliService = require('../../services/meli.service');
+const expect = require('chai').expect;
+const meliService = require('../../services/meli.service');
 
 describe('meli.service', () => {
 	it('should search items', () => {
