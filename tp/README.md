@@ -16,8 +16,8 @@ En cada parte vamos a ir agregando código que se integre al trabajo final.
 - [Environments](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-4--environments) 
 - [ES6 Babel Webpack](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-6--es6---babel---webpack) 
 - [Testing](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-7--testing) 
-    * [Unitarios](https://github.com/fallemand/workshop-nodejs/tree/master/tp#a-configurar-server)
-    * [Funcionales](https://github.com/fallemand/workshop-nodejs/tree/master/tp#b-router)
+    * [Unitarios](https://github.com/fallemand/workshop-nodejs/blob/master/tp/README.md#a-tests-unitarios-mocha)
+    * [Funcionales](https://github.com/fallemand/workshop-nodejs/blob/master/tp/README.md#b-tests-funcionales-nightwatchjs)
 - [Deploy Cloud](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-8--cloud-deploy-openshift) 
 
 ## Parte 1 : Npm Scripts
@@ -244,7 +244,7 @@ Modificar:
 `package.json`  
 
 ## Parte 7 : Testing
-### A: Tests Unitarios (Nightwatch.js)
+### A: Tests Unitarios (Mocha)
 #### Dependencias: 
 [mocha](https://mochajs.org/)  
 
