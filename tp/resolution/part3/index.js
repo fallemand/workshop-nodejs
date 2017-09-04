@@ -18,6 +18,7 @@ app.set('views', 'views/pages/');
 app.set('view engine', '.hbs');
 
 //Use mocks
+console.info('--- Using Mocks ---');
 require('./mocks');
 
 //Start Application

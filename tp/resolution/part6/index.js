@@ -19,7 +19,7 @@ app.set('view engine', '.hbs');
 
 //Use mocks
 if(process.env.NODE_ENV !== 'production') {
-    console.info('--- Using Mocks ---')
+    console.info('--- Using Mocks ---');
     require('./mocks');
 }
 

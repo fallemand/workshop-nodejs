@@ -15,6 +15,7 @@ app.set('view engine', 'jsx');
 
 //Use mocks
 if(process.env.NODE_ENV !== 'production') {
+    console.info('--- Using Mocks ---');
     require('./mocks');
 }
 
