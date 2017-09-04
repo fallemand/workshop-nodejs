@@ -15,7 +15,9 @@ En cada parte vamos a ir agregando código que se integre al trabajo final.
 - [Mocks](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-3--mocks-nock) 
 - [Environments](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-4--environments) 
 - [ES6 Babel Webpack](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-6--es6---babel---webpack) 
-- [Test Funcionales](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-7--test-funcionales-con-nightwatch) 
+- [Testing](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-7--testing) 
+    * [Unitarios](https://github.com/fallemand/workshop-nodejs/tree/master/tp#a-configurar-server)
+    * [Funcionales](https://github.com/fallemand/workshop-nodejs/tree/master/tp#b-router)
 - [Deploy Cloud](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-8--cloud-deploy-openshift) 
 
 ## Parte 1 : Npm Scripts
@@ -241,7 +243,28 @@ Modificar:
 Modificar:  
 `package.json`  
 
-## Parte 7 : Test funcionales con NightWatch
+## Parte 7 : Testing
+### A: Tests Unitarios (Nightwatch.js)
+#### Dependencias: 
+[mocha](https://mochajs.org/)  
+
+#### Ejercicio Dictado:   
+-Configuramos los tests unitarios  
+-Creamos un test inicial: meli.service -> search debe traer resultados.
+
+#### Ejercicio Participantes:   
+- Completar tests sobre todos los métodos del meli.service.js  
+
+#### Entregables:  
+`test/unit/meli.service.spec.js`  
+Modificar:  
+`package.json`  
+
+### B: Tests Funcionales (Nightwatch.js)
+#### Dependencias: 
+[nightwatch](http://nightwatchjs.org/)  
+[selenium-standalone 5.8.0](https://github.com/vvo/selenium-standalone)  
+
 #### Ejercicio Dictado:   
 -Configurar el entorno para poder generar una suite de test funcionales.
 -Crear test de ejemplo para el search.
@@ -261,10 +284,10 @@ Modificar:
 Modificar:  
 `package.json`  
 
-## Parte 8 : Cloud Deploy (OpenShift)
+## Parte 8 : Cloud Deploy (Heroku)
 #### Ejercicio Dictado:   
 Explicamos como deployar nuestra aplicación en un servicio cloud, y obtener una url con la demo.
-- Explicamos registro en [OpenShift](https://www.openshift.com/)
+- Explicamos registro en [Heroku](https://heroku.com/)
 - Configuramos una cuenta para que genere builds desde el repo de github
 - Generamos un nuevo build
 - Deployamos la aplicación
