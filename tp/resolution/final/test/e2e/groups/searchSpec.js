@@ -1,4 +1,4 @@
-function searchTvLedDesktop(client, query){
+function searchCellphone(client, query){
     var homePage = client.page.HomePage();
     homePage.search(query);
 
@@ -10,8 +10,8 @@ function searchTvLedDesktop(client, query){
 
 module.exports = {
 
-    'Should search TV LED 4K' : function(client) {
-        searchTvLedDesktop(client, 'TV LED 4k')
+    'Should search Iphone' : function(client) {
+        searchCellphone(client, 'iphone')
     },
     beforeEach: function(client) {
         client.url(client.globals.site);

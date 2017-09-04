@@ -13,9 +13,9 @@ melinock
 
 //Item mocks
 melinock
-    .get(/\/items\/.*/)
-    .reply(200, itemMock)
     .get(/\/items\/.*\/description/)
     .reply(200, itemDescriptionMock)
+    .get(/\/items\/.*/)
+    .reply(200, itemMock)
     .get(/\/categories\/.*/)
     .reply(200, categoryMock);

@@ -1,12 +1,12 @@
 {
-  "name": "integrador2",
+  "name": "workshop-node-tp",
   "version": "1.0.0",
   "description": "Integrated exercise for the Node.js Workshop",
   "main": "index.js",
   "scripts": {
     "setup-e2e": "./node_modules/.bin/selenium-standalone install",
-    "test-unit": "NODE_ENV=test mocha 'test/unit/**/*.js'",
-    "test-e2e": "nightwatch",
+    "test:unit": "NODE_ENV=test mocha 'test/unit/**/*.js'",
+    "test:e2e": "npm run setup-e2e && nightwatch",
     "webpack": "webpack",
     "clean": "rimraf assets/dist/**/*",
     "autoprefixer": "postcss -u autoprefixer -r assets/dist/styles/*",
@@ -16,6 +16,7 @@
     "uglify": "uglifyjs assets/src/scripts/*.js -m -o assets/dist/scripts/app.js && uglifyjs assets/src/scripts/*.js -m -c -o assets/dist/scripts/app.min.js",
     "imagemin": "imagemin assets/src/images/* -o assets/dist/images",
     "start-dev": "NODE_ENV=development ./node_modules/.bin/nodemon index.js",
+    "start-test": "NODE_ENV=test node index.js",
     "start": "NODE_ENV=production node ./node_modules/.bin/pm2 start index.js -i max --attach",
     "build:styles": "npm run lint-styles && npm run scss && npm run autoprefixer",
     "build:scripts": "npm run lint-scripts && npm run webpack",
@@ -30,7 +31,7 @@
   "author": "Facundo Allemand (facundo.allemand@mercadolibre.com)",
   "license": "ISC",
   "engines": {
-    "node": "6.9.2"
+    "node": "6.11.0"
   },
   "dependencies": {
     "autoprefixer": "^6.3.6",

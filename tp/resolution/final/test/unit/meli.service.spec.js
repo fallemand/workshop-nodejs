@@ -13,9 +13,9 @@ describe('meli.service', () => {
 
     it('should get item', () => {
         return meliService.item('MLM571268838').then(result => {
-            expect(result.title).equals('Item De Testeo, Por Favor No Ofertar!');
+            expect(result.title).equals('Iphone 6 16gb Lte 4g Libres Nuevos Caja Sellados');
             expect(result).has.property('text');
-            expect(result.text).equals('Descripción del item');
+            expect(result.text).equals('<p><img src="http://i.imgur.com/ju962cn.jpg" width="922" height="5098" /></p>');
         })
     })
 })
