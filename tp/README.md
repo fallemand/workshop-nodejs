@@ -9,7 +9,7 @@ En cada parte vamos a ir agregando código que se integre al trabajo final.
     * [Server](https://github.com/fallemand/workshop-nodejs/tree/master/tp#a-configurar-server)
     * [Routes](https://github.com/fallemand/workshop-nodejs/tree/master/tp#b-router)
     * [Controllers](https://github.com/fallemand/workshop-nodejs/tree/master/tp#c-controllers)
-    * [Middleware](https://github.com/fallemand/workshop-nodejs/tree/master/tp#d-middleware)
+    * [Middlewares](https://github.com/fallemand/workshop-nodejs/tree/master/tp#d-middleware)
     * [Services](https://github.com/fallemand/workshop-nodejs/tree/master/tp#e-services)
     * [Handlebars](https://github.com/fallemand/workshop-nodejs/tree/master/tp#f-handlebars)
 - [Mocks](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-3--mocks-nock) 
@@ -18,7 +18,7 @@ En cada parte vamos a ir agregando código que se integre al trabajo final.
 - [Testing](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-7--testing) 
     * [Unitarios](https://github.com/fallemand/workshop-nodejs/blob/master/tp/README.md#a-tests-unitarios-mocha)
     * [Funcionales](https://github.com/fallemand/workshop-nodejs/blob/master/tp/README.md#b-tests-funcionales-nightwatchjs)
-- [Deploy Cloud](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-8--cloud-deploy-openshift) 
+- [Deploy Cloud](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-8--cloud-deploy-heroku) 
 
 ## Parte 1 : Npm Scripts
 
