@@ -10,6 +10,10 @@ npm install
 ```
 ### 2) Compile  assets
 ```
+npm run build
+```
+or
+```
 npm run watch
 ```
 ### 3) Start app:
