@@ -1,5 +1,5 @@
 module.exports = {
-    elements: {
-        "breadcrumb": '.breadcrumb li:last-child',
-    }
+  elements: {
+    "breadcrumb": '.breadcrumb li:last-child',
+  }
 };

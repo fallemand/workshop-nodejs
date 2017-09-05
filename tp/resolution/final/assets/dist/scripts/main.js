@@ -379,40 +379,40 @@ var template = __webpack_require__(23);
 
 module.exports = function (input, container) {
 
-    //Define Callbacks
-    //-------------------------------------------------------------
-    var success = function success(data) {
-        container.innerHTML = template(JSON.parse(data));
-        body.addEventListener('click', hideMenuListener);
-    };
-    var err = function err(_err) {
-        console.log(_err);
-    };
+  // Define Callbacks
+  // -----------------------------------------------------------
+  var success = function success(data) {
+    container.innerHTML = template(JSON.parse(data));
+    body.addEventListener('click', hideMenuListener);
+  };
+  var error = function error(err) {
+    console.log(err);
+  };
 
-    //Define Events
-    //-------------------------------------------------------------
-    var body = document.body;
-    var hideMenuListener = function hideMenuListener(event) {
-        container.innerHTML = '';
-        body.removeEventListener('click', hideMenuListener);
-    };
+  // Define Events
+  // -----------------------------------------------------------
+  var body = document.body;
+  var hideMenuListener = function hideMenuListener(event) {
+    container.innerHTML = '';
+    body.removeEventListener('click', hideMenuListener);
+  };
 
-    //Click on suggested
-    container.addEventListener('click', function (event) {
-        if (event.target.className.indexOf('suggest__item') > -1) {
-            input.value = event.target.innerText;
-            input.form.submit();
-        }
-        hideMenuListener();
+  // Click on suggested
+  container.addEventListener('click', function (event) {
+    if (event.target.className.indexOf('suggest__item') > -1) {
+      input.value = event.target.innerText;
+      input.form.submit();
     }
+    hideMenuListener();
+  });
 
-    //Suggest on every key
-    );input.addEventListener('keyup', function () {
-        if (input.value.length > 2) {
-            var url = '/api/suggest?q=' + input.value + '&v=1';
-            request(url, success, err);
-        }
-    });
+  // Suggest on every key
+  input.addEventListener('keyup', function () {
+    if (input.value.length > 2) {
+      var url = '/api/suggest?q=' + input.value + '&v=1';
+      request(url, success, error);
+    }
+  });
 };
 
 /***/ }),
@@ -423,21 +423,21 @@ module.exports = function (input, container) {
 
 
 module.exports = function (url, callback, error) {
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", url, true);
-    xhr.onload = function (e) {
-        if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-                callback(xhr.responseText);
-            } else {
-                error(xhr.statusText);
-            }
-        }
-    };
-    xhr.onerror = function (e) {
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", url, true);
+  xhr.onload = function (e) {
+    if (xhr.readyState === 4) {
+      if (xhr.status === 200) {
+        callback(xhr.responseText);
+      } else {
         error(xhr.statusText);
-    };
-    xhr.send(null);
+      }
+    }
+  };
+  xhr.onerror = function (e) {
+    error(xhr.statusText);
+  };
+  xhr.send(null);
 };
 
 /***/ }),
@@ -450,9 +450,9 @@ module.exports = function (url, callback, error) {
 var suggest = __webpack_require__(3);
 
 window.onload = function () {
-    var input = document.querySelector('[data-js="search"]');
-    var container = document.querySelector('[data-js="suggest"]');
-    suggest(input, container);
+  var input = document.querySelector('[data-js="search"]');
+  var container = document.querySelector('[data-js="suggest"]');
+  suggest(input, container);
 };
 
 /***/ }),

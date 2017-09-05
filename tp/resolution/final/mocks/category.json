@@ -5,31 +5,30 @@
   "permalink": null,
   "total_items_in_this_category": 2326,
   "path_from_root": [
-    {
-      "id": "MLA1051",
-      "name": "Celulares y Teléfonos"
-    },
-    {
-      "id": "MLA1055",
-      "name": "Celulares y Smartphones"
-    },
-    {
-      "id": "MLA32089",
-      "name": "iPhone"
-    },
-    {
-      "id": "MLA352540",
-      "name": "iPhone 6"
-    },
-    {
-      "id": "MLA352542",
-      "name": "16GB"
-    }
-  ],
-  "children_categories": [
-  ],
+  {
+    "id": "MLA1051",
+    "name": "Celulares y Teléfonos"
+  },
+  {
+    "id": "MLA1055",
+    "name": "Celulares y Smartphones"
+  },
+  {
+    "id": "MLA32089",
+    "name": "iPhone"
+  },
+  {
+    "id": "MLA352540",
+    "name": "iPhone 6"
+  },
+  {
+    "id": "MLA352542",
+    "name": "16GB"
+  }],
+  "children_categories": [],
   "attribute_types": "attributes",
-  "settings": {
+  "settings":
+  {
     "adult_content": false,
     "buying_allowed": true,
     "buying_modes": [
@@ -59,12 +58,10 @@
     "minimum_price": null,
     "mirror_category": null,
     "mirror_master_category": null,
-    "mirror_slave_categories": [
-    ],
+    "mirror_slave_categories": [],
     "price": "required",
     "reservation_allowed": null,
-    "restrictions": [
-    ],
+    "restrictions": [],
     "rounded_address": false,
     "seller_contact": "not_allowed",
     "shipping_modes": [
@@ -83,8 +80,7 @@
     "stock": "required",
     "sub_vertical": "smartphones",
     "subscribable": null,
-    "tags": [
-    ],
+    "tags": [],
     "vertical": "consumer_electronics",
     "vip_subdomain": "articulo"
   },
