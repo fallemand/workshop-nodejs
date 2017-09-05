@@ -255,8 +255,8 @@ Modificar:
 [selenium-standalone 5.8.0](https://github.com/vvo/selenium-standalone)  
 
 #### Ejercicio Dictado:   
--Configurar el entorno para poder generar una suite de test funcionales.
--Crear test de ejemplo para el search.
+-Configurar el entorno para poder generar una suite de test funcionales.  
+-Crear test de ejemplo para el search.  
 
 #### Ejercicio Participantes:   
 - Generar test que valide que funciona correctamente:  
@@ -273,7 +273,7 @@ Modificar:
 Modificar:  
 `package.json`  
 
-## Parte 8 : Cloud Deploy (Heroku)
+## Parte 7 : Cloud Deploy (Heroku)
 #### Ejercicio Dictado:   
 Explicamos como deployar nuestra aplicación en un servicio cloud, y obtener una url con la demo.
 - Explicamos registro en [Heroku](https://heroku.com/)
