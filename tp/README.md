@@ -18,7 +18,7 @@ En cada parte vamos a ir agregando código que se integre al trabajo final.
 - [Testing](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-7--testing) 
     * [Unitarios](https://github.com/fallemand/workshop-nodejs/blob/master/tp/README.md#a-tests-unitarios-mocha)
     * [Funcionales](https://github.com/fallemand/workshop-nodejs/blob/master/tp/README.md#b-tests-funcionales-nightwatchjs)
-- [Deploy Cloud](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-8--cloud-deploy-heroku) 
+- [Deploy Cloud](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-7--cloud-deploy-heroku) 
 
 ## Parte 1 : Npm Scripts
 
@@ -34,8 +34,8 @@ Utils:
 [nodemon](https://nodemon.io/) (Detecta cambios en el código y reinicia server para aplicarlos)
 
 #### Ejercicio Dictado:  
-Explicar nodemon
-Explicar el buildeo de Sass, autoprefix y minificación. 
+Explicar nodemon  
+Explicar el buildeo de Sass, autoprefix y minificación.  
 Crear un watch de Sass.  
 
 #### Ejercicio Participantes:   
@@ -79,6 +79,9 @@ start
 ## Parte 2 : Express
 ### A: Configurar Server
 -Instalar express y levantar server.  
+
+#### Dependencias:
+[express](https://github.com/expressjs/express)  
 
 #### Entregables: 
 `index.js`
@@ -159,10 +162,14 @@ Modificar:
 ### F: Handlebars
 Vamos a configurar handlebars para utilizar en las vistas.  
 
+#### Dependencias:
+[handlebars](https://github.com/wycats/handlebars.js)  
+[express-handlebars](https://github.com/ericf/express-handlebars)  
+
 #### Ejercicio Dictado:  
--Crearemos un layout.
--Crearemos una page
--Haremos que la ruta `app/search?q=iphone` sea renderizada utilizando una page .hbs
+-Crearemos un layout.  
+-Crearemos una page  
+-Haremos que la ruta `app/search?q=iphone` sea renderizada utilizando una page .hbs  
 
 #### Ejercicio Participantes: 
 Completar todas las vistas restantes.  
@@ -215,25 +222,17 @@ Explicar como diferenciar los distintos entornos.
 #### Entregables:  
 Modificar:  
 `index.js` Agregar lógica para que use los mocks solo en desarrollo  
-`package.json` Setear las variables en cada entorno.  
+`package.json` Setear las variables en cada entorno.   
 
-## Parte 5 : Unit Test (Mocha - Chai)
--Crear el test de meli.service.
--Test a desarrollar
-    - Que traiga la información del item, la descripción y la categoría.
-    - Que obtenga resultados en base al search.
+## Parte 5 : ES6 - Babel - Webpack
+-Escribir en scripts código en ES6, y que el bundle generado sea ES5.  
+-Generar un componente de suggest, que a medida vayamos escribiendo en el searchBar nos sugiera resultados.  
 
-#### Entregables:  
-Modificar:  
-`test/unit/meli.service.spec.js`   
-
-#### Ejercicio Participantes:   
--Producción: Usar assets minificados.  
--Desarrollo: Usar assets no minificados.  
-
-## Parte 6 : ES6 - Babel - Webpack
--Escribir en scripts código en ES6, y que el bundle generado sea ES5.
--Generar un componente de suggest, que a medida vayamos escribiendo en el searchBar nos sugiera resultados.
+#### Dependencias:
+[webpack](https://github.com/webpack/webpack)  
+[babel-loader](https://github.com/babel/babel-loader)  
+[babel-preset-es2015](https://github.com/babel/babel/tree/master/packages/babel-preset-es2015)  
+[handlebars-loader](https://github.com/pcardune/handlebars-loader)  
 
 #### Entregables:  
 `webpack.config.js`  
@@ -243,17 +242,20 @@ Modificar:
 Modificar:  
 `package.json`  
 
-## Parte 7 : Testing
+## Parte 6 : Testing
 ### A: Tests Unitarios (Mocha)
 #### Dependencias: 
 [mocha](https://mochajs.org/)  
 
 #### Ejercicio Dictado:   
 -Configuramos los tests unitarios  
--Creamos un test inicial: meli.service -> search debe traer resultados.
+-Crear el test de meli.service.  
+    Creamos test inicial (search debe traer resultados).  
 
 #### Ejercicio Participantes:   
 - Completar tests sobre todos los métodos del meli.service.js  
+    * Que traiga la información del item, la descripción y la categoría.
+    * Testear resultados suggest.  
 
 #### Entregables:  
 `test/unit/meli.service.spec.js`  
@@ -266,8 +268,8 @@ Modificar:
 [selenium-standalone 5.8.0](https://github.com/vvo/selenium-standalone)  
 
 #### Ejercicio Dictado:   
--Configurar el entorno para poder generar una suite de test funcionales.
--Crear test de ejemplo para el search.
+-Configurar el entorno para poder generar una suite de test funcionales.  
+-Crear test de ejemplo para el search.  
 
 #### Ejercicio Participantes:   
 - Generar test que valide que funciona correctamente:  
@@ -284,7 +286,7 @@ Modificar:
 Modificar:  
 `package.json`  
 
-## Parte 8 : Cloud Deploy (Heroku)
+## Parte 7 : Cloud Deploy (Heroku)
 #### Ejercicio Dictado:   
 Explicamos como deployar nuestra aplicación en un servicio cloud, y obtener una url con la demo.
 - Explicamos registro en [Heroku](https://heroku.com/)
