@@ -80,6 +80,9 @@ start
 ### A: Configurar Server
 -Instalar express y levantar server.  
 
+#### Dependencias:
+[express](https://github.com/expressjs/express)  
+
 #### Entregables: 
 `index.js`
 
@@ -159,6 +162,10 @@ Modificar:
 ### F: Handlebars
 Vamos a configurar handlebars para utilizar en las vistas.  
 
+#### Dependencias:
+[handlebars](https://github.com/wycats/handlebars.js)  
+[express-handlebars](https://github.com/ericf/express-handlebars)  
+
 #### Ejercicio Dictado:  
 -Crearemos un layout.  
 -Crearemos una page  
@@ -220,6 +227,12 @@ Modificar:
 ## Parte 5 : ES6 - Babel - Webpack
 -Escribir en scripts código en ES6, y que el bundle generado sea ES5.  
 -Generar un componente de suggest, que a medida vayamos escribiendo en el searchBar nos sugiera resultados.  
+
+#### Dependencias:
+[webpack](https://github.com/webpack/webpack)  
+[babel-loader](https://github.com/babel/babel-loader)  
+[babel-preset-es2015](https://github.com/babel/babel/tree/master/packages/babel-preset-es2015)  
+[handlebars-loader](https://github.com/pcardune/handlebars-loader)  
 
 #### Entregables:  
 `webpack.config.js`  
