@@ -41,11 +41,5 @@ npm run start-test
 npm run test:e2e
 ``` 
 
-## Contact 
-```
-facundo.allemand@mercadolibre.com
-``` 
-
-
 ## License
 © 2017 Mercado Libre
