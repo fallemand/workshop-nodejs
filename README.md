@@ -5,6 +5,7 @@ Se busca que los asistentes obtengan una compresión completa del stack, por lo 
 El proyecto incluirá módulos, servicios, middlewares, controllers, routers, ES6 en el cliente, mocks, test unitarios y funcionales, buildeo de assets, entre otros.  
 
 [Resultado Final](https://github.com/fallemand/workshop-nodejs/tree/master/tp/resolution/final)  
+[Resultado Final (React)](https://github.com/fallemand/workshop-nodejs/tree/master/tp/resolution/final-react)  
 [Demo](https://workshop-node.herokuapp.com/)
 
 ## Requisitos Técnicos
