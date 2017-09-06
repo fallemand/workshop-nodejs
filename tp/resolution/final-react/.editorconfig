@@ -2,6 +2,7 @@
 ## This file helps to maintain a consistent coding style
 ## between different envirorments.
 ## More info: editorconfig.org
+## @see https://github.com/mercadolibre/css-style-guide/blob/master/.editorconfig
 ##
 
 root = true

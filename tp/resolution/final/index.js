@@ -30,7 +30,6 @@ router.init(app, __dirname);
 //Start
 global.port = process.env.PORT || 3000;
 global.address = process.env.IP || '0.0.0.0';
-
 app.listen(global.port, global.address, () => {
   console.log("Listening on " + global.address + ", port " + global.port)
 });
