@@ -16,7 +16,7 @@ El proyecto incluirá módulos, servicios, middlewares, controllers, routers, ES
 - Conocimiento básico de mocks (¿Que son? ¿Para que sirven?) , tests (diferencias entre test funcionales y unitarios), npm (Manejo de dependencias en Node)
 
 ## Listado de Ejercicios
-[Notas para el Instructor](https://docs.google.com/document/d/1J7d2IMq4y3iUmN40U_P_lBVnjfcVfQXF7tmeSfROuWc/edit)  
+[Notas para el Instructor](https://docs.google.com/a/mercadolibre.com/document/d/1J7d2IMq4y3iUmN40U_P_lBVnjfcVfQXF7tmeSfROuWc/edit?usp=sharing)  
 
 - [EJ Requisito](https://github.com/fallemand/workshop-nodejs/tree/master/ej0-requirement)
 - [TP1-FileSystem](https://github.com/fallemand/workshop-nodejs/tree/master/ej1-filesystem)
