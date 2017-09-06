@@ -6,7 +6,7 @@ class Search extends React.Component {
   searchItems(data) {
     let list = [];
     this.props.results.forEach((element) => {
-        list.push(<SearchItem  id={element.id} thumbnail={element.thumbnail} address={element.address} title={element.title} price={element.price} />);
+        list.push(<SearchItem key={element.id} id={element.id} thumbnail={element.thumbnail} address={element.address} title={element.title} price={element.price} />);
     })
     return list;
   }
