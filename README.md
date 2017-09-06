@@ -38,7 +38,7 @@ El proyecto incluirá módulos, servicios, middlewares, controllers, routers, ES
   * [Testing](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-7--testing) 
     - [Unitarios](https://github.com/fallemand/workshop-nodejs/blob/master/tp/README.md#a-tests-unitarios-mocha)
     - [Funcionales](https://github.com/fallemand/workshop-nodejs/blob/master/tp/README.md#b-tests-funcionales-nightwatchjs)
-  * [Deploy Cloud](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-8--cloud-deploy-heroku) 
+  * [Deploy Cloud](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-7--cloud-deploy-heroku) 
   
 ## Configurando el entorno.
 NVM + Node 6.11.0  
