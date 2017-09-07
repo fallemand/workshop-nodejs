@@ -8,6 +8,16 @@
 - Asincronico: Leer archivo, quitar vocales, imprimir por consola resultado.
 
 #### Ejercicio Participantes: Cambiador de palabras   
+
+- Crear un archivo `keys.json`
+- Crear un archivo `index-async.js`
+- Importar el módulo de File System
+- Usar `readFile` para leer el archivo de texto a procesar
+- En la función de callback reemplazar el texto con las keys por su valor
+- Usar `writeFile` para reemplazar el texto con las palabras nuevas
+- Manejar el error si existe en cualquier caso
+
+
 -Crear un json, que contenga:
 ```javascript
 { 
