@@ -9,13 +9,16 @@ En cada parte vamos a ir agregando código que se integre al trabajo final.
     * [Server](https://github.com/fallemand/workshop-nodejs/tree/master/tp#a-configurar-server)
     * [Routes](https://github.com/fallemand/workshop-nodejs/tree/master/tp#b-router)
     * [Controllers](https://github.com/fallemand/workshop-nodejs/tree/master/tp#c-controllers)
-    * [Middleware](https://github.com/fallemand/workshop-nodejs/tree/master/tp#c-middleware)
-    * [Handlebars](https://github.com/fallemand/workshop-nodejs/tree/master/tp#d-handlebars)
+    * [Middlewares](https://github.com/fallemand/workshop-nodejs/tree/master/tp#d-middleware)
+    * [Services](https://github.com/fallemand/workshop-nodejs/tree/master/tp#e-services)
+    * [Handlebars](https://github.com/fallemand/workshop-nodejs/tree/master/tp#f-handlebars)
 - [Mocks](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-3--mocks-nock) 
 - [Environments](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-4--environments) 
 - [ES6 Babel Webpack](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-6--es6---babel---webpack) 
-- [Test Funcionales](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-7--test-funcionales-con-nightwatch) 
-- [Deploy Cloud](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-8--cloud-deploy-openshift) 
+- [Testing](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-7--testing) 
+    * [Unitarios](https://github.com/fallemand/workshop-nodejs/blob/master/tp/README.md#a-tests-unitarios-mocha)
+    * [Funcionales](https://github.com/fallemand/workshop-nodejs/blob/master/tp/README.md#b-tests-funcionales-nightwatchjs)
+- [Deploy Cloud](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-7--cloud-deploy-heroku) 
 
 ## Parte 1 : Npm Scripts
 
@@ -31,8 +34,8 @@ Utils:
 [nodemon](https://nodemon.io/) (Detecta cambios en el código y reinicia server para aplicarlos)
 
 #### Ejercicio Dictado:  
-Explicar nodemon
-Explicar el buildeo de Sass, autoprefix y minificación. 
+Explicar nodemon  
+Explicar el buildeo de Sass, autoprefix y minificación.  
 Crear un watch de Sass.  
 
 #### Ejercicio Participantes:   
@@ -68,10 +71,17 @@ start
 `assets/scr/styles/pages/_search.scss`  
 `assets/scr/styles/pages/_error.scss`  
 `assets/scr/styles/main.scss`  
+`assets/scr/scripts/main.js`  
+`assets/scr/scripts/file1.js`  
+`assets/scr/scripts/file2.js`  
+`assets/scr/images/test.jpg`  
 
 ## Parte 2 : Express
 ### A: Configurar Server
 -Instalar express y levantar server.  
+
+#### Dependencias:
+[express](https://github.com/expressjs/express)  
 
 #### Entregables: 
 `index.js`
@@ -100,11 +110,11 @@ start
 
 #### Ejercicio Dictado:  
 /app/items/MLA1232323  
-/api/items/MLA1232323  
+/app/search?q="iphone" 
 
 #### Ejercicio Participantes: 
 /api/search?q="iphone"  
-/app/search?q="iphone"  
+/api/items/MLA1232323  
 
 #### Entregables:  
 `controllers/app.controller.js`  
@@ -113,7 +123,7 @@ start
 Modificar:  
 `routers/router.js`  
 
-### C: Middleware
+### D: Middleware
 -Crear un middleware para que cada request contengan los datos del autor del ejercicio.  
 -Crear un middleware para manejo de errores.  
 
@@ -121,18 +131,48 @@ Modificar:
 [Express Middlewares](http://expressjs.com/es/guide/using-middleware.html)  
 
 #### Entregables:  
-`services/author.middleware.js`  
-`services/errors.middleware.js`  
+`middlewares/author.middleware.js`  
+`middlewares/errors.middleware.js`  
 Modificar:   
 `routers/router.js`  
+`controllers/api.controller.js`  
+
+### E: Services
+-Integrar el archivo `meli.service.js` y `request.js`  
+
+#### Ejercicio Dictado:  
+Mostramos como hacer para que la llamada a `api/search?q=iphone` devuelva el json con los resultados de la api de mercadolibre.
+
+#### Ejercicio Participantes: 
+Deberan dejar funcionando todas las llamadas.
+
+`api/item/MLA2314234234` Retorna `JSON`: Debe devolver todos los datos de un item, incluida la description en el atributo `text`  
+`api/search?q=iphone` Retorna `JSON`: Debe retornar los resultados del search de MercadoLibre  
+`api/suggest?q=iphone` Retorna `JSON`: Debe retornar las sugerencias de búsqueda  
+`app/item/MLA2314234234` Retorna `TXT`: Por ahora solo imprime en pantalla el resultado a la llamada a la api  
+`app/search?q=iphone` Retorna `TXT`: Por ahora solo imprime en pantalla el resultado a la llamada a la api  
+
+#### Entregables:  
+`services/request.service.js`  
+`services/meli.service.js`  
+Modificar:   
 `controllers/app.controller.js`  
 `controllers/api.controller.js`  
 
-### D: Handlebars
--Implementar handlebars.  
--Definir un layout.  
--Definir una page.  
--Definir un partial.  
+### F: Handlebars
+Vamos a configurar handlebars para utilizar en las vistas.  
+
+#### Dependencias:
+[handlebars](https://github.com/wycats/handlebars.js)  
+[express-handlebars](https://github.com/ericf/express-handlebars)  
+
+#### Ejercicio Dictado:  
+-Crearemos un layout.  
+-Crearemos una page  
+-Haremos que la ruta `app/search?q=iphone` sea renderizada utilizando una page .hbs  
+
+#### Ejercicio Participantes: 
+Completar todas las vistas restantes.  
 
 #### Entregables:  
 `views/layouts/main.hbs`  
@@ -142,13 +182,27 @@ Modificar:
 `views/pages/item.hbs`  
 `views/partials/breadcrumb.hbs`  
 `views/partials/header.hbs`  
+Modificar:  
+`package.json`  
+`index.js`  
+`controllers/app.controller.js`  
+`routers/reouter.js`  
 
 ## Parte 3 : Mocks (Nock)
--Explicar como crear mocks.  
--Setear mocks para desarrollo.    
+-Vemos como generar mocks con Nock.   
 
 #### Dependencias:
-Watchers: [nock](https://github.com/node-nock/nock)  
+[nock](https://github.com/node-nock/nock)  
+
+#### Ejercicio Dictado:  
+-Explicamos como crear mocks para el caso del search de forma genérica, es decir, que para cualquier búsqueda, retorne los resultados del mock.  
+`/sites/MLA/search/*`  
+
+#### Ejercicio Participantes: 
+-Completar los mocks de la vista del item. Para lo cual, deberán mockear 3 llamadas:  
+`/items/*` -> Obtener item  
+`/items/*/description` -> Obtener descripción de la publicación.  
+`/categories/*` -> Obtener el path de la categoría.  
 
 #### Entregables:  
 `mocks/index.js`  
@@ -162,31 +216,23 @@ Modificar:
 ## Parte 4 : Environments
 Explicar como diferenciar los distintos entornos.
 
-#### Ejercicio Participantes:   
+#### Ejercicio Dictado:   
 -Que en desarrollo use los mocks.
 
 #### Entregables:  
 Modificar:  
 `index.js` Agregar lógica para que use los mocks solo en desarrollo  
-`package.json` Setear las variables en cada entorno.  
+`package.json` Setear las variables en cada entorno.   
 
-## Parte 5 : Unit Test (Mocha - Chai)
--Crear el test de meli.service.
--Test a desarrollar
-    - Que traiga la información del item, la descripción y la categoría.
-    - Que obtenga resultados en base al search.
+## Parte 5 : ES6 - Babel - Webpack
+-Escribir en scripts código en ES6, y que el bundle generado sea ES5.  
+-Generar un componente de suggest, que a medida vayamos escribiendo en el searchBar nos sugiera resultados.  
 
-#### Entregables:  
-Modificar:  
-`test/unit/meli.service.spec.js`   
-
-#### Ejercicio Participantes:   
--Producción: Usar assets minificados.  
--Desarrollo: Usar assets no minificados.  
-
-## Parte 6 : ES6 - Babel - Webpack
--Escribir en scripts código en ES6, y que el bundle generado sea ES5.
--Generar un componente de suggest, que a medida vayamos escribiendo en el searchBar nos sugiera resultados.
+#### Dependencias:
+[webpack](https://github.com/webpack/webpack)  
+[babel-loader](https://github.com/babel/babel-loader)  
+[babel-preset-es2015](https://github.com/babel/babel/tree/master/packages/babel-preset-es2015)  
+[handlebars-loader](https://github.com/pcardune/handlebars-loader)  
 
 #### Entregables:  
 `webpack.config.js`  
@@ -196,10 +242,34 @@ Modificar:
 Modificar:  
 `package.json`  
 
-## Parte 7 : Test funcionales con NightWatch
+## Parte 6 : Testing
+### A: Tests Unitarios (Mocha)
+#### Dependencias: 
+[mocha](https://mochajs.org/)  
+
 #### Ejercicio Dictado:   
--Configurar el entorno para poder generar una suite de test funcionales.
--Crear test de ejemplo para el search.
+-Configuramos los tests unitarios  
+-Crear el test de meli.service.  
+    Creamos test inicial (search debe traer resultados).  
+
+#### Ejercicio Participantes:   
+- Completar tests sobre todos los métodos del meli.service.js  
+    * Que traiga la información del item, la descripción y la categoría.
+    * Testear resultados suggest.  
+
+#### Entregables:  
+`test/unit/meli.service.spec.js`  
+Modificar:  
+`package.json`  
+
+### B: Tests Funcionales (Nightwatch.js)
+#### Dependencias: 
+[nightwatch](http://nightwatchjs.org/)  
+[selenium-standalone 5.8.0](https://github.com/vvo/selenium-standalone)  
+
+#### Ejercicio Dictado:   
+-Configurar el entorno para poder generar una suite de test funcionales.  
+-Crear test de ejemplo para el search.  
 
 #### Ejercicio Participantes:   
 - Generar test que valide que funciona correctamente:  
@@ -216,10 +286,10 @@ Modificar:
 Modificar:  
 `package.json`  
 
-## Parte 8 : Cloud Deploy (OpenShift)
+## Parte 7 : Cloud Deploy (Heroku)
 #### Ejercicio Dictado:   
 Explicamos como deployar nuestra aplicación en un servicio cloud, y obtener una url con la demo.
-- Explicamos registro en [OpenShift](https://www.openshift.com/)
+- Explicamos registro en [Heroku](https://heroku.com/)
 - Configuramos una cuenta para que genere builds desde el repo de github
 - Generamos un nuevo build
 - Deployamos la aplicación
