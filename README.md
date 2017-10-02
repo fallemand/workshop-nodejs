@@ -9,11 +9,11 @@ El proyecto incluirá módulos, servicios, middlewares, controllers, routers, ES
 [Demo](https://workshop-node.herokuapp.com/)
 
 ## Requisitos Técnicos
-- RESTful Apis.  
-- Javascript Asicronico. Manejo de callbacks. Scopes.  
-- ECMA 6.  
-- Handlebars (Uso de partials, helpers, each, if, etc).  
-- SASS.  
+- [RESTful Apis](http://www.andrewhavens.com/posts/20/beginners-guide-to-creating-a-rest-api/)  
+- [Javascript Asicronico. Manejo de callbacks. Scopes](https://houssein.me/javascript/2016/05/10/asynchronous-javascript-callbacks.html)  
+- [ECMA 6](http://blog.teamtreehouse.com/get-started-ecmascript-6)  
+- [Handlebars](http://handlebarsjs.com/) (Uso de partials, helpers, each, if, etc)  
+- [SASS](http://sass-lang.com/guide).  
 - Conocimiento básico de mocks (¿Que son? ¿Para que sirven?) , tests (diferencias entre test funcionales y unitarios), npm (Manejo de dependencias en Node)
 
 ## Listado de Ejercicios
@@ -50,6 +50,5 @@ Modulos Sublime sugeridos:
 - NodeJs   
 
 ## Mini intro
-¿Que es Node?   
-¿Para que lo usamos en MercadoLibre?   
-Como bajaron los tiempos de apps usando Nordic   
+[¿Que es Node?](https://www.netconsulting.es/blog/nodejs/)
+¿Para que lo usamos en MercadoLibre? [nordic](http://nordic.ml.com/docs) 
