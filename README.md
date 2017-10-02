@@ -50,5 +50,5 @@ Modulos Sublime sugeridos:
 - NodeJs   
 
 ## Mini intro
-[¿Que es Node?](https://www.netconsulting.es/blog/nodejs/)
-¿Para que lo usamos en MercadoLibre? [nordic](http://nordic.ml.com/docs) 
+[¿Que es Node?](https://www.netconsulting.es/blog/nodejs/)  
+¿Para que lo usamos en MercadoLibre? [nordic](http://nordic.ml.com/docs)  
