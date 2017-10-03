@@ -2,7 +2,7 @@
 Se debe realizar lo siguiente:  
 -Pegarle a la api de search de mercadolibre con lo que el usuario ingrese en el input.  
 `https://api.mercadolibre.com/sites/MLA/search?q=iphone7`  
--Renderizar los resultados obtenidos con el campo de resultado.  
+-Renderizar los resultados obtenidos.  
 
 **Aclaración:** Se entrega una base ya armada con todo el markup, los estilos y funciones js.  
 Ustedes deben modificar el archivo `index.html` y `assets/scripts/main.js`   
