@@ -4,7 +4,7 @@ Se debe realizar lo siguiente:
 `https://api.mercadolibre.com/sites/MLA/search?q=iphone7`  
 -Renderizar los resultados obtenidos con el campo de resultado.  
 
-Aclaración: Se entrega ya realizado todo el markup con los estilos.  
+**Aclaración:** Se entrega una base ya armada con todo el markup, los estilos, y funciones js. Ustedes lo que tienen que hacer es modificar el archivo `index.html` y `assets/scripts/main.js`   
 
 #### Funcionalidad: 
 ![funcionalidad](http://g.recordit.co/643HOyHklQ.gif)
