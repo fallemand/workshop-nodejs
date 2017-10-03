@@ -4,14 +4,16 @@ Se debe realizar lo siguiente:
 `https://api.mercadolibre.com/sites/MLA/search?q=iphone7`  
 -Renderizar los resultados obtenidos con el campo de resultado.  
 
-**Aclaración:** Se entrega una base ya armada con todo el markup, los estilos, y funciones js. Ustedes lo que tienen que hacer es modificar el archivo `index.html` y `assets/scripts/main.js`   
+**Aclaración:** Se entrega una base ya armada con todo el markup, los estilos y funciones js.  
+Ustedes deben modificar el archivo `index.html` y `assets/scripts/main.js`   
 
 #### Funcionalidad: 
 ![funcionalidad](http://g.recordit.co/643HOyHklQ.gif)
 
 #### Atención: 
-- Las llamadas deben ser asincronicas utilizando javascript.  
-- Los templates pueden ser definidos en el index.html de la siguiente forma:  
+- Las llamadas deben ser asincronicas utilizando javascript. 
+- En el `main.js` encontrarán la función `request(url, callback, error)` para hacer el request.  
+- Los templates deben ser definidos en el index.html de la siguiente forma:  
 ```
 <script id="entry-template" type="text/x-handlebars-template">
   <div class="entry">
