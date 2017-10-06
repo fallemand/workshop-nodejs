@@ -48,18 +48,21 @@
     <script id="breadcrumb-template" type="text/x-handlebars-template">
         <ul class="breadcrumb">
             <li class="breadcrumb__element"><a href="/">Inicio</a></li>
-            <li class="breadcrumb__element">Celulares</li>
-            <li class="breadcrumb__element">Iphone</li>
+            {{#each breadCrumbs}}
+            <li class="breadcrumb__element">{{name}}</li>
+            {{/each}}
         </ul>
     </script>
+    
     <script id="product-list-template" type="text/x-handlebars-template">
+        {{#if products}}
             {{#each products}}
             <a class="search-item" href="{{permalink}}">
                 <div class="search-item__picture">
                     <img src="{{thumbnail}}" alt="{{title}}">
                 </div>
                 <div class="search-item__description">
-                    <span class="search-item__price">$ {{price}}</span>
+                    <span class="search-item__price">{{{formatedMoney price}}}</span>
                     {{#if shipping.free_shipping}}
                     <i class="search-item__freeshipment"></i>
                     {{/if}}
@@ -68,6 +71,22 @@
                 <div class="search-item__location">{{address.city_name}}</div>
             </a>
             {{/each}}
+        {{else}}
+        <div class="search-item search-item--no-results">
+            <h3>Por favor utliza el cuadro de búsqueda superior para empezar</h3>
+        </div>
+        {{/if}}
+    </script>
+
+    <script id="no-product-found-template" type="text/x-handlebars-template">
+        <div class="search-item search-item--no-results">
+            <h2>No hay publicaciones que coincidan con tu búsqueda.</h2>
+            <ul class="search-tips">
+                <li>Revisa la ortografía de la palabra.</li>
+                <li>Utiliza palabras más genéricas o menos palabras.</li>
+                <li><a href="https://www.mercadolibre.com.ar/jm/ml.allcategs.AllCategsServlet">Navega por categorías de productos</a>                    para encontrar un producto similar.</li>
+            </ul>
+        </div>
     </script>
 
     <script src="assets/scripts/handlebars.min-latest.js"></script>
