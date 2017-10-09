@@ -26,7 +26,9 @@
         <div class="header__container">
             <a class="header__logo" href="/" tabindex="1">MercadoLibre - Donde compras y vendes de todo</a>
             <form class="header__search" action="#" method="POST" role="search" data-js="form">
-                <input type="text" class="header__search-input" name="q" max-length="120" tabindex="2" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="Nunca dejes de buscar" data-js="search" />
+                <input type="text" class="header__search-input" name="q" max-length="120" tabindex="2"
+                       autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false"
+                       placeholder="Nunca dejes de buscar" data-js="search" />
                 <button type="submit" class="header__search-btn" data-fastClick tabindex="3">
                     <i class="header__search-icon"><span>Buscar</span></i>
                 </button>
@@ -35,88 +37,43 @@
     </header>
 
     <main role="main" class="main">
-        <div class="breadcrumb-container">
-            <ul class="breadcrumb">
-                <li class="breadcrumb__element"><a href="/">Inicio</a></li>
-                <li class="breadcrumb__element">Celulares</li>
-                <li class="breadcrumb__element">Iphone</li>
-            </ul>
-        </div>
+        <div class="breadcrumb-container" data-js=breadcrumb-container></div>
 
-        <div class="main__content">
-            <a class="search-item" href="#">
-                <div class="search-item__picture">
-                    <img src="http://mla-s2-p.mlstatic.com/775315-MLA25224867121_122016-I.jpg" alt="Iphone 7 32gb Nuevos Libres En Caja Sellada Originales!">
-                </div>
-                <div class="search-item__description">
-                    <span class="search-item__price">$ 17290</span>
-                    <i class="search-item__freeshipment"></i>
-                    <p class="search-item__title">Iphone 7 32gb Nuevos Libres En Caja Sellada Originales!</p>
-                </div>
-                <div class="search-item__location">Capital Federal</div>
-            </a>
-            <a class="search-item" href="#">
-                <div class="search-item__picture">
-                    <img src="http://mla-s1-p.mlstatic.com/775425-MLA25427111665_032017-I.jpg" alt="Apple Iphone 7 32gb 4.7' Retina 12mp 4k Sellado Stock">
-                </div>
-                <div class="search-item__description">
-                    <span class="search-item__price">$ 18710.99</span>
-                    <i class="search-item__freeshipment"></i>
-                    <p class="search-item__title">Apple Iphone 7 32gb 4.7' Retina 12mp 4k Sellado Stock</p>
-                </div>
-                <div class="search-item__location">Capital Federal</div>
-            </a>
-            <a class="search-item" href="#">
-                <div class="search-item__picture">
-                    <img src="http://mla-s2-p.mlstatic.com/514405-MLA20871184140_092016-I.jpg" alt="Iphone 7 Plus 32gb Liberados Con Garantia + Envio Gratis">
-                </div>
-                <div class="search-item__description">
-                    <span class="search-item__price">$ 21999.99</span>
-                    <i class="search-item__freeshipment"></i>
-                    <p class="search-item__title">Iphone 7 Plus 32gb Liberados Con Garantia + Envio Gratis</p>
-                </div>
-                <div class="search-item__location">Capital Federal</div>
-            </a>
-            <a class="search-item" href="#">
-                <div class="search-item__picture">
-                    <img src="http://mla-s1-p.mlstatic.com/182525-MLA25454527435_032017-I.jpg" alt="Iphone 7 32gb Nuevos Sellados+regalo + Envio Gratis">
-                </div>
-                <div class="search-item__description">
-                    <span class="search-item__price">$ 17280</span>
-                    <i class="search-item__freeshipment"></i>
-                    <p class="search-item__title">Iphone 7 32gb Nuevos Sellados+regalo + Envio Gratis</p>
-                </div>
-                <div class="search-item__location">Capital Federal</div>
-            </a>
-            <a class="search-item" href="#">
-                <div class="search-item__picture">
-                    <img src="http://mla-s2-p.mlstatic.com/717939-MLA25716768125_062017-I.jpg" alt="Iphone 7 Plus 128gb Sellado Stock Entrega Inmediata">
-                </div>
-                <div class="search-item__description">
-                    <span class="search-item__price">$ 23926.17</span>
-                    <i class="search-item__freeshipment"></i>
-                    <p class="search-item__title">Iphone 7 Plus 128gb Sellado Stock Entrega Inmediata</p>
-                </div>
-                <div class="search-item__location">Capital Federal</div>
-            </a>
-            <a class="search-item" href="#">
-                <div class="search-item__picture">
-                    <img src="http://mla-s1-p.mlstatic.com/837625-MLA25465609353_032017-I.jpg" alt="Apple Iphone 7 Plus Red 256gb Edicion Limitada Sellado Gtia!">
-                </div>
-                <div class="search-item__description">
-                    <span class="search-item__price">$ 25499.99</span>
-                    <i class="search-item__freeshipment"></i>
-                    <p class="search-item__title">Apple Iphone 7 Plus Red 256gb Edicion Limitada Sellado Gtia!</p>
-                </div>
-                <div class="search-item__location">Capital Federal</div>
-            </a>
-
-        </div>
+        <div class="main__content" data-js=main-content></div>
     </main>
 
     <!-- ########################################
                     Templates
     ######################################## -->
+
+    <script id="breadcrumb-template" type="text/x-handlebars-template">
+        <ul class="breadcrumb">
+            <li class="breadcrumb__element"><a href="/">Inicio</a></li>
+            {{#each listItems}}
+            <li class="breadcrumb__element">{{name}}</li>
+            {{/each}}
+        </ul>
+    </script>
+
+    <script id="search-template" type="text/x-handlebars-template">
+        {{#if searchItems}}
+        {{#each searchItems}}
+        <a class="search-item" href="#">
+            <div class="search-item__picture">
+                <img src={{thumbnail}} alt={{title}}>
+            </div>
+            <div class="search-item__description">
+                <span class="search-item__price">$ {{price}}</span>
+                <i class="search-item__freeshipment"></i>
+                <p class="search-item__title">{{title}}</p>
+            </div>
+            <div class="search-item__location">{{address.city_name}}</div>
+        </a>
+        {{/each}}
+        {{else}}
+        <p class="search-item__title">No encontramos productos con esa búsqueda</p>
+        {{/if}}
+    </script>
 
     <script src="assets/scripts/handlebars.min-latest.js"></script>
     <script src="assets/scripts/main.js"></script>
