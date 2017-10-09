@@ -28,10 +28,17 @@ window.onload = function() {
                     var response = JSON.parse(responseText);
                     var breadcrumbsSource = document.querySelector('#breadcrumbs').innerHTML;
                     var breadcrumbsTemplate = Handlebars.compile(breadcrumbsSource);
-                    var breadcrumbsContext = {
-                        breadcrumbs: response.filters[0].values[0].path_from_root,
-                        query: input.value
-                    };
+                    if ( response.filters.length > 0 ){
+                        var breadcrumbsContext = {
+                            breadcrumbs: response.filters[0].values[0].path_from_root,
+                            query: input.value
+                        };
+                    } else {
+                        var breadcrumbsContext = {
+                            breadcrumbs: "",
+                            query: input.value
+                        };
+                    }
                     var breadcrumbsHTML = breadcrumbsTemplate(breadcrumbsContext);
                     var itemListSource = document.querySelector("#item-list").innerHTML;
                     var itemListTemplate = Handlebars.compile(itemListSource);
@@ -41,8 +48,9 @@ window.onload = function() {
                     var itemListHTML = itemListTemplate(itemListContext);
                     document.querySelector("main").innerHTML = breadcrumbsHTML + itemListHTML;
         },
-        function () {
-
+        function (e) {
+            console.log(e);
+            document.querySelector("main").innerHTML = "<p>Ups, algo salió mal</p>";
         });
     });
 }
