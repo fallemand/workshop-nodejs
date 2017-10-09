@@ -1,4 +1,5 @@
-class calculadora {
+class calculadoraStatic {
+
     static sumar(a, b ){
         return a + b;
     }
@@ -16,4 +17,4 @@ class calculadora {
     }
 }
 
-module.exports = calculadora;
+module.exports = calculadoraStatic;
