@@ -27,13 +27,12 @@ function renderSearch(response) {
         return obj.id == 'category';
     });
     var breadcrumbsArr = categoryFilters[0].values[0].path_from_root;
-    
+
     renderItems(itemsObj);
     renderBreadcrumbs(breadcrumbsArr);
 
     
     searchBtn.disabled = false;
-    console.log(breadcrumbsArr);
 }
 
 function renderItems(items) {
@@ -60,7 +59,7 @@ function renderItems(items) {
 
 function renderBreadcrumbs(catArr) {
     var contentWrapper = document.querySelector('.breadcrumb-container');
-    if (catArr.length()> 0) {
+    if (catArr.length > 0) {
         var sourceMarkup   = document.getElementById('breadcrumbs-template').innerHTML;
         var breadCrumbsTemplate = Handlebars.compile(sourceMarkup);
     
