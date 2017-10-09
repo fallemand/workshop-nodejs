@@ -117,6 +117,30 @@
     <!-- ########################################
                     Templates
     ######################################## -->
+    <script id="search-item" type="text/x-handlebars-template">
+        <a class="search-item" href="#">
+            <div class="search-item__picture">
+                <img src="http://mla-s1-p.mlstatic.com/837625-MLA25465609353_032017-I.jpg" alt="Apple Iphone 7 Plus Red 256gb Edicion Limitada Sellado Gtia!">
+            </div>
+            <div class="search-item__description">
+                <span class="search-item__price">$ 25499.99</span>
+                <i class="search-item__freeshipment"></i>
+                <p class="search-item__title">{{title}}</p>
+            </div>
+            <div class="search-item__location">{{address.state_name}}</div>
+        </a>
+    </script>
+
+    <script id="breadcrumb-container" type="text/x-handlebars-template">
+        <div class="breadcrumb-container">
+            <ul class="breadcrumb">
+                <li class="breadcrumb__element"><a href="/">Inicio</a></li>
+                <li class="breadcrumb__element">Celulares</li>
+                <li class="breadcrumb__element">Iphone</li>
+            </ul>
+        </div>
+    </script>
+
 
     <script src="assets/scripts/handlebars.min-latest.js"></script>
     <script src="assets/scripts/main.js"></script>
