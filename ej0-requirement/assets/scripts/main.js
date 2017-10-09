@@ -48,7 +48,7 @@ function renderItems(items) {
             itemUrl: item.permalink,
             pictureUrl: item.thumbnail,
             itemTitle: item.title,
-            itemPrice: '$ ' + item.price,
+            itemPrice: item.price,
             free_shipping: item.shipping.free_shipping,
             itemLocation: item.address.state_name
         };

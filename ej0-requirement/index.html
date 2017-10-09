@@ -56,7 +56,7 @@
                     <img src="{{pictureUrl}}" alt="{{itemTitle}}">
                 </div>
                 <div class="search-item__description">
-                    <span class="search-item__price">{{itemPrice}}</span>
+                    <span class="search-item__price">{{{formatedMoney itemPrice}}}</span>
                     {{#if free_shipping}}
                         <i class="search-item__freeshipment"></i>
                     {{/if}}
