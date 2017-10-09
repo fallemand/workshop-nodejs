@@ -2,13 +2,14 @@ window.onload = function() {
     var headerSearch = document.getElementById('headerSearch');
     var headerSearchInput = document.getElementById('headerSearchInput');
     var searchApi = "https://api.mercadolibre.com/sites/MLA/search?q=";
-    headerSearch.addEventListener('submit', function() {
+    headerSearch.addEventListener('submit', function(event) {
+        event.preventDefault();
         request(searchApi + headerSearchInput.value,
             function(res)  {
-                var source = document.getElementById("entry-template").innerHTML;
+                var source = document.getElementById("template").innerHTML;
                 var template = Handlebars.compile(source);
-                var html = template(JSON.parse(context));
-                document.getElementById("test").innerHTML = html;
+                var html = template(JSON.parse(res));
+                document.getElementById("content").innerHTML = html;
             },
             function(err) {
                 console.error(err);
@@ -34,3 +35,10 @@ function request(url, callback, error) {
     };
     xhr.send(null);
 }
+
+
+Handlebars.registerHelper('price', function(price) {
+    var price = price.toLocaleString('es-ES');
+    var priceArray = price.split(',');
+    return price
+});
