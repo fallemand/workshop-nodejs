@@ -1,5 +1,19 @@
 window.onload = function() {
-
+    var headerSearch = document.getElementById('headerSearch');
+    var headerSearchInput = document.getElementById('headerSearchInput');
+    var searchApi = "https://api.mercadolibre.com/sites/MLA/search?q=";
+    headerSearch.addEventListener('submit', function() {
+        request(searchApi + headerSearchInput.value,
+            function(res)  {
+                var source = document.getElementById("entry-template").innerHTML;
+                var template = Handlebars.compile(source);
+                var html = template(JSON.parse(context));
+                document.getElementById("test").innerHTML = html;
+            },
+            function(err) {
+                console.error(err);
+            })
+    });
 }
 
 //Use this method to make request to the API
