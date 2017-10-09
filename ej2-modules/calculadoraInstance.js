@@ -22,10 +22,20 @@ class calculadoraInstance {
 
     setA(a){
         this.a = a;
+        return this;
     }
 
     setB(b){
         this.b = b;
+        return this;
+    }
+
+    getA(){
+        return this.a;
+    }
+
+    getB(){
+        return this.b;
     }
 }
 
