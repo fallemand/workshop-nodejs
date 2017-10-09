@@ -12,7 +12,7 @@ fs.readFile('./text.txt', 'utf8', (err, data) => {
     /**
      * Otra forma de leer un json es através de Object.keys
      */
-    
+
     //Object.keys(replaces).forEach((key, val) => {
     //    console.log(replaces[key]);
     //});
@@ -21,8 +21,12 @@ fs.readFile('./text.txt', 'utf8', (err, data) => {
 
         if (replaces.hasOwnProperty(key)) {
             
-            // Replace all
-            data = data.split(key).join(replaces[key]);
+            var regExp = new RegExp(key, 'ig');
+            
+            data = data.replace(regExp, replaces[key]);
+
+            // Otra forma de replace all
+            // data = data.split(key).join(replaces[key]);
         }
     }
         
