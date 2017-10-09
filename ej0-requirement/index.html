@@ -35,82 +35,36 @@
     </header>
 
     <main role="main" class="main">
-        <div class="breadcrumb-container">
-            <ul class="breadcrumb">
-                <li class="breadcrumb__element"><a href="/">Inicio</a></li>
-                <li class="breadcrumb__element">Celulares</li>
-                <li class="breadcrumb__element">Iphone</li>
-            </ul>
+        
+        <div class="breadcrumb-container" data-js="breadcrumb-container">
+            <script id="breadcrumb" type="text/x-handlebars-template">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb__element"><a href="/">Inicio</a></li>
+                    {{#each breadCrumbList}}
+                        <li class="breadcrumb__element">{{name}}</li>
+                    {{/each}}
+                </ul>
+            </script>
         </div>
 
-        <div class="main__content">
-            <a class="search-item" href="#">
-                <div class="search-item__picture">
-                    <img src="http://mla-s2-p.mlstatic.com/775315-MLA25224867121_122016-I.jpg" alt="Iphone 7 32gb Nuevos Libres En Caja Sellada Originales!">
-                </div>
-                <div class="search-item__description">
-                    <span class="search-item__price">$ 17290</span>
-                    <i class="search-item__freeshipment"></i>
-                    <p class="search-item__title">Iphone 7 32gb Nuevos Libres En Caja Sellada Originales!</p>
-                </div>
-                <div class="search-item__location">Capital Federal</div>
-            </a>
-            <a class="search-item" href="#">
-                <div class="search-item__picture">
-                    <img src="http://mla-s1-p.mlstatic.com/775425-MLA25427111665_032017-I.jpg" alt="Apple Iphone 7 32gb 4.7' Retina 12mp 4k Sellado Stock">
-                </div>
-                <div class="search-item__description">
-                    <span class="search-item__price">$ 18710.99</span>
-                    <i class="search-item__freeshipment"></i>
-                    <p class="search-item__title">Apple Iphone 7 32gb 4.7' Retina 12mp 4k Sellado Stock</p>
-                </div>
-                <div class="search-item__location">Capital Federal</div>
-            </a>
-            <a class="search-item" href="#">
-                <div class="search-item__picture">
-                    <img src="http://mla-s2-p.mlstatic.com/514405-MLA20871184140_092016-I.jpg" alt="Iphone 7 Plus 32gb Liberados Con Garantia + Envio Gratis">
-                </div>
-                <div class="search-item__description">
-                    <span class="search-item__price">$ 21999.99</span>
-                    <i class="search-item__freeshipment"></i>
-                    <p class="search-item__title">Iphone 7 Plus 32gb Liberados Con Garantia + Envio Gratis</p>
-                </div>
-                <div class="search-item__location">Capital Federal</div>
-            </a>
-            <a class="search-item" href="#">
-                <div class="search-item__picture">
-                    <img src="http://mla-s1-p.mlstatic.com/182525-MLA25454527435_032017-I.jpg" alt="Iphone 7 32gb Nuevos Sellados+regalo + Envio Gratis">
-                </div>
-                <div class="search-item__description">
-                    <span class="search-item__price">$ 17280</span>
-                    <i class="search-item__freeshipment"></i>
-                    <p class="search-item__title">Iphone 7 32gb Nuevos Sellados+regalo + Envio Gratis</p>
-                </div>
-                <div class="search-item__location">Capital Federal</div>
-            </a>
-            <a class="search-item" href="#">
-                <div class="search-item__picture">
-                    <img src="http://mla-s2-p.mlstatic.com/717939-MLA25716768125_062017-I.jpg" alt="Iphone 7 Plus 128gb Sellado Stock Entrega Inmediata">
-                </div>
-                <div class="search-item__description">
-                    <span class="search-item__price">$ 23926.17</span>
-                    <i class="search-item__freeshipment"></i>
-                    <p class="search-item__title">Iphone 7 Plus 128gb Sellado Stock Entrega Inmediata</p>
-                </div>
-                <div class="search-item__location">Capital Federal</div>
-            </a>
-            <a class="search-item" href="#">
-                <div class="search-item__picture">
-                    <img src="http://mla-s1-p.mlstatic.com/837625-MLA25465609353_032017-I.jpg" alt="Apple Iphone 7 Plus Red 256gb Edicion Limitada Sellado Gtia!">
-                </div>
-                <div class="search-item__description">
-                    <span class="search-item__price">$ 25499.99</span>
-                    <i class="search-item__freeshipment"></i>
-                    <p class="search-item__title">Apple Iphone 7 Plus Red 256gb Edicion Limitada Sellado Gtia!</p>
-                </div>
-                <div class="search-item__location">Capital Federal</div>
-            </a>
-
+        <div class="main__content" data-js="main-content">
+            <script id="product-list" type="text/x-handlebars-template">
+                {{#each products}}
+                    <a class="search-item" href="{{permalink}}">
+                        <div class="search-item__picture">
+                            <img src="{{thumbnail}}" alt="{{title}}">
+                        </div>
+                        <div class="search-item__description">
+                            <span class="search-item__price">${{price}}</span>
+                            {{#if shipping.free_shipping}}
+                                <i class="search-item__freeshipment"></i>
+                            {{/if}}
+                            <p class="search-item__title">{{title}}</p>
+                        </div>
+                        <div class="search-item__location">{{adress.state_name}}</div>
+                    </a>
+                {{/each}}
+            </script>
         </div>
     </main>
 
