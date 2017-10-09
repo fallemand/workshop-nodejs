@@ -9,9 +9,13 @@ console.log("Inicio");
 
 fs.readFile('./text.txt', 'utf8', (err, data) => {
 
-    Object.keys(replaces).forEach((key, val) => {
-        console.log(replaces[key]);
-    });
+    /**
+     * Otra forma de leer un json es através de Object.keys
+     */
+    
+    //Object.keys(replaces).forEach((key, val) => {
+    //    console.log(replaces[key]);
+    //});
 
     for (var key in replaces) {
 
@@ -22,7 +26,9 @@ fs.readFile('./text.txt', 'utf8', (err, data) => {
         }
     }
         
-    console.log(data);
+    fs.writeFile('./outputEjercicio.txt', data, (err) => {
+        console.log("El archivo de ejercicio se guardó exitosamente!");
+    });
 });
 
 console.log("Fin");
