@@ -19,7 +19,7 @@ const requestPromise = (options) => {
             });
     
             resp.on('end', () => {
-                data = JSON.parse(data)
+                data = JSON.parse(data);
     
                 // Handle HTTP errors
                 if(resp.statusCode < 200 || resp.statusCode > 299) {
