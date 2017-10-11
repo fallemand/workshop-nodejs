@@ -17,7 +17,6 @@ window.onload = function() {
     });
 }
 
-//Use this method to make request to the API
 function request(url, callback, error) {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", url, true);
@@ -35,7 +34,6 @@ function request(url, callback, error) {
     };
     xhr.send(null);
 }
-
 
 Handlebars.registerHelper('price', function(price) {
     var price = price.toLocaleString('es-ES');
