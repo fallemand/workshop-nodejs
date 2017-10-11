@@ -6,10 +6,10 @@ const Calculadora = require('./calculadora.js')
 
 // Estatica
 
-console.log(CalculadoraStatic.sumar(5,4));
-console.log(CalculadoraStatic.restar(5,4));
-console.log(CalculadoraStatic.multiplicar(5,4));
-console.log(CalculadoraStatic.dividir(5,4));
+console.log(CalculadoraStatic.sumar(5, 4));
+console.log(CalculadoraStatic.restar(5, 4));
+console.log(CalculadoraStatic.multiplicar(5, 4));
+console.log(CalculadoraStatic.dividir(5, 4));
 
 // No estatica 
 
