@@ -4,8 +4,8 @@ Se plantea una serie de ejercicios introductorios, y luego se avanza sobre un tr
 Se busca que los asistentes obtengan una compresión completa del stack, por lo que se inicia con una carpeta vacía, y clase a clase se va agregando funcionalidad, hasta lograr un proyecto completo deployado en la nube con una url productiva.  
 El proyecto incluirá módulos, servicios, middlewares, controllers, routers, ES6 en el cliente, mocks, test unitarios y funcionales, buildeo de assets, entre otros.  
 
-[Resultado Final](https://github.com/fallemand/workshop-nodejs/tree/master/tp/resolution/final)  
-[Resultado Final (React)](https://github.com/fallemand/workshop-nodejs/tree/master/tp/resolution/final-react)  
+[Resultado Final](https://github.com/fallemand/workshop-nodejs/tree/complete/tp/resolution/final)  
+[Resultado Final (React)](https://github.com/fallemand/workshop-nodejs/tree/complete/tp/resolution/final-react)  
 [Demo](https://workshop-node.herokuapp.com/)
 
 ## Requisitos Técnicos
