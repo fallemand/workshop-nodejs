@@ -1,0 +1,22 @@
+.suggest {
+    position: absolute;
+    display: block;
+    width: 99.8%;
+    margin: 0px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    list-style-type: none;
+    padding: 0;
+
+    .suggest__item {
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 100;
+        color: #999;
+
+        &:hover {
+            background-color: #eee;
+        }
+    }
+}

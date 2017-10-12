@@ -1,0 +1,79 @@
+$search-font-size: 14px;
+
+.header {
+  background-color: #ffe600;
+  padding: 7px 0;
+}
+
+.header__container {
+  max-width: 1024px;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+
+.header__logo {
+  min-width: 74px;
+  width: 5%;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-indent: -999px;
+  height: 36px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 53px;
+    height: 36px;
+    background-image: url('../images/logo-ml.png');
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.header__search {
+  width: 95%;
+  max-width: 950px;
+  display: inline-block;
+  padding-right: 43px;
+  vertical-align: top;
+  position: relative;
+}
+
+.header__search-input {
+  width: 100%;
+  height: 36px;
+  border: none;
+  border-radius: 3px;
+  vertical-align: top;
+  font-size: $search-font-size;
+  padding: 0 20px;
+  font-weight: 300;
+  outline: none;
+}
+
+.header__search-btn {
+  background-color: #eee;
+  padding: 10px 12px;
+  width: 44px;
+  height: 36px;
+  border: none;
+  margin-left: -7px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.header__search-icon {
+  width: 18px;
+  height: 18px;
+  background-image: url('../images/search.png');
+  display: block;
+
+  span {
+    display: none;
+  }
+}

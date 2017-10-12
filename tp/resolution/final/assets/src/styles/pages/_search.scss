@@ -1,0 +1,59 @@
+.search-item {
+  padding: 16px;
+  white-space: nowrap;
+  display: block;
+  color: #666;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+
+  &:hover {
+    background-color: #f3f3f3;
+    cursor: pointer;
+  }
+
+  .search-item__picture {
+    display: inline-block;
+    padding-right: 16px;
+    width: 20%;
+    max-width: 196px;
+
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 4px;
+    }
+  }
+
+  .search-item__description {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    width: 60%;
+  }
+
+  .search-item__price {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+
+  .search-item__freeshipment {
+    width: 18px;
+    height: 18px;
+    background-image: url('../images/shipping.png');
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  .search-item__title {
+    font-size: 18px;
+  }
+
+  .search-item__location {
+    margin-top: 20px;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: top;
+    color: #999;
+    width: 20%;
+  }
+}
