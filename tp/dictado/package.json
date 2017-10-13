@@ -1,0 +1,15 @@
+{
+  "name": "node-fallemand",
+  "version": "1.0.0",
+  "description": "Workshop Node.js TP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "facundo.allemand@mercadolibre.com",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  }
+}
