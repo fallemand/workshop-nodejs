@@ -28,7 +28,7 @@ const error = (err) => {
 request(optionsHttp, success, error);
 */
 
-const requestPromise = require('./requestPromise');
+const requestPromise = require('../ej4-promises/requestPromise');
 
 requestPromise(optionsHttps).then(data => {
     console.log(data);
