@@ -34,25 +34,28 @@ const request4 = () => {
 
 // Ejecutarlas secuencialmente
 // ----------------------------------------
-console.time('sequential');
+
+/*
+console.time('sequential'); //permite calcular tiempo de funciones --> console.timeEnd('sequential'); //cortar la secuencia
 request1().then((data1) => {
-  console.log(data1);
+  console.log(data1);  
   request2().then((data2) => {
-    console.log(data2);
-    request3().then((data3) => {
-      console.log(data3);
+    console.log(data2); 
+    request3().then((data3) =>{
+      console.log(data3); 
       request4().then((data4) => {
-        console.log(data4);
+        console.log(data4); 
         console.timeEnd('sequential');
-      })
-    })
-  })
+      });
+    }); 
+  });  
 });
+*/
 
 // Ejecutarlas en paralelo
 // ----------------------------------------
-// console.time('pararel');
-// Promise.all([request1(), request2(), request3(), request4()]).then((data) => {
-//   console.log(data);
-//   console.timeEnd('pararel');
-// });
+ console.time('pararel');
+ Promise.all([request1(), request2(), request3(), request4()]).then((data) => {
+   console.log(data);
+   console.timeEnd('pararel');
+ });
