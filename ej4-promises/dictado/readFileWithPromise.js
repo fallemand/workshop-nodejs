@@ -8,4 +8,4 @@ let readFileWithPromise = (fileName) => {
     });
 };
 
-module.exports = readFileWithPromise
+module.exports = readFileWithPromise;

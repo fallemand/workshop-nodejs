@@ -32,7 +32,7 @@ const request4 = () => {
   });
 };
 
-// Ejecutarlas secunencialmente
+// Ejecutarlas secuencialmente
 // ----------------------------------------
 console.time('sequential');
 request1().then((data1) => {
