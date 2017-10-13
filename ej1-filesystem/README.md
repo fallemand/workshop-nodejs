@@ -9,7 +9,7 @@
 
 #### Ejercicio Participantes: Cambiador de palabras   
 
-- Crear un archivo `keys.json`
+- Leer el archivo `replaces.json`
 - Crear un archivo `index-async.js`
 - Importar el módulo de File System
 - Usar `readFile` para leer el archivo de texto a procesar

@@ -1,7 +1,8 @@
+let searchInput = document.querySelector('[data-js="search"]');
+let apiUrl = 'https://api.mercadolibre.com/sites/MLA/search?q=';
+
 window.onload = function() {
-    let apiUrl = 'https://api.mercadolibre.com/sites/MLA/search?q=';
     let searchForm = document.querySelector('[data-js="form"]');
-    let searchInput = document.querySelector('[data-js="search"]');
 
     searchForm.addEventListener('submit', function (e) {
         e.preventDefault();
@@ -12,8 +13,9 @@ window.onload = function() {
 
 function productsList(data) {
     data = JSON.parse(data);
+    searchInput.value = '';
+    apiUrl = 'https://api.mercadolibre.com/sites/MLA/search?q=';
     console.log(data);
-    //searchInput.value = '';
 
     const breadcrumbContainer = document.querySelector("[data-js=breadcrumb-container]");
     const breadcrumbTemplate = document.getElementById("breadcrumb-template");
