@@ -1,5 +1,5 @@
-let fs = require('fs');
-let readFileWithPromise = require('./readFileWithPromise');
+const fs = require('fs');
+const readFileWithPromise = require('./readFileWithPromise');
 
 console.log('Leyendo el archivo con callback\n');
 fs.readFile('./trabalenguas.txt', 'utf8', (err, data) => {
