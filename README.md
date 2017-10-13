@@ -24,6 +24,7 @@ El proyecto incluirá módulos, servicios, middlewares, controllers, routers, ES
 - [TP2-Modules](https://github.com/fallemand/workshop-nodejs/tree/master/ej2-modules)
 - [TP3-Request](https://github.com/fallemand/workshop-nodejs/tree/master/ej3-request)
 - [TP4-Promises](https://github.com/fallemand/workshop-nodejs/tree/master/ej4-promises)
+- [TP5-Services](https://github.com/fallemand/workshop-nodejs/tree/master/ej5-services)
 - [Trabajo Integrador](https://github.com/fallemand/workshop-nodejs/tree/master/tp)
   * [Npm Scripts](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-1--npm-scripts) 
   * [Express](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-2--express) 
