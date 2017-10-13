@@ -28,9 +28,6 @@ https.get('https://api.mercadolibre.com/sites/MLA/search?q=iphone7', (resp) => {
 
 
 
-
-
-
 // https.get('https://api.mercadolibre.com/sites/MLA/search?q=iphone7', (resp) => {
 //
 //     let data = '';
