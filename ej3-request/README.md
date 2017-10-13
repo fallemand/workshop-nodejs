@@ -1,11 +1,9 @@
 ## Ej3 : Request
 
 #### Bibliografía:
-
 [Modulo http](https://nodejs.org/api/http.html#http_http_get_options_callback)
 
 #### Objetivo:
-
 -Crear un módulo que permita hacer requests.
 
 #### Ejercicio Dictado:  
@@ -17,10 +15,8 @@ Explicar como generar una request a la API de Mercado Libre e imprimir por conso
 - La función de callback, recibe como parámetro un 'Readable Stream', el mismo emite eventos 'data' cada vez que una porción de datos llega. Para leer los mismos vamos a hacerlo escuchando el evento 'data' (request.on('data', callback), y en el callback vamos a ir uniendo estos pedazos o porciones de respuesta. El mismo stream, emite un evento 'end' que indica que ya termino de recibir toda la información, por lo que vamos a agregar un listener para ese evento asi sabemos cuando termina de recibir la información y tengamos que imprimirla.
 
 #### Ejercicio Participantes:   
--Crear módulo para hacer `request`.  
--Crear un módulo `meli.service.js` que use el objeto `request` y haga las llamadas a item y search.  
+-Crear módulo para hacer `request`.   
 -Imprimir json respuesta.  
 
 #### Entregables: 
 `request.js`  
-`meli.service.js`
