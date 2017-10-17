@@ -10,7 +10,7 @@ function request(options, protocol) {
       res.on('end', (chunk) => {
         data = JSON.parse(data);
 
-        (res.statusCode < 200 || res.statusCode > 299)
+        (res.statusCode > 200 || res.statusCode < 299)
           ? resolve(data)
           : reject(data);
       });
