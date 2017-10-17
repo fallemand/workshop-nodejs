@@ -4,12 +4,23 @@
   "description": "Workshop Node.js TP",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --output-style compressed -o assets/dist/styles assets/src/styles",
+    "lint:styles": "sass-lint -v -q",
+    "lint:scripts": "./node_modules/.bin/eslint -c .eslintrc assets/src/scripts || true",
+    "build:styles": "npm run lint-styles && npm run scss",
+    "watch:styles": "onchange \"assets/src/styles\" -- npm run build:styles"
   },
   "author": "facundo.allemand@mercadolibre.com",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "node-sass": "^4.5.3"
+    "node-sass": "^4.5.3",
+    "onchange": "^3.2.1",
+    "sass-lint": "^1.12.1",
+    "babel-eslint": "6.1.2",
+    "eslint": "3.5.0",
+    "eslint-config-airbnb-base": "7.1.0",
+    "eslint-plugin-import": "1.15.0"
   }
 }
