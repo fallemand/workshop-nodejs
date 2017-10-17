@@ -35,7 +35,7 @@ meliService.searchWithPromise('iphone', 'MLA').then((data) => {
 });
 
 //*** Item suggestion with promise ***
-meliService.suggestWithPromise('iphone', 'MLC').then((data) => {
+meliService.suggestWithPromise('iphone', 'MLA').then((data) => {
   console.log("*** Item suggestion with promise ***");
   console.log(data);
 }).catch((err) => {

@@ -8,14 +8,14 @@ class MeliService {
       method: 'GET',
       headers: {'Content-Type': 'application/json'},
       hostname: 'api.mercadolibre.com',
-      path: '/items/' + id
+      path: `/items/${id}`
     };
     const descriptionOptions = {
       protocol: 'https',
       method: 'GET',
       headers: {'Content-Type': 'application/json'},
       hostname: 'api.mercadolibre.com',
-      path: '/items/' +id + '/description'
+      path: `/items/${id}/description`
     };
 
     Promise.all([request(itemOptions), request(descriptionOptions)]).then((data) => {
@@ -26,7 +26,7 @@ class MeliService {
         method: 'GET',
         headers: {'Content-Type': 'application/json'},
         hostname: 'api.mercadolibre.com',
-        path: '/categories/' + data[0].category_id
+        path: `/categories/${data[0].category_id}`
       };
       request(categoryOptions).then((data) => {
         item.category = data;
@@ -45,7 +45,7 @@ class MeliService {
       method: 'GET',
       headers: {'Content-Type': 'application/json'},
       hostname: 'api.mercadolibre.com',
-      path: '/sites/' + site + '/search?q=' + query
+      path: `/sites/${site}/search?q=${query}`
     };
 
     request(options).then((data) => {
@@ -61,7 +61,7 @@ class MeliService {
       method: 'GET',
       headers: {'Content-Type': 'application/json'},
       hostname: 'http2.mlstatic.com',
-      path: '/resources/sites/' + site + '/autosuggest?q=' + query
+      path: `/resources/sites/${site}/autosuggest?q=${query}`
     };
 
     request(options).then((data) => {
@@ -78,14 +78,14 @@ class MeliService {
       method: 'GET',
       headers: {'Content-Type': 'application/json'},
       hostname: 'api.mercadolibre.com',
-      path: '/items/' + id
+      path: `/items/${id}`
     };
     const descriptionOptions = {
       protocol: 'https',
       method: 'GET',
       headers: {'Content-Type': 'application/json'},
       hostname: 'api.mercadolibre.com',
-      path: '/items/' +id + '/description'
+      path: `/items/${id}/description`
     };
 
     return new Promise((resolve, reject) => Promise.all([request(itemOptions), request(descriptionOptions)]).then((data) => {
@@ -96,7 +96,7 @@ class MeliService {
         method: 'GET',
         headers: {'Content-Type': 'application/json'},
         hostname: 'api.mercadolibre.com',
-        path: '/categories/' + data[0].category_id
+        path: `/categories/${data[0].category_id}`
       };
       request(categoryOptions).then((data) => {
         item.category = data;
@@ -115,7 +115,7 @@ class MeliService {
       method: 'GET',
       headers: {'Content-Type': 'application/json'},
       hostname: 'api.mercadolibre.com',
-      path: '/sites/'+ site +'/search?q=' + query
+      path: `/sites/${site}/search?q=${query}`
     };
 
     return request(options);
@@ -127,7 +127,7 @@ class MeliService {
       method: 'GET',
       headers: {'Content-Type': 'application/json'},
       hostname: 'http2.mlstatic.com',
-      path: '/resources/sites/'+ site +'/autosuggest?q=' + query
+      path: `/resources/sites/${site}/autosuggest?q=${query}`
     };
 
     return request(options);
