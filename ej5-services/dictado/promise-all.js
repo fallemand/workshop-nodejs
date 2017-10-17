@@ -51,8 +51,12 @@ request1().then((data1) => {
 
 // Ejecutarlas en paralelo
 // ----------------------------------------
-// console.time('pararel');
-// Promise.all([request1(), request2(), request3(), request4()]).then((data) => {
-//   console.log(data);
-//   console.timeEnd('pararel');
-// });
+console.time('parallel');
+  Promise.all([request1(), request2(), request3(), request4()]).then((data) => {
+    console.log(data);
+    console.timeEnd('parallel');
+});
+
+
+//data será un array que tendrá en cada posición, el resultado de cada llamada
+//Buena practica: Ejecutar en paralelo siempre que se pueda
