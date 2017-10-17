@@ -1,4 +1,4 @@
-const meliService = require('./meli.service');
+const meliService = require('../resolution/meli.service');
 
 meliService.item('id', (item) => {
 

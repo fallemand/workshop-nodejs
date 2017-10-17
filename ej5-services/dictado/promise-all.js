@@ -34,7 +34,7 @@ const request4 = () => {
 
 // Ejecutarlas secuencialmente
 // ----------------------------------------
-console.time('sequential');
+/*console.time('sequential');
 request1().then((data1) => {
   console.log(data1);
   request2().then((data2) => {
@@ -47,12 +47,12 @@ request1().then((data1) => {
       })
     })
   })
-});
+});*/
 
 // Ejecutarlas en paralelo
 // ----------------------------------------
-// console.time('pararel');
-// Promise.all([request1(), request2(), request3(), request4()]).then((data) => {
-//   console.log(data);
-//   console.timeEnd('pararel');
-// });
+console.time('pararel');
+Promise.all([request1(), request2(), request3(), request4()]).then((data) => {
+  console.log(data);
+  console.timeEnd('pararel');
+});
