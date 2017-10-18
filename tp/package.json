@@ -1,0 +1,43 @@
+{
+  "name": "workshop-node-jmorazano",
+  "version": "1.0.0",
+  "description": "La idea de este ejercicio es armar un mini sitio de Mercado Libre con Home, Search, Vip, página de error, y Api. En cada parte vamos a ir agregando código que se integre al trabajo final. - **[Site Demo](https://workshop-node.herokuapp.com/)**",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf assets/dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --output-style compressed -o assets/dist/styles assets/src/styles",
+    "uglify": "uglifyjs assets/src/scripts/*.js -b -o assets/dist/scripts/bundle.js && uglifyjs assets/src/scripts/*.js -m -c -o assets/dist/scripts/bundle.min.js",
+    "lint:styles": "sass-lint -v -q",
+    "lint:scripts": "./node_modules/.bin/eslint -c .eslintrc assets/src/scripts || true",
+    "build:styles": "npm run lint:styles && npm run scss",
+    "build:scripts": "npm run lint:scripts && npm run uglify",
+    "watch:styles": "onchange \"assets/src/styles\" -- npm run build:styles",
+    "watch:scripts": "onchange \"assets/src/scripts\" -- npm run build:scripts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fallemand/workshop-nodejs.git#readme"
+  },
+  "keywords": [
+    "node",
+    "js"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fallemand/workshop-nodejs/issues"
+  },
+  "homepage": "https://github.com/fallemand/workshop-nodejs/tree/readme#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.5",
+    "babel-eslint": "6.1.2",
+    "eslint": "3.5.0",
+    "eslint-config-airbnb-base": "7.1.0",
+    "eslint-plugin-import": "1.15.0",
+    "imagemin": "^5.3.1",
+    "node-sass": "^4.5.3",
+    "rimraf": "^2.6.2",
+    "sass-lint": "^1.12.1"
+  }
+}
