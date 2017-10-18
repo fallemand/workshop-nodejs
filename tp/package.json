@@ -1,0 +1,29 @@
+{
+  "name": "workshop-node",
+  "version": "0.1.0",
+  "description": "Workshop Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --output-style compressed -o assets/dist/styles assets/src/styles",
+    "uglify": "uglifyjs assets/src/scripts/*.js -b -o assets/dist/scripts/app.js && uglifyjs assets/src/scripts/*.js -c -o assets/dist/scripts/app.min.js",
+    "lint:styles": "sass-lint -v -q",
+    "lint:scripts": "./node_modules/.bin/eslint -c .eslintrc assets/src/scripts || true",
+    "build:styles": "npm run lint:styles && npm run scss",
+    "build:scripts": "npm run lint:scripts && npm run uglify",
+    "watch:styles": "onchange \"assets/src/styles\" -- npm run build:styles",
+    "watch:scripts": "onchange \"assets/src/scripts\" -- npm run build:scripts"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "4.5.3",
+    "onchange": "3.2.1",
+    "sass-lint": "1.12.1",
+    "uglify-js": "3.1.4",
+    "babel-eslint": "6.1.2",
+    "eslint": "3.5.0",
+    "eslint-config-airbnb-base": "7.1.0",
+    "eslint-plugin-import": "1.15.0"
+  }
+}
