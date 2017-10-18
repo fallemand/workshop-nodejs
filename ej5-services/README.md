@@ -18,7 +18,10 @@ Explicamos como hacer promises secuenciales y paralelas.
   **endpoint search:** `https://api.mercadolibre.com/sites/MLA/search?q=iphone7`  
   
   - `suggest(query)`: Recibe como parámetro una `query` y retorna como resultado las posibles sugerencias para esa búsqueda.  
-  **endpoint suggest:** `http://http2.mlstatic.com/resources/sites/MLA/autosuggest?q=ipho`  
+  **endpoint suggest:** `https://api.mercadolibre.com/sites/MLA/autosuggest?q=ipho`  
+
+-Crear un módulo `meli.transform.js` con los mísmos métodos que al módulo `meli.service.js`, que se encargue de recibir el json de la api de mercadolibre, y solo devuelva los atributos que sean necesarios.  
 
 #### Entregables: 
-`meli.service.js`
+`meli.service.js`  
+`meli.transform.js`  

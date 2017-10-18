@@ -16,9 +16,9 @@ module.exports = (options) => {
             });
 
             resp.on('end', () => {
-                try{
+                try {
                     data = JSON.parse(data);
-                } catch(err){
+                } catch (err) {
                     data = data;
                 }
                 //handle http errors

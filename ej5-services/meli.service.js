@@ -11,7 +11,7 @@ module.exports.search = (query) => {
         path: `/sites/MLA/search?q=${query}`
     }
 
-    return request(searchOptions); 
+    return request(searchOptions);
 };
 
 module.exports.suggest = (query) => {
@@ -22,13 +22,13 @@ module.exports.suggest = (query) => {
             'Content-type': 'application/json',
         },
         hostname: 'http2.mlstatic.com',
-        path: `/resources/sites/MLA/autosuggest?q=${query}`   
+        path: `/resources/sites/MLA/autosuggest?q=${query}`
     }
 
-    return request(suggestOptions); 
+    return request(suggestOptions);
 };
 
-module.exports.item = (id) =>{
+module.exports.item = (id) => {
 
     const promises = [];
     const itemFull = {};
@@ -50,26 +50,26 @@ module.exports.item = (id) =>{
     options.path = `/items/${id}/description`
     promises.push(request(options));
 
-    return new Promise( (resolve, reject) => {
-        Promise.all(promises).then( (results) =>{
+    return new Promise((resolve, reject) => {
+        Promise.all(promises).then((results) => {
             const item = results[0];
             const description = results[1];
             itemFull.description = description
-    
+
             //search category        
             options.protocol = 'https';
             options.path = `/categories/${item.category_id}`
-            request(options).then( (category) => {
-                itemFull.category = category           
+            request(options).then((category) => {
+                itemFull.category = category
                 resolve(itemFull);
             }).catch((err) => {
                 reject(err);
             });
-    
+
         }).catch((err) => {
             reject(err);
         });
-    
+
     });
-    
+
 };
