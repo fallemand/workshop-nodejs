@@ -1,0 +1,39 @@
+{
+  "name": "workshop-node_grodriguezis",
+  "version": "0.0.1",
+  "description": "Integrated exercise for the nodejs workshop",
+  "main": "index.js",
+  "scripts": {
+    "test": "test/test.js",
+    "scss": "node-sass --output-style compressed -o assets/dist/styles assets/src/styles",
+    "lint:styles": "sass-lint -v -q",
+    "build:styles": "npm run lint:styles && npm run scss",
+    "watch:styles": "onchange \"assets/src/styles\" -- npm run build:styles",
+    "lint:scripts": "eslint -c .eslintrc assets/src/scripts || true",
+    "uglifyjs": "uglifyjs --beautify --output assets/dist/scripts/scripts.js assets/src/scripts/**.js && uglifyjs --compress --mangle --output assets/dist/scripts/scripts.min.js assets/src/scripts/**.js",
+    "build:scripts": "npm run lint:scripts && npm run uglifyjs",
+    "watch:scripts": "onchange \"assets/src/scripts\" -- npm run build:scripts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fallemand/workshop-nodejs.git"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "express",
+    "react"
+  ],
+  "author": "grodriguezis",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "6.1.2",
+    "eslint": "3.5.0",
+    "eslint-config-airbnb-base": "7.1.0",
+    "eslint-plugin-import": "1.15.0",
+    "node-sass": "^4.5.3",
+    "onchange": "^3.2.1",
+    "sass-lint": "^1.12.1",
+    "uglify-js": "^3.1.4"
+  }
+}
