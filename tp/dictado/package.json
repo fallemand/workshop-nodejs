@@ -8,7 +8,7 @@
     "scss": "node-sass --output-style compressed -o assets/dist/styles assets/src/styles",
     "lint:styles": "sass-lint -v -q",
     "lint:scripts": "./node_modules/.bin/eslint -c .eslintrc assets/src/scripts || true",
-    "build:styles": "npm run lint-styles && npm run scss",
+    "build:styles": "npm run lint:styles && npm run scss",
     "watch:styles": "onchange \"assets/src/styles\" -- npm run build:styles"
   },
   "author": "facundo.allemand@mercadolibre.com",
