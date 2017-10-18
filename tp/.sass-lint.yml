@@ -1,5 +1,5 @@
 files:
-    include: '**/*.scss'
+    include: 'assets/src/**/*.scss'
 options:
     formatter: stylish
     merge-default-rules: false

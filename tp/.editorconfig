@@ -2,6 +2,7 @@
 ## This file helps to maintain a consistent coding style
 ## between different envirorments.
 ## More info: editorconfig.org
+## @see https://github.com/mercadolibre/css-style-guide/blob/master/.editorconfig
 ##
 
 root = true
@@ -10,7 +11,7 @@ root = true
 charset = utf-8
 end_of_line = lf
 indent_style = space
-indent_size = 4
+indent_size = 2
 insert_final_newline = true
 trim_trailing_whitespace = true
 
