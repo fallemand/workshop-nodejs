@@ -1,0 +1,34 @@
+{
+  "name": "workshop-node",
+  "version": "1.0.0",
+  "description": "Integrated work for workshop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --output-style compressed -o assets/dist/styles assets/src/styles",
+    "lint:styles": "sass-lint -v -q",
+    "lint:scripts": "./node_modules/.bin/eslint -c .eslintrc assets/src/scripts || true",
+    "build:styles": "npm run lint:styles && npm run scss",
+    "watch:styles": "onchange \"assets/src/styles\" -- npm run build:styles",
+    "uglify": "uglifyjs assets/src/scripts/*.js -b -o assets/dist/scripts/app.js && uglifyjs assets/src/scripts/*.js -m -c -o assets/dist/scripts/app.min.js",
+    "build:scripts": "npm run lint:scripts && npm run uglify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fallemand/workshop-nodejs.git"
+  },
+  "author": "Hernan Garzon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fallemand/workshop-nodejs/issues"
+  },
+  "homepage": "https://github.com/fallemand/workshop-nodejs#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "node-sass": "^4.5.3",
+    "onchange": "^3.2.1",
+    "sass-lint": "^1.12.1",
+    "uglify-js": "^3.1.4",
+    "uglifyjs": "^2.4.11"
+  }
+}
