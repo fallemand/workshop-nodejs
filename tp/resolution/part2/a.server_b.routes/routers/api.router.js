@@ -9,6 +9,6 @@ router.get('/search', (req, res) => {
 });
 router.get('/suggest', (req, res) => {
   res.json({message: `Acá vamos a autocompletar: ${req.query.q}`});
-})
+});
 
 module.exports = router;

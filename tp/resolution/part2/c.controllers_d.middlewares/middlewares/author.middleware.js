@@ -4,4 +4,4 @@ module.exports = (req, res, next) => {
         'mail': 'marcos.galperin@mercadolibre.com'
     };
     next();
-}
+};

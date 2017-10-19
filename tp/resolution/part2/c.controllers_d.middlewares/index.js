@@ -8,4 +8,4 @@ router.init(app, __dirname);
 //Start Application
 app.listen('3000', 'localhost', () => {
   console.log('App started on port 3000');
-})
+});
