@@ -1,5 +1,5 @@
 {
-  "name": "integrador2",
+  "name": "node-workshop",
   "version": "1.0.0",
   "description": "Integrated exercise for the Node.js Workshop",
   "main": "index.js",
@@ -42,5 +42,8 @@
   },
   "optionalDependencies": {
     "fsevents": "*"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
   }
 }
