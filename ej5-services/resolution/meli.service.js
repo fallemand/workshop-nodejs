@@ -56,7 +56,7 @@ exports.item = (id) => {
 exports.search = (query) => {
   options.hostname = 'api.mercadolibre.com';
   options.path = `/sites/MLA/search?limit=6&q=${escape(query)}`;
-  return request(options);
+  return request(options, meliTransform.search);
 };
 
 exports.suggest = (query) => {

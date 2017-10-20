@@ -16,19 +16,23 @@ exports.item = (item) => {
 };
 
 exports.search = (search) => {
-  return search.results.map((result) => {
-    return {
-      id: result.id,
-      title: result.title,
-      price: {
-        amount: result.price,
-        currency: result.currency_id,
-      },
-      condition: result.condition,
-      free_shipping: result.shipping.free_shipping,
-      picture: result.thumbnail
-    }
-  });
+  return {
+    query : search.query,
+    paging: search.paging,
+    results: search.results.map((result) => {
+      return {
+        id: result.id,
+        title: result.title,
+        price: {
+          amount: result.price,
+          currency: result.currency_id,
+        },
+        condition: result.condition,
+        free_shipping: result.shipping.free_shipping,
+        picture: result.thumbnail
+      }
+    })
+  }
 };
 
 exports.suggest = (results) => {
