@@ -15,9 +15,7 @@ function request(options, protocol) {
           : reject(data);
       });
     })
-    .on('error', (data) => {
-      reject({ error: data });
-    })
+    .on('error', (data) => reject({ error: data }))
     .end();
   });
 }
