@@ -9,7 +9,7 @@ exports.init = function(app, basePath) {
   //Set App routes
   app.use('/app', routerApp, errorManager.appErrors);
 
-  //Set App routes
+  //Set Api routes
   app.use('/api', author, routerApi, errorManager.apiErrors);
 
   //Set statics path

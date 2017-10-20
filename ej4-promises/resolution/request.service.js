@@ -1,7 +1,7 @@
 const https = require('https');
 const http = require('http');
 
-module.exports = (options) => {
+module.exports = (options, transform) => {
 
     const protocol = (options.protocol == 'http') ? http : https;
     delete options.protocol;
@@ -17,7 +17,10 @@ module.exports = (options) => {
         response.on('end', () => {
           result = JSON.parse(result);
           // Handle http errors
-          if (response.statusCode < 200 || response.statusCode > 299) {
+          if (response.statusCode >= 200 || response.statusCode <= 299) {
+            if (transform) {
+              result = transform(result);
+            }
             resolve(result);
           }
           else {

@@ -1,4 +1,3 @@
-
 const meliService = require('../services/meli.service');
 
 exports.search = (req, res, next) => {
@@ -9,7 +8,7 @@ exports.search = (req, res, next) => {
             res.json(data);
         })
         .catch(next);
-}
+};
 
 exports.items = (req, res, next) => {
     const id = req.params.id;
@@ -19,7 +18,7 @@ exports.items = (req, res, next) => {
             res.json(item);
         })
         .catch(next);
-}
+};
 
 exports.suggest = (req, res, next) => {
     const query = req.query.q;
@@ -29,4 +28,4 @@ exports.suggest = (req, res, next) => {
             res.json(results);
         })
         .catch(next);
-}
+};
