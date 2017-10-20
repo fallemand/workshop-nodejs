@@ -1,4 +1,6 @@
 const request = require('./requestPromise');
+const transform = require('./transform');
+
 class MeliService {
 
   static item(id, response) {

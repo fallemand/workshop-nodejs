@@ -23,4 +23,3 @@ module.exports = (options) => {
     }).end();
   });
 };
-
