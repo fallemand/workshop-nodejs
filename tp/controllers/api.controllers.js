@@ -10,8 +10,7 @@ class apiControllers {
 
     static items(req, res, next){
         res.json({ 'message': `Entro a /api/items - id = ${req.params.id}` })
-    }
-    
+    }   
 }
 
 module.exports = apiControllers;

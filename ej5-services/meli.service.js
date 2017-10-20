@@ -1,4 +1,5 @@
 const request = require('./requestPromise');
+const transform = require('./meli.transform');
 
 module.exports.search = (query) => {
     const searchOptions = {
@@ -62,6 +63,8 @@ module.exports.item = (id) => {
             request(options).then((category) => {
                 itemFull.category = category
                 resolve(itemFull);
+                // resolve(transform.item(itemFull)); //validar los datos del VIP
+
             }).catch((err) => {
                 reject(err);
             });
