@@ -1,8 +1,8 @@
 const service = require('./meli.service');
 
-// service.search('iphone')
-//   .then((data) => console.log(data))
-//   .catch((err) => console.log(err));
+service.search('iphone')
+  .then((data) => console.log(data))
+  .catch((err) => console.log(err));
 
 // service.suggest('iph')
 //   .then((data) => console.log(data))
