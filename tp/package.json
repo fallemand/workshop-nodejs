@@ -24,6 +24,9 @@
   },
   "author": "",
   "license": "MIT",
+  "dependencies": {
+    "express": "4.16.2"
+  },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel-eslint": "6.1.2",
