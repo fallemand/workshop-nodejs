@@ -1,0 +1,54 @@
+{
+  "name": "workshop-node-lucarrizo",
+  "version": "1.0.0",
+  "description": "Practico node",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf assets/dist/**/*",
+    "autoprefixer": "postcss -u autoprefixer -r assets/dist/styles/*",
+    "scss": "node-sass --output-style compressed -o assets/dist/styles assets/src/styles",
+    "lint:scripts": "./node_modules/.bin/eslint -c .eslintrc assets/src/scripts || true",
+    "lint:styles": "sass-lint assets/src/styles/*.scss -v -q",
+    "uglify": "uglifyjs assets/src/scripts/*.js -b -o assets/dist/scripts/app.js && uglifyjs assets/src/scripts/*.js -m -c -o assets/dist/scripts/app.min.js",
+    "imagemin": "imagemin assets/src/images/* -o assets/dist/images",
+    "start": "./node_modules/.bin/nodemon index.js",
+    "build:styles": "npm run lint:styles && npm run scss && npm run autoprefixer",
+    "build:scripts": "npm run lint:scripts && npm run uglify",
+    "build:images": "npm run imagemin",
+    "build": "npm run clean && npm run build:styles && npm run build:scripts && npm run build:images",
+    "watch:styles": "onchange \"assets/src/styles\" -- npm run build:styles",
+    "watch:scripts": "onchange \"assets/src/scripts\" -- npm run build:scripts",
+    "watch:images": "onchange \"assets/src/images\" -- npm run build:images",
+    "watch": "npm-run-all -p watch:styles watch:scripts watch:images",
+    "postinstall": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fallemand/workshop-nodejs/tree/lucarrizo"
+  },
+  "keywords": [
+    "node",
+    "javascript"
+  ],
+  "author": "Lucas Carrizo",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "babel-eslint": "6.1.2",
+    "eslint": "3.5.0",
+    "eslint-config-airbnb-base": "7.1.0",
+    "eslint-plugin-import": "1.15.0",
+    "imagemin-cli": "^3.0.0",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.12.1",
+    "npm-run-all": "^2.1.1",
+    "onchange": "^2.4.0",
+    "postcss-cli": "^2.5.2",
+    "rimraf": "^2.5.4",
+    "sass-lint": "^1.10.2",
+    "uglify-js": "^2.6.2"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
