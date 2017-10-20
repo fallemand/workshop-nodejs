@@ -41,5 +41,8 @@
     "sass-lint": "^1.10.2",
     "uglify-js": "^2.6.2",
     "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
   }
 }
