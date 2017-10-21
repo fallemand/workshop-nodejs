@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const exphbs = require('express-handlebars');
 const router = require('./routers/router');
 const helmet = require('helmet');
 const expReact = require('express-react-views');

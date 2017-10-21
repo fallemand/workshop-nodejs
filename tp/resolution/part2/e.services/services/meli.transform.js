@@ -19,19 +19,17 @@ exports.search = (search) => {
   return {
     query : search.query,
     paging: search.paging,
-    filters: search.filters,
     results: search.results.map((result) => {
       return {
         id: result.id,
         title: result.title,
-        address: result.address,
         price: {
           amount: result.price,
           currency: result.currency_id,
         },
         condition: result.condition,
         free_shipping: result.shipping.free_shipping,
-        thumbnail: result.thumbnail
+        picture: result.thumbnail
       }
     })
   }

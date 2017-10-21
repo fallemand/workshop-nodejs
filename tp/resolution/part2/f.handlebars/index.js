@@ -18,8 +18,8 @@ app.set('views', 'views/pages/');
 app.set('view engine', '.hbs');
 
 //Start Application
-global.port = 3000
-global.address = '0.0.0.0'
+global.port = 3000;
+global.address = '0.0.0.0';
 app.listen(global.port, global.address, () => {
   console.log('App started on port 3000');
-})
+});
