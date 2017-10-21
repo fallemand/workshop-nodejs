@@ -1,5 +1,5 @@
 const React = require('react');
-const Layout = require('./layout');
+const Layout = require('./Layout');
 
 class Item extends React.Component {
 

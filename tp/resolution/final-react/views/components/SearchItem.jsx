@@ -1,4 +1,4 @@
-var React = require('react');
+const React = require('react');
 
 class SearchItem extends React.Component {
   render() {
@@ -8,8 +8,8 @@ class SearchItem extends React.Component {
               <img src={this.props.thumbnail} alt={this.props.title} />
           </div>
           <div className="search-item__description">
-              <span className="search-item__price">$ {this.props.price}</span>
-              <i className="search-item__freeshipment"></i>
+              <span className="search-item__price">$ {this.props.price.amount}</span>
+              {this.props.free_shipping && <i className="search-item__freeshipment"></i>}
               <p className="search-item__title">{this.props.title}</p>
           </div>
           <div className="search-item__location">{this.props.address.state_name}</div>

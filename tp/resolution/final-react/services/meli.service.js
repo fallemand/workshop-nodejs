@@ -1,4 +1,5 @@
 const request = require('./request.service');
+const meliTransform = require('./meli.transform');
 
 const options = {
   method: 'GET',
@@ -12,11 +13,11 @@ exports.itemSync = (id) => {
     request(options).then((item) => {
       options.path = `/items/${id}/description`;
       request(options).then((response) => {
-        item.text = response.text;
+        item.description = response.text;
         options.path = `/categories/${item.category_id}`;
         request(options).then((category) => {
-          item.path_from_root = category.path_from_root;
-          resolve(item);
+          item.category = category.path_from_root;
+          resolve(meliTransform.item(item));
         });
       });
     }).catch((err) => {
@@ -37,12 +38,12 @@ exports.item = (id) => {
     Promise.all([promiseItem, promiseItemDescription]).then((data) => {
       const item = data[0];
       const itemDescription = data[1].text || data[1].plain_text;
-      item.text = itemDescription;
+      item.description = itemDescription;
 
       options.path = `/categories/${item.category_id}`;
       request(options).then((category) => {
-        item.path_from_root = category.path_from_root;
-        resolve(item);
+        item.category = category.path_from_root;
+        resolve(meliTransform.item(item));
       }).catch((err) => {
         reject(err);
       });
@@ -55,11 +56,11 @@ exports.item = (id) => {
 exports.search = (query) => {
   options.hostname = 'api.mercadolibre.com';
   options.path = `/sites/MLA/search?limit=6&q=${escape(query)}`;
-  return request(options);
+  return request(options, meliTransform.search);
 };
 
 exports.suggest = (query) => {
   options.hostname = 'http2.mlstatic.com';
   options.path = `/resources/sites/MLA/autosuggest?q=${escape(query)}&v=1`;
-  return request(options);
+  return request(options, meliTransform.suggest);
 };

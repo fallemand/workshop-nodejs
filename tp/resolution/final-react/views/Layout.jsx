@@ -7,10 +7,10 @@ class Layout extends React.Component {
     return (
       <html>
           <head>
-            <meta charset="utf-8"/>
+            <meta charSet="utf-8"/>
             <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-            <meta http-equiv="cleartype" content="on"/>
-            <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+            <meta httpEquiv="cleartype" content="on"/>
+            <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
             <meta name="theme-color" content="#fff059"/>
             <title>Mercado Libre | FrontEnd Test</title>
             <link rel="shortcut icon" href="http://ui.mlstatic.com/navigation/1.2.0/mercadolibre/favicon.ico"/>
@@ -18,14 +18,15 @@ class Layout extends React.Component {
             <link href="/assets/dist/styles/main.css" rel="stylesheet" />
         </head>
         <body>
-            <Header query={this.props.query}/>
+            <header role="banner" id="header" className="header">
+              <Header query={this.props.query}/>
+            </header>
             <main role="main" className="main">
                 <Breadcrumb {...this.props}/>
                 <div className="main__content">
                     {this.props.children}
                 </div>
             </main>
-
             <script src="/assets/dist/scripts/main.js"></script>
         </body>
       </html>

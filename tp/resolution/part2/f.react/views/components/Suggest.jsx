@@ -2,11 +2,18 @@ const React = require('react');
 
 class Suggest extends React.Component {
   render() {
-    const suggestList = this.props.suggested_queries.map(function(element){
-                          return `<li class="suggest__item">${element.q}</li>`
-                        }).join('');
     return (
-      <ul className="suggest" dangerouslySetInnerHTML={{__html: suggestList }} />
+      <div>
+        { this.props.results &&
+          <ul className="suggest">
+            {this.props.results.map((element) =>
+              <li key={element} className="suggest__item">
+                <a href={`/app/search?q=${element}`}>{element}</a>
+              </li>
+            )}
+          </ul>
+        }
+      </div>
     );
   }
 }

@@ -1,5 +1,5 @@
 var React = require('react');
-const Layout = require('./layout');
+const Layout = require('./Layout');
 
 class Error extends React.Component {
   render() {

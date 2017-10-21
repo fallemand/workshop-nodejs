@@ -1,7 +1,17 @@
-var suggest = require('./components/suggest.js');
+const React = require('react');
+const ReactDOM = require('react-dom');
+const Header = require('../../../views/components/Header');
 
-window.onload = () => {
-    var input = document.querySelector('[data-js="search"]');
-    var container = document.querySelector('[data-js="suggest"]');
-    suggest(input, container);
-}
+/**
+ * Get server state
+ */
+const props = window.__PRELOADED_STATE__;
+
+/**
+ * i18n
+ */
+
+ReactDOM.render(
+  <Header {...props} />,
+  document.getElementById('header'),
+);
