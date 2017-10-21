@@ -12,8 +12,8 @@ class Breadcrumb extends React.Component {
         result += (`<li class="breadcrumb__element">${element.name}</li>`);
       });
     }
-    if(data.path_from_root) {
-      data.path_from_root.forEach(element => {
+    if(data.category) {
+      data.category.forEach(element => {
         result += (`<li class="breadcrumb__element">${element.name}</li>`);
       });
     }

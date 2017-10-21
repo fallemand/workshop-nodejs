@@ -27,7 +27,7 @@ class Layout extends React.Component {
                     {this.props.children}
                 </div>
             </main>
-            <script src="/assets/dist/scripts/main.js"></script>
+            <script src="/assets/dist/scripts/header.js"></script>
         </body>
       </html>
     );

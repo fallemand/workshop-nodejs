@@ -1,9 +1,9 @@
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
     entry: {
-        "main": './assets/src/scripts/main.js'
+        "header": './assets/src/scripts/header.js'
     },
     output: {
         path: path.resolve(__dirname, './assets/dist/scripts'),
@@ -21,6 +21,12 @@ module.exports = {
     resolve: {
       extensions: ['.js', '.jsx'],
     },
+    plugins: [
+      new webpack.optimize.UglifyJsPlugin({
+        minimize: true,
+        sourceMap: true
+      })
+    ],
     stats: {
         colors: true
     },
