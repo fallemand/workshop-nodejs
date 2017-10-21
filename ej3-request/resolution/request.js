@@ -16,7 +16,7 @@ module.exports = (options, success, error) => {
         response.on('end', () => {
             result = JSON.parse(result);
             // Handle http errors
-            if (response.statusCode >= 200 || response.statusCode <= 299) {
+            if (response.statusCode >= 200 && response.statusCode <= 299) {
                 success(result);
             }
             else {
