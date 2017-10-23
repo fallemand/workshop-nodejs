@@ -34,9 +34,6 @@ const request = () => {
   })
 };
 
-
-
-app.use(middleware1, middleware2, middleware3);
 app.get('/foo', (req, res, next) => {
   console.log('Entro a foo');
   request().then((data) => {
@@ -49,6 +46,11 @@ app.get('/bar', (req, res) => {
   console.log('Entro a bar');
   res.send('Entramos a bar!');
 });
+
+app.use(middleware1);
+app.use(middleware2);
+app.use(middleware3);
+app.use(router);
 app.use(middlewareError);
 
 app.listen('3000', 'localhost', () => {
