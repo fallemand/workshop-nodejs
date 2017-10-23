@@ -17,18 +17,29 @@ module.exports.item = (id) => {
     hostname: 'api.mercadolibre.com',
     path: `/items/${id}/description`
   };
-
-  Promise.all([request(item), request(desc)]).then((data) => {
-    request({
-      protocol:'https',
-      method: 'GET',
-      headers: {'Content-type': 'aplication/json'},
-      hostname: 'api.mercadolibre.com',
-      path: `/categories/${data[0].category_id}`
+  return new Promise((resolve,reject) => {
+    Promise.all([request(item), request(desc)]).then((data) => {
+      request({
+        protocol:'https',
+        method: 'GET',
+        headers: {'Content-type': 'aplication/json'},
+        hostname: 'api.mercadolibre.com',
+        path: `/categories/${data[0].category_id}`
+      });
+      fs.writeFile('./meliService-item.txt', JSON.stringify(data[0]), (err) => {
+        console.log('El archivo de item se guardó OK');
+      });
+      fs.writeFile('./meliService-desc.txt', JSON.stringify(data[1]), (err) => {
+        console.log('El archivo de descripciones se guardó OK');
+      });
+      fs.writeFile('./meliService-categ.txt', JSON.stringify(data), (err) => {
+        console.log('El archivo de categorias se guardó OK');
+      });
+    }).catch((err) => {
+      reject(err);
     });
-    fs.writeFile('./meliService-item.txt', JSON.stringify(data[0]), (err) => {
-      console.log('El archivo se guardó OK');
-    });
+  }).catch((err) => {
+    reject(err);
   });
 };
 
@@ -38,7 +49,7 @@ module.exports.search = (query) => {
     method: 'GET',
     headers: {'Content-type': 'aplication/json'},
     hostname: 'api.mercadolibre.com',
-    path: `/sites/MLA/search?q=${id}`
+    path: `/sites/MLA/search?q=${query}`
   });
 };
 
