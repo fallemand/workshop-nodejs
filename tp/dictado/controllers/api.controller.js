@@ -2,31 +2,28 @@ const meliService = require('../services/meli.service');
 
 // API Controller
 
-module.exports.item = (req, res) => {
+module.exports.item = (req, res, next) => {
   const id = req.params.id;
   meliService.item(id).then((item) => {
+    item.author = res.locals.author;
     res.send(item);
-  }).catch((err) => {
-    res.status(err.status || 500).send(err);
-  });
+  }).catch(next);
 };
 
-module.exports.search = (req, res) => {
+module.exports.search = (req, res, next) => {
   const query = req.query.q;
   meliService.search(query).then((results) => {
+    results.author = res.locals.author;
     res.send(results);
-  }).catch((err) => {
-    res.status(err.status || 500).send(err);
-  });
+  }).catch(next);
 };
 
-module.exports.suggest = (req, res) => {
+module.exports.suggest = (req, res, next) => {
   const query = req.query.q;
   meliService.suggest(query).then((results) => {
+    results.author = res.locals.author;
     res.send(results);
-  }).catch((err) => {
-    res.status(err.status || 500).send(err);
-  });
+  }).catch(next);
 };
 
 module.exports.itemsPost = (req, res) => {
