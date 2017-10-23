@@ -1,5 +1,8 @@
 const router = require('express').Router();
 const apiController = require('../controllers/api.controller');
+const authorMiddleware = require('../middlewares/author.middleware');
+
+router.use(authorMiddleware);
 
 router.get('/search/:site', apiController.search);
 

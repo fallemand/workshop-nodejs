@@ -1,6 +1,7 @@
 const routerApi = require('./api.router');
 const routerApp = require('./app.router');
 const serverAssets = require('express').static;
+const errorMiddleware = require('../middlewares/error.middleware');
 
 // Si necesitara los 2 elementos del mismo require
 // const {Router, static} = require('express');
@@ -9,8 +10,8 @@ const serverAssets = require('express').static;
 module.exports.init = (app, path) => {
     
     // Set statics paths
-    app.use('/api', routerApi);
-    app.use('/app', routerApp);
+    app.use('/api', routerApi, errorMiddleware.apiError);
+    app.use('/app', routerApp, errorMiddleware.appError);
     
     app.use('/assets', serverAssets(`${path}/assets`));
     

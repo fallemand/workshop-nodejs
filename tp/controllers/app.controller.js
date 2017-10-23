@@ -2,25 +2,21 @@ const meliService = require('../services/meli.service')
 
 class AppController {
     
-    static search(req, res) {
+    static search(req, res, next) {
         const site = req.params.site;
         const q = req.query.q;
 
         meliService.searchWithPromise(q, site).then((result) => {
             res.send(result);
-        }).catch( (err) => {
-            res.status(500).send(err)
-        });
+        }).catch(next);
     };
     
-    static items(req, res) {
+    static items(req, res, next) {
         const itemId = req.params.id;
 
         meliService.itemWithPromise(itemId).then((result) => {
             res.send(result);
-        }).catch( (err) => {
-            res.status(500).send(err)
-        });
+        }).catch(next);
     };
 }
 
