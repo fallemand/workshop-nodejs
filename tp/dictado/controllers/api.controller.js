@@ -1,7 +1,12 @@
 // API Controller
+const meliService = require('../services/meli.service.js');
 
 module.exports.items = (req, res) => {
-  res.json({message: `Acá vamos a retornar el item: ${req.params.id}`});
+  meliService.item(req.params.id).then((item) => {
+    res.json(item);
+  }).catch((err) => {
+    res.status(err.status || 500).json(err);
+  });
 };
 
 module.exports.itemsPost = (req, res) => {
