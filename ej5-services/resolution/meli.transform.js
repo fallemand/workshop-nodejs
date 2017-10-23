@@ -1,15 +1,27 @@
 class Transform {
 
     static item(item) {
-        return item;
+        let transformedItem = {};
+
+        transformedItem = item;
+
+        return transformedItem;
     };
 
     static search(search) {
-        return search;
+        let transformedSearch = {};
+
+        transformedSearch = search;
+
+        return transformedSearch;
     };
 
     static suggest(suggest) {
-        return suggest;
+        let transformedSuggest = {};
+
+        transformedSuggest = suggest;
+
+        return transformedSuggest;
     };
 }
 
