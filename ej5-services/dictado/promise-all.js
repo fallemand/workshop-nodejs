@@ -34,29 +34,32 @@ const request4 = () => {
 
 // Ejecutarlas secuencialmente
 // ----------------------------------------
-console.time('sequential');
-request1().then((data1) => {
-  console.log(data1);
-  request2().then((data2) => {
-    console.log(data2);
-    request3().then((data3) => {
-      console.log(data3);
-      request4().then((data4) => {
-        console.log(data4);
-        console.timeEnd('sequential');
-      })
-    })
-  })
-});
+// console.time('sequential');
+// request1().then((data1) => {
+//   console.log(data1);
+//
+//   request2().then((data2) => {
+//     console.log(data2);
+//
+//     request3().then((data3) => {
+//       console.log(data3);
+//
+//       request4().then((data4) => {
+//         console.log(data4);
+//         console.timeEnd('sequential');
+//       })
+//     })
+//   })
+//
+// });
 
 // Ejecutarlas en paralelo
 // ----------------------------------------
 console.time('parallel');
-  Promise.all([request1(), request2(), request3(), request4()]).then((data) => {
-    console.log(data);
-    console.timeEnd('parallel');
+Promise.all([request1(), request2(), request3(), request4()]).then((data) => {
+  console.log(data);
+  console.timeEnd('parallel');
 });
-
 
 //data será un array que tendrá en cada posición, el resultado de cada llamada
 //Buena practica: Ejecutar en paralelo siempre que se pueda
