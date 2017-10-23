@@ -10,8 +10,8 @@ exports.item = (item) => {
     sold_quantity: item.sold_quantity,
     free_shipping: item.shipping.free_shipping,
     picture: item.pictures[0] && item.pictures[0].url,
-    description: item.description,
     category: item.category,
+    description: item.description,
   }
 };
 
@@ -19,17 +19,19 @@ exports.search = (search) => {
   return {
     query : search.query,
     paging: search.paging,
+    filters: search.filters,
     results: search.results.map((result) => {
       return {
         id: result.id,
         title: result.title,
+        address: result.address,
         price: {
           amount: result.price,
           currency: result.currency_id,
         },
         condition: result.condition,
         free_shipping: result.shipping.free_shipping,
-        picture: result.thumbnail
+        thumbnail: result.thumbnail
       }
     })
   }
