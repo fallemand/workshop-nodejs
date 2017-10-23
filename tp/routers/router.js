@@ -5,12 +5,13 @@
 const {Router, static} = require('express');
 const routerApp = require('./app.router');
 const routerApi = require('./api.router');
+const author = require('../middlewares/author.middleware')
 
 module.exports.init = (app, path) => {
 
 
   app.use('/app', routerApp);
-  app.use('/api', routerApi);
+  app.use('/api', author, routerApi);
 
   app.use('/assets', static(`${path}/assets`));
 
