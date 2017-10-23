@@ -5,7 +5,7 @@ const routerApp = require('./app.router');
 module.exports.init = (app, path) => {
 
   // Set routers
-  app.use('/api', routerApi);
+  app.use('/api', author, routerApi);
   app.use('/app', routerApp);
 
   // Set statics path
