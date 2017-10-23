@@ -4,12 +4,7 @@ const router = express.Router();
 
 const middleware1 = (req, res, next) => {
   console.log('Entro al middleware1');
-  if(true) {
-    next('router');
-  }
-  else {
-    next();
-  }
+  next();
 };
 
 const middleware2 = (req, res, next) => {
@@ -39,7 +34,10 @@ const request = () => {
   })
 };
 
-router.get('/foo', (req, res, next) => {
+
+
+app.use(middleware1, middleware2, middleware3);
+app.get('/foo', (req, res, next) => {
   console.log('Entro a foo');
   request().then((data) => {
     data.version = res.locals.version;
@@ -47,15 +45,10 @@ router.get('/foo', (req, res, next) => {
   }).catch(next);
 });
 
-router.get('/bar', (req, res) => {
+app.get('/bar', (req, res) => {
   console.log('Entro a bar');
   res.send('Entramos a bar!');
 });
-
-app.use(middleware1);
-app.use(middleware2);
-app.use(middleware3);
-app.use(router);
 app.use(middlewareError);
 
 app.listen('3000', 'localhost', () => {
