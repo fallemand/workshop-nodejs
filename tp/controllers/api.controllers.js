@@ -1,16 +1,27 @@
+const meliService = require('../services/meli.service');
+
 class apiControllers {
 
-    static search(req, res, next){
-        res.json({ 'message': `Entro a /api/search - Query = ${JSON.stringify(req.query)}` })
+    static search(req, res, next) {
+        meliService.search(req.query.q).then((results) => {
+            results.author = res.locals.author;
+            res.send(results);
+        }).catch(next);
     }
 
-    static suggest(req, res, next){
-        res.json({ 'message': `Entro a /api/suggest - Query = ${JSON.stringify(req.query)}` })
+    static suggest(req, res, next) {
+        meliService.suggest(req.query.q).then((results) => {
+            results.author = res.locals.author;
+            res.send(results);
+        }).catch(next);
     }
 
-    static items(req, res, next){
-        res.json({ 'message': `Entro a /api/items - id = ${req.params.id}` })
-    }   
+    static items(req, res, next) {
+        meliService.item(req.params.id).then((results) => {
+            results.author = res.locals.author;
+            res.send(results);
+        }).catch(next);
+    }
 }
 
 module.exports = apiControllers;
