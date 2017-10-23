@@ -6,9 +6,9 @@ class ApiController {
         const site = req.params.site;
         const q = req.query.q;
 
-        meliService.searchWithPromise(q, site).then(result => {
+        meliService.searchWithPromise(q, site).then((result) => {
             res.send(result);
-        }).catch( err => {
+        }).catch( (err) => {
             res.status(500).send(err)
         });
     };
@@ -17,9 +17,9 @@ class ApiController {
         const site = req.params.site;
         const q = req.query.q;
 
-        meliService.suggestWithPromise(q, site).then(result => {
+        meliService.suggestWithPromise(q, site).then((result) => {
             res.send(result);
-        }).catch( err => {
+        }).catch( (err) => {
             res.status(500).send(err)
         });
     };
@@ -27,9 +27,9 @@ class ApiController {
     static items(req, res) {
         const itemId = req.params.id;
 
-        meliService.itemWithPromise(itemId).then(result => {
+        meliService.itemWithPromise(itemId).then((result) => {
             res.send(result);
-        }).catch( err => {
+        }).catch( (err) => {
             res.status(500).send(err)
         });
     };
