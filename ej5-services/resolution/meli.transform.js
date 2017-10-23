@@ -10,8 +10,8 @@ exports.item = (item) => {
     sold_quantity: item.sold_quantity,
     free_shipping: item.shipping.free_shipping,
     picture: item.pictures[0] && item.pictures[0].url,
-    description: item.description,
     category: item.category,
+    description: item.description,
   }
 };
 
