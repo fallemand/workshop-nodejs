@@ -43,12 +43,15 @@
     "eslint-plugin-import": "1.15.0",
     "imagemin-cli": "^3.0.0",
     "node-sass": "^4.5.3",
+    "nodemon": "^1.12.1",
     "npm-run-all": "^2.1.1",
     "onchange": "^2.4.0",
     "postcss-cli": "^2.5.2",
     "rimraf": "^2.5.4",
     "sass-lint": "^1.10.2",
-    "uglify-js": "^2.6.2",
-    "nodemon": "^1.11.0"
+    "uglify-js": "^2.6.2"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
   }
 }

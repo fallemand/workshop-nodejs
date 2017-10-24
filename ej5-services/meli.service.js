@@ -24,8 +24,8 @@ class MeliService {
         req(itemOptions),
         req(descriptionOptions)
       ]).then((data) => {
-
-        result = data[0];
+        result = {};
+        result.item = data[0];
         result.description = data[1];
 
         const categoryOptions = {
@@ -55,7 +55,7 @@ class MeliService {
         method: 'GET',
         headers: {'Content-type': 'application/json'},
         hostname: 'api.mercadolibre.com',
-        path: `/sites/MLA/search?q=${query}`
+        path: `/sites/MLA/search?q=${escape(query)}&limit=4`
       };
 
       return req(queryOptions);

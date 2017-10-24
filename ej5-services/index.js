@@ -1,16 +1,18 @@
 const meliService = require('./meli.service');
+const meliTransform = require('./meli.transform');
 
 console.log('-------------- ITEM ----------------');
 
 meliService.item('MLA659477272')
   .then((data) => {
-    console.log(data);
+    // console.log(data);
+    console.log(meliTransform.getParsedItem(data.category, data.item, data.description));
 
     console.log('-------------- SEARCH ----------------');
 
-    meliService.search('2312312321')
+    meliService.search('iphone 7')
       .then((data) => {
-        console.log(data);
+        console.log(meliTransform.getParsedSearch(data));
 
         console.log('-------------- SUGGEST ----------------');
 
