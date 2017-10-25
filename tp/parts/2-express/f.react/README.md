@@ -39,11 +39,11 @@ Modificar:
 **Breadcrumb:** 
 ```html
 <ul class="breadcrumb">
-    <li class="breadcrumb__element"><a href="/">Inicio</a></li>
-    <li class="breadcrumb__element">Celulares y Teléfonos</li>
-    <li class="breadcrumb__element">Celulares y Smartphones</li>
-    <li class="breadcrumb__element">iPhone</li>
-    <li class="breadcrumb__element">"iphone 6"</li>
+  <li class="breadcrumb__element"><a href="/">Inicio</a></li>
+  <li class="breadcrumb__element">Celulares y Teléfonos</li>
+  <li class="breadcrumb__element">Celulares y Smartphones</li>
+  <li class="breadcrumb__element">iPhone</li>
+  <li class="breadcrumb__element">"iphone 6"</li>
 </ul>
 ```
 
@@ -130,10 +130,10 @@ Modificar:
 **Index:** 
 ```html
 <div class="search-hero">
-	<img class="seach-hero__image" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png" alt="Buscar">
-	<span class="seach-hero__title">
-		Ingresa en la barra de búsqueda el producto que estas buscando!
-	</span>
+  <img class="seach-hero__image" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png" alt="Buscar">
+  <span class="seach-hero__title">
+    Ingresa en la barra de búsqueda el producto que estas buscando!
+  </span>
 </div>
 ```
 
