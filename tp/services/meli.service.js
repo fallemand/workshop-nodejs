@@ -1,5 +1,4 @@
 const request = require('./requestPromise');
-//const transform = require('./transform');
 
 class MeliService {
 
@@ -67,7 +66,7 @@ class MeliService {
     };
 
     request(options).then((data) => {
-      response(JSON.stringify(data));
+      response(transform.suggest(JSON.stringify(data)));
     }).catch((err) => {
       response(JSON.stringify(err));
     });

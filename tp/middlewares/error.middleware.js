@@ -10,6 +10,6 @@ module.exports.apiError = (err, req, res, next) => {
 
 module.exports.appError = (err, req, res, next) => {
     console.log('Entro al middleware de error de app');
-    //TODO
+    logError(err);
     res.status(500).send(err);
 }

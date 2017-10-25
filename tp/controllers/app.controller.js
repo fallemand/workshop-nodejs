@@ -18,6 +18,18 @@ class AppController {
             res.send(result);
         }).catch(next);
     };
+
+    static test(req, res, next) {
+        res.render('index', {
+            title: 'Titulo!',
+            tasks: [
+                'task1',
+                'task2',
+                'task3'
+            ]
+            //subtitle: 'Subtitulo!'
+        });
+    };
 }
 
 module.exports = AppController;
