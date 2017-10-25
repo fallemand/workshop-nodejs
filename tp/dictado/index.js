@@ -2,6 +2,12 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const router = require('./routers/router');
+const expReact = require('express-react-views');
+
+//React
+app.engine('jsx', expReact.createEngine());
+app.set('views', __dirname + '/views/');
+app.set('view engine', 'jsx');
 
 // Configure Body for post calls
 app.use(bodyParser.urlencoded({ extended: true }));
