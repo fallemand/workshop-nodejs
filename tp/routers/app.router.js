@@ -14,4 +14,6 @@ const appController = require('../controllers/app.controller');
 
   router.get('/items/:id', appController.items);
 
+router.get('/test', appController.test);
+
 module.exports = router;

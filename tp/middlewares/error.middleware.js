@@ -13,6 +13,6 @@ module.exports.apiError = (err, req, res, next) => {
   res.status(err.status || 500).json({err: err});
 };
 
-module.exports.appError = (error, req, res, next) => {
-  //TODO
+module.exports.appError = (err, req, res, next) => {
+  logError(err);
 };

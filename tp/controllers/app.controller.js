@@ -10,6 +10,20 @@ class appController {
   static items(req, res) {
     res.send(`Entró a la app item ${req.params.id}`);
   };
+
+  static test(req, res) {
+    res.render('index', {
+      title: 'Lista de tareas',
+      subtitle: "Recordar hacerlas",
+      showSubtitle: true,
+      tasks: [
+        'Lavar el auto',
+        'Bañar el perro',
+        'Cortar el pasto',
+        'Aprender React'
+      ]
+    });
+  }
 }
 
 module.exports = appController;
