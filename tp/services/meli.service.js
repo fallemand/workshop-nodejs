@@ -1,4 +1,5 @@
 const request = require('./request');
+const meliTransform = require('./meli.transform');
 
 class meliService {
 
@@ -27,19 +28,20 @@ class meliService {
             const requestDescription = request(optionsDescriptionHttps);
             
             Promise.all([requestItem, requestDescription]).then((data) => {
-                const partialData = data;
+                const itemData = data[0];
+                itemData.description = data[1];
                 
                 const optionsCategoriesHttps = {
                     protocol: 'https',
                     method: 'GET',
                     headers: {'Content-type': 'application/json'},
                     hostname: 'api.mercadolibre.com',
-                    path: `/categories/${partialData[0].category_id}`
+                    path: `/categories/${itemData.category_id}`
                 };
 
                 request(optionsCategoriesHttps).then((categoryData) => {
-                    partialData.push(categoryData);
-                    resolve(partialData);
+                    itemData.category = categoryData;
+                    resolve(meliTransform.item(itemData));
                 }).catch((err) => {
                     reject(err);
                 });
@@ -58,7 +60,7 @@ class meliService {
             path: `/sites/MLA/search?q=${query}`
         };
 
-        return request(optionsSearchHttps);
+        return request(optionsSearchHttps, meliTransform.search);
     }
 
     static suggest(query, callback) {
@@ -70,7 +72,7 @@ class meliService {
             path: `/resources/sites/MLA/autosuggest?q=${query}`
         };
 
-        return request(optionsSuggestHttps);
+        return request(optionsSuggestHttps, meliTransform.suggest);
     }
 }
 

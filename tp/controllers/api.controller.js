@@ -26,7 +26,7 @@ class apiController {
 
         meliService.item(itemId).then((item) => {
             console.log('este es el autor', res.locals.author);
-            item[0].author = res.locals.author; // remover [0] cuando esté el transform
+            item.author = res.locals.author;
             res.json(item);
         }).catch(next);
     }
