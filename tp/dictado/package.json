@@ -1,5 +1,5 @@
 {
-  "name": "integrador2",
+  "name": "node-workshop",
   "version": "1.0.0",
   "description": "Integrated exercise for the Node.js Workshop",
   "main": "index.js",
@@ -7,13 +7,13 @@
     "clean": "rimraf assets/dist/**/*",
     "autoprefixer": "postcss -u autoprefixer -r assets/dist/styles/*",
     "scss": "node-sass --output-style compressed -o assets/dist/styles assets/src/styles",
-    "lint-scripts": "./node_modules/.bin/eslint -c .eslintrc assets/src/scripts || true",
-    "lint-styles": "sass-lint assets/src/styles/*.scss -v -q",
+    "lint:scripts": "./node_modules/.bin/eslint -c .eslintrc assets/src/scripts || true",
+    "lint:styles": "sass-lint assets/src/styles/*.scss -v -q",
     "uglify": "uglifyjs assets/src/scripts/*.js -b -o assets/dist/scripts/app.js && uglifyjs assets/src/scripts/*.js -m -c -o assets/dist/scripts/app.min.js",
     "imagemin": "imagemin assets/src/images/* -o assets/dist/images",
     "start": "./node_modules/.bin/nodemon index.js",
-    "build:styles": "npm run lint-styles && npm run scss && npm run autoprefixer",
-    "build:scripts": "npm run lint-scripts && npm run uglify",
+    "build:styles": "npm run lint:styles && npm run scss && npm run autoprefixer",
+    "build:scripts": "npm run lint:scripts && npm run uglify",
     "build:images": "npm run imagemin",
     "build": "npm run clean && npm run build:styles && npm run build:scripts && npm run build:images",
     "watch:styles": "onchange \"assets/src/styles\" -- npm run build:styles",
@@ -42,5 +42,8 @@
   },
   "optionalDependencies": {
     "fsevents": "*"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
   }
 }
