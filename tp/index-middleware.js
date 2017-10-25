@@ -17,10 +17,10 @@ const middleware3 = (req, res, next) => {
   next();
 };
 
-const middlewareError = (err, req, res, next) => {
+const middlewareError = (err, req, res) => {
   console.log('entro middleware error');
   console.log(err);
-  res.send('Ocurrion un error: ' + err);
+  res.send('Ocurrió un error: ' + err);
 };
 
 const request = () => {

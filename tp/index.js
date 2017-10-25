@@ -2,10 +2,16 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const router = require('./routers/router');
+const expReact = require('express-react-views');
 
 // Configure Body for post calls
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+// Configure React views
+app.engine('jsx', expReact.createEngine());
+app.set('views', __dirname + '/views/');
+app.set('view engine', 'jsx');
 
 // Define Routes
 router.init(app, __dirname);
