@@ -11,4 +11,7 @@ router.get('/search', appController.search);
 // 5: /app/items/MLA621827059
 router.get('/items/:item', appController.items);
 
+// Test react view
+router.get('/test', appController.test);
+
 module.exports = router;

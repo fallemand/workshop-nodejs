@@ -11,3 +11,7 @@ module.exports.apiError = (err, req, res, next) => {
   }
   res.status(err.status || 500).json({error: err.toString()});
 };
+
+module.exports.appError = (err, req, res, next) => {
+  logError(err);
+};
