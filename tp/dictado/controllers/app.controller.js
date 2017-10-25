@@ -14,3 +14,7 @@ module.exports.test = (req, res) => {
     enumProp: 'default'
   });
 };
+
+module.exports.index = (req, res) => {
+  res.render('index');
+};
