@@ -1,14 +1,22 @@
+const service = require('../services/meli.service');
+
 class ApiController {
-  static search(req, res) {
-    res.json({ data: `search ${req.query.q}` });
+  static search(req, res, next) {
+    service.search(req.query.q)
+      .then((data) => res.json({ data, author: res.locals.author }))
+      .catch(next);
   }
 
-  static suggest(req, res) {
-    res.json({ data: `suggest ${req.query.q}` });
+  static suggest(req, res, next) {
+    service.suggest(req.query.q)
+      .then((data) => res.json({ data, author: res.locals.author }))
+      .catch(next);
   }
 
-  static items(req, res) {
-    res.json({ data: `item ${req.params.id}` });
+  static items(req, res, next) {
+    service.item(req.params.id)
+      .then((data) => res.json({ data, author: res.locals.author }))
+      .catch(next);
   }
 }
 
