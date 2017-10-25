@@ -25,22 +25,26 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "express": "4.16.2"
+    "express": "4.16.2",
+    "express-react-views": "0.10.4",
+    "prop-types": "15.6.0",
+    "react": "16.0.0",
+    "react-dom": "16.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^6.3.6",
+    "autoprefixer": "6.3.6",
     "babel-eslint": "6.1.2",
     "eslint": "3.5.0",
     "eslint-config-airbnb-base": "7.1.0",
     "eslint-plugin-import": "1.15.0",
-    "imagemin-cli": "^3.0.0",
-    "node-sass": "^4.5.3",
-    "npm-run-all": "^2.1.1",
-    "onchange": "^2.4.0",
-    "postcss-cli": "^2.5.2",
-    "rimraf": "^2.5.4",
-    "sass-lint": "^1.10.2",
-    "uglify-js": "^2.6.2",
-    "nodemon": "^1.11.0"
+    "imagemin-cli": "3.0.0",
+    "node-sass": "4.5.3",
+    "npm-run-all": "2.1.1",
+    "onchange": "2.4.0",
+    "postcss-cli": "2.5.2",
+    "rimraf": "2.5.4",
+    "sass-lint": "1.10.2",
+    "uglify-js": "2.6.2",
+    "nodemon": "1.11.0"
   }
 }
