@@ -1,6 +1,6 @@
 const React = require('react');
 const SearchItem = require('./components/SearchItem');
-const Layout = require('./Layout');
+const Layout = require('./components/Layout');
 
 class Search extends React.Component {
   searchItems(data) {

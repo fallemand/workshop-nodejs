@@ -1,6 +1,6 @@
 const React = require('react');
-const Header = require('./components/Header');
-const Breadcrumb = require('./components/Breadcrumb');
+const Header = require('./Header');
+const Breadcrumb = require('./Breadcrumb');
 
 class Layout extends React.Component {
   render() {
