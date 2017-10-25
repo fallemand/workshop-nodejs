@@ -7,13 +7,8 @@ class AppController {
     res.send(`App item: ${req.params.item}`);
   }
 
-  test(req, res) {
-    res.render('index', {
-      title: 'Lista de tareas',
-      subtitle: 'Acordate de hacerlas',
-      sshowSubtitle: true,
-      tasks: ['task 1', 'task 2', 'task 3'],
-    });
+  index(req, res) {
+    res.render('index');
   }
 }
 
