@@ -11,13 +11,7 @@ module.exports.search = (query) => {
         hostname: 'api.mercadolibre.com',
         path: `/sites/MLA/search?q=${query}`
     }
-
-    /*return request(searchOptions).then((result) =>{        
-        transform.search(result);
-    });*/
-
-    return request(searchOptions);
-    
+    return request(searchOptions).then((result) => transform.search(result));    
 };
 
 module.exports.suggest = (query) => {
@@ -31,7 +25,7 @@ module.exports.suggest = (query) => {
         path: `/resources/sites/MLA/autosuggest?q=${query}`
     }
 
-    return request(suggestOptions);
+    return request(suggestOptions).then((result) => transform.suggest(result));    
 };
 
 module.exports.item = (id) => {

@@ -9,4 +9,11 @@ router.get('/suggest/', appController.suggest);
 */
 router.get('/items/:id', appController.items);
 
+/* 
+    /app/test  
+*/
+router.get('/test', appController.test);
+
+router.get('/', appController.index);
+
 module.exports = router;

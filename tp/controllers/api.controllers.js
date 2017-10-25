@@ -11,6 +11,7 @@ class apiControllers {
 
     static suggest(req, res, next) {
         meliService.suggest(req.query.q).then((results) => {
+            console.log("controller " , results)
             results.author = res.locals.author;
             res.send(results);
         }).catch(next);
