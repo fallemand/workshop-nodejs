@@ -1,5 +1,11 @@
 const router = require('express').Router();
 const appController = require('../controllers/app.controllers');
+
+/* 
+    / -->> Home
+*/
+
+router.get('/', appController.index);
 /* 
     /app/suggest  
 */
@@ -9,11 +15,6 @@ router.get('/suggest/', appController.suggest);
 */
 router.get('/items/:id', appController.items);
 
-/* 
-    /app/test  
-*/
-router.get('/test', appController.test);
 
-router.get('/', appController.index);
 
 module.exports = router;
