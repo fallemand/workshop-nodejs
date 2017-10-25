@@ -5,10 +5,7 @@ module.exports.items = (req, res) => {
 };
 
 module.exports.itemsPost = (req, res) => {
-  res.json({
-    message: `Aca estamos en el post!!!`,
-    body: req.body
-  });
+  res.json({message: `Aca estamos en el post!!!`});
 };
 
 module.exports.search = (req, res) => {
