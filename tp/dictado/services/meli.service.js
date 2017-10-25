@@ -1,55 +1,66 @@
-const request = require('./requestPromise');
-const  fs = require('fs');
+const request = require('./request.service');
+const meliTransform = require('./meli.transform');
 
-module.exports.item = (id) => {
-  const item = {
-    protocol:'https',
-    method: 'GET',
-    headers: {'Content-type': 'aplication/json'},
-    hostname: 'api.mercadolibre.com',
-    path: `/items/${id}`
-  };
+const options = {
+  method: 'GET',
+  headers: { 'Content-type': 'application/json' },
+};
 
-  const desc = {
-    protocol:'https',
-    method: 'GET',
-    headers: {'Content-type': 'aplication/json'},
-    hostname: 'api.mercadolibre.com',
-    path: `/items/${id}/description`
-  };
-  return new Promise((resolve,reject) => {
-    Promise.all([request(item), request(desc)]).then((data) => {
-      request({
-        protocol:'https',
-        method: 'GET',
-        headers: {'Content-type': 'aplication/json'},
-        hostname: 'api.mercadolibre.com',
-        path: `/categories/${data[0].category_id}`
+exports.itemSync = (id) => {
+  options.hostname = 'api.mercadolibre.com';
+  options.path = `/items/${id}`;
+  return new Promise((resolve, reject) => {
+    request(options).then((item) => {
+      options.path = `/items/${id}/description`;
+      request(options).then((response) => {
+        item.description = response.text;
+        options.path = `/categories/${item.category_id}`;
+        request(options).then((category) => {
+          item.category = category.path_from_root;
+          resolve(meliTransform.item(item));
+        });
       });
     }).catch((err) => {
       reject(err);
     });
-  }).catch((err) => {
-    reject(err);
   });
 };
 
-module.exports.search = (query) => {
-  return request({
-    protocol:'https',
-    method: 'GET',
-    headers: {'Content-type': 'aplication/json'},
-    hostname: 'api.mercadolibre.com',
-    path: `/sites/MLA/search?q=${query}`
+exports.item = (id) => {
+  options.hostname = 'api.mercadolibre.com';
+  options.path = `/items/${id}`;
+  const promiseItem = request(options);
+
+  options.path = `/items/${id}/description`;
+  const promiseItemDescription = request(options);
+
+  return new Promise((resolve, reject) => {
+    Promise.all([promiseItem, promiseItemDescription]).then((data) => {
+      const item = data[0];
+      const itemDescription = data[1].text || data[1].plain_text;
+      item.description = itemDescription;
+
+      options.path = `/categories/${item.category_id}`;
+      request(options).then((category) => {
+        item.category = category.path_from_root;
+        resolve(meliTransform.item(item));
+      }).catch((err) => {
+        reject(err);
+      });
+    }).catch((err) => {
+      reject(err);
+    });
   });
 };
 
-module.exports.suggest = (query) => {
-  return request({
-    protocol:'http',
-    method: 'GET',
-    headers: {'Content-type': 'aplication/json'},
-    hostname: 'http2.mlstatic.com',
-    path: `/resources/sites/MLA/autosugest?q=${query}`
-  });
+exports.search = (query) => {
+  options.hostname = 'api.mercadolibre.com';
+  options.path = `/sites/MLA/search?limit=6&q=${escape(query)}`;
+  return request(options, meliTransform.search);
+};
+
+exports.suggest = (query) => {
+  options.hostname = 'http2.mlstatic.com';
+  options.path = `/resources/sites/MLA/autosuggest?q=${escape(query)}&v=1`;
+  return request(options, meliTransform.suggest);
 };
