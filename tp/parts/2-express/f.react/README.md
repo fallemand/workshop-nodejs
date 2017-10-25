@@ -123,7 +123,7 @@ Modificar:
 <div class="error">
   <img class="error__img" src="https://www.mercadolibre.com/org-img/mkt/error/img/herramienta_es.jpg" alt="Destornillador">
   <h1 class="error__title">Detalle</h1>
-  <div class="error__detail">"{\"error\":\"{\\\"message\\\":\\\"Item with id asdasdasd not found.\\\",\\\"error\\\":\\\"not_found\\\",\\\"status\\\":404,\\\"cause\\\":[]}\"}"</div>
+  <div class="error__detail">{"error":"{"message":"Item with id asdasdasd not found.","error":"not_found","status":404,"cause":[]}"}"</div>
 </div>
 ```
 
