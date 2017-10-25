@@ -1,19 +1,30 @@
+const meliService = require('../services/meli.service');
 
 class ApiController {
   root (req, res) {
     res.json({message: 'api root'});
   }
 
-  items (req, res) {
-    res.json(req.params);
+  items (req, res, next) {
+    console.log(req.params.id);
+    meliService.item(req.params.id).then( (data) => {
+      data.author = res.locals.author;
+      res.json(data);
+    }).catch(next);
   }
 
-  search (req, res) {
-    res.json(req.query);
+  search (req, res, next) {
+    meliService.search(req.query.q).then((data) => {
+      data.author = res.locals.author;
+      res.json(data);
+    }).catch(next);
   }
 
-  suggest (req, res) {
-    res.json(req.query);
+  suggest (req, res, next) {
+    meliService.search(req.query.q).then( (data) => {
+      data.author = res.locals.author;
+      res.json(data);
+    }).catch(next);
   }
 }
 
