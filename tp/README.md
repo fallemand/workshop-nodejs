@@ -10,7 +10,7 @@ En cada parte vamos a ir agregando código que se integre al trabajo final.
     * [Routes](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/a.server_b.routes#b-router)
     * [Controllers](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/c.controllers_d.middlewares#c-controllers)
     * [Middlewares](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/c.controllers_d.middlewares#d-middleware)
-    * [Services](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/e-services)
+    * [Services](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/e.services)
     * [React](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/f.react)
 - [Mocks](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/3-mocks) 
 - [Environments](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/4-environments) 
