@@ -17,5 +17,5 @@ En cada parte vamos a ir agregando código que se integre al trabajo final.
 - [ES6 Babel Webpack](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/5-webpack) 
 - [Testing](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/6-testing) 
     * [Unitarios](https://github.com/fallemand/workshop-nodejs/blob/master/tp/parts/6-testing#a-tests-unitarios-mocha)
-    * [Funcionales](https://github.com/fallemand/workshop-nodejs/blob/master/tp//parts/6-testing#b-tests-funcionales-nightwatchjs)
+    * [Funcionales](https://github.com/fallemand/workshop-nodejs/blob/master/tp/parts/6-testing#b-tests-funcionales-nightwatchjs)
 - [Deploy Cloud](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/7-cloud) 
