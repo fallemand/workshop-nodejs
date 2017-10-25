@@ -1,4 +1,5 @@
 const request = require('./request');
+const meliTransform = require('./meli.transform');
 
 class meliService {
 
@@ -39,7 +40,8 @@ class meliService {
 
                 request(optionsCategoriesHttps).then((categoryData) => {
                     partialData.push(categoryData);
-                    resolve(partialData);
+
+                    resolve(meliTransform.item(partialData));
                 }).catch((err) => {
                     reject(err);
                 });
@@ -58,7 +60,7 @@ class meliService {
             path: `/sites/MLA/search?q=${query}`
         };
 
-        return request(optionsSearchHttps);
+        return request(optionsSearchHttps, meliTransform.search);
     }
 
     static suggest(query, callback) {
@@ -70,7 +72,7 @@ class meliService {
             path: `/resources/sites/MLA/autosuggest?q=${query}`
         };
 
-        return request(optionsSuggestHttps);
+        return request(optionsSuggestHttps, meliTransform.suggest);
     }
 }
 
