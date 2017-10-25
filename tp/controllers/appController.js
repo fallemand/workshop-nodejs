@@ -10,6 +10,18 @@ class AppController {
   search (req, res) {
     res.send(req.query);
   }
+
+  test (req, res) {
+    res.render('index', {
+      title: "Lista de tareas",
+      subtitle: "Acordate de hacerlas",
+      tasks: [
+        "Lavar la ropa",
+        "Lavar los platos",
+        "Bañarse"
+      ]
+    });
+  }
 }
 
 module.exports = new AppController ();

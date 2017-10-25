@@ -3,5 +3,5 @@ module.exports.apiError = (err, req, res, next) => {
 };
 
 module.exports.appError = (err, req ,res, next) => {
-  //TODO
+  console.error(err);
 };
