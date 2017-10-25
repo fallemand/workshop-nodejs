@@ -61,9 +61,8 @@ module.exports.item = (id) => {
             options.protocol = 'https';
             options.path = `/categories/${item.category_id}`
             request(options).then((category) => {
-                itemFull.category = category
-                resolve(itemFull);
-                //resolve(transform.item(itemFull)); //validar los datos del VIP
+                itemFull.category = category                
+                resolve(transform.item(itemFull));
 
             }).catch((err) => {
                 reject(err);

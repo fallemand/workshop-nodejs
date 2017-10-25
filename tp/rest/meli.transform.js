@@ -1,5 +1,5 @@
 module.exports.search = (search) => {
-    console.log(search)
+
     return {
         query: search.query,
         paging: search.paging,
@@ -19,16 +19,14 @@ module.exports.search = (search) => {
 };
 
 module.exports.suggest = (suggest) => {
-    console.log("transform" . suggest)
+
     return {
         query: suggest.q,
-        results : suggest.suggested_queries
+        results: suggest.suggested_queries
     }
 };
 
 module.exports.item = (result) => {
-
-    console.log(result)
 
     return {
         id: result.item.id,
@@ -40,9 +38,9 @@ module.exports.item = (result) => {
         condition: result.item.condition,
         sold_quantity: result.item.sold_quantity,
         free_shipping: result.item.shipping.shipping,
-        //picture: result.item.,
-        category: [],
-        description: "<p>...</p>"
-      }
+        picture: result.item.pictures[0],
+        category: result.category,
+        description: result.description
+    }
 
 };
