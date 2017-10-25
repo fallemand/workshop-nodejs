@@ -1,5 +1,11 @@
 const app = require('express')();
 const router = require('./routers/main.router');
+const reactViews = require('express-react-views');
+
+// Configure React views
+app.engine('jsx', reactViews.createEngine());
+app.set('views', __dirname + '/views/');
+app.set('view engine', 'jsx');
 
 /**
  * Router
