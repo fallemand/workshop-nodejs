@@ -1,14 +1,38 @@
+const meliService = require('../services/meli.service');
+const Transformer = require('../services/meli.transform');
+
 class ApiController {
-  search(req, res) {
-    res.send(`Search endpoint: ${req.query.q}`);
+  search(req, res, next) {
+    meliService
+      .search(req.query.q)
+      .then((data) => {
+        const parsedData = Transformer.search(data);
+        parsedData.author = res.locals.author;
+        res.send(parsedData);
+      })
+      .catch(next);
   }
 
-  suggest(req, res) {
-    res.send(`Suggest endpoint: ${req.query.q}`);
+  suggest(req, res, next) {
+    meliService
+      .suggest(req.query.q)
+      .then((data) => {
+        const parsedData = Transformer.suggest(data);
+        parsedData.author = res.locals.author;
+        res.send(parsedData);
+      })
+      .catch(next);
   }
 
-  items(req, res) {
-    res.send(`Item endpoint: ${req.params.item}`);
+  items(req, res, next) {
+    meliService
+      .item(req.params.item)
+      .then((data) => {
+        const parsedData = Transformer.item(data);
+        parsedData.author = res.locals.author;
+        res.send(parsedData);
+      })
+      .catch(next);
   }
 
   postItem(req, res) {
