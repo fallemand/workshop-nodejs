@@ -15,5 +15,6 @@ module.exports.apiError = (err, req, res, next) => {
 };
 
 module.exports.appError = (err, req, res, next) => {
-  //TODO
+  logError(err);
+  res.send(err);
 };
