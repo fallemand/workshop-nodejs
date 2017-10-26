@@ -7,4 +7,6 @@ router.get('/items/:id', appController.items);
 
 router.get('/test', appController.test);
 
+router.get('/index', appController.index);
+
 module.exports = router;

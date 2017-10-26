@@ -1,7 +1,7 @@
 const React = require('React');
 const PropTypes = require('prop-types');
 
-class Layout extends React.Component {
+class LayoutEmi extends React.Component {
     render() {
         return (
             <html>
@@ -19,7 +19,7 @@ class Layout extends React.Component {
 }
 
 // Valores por defecto
-Layout.defaultProps = {
+LayoutEmi.defaultProps = {
     title: 'Titulo por defecto',
     subtitle: 'Subtitulo por defecto',
     showSubtitle: true,
@@ -27,11 +27,11 @@ Layout.defaultProps = {
 }
 
 // Tipos de los valores
-Layout.propTypes = {
+LayoutEmi.propTypes = {
     title: PropTypes.string,
     subtitle: PropTypes.string,
     showTitle: PropTypes.bool,
     showSubtitle: PropTypes.bool
 }
 
-module.exports = Layout;
+module.exports = LayoutEmi;

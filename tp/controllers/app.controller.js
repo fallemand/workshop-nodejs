@@ -18,9 +18,9 @@ class AppController {
             res.send(result);
         }).catch(next);
     };
-
+    
     static test(req, res, next) {
-        res.render('index', {
+        res.render('IndexEmi', {
             title: 'Titulo!',
             tasks: [
                 'task1',
@@ -29,6 +29,10 @@ class AppController {
             ]
             //subtitle: 'Subtitulo!'
         });
+    };
+        
+    static index(req, res, next) {
+        res.render('index', {breadcrumb: ["Bre 1", "Bre 2", "Bre 3"]});
     };
 }
 
