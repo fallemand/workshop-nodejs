@@ -19,7 +19,7 @@ module.exports.appErrors = (err, req, res, next) => {
   if (err instanceof Error) {
     err = err.toString();
   }
-  res.render('error', {
+  res.render('Error', {
     error: JSON.stringify(err),
   });
 };

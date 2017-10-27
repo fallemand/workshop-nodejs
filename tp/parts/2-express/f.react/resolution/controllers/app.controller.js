@@ -3,7 +3,7 @@ const request = require('../services/request.service');
 exports.search = (req, res, next) => {
   const options = getOptions(`/api/search?q=${escape(req.query.q)}`);
   request(options).then(data => {
-    res.render('search', data);
+    res.render('Search', data);
   })
     .catch(next);
 };
@@ -11,7 +11,7 @@ exports.search = (req, res, next) => {
 exports.items = (req, res, next) => {
   const options = getOptions('/api/items/' + req.params.id);
   request(options).then(item => {
-    res.render('item', item);
+    res.render('Item', item);
   })
     .catch(next);
 };

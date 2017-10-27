@@ -17,6 +17,6 @@ exports.init = function (app, basePath) {
 
   //Set default url
   app.use('/*', function (req, res, next) {
-    res.render('index');
+    res.render('Index');
   });
 };
