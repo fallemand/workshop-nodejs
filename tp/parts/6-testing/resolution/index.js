@@ -1,21 +1,15 @@
 const express = require('express');
 const app = express();
-const exphbs = require('express-handlebars');
 const router = require('./routers/router');
+const expReact = require('express-react-views');
+
+//React
+app.engine('jsx', expReact.createEngine());
+app.set('views', __dirname + '/views/');
+app.set('view engine', 'jsx');
 
 //Define al routes
 router.init(app, __dirname);
-
-//Handlebars
-app.engine('.hbs', exphbs({
-  defaultLayout: 'main',
-  extname: '.hbs',
-  layoutsDir: 'views/layouts/',
-  partialsDir: 'views/partials/',
-  helpers: require('./views/helpers')
-}));
-app.set('views', 'views/pages/');
-app.set('view engine', '.hbs');
 
 //Use mocks
 if (process.env.NODE_ENV !== 'production') {

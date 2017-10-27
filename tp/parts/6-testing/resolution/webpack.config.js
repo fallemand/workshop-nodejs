@@ -1,10 +1,9 @@
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    "main": './assets/src/scripts/main.js',
-    "main.min": './assets/src/scripts/main.js'
+    "header": './assets/src/scripts/header.js'
   },
   output: {
     path: path.resolve(__dirname, './assets/dist/scripts'),
@@ -12,21 +11,20 @@ module.exports = {
   },
   module: {
     loaders: [{
-      test: /\.js$/,
+      exclude: /node_modules/,
       loader: 'babel-loader',
       query: {
-        presets: ['es2015']
+        presets: ['es2015', 'react']
       }
-    },
-      {
-        test: /\.hbs$/,
-        loader: 'handlebars-loader'
-      }]
+    }]
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
-      include: /\.min\.js$/,
-      minimize: true
+      minimize: true,
+      sourceMap: true
     })
   ],
   stats: {

@@ -1,15 +1,25 @@
-//Log error function
+// Log error function
 const logError = (err) => {
   console.error(err);
-}
+};
 
-exports.apiErrors = (err, req, res, next) => {
+module.exports.apiErrors = (err, req, res, next) => {
   logError(err);
-  res.status(err.status || 500).json({error: err});
-}
+  if (err instanceof Error) {
+    err = {
+      status: 500,
+      message: err.toString()
+    };
+  }
+  res.status(err.status || 500).json(err);
+};
 
-exports.appErrors = (err, req, res, next) => {
+module.exports.appErrors = (err, req, res, next) => {
   logError(err);
-  res.render('error', {message: JSON.stringify(err, null, 4)});
-}
-
+  if (err instanceof Error) {
+    err = err.toString();
+  }
+  res.render('error', {
+    error: JSON.stringify(err),
+  });
+};

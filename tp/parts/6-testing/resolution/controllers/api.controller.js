@@ -6,9 +6,8 @@ exports.search = (req, res, next) => {
     .then(data => {
       data.author = res.locals.author;
       res.json(data);
-    })
-    .catch(next);
-}
+    }).catch(next);
+};
 
 exports.items = (req, res, next) => {
   const id = req.params.id;
@@ -16,9 +15,8 @@ exports.items = (req, res, next) => {
     .then(item => {
       item.author = res.locals.author;
       res.json(item);
-    })
-    .catch(next);
-}
+    }).catch(next);
+};
 
 exports.suggest = (req, res, next) => {
   const query = req.query.q;
@@ -26,6 +24,5 @@ exports.suggest = (req, res, next) => {
     .then(results => {
       results.author = res.locals.author;
       res.json(results);
-    })
-    .catch(next);
-}
+    }).catch(next);
+};

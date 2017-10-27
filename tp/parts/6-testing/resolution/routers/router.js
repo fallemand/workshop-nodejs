@@ -19,4 +19,4 @@ exports.init = function (app, basePath) {
   app.use('/*', function (req, res, next) {
     res.render('index');
   });
-}
+};
