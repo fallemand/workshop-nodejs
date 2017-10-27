@@ -9,11 +9,10 @@
     "scss": "node-sass --output-style compressed -o assets/dist/styles assets/src/styles",
     "lint:scripts": "./node_modules/.bin/eslint -c .eslintrc assets/src/scripts || true",
     "lint:styles": "sass-lint assets/src/styles/*.scss -v -q",
-    "uglify": "uglifyjs assets/src/scripts/*.js -b -o assets/dist/scripts/app.js && uglifyjs assets/src/scripts/*.js -m -c -o assets/dist/scripts/app.min.js",
     "webpack": "webpack",
     "imagemin": "imagemin assets/src/images/* -o assets/dist/images",
     "start": "NODE_ENV=production node index.js",
-    "start-dev": "NODE_ENV=development ./node_modules/.bin/nodemon index.js",
+    "start:dev": "NODE_ENV=development ./node_modules/.bin/nodemon index.js",
     "build:styles": "npm run lint:styles && npm run scss && npm run autoprefixer",
     "build:scripts": "npm run lint:scripts && npm run webpack",
     "build:images": "npm run imagemin",
@@ -32,10 +31,7 @@
     "eslint": "3.5.0",
     "eslint-config-airbnb-base": "7.1.0",
     "eslint-plugin-import": "1.15.0",
-    "handlebars": "^4.0.10",
-    "handlebars-loader": "^1.5.0",
     "imagemin-cli": "^3.0.0",
-    "nock": "^9.0.14",
     "node-sass": "^4.5.3",
     "nodemon": "^1.11.0",
     "npm-run-all": "^2.1.1",
@@ -44,12 +40,23 @@
     "rimraf": "^2.5.4",
     "sass-lint": "^1.10.2",
     "uglify-js": "^2.6.2",
-    "webpack": "^3.5.5"
+    "nock": "^9.0.14",
+    "webpack": "^3.5.5",
+    "serialize-javascript": "^1.4.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1"
   },
   "optionalDependencies": {
     "fsevents": "*"
   },
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "express-react-views": "^0.10.4",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "whatwg-fetch": "^2.0.3"
   }
 }

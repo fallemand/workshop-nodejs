@@ -1,6 +1,7 @@
 const React = require('react');
 const Header = require('./Header');
 const Breadcrumb = require('./Breadcrumb');
+const serialize = require('serialize-javascript');
 
 class Layout extends React.Component {
   render() {
@@ -28,6 +29,9 @@ class Layout extends React.Component {
                 </div>
             </main>
             <script src="/assets/dist/scripts/header.js"></script>
+            <script>
+              {`window.__PRELOADED_STATE__ = ${serialize(this.props, { isJSON: true })};`}
+            </script>
         </body>
       </html>
     );
