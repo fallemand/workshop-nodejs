@@ -49,8 +49,8 @@ app.get('/bar', (req, res) => {
 
 app.use(middleware1);
 app.use(middleware2);
-app.use(middleware3);
 app.use(router);
+app.use(middleware3);
 app.use(middlewareError);
 
 app.listen('3000', 'localhost', () => {

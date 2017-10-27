@@ -39,11 +39,11 @@ Modificar:
 **Breadcrumb:** 
 ```html
 <ul class="breadcrumb">
-    <li class="breadcrumb__element"><a href="/">Inicio</a></li>
-    <li class="breadcrumb__element">Celulares y Teléfonos</li>
-    <li class="breadcrumb__element">Celulares y Smartphones</li>
-    <li class="breadcrumb__element">iPhone</li>
-    <li class="breadcrumb__element">"iphone 6"</li>
+  <li class="breadcrumb__element"><a href="/">Inicio</a></li>
+  <li class="breadcrumb__element">Celulares y Teléfonos</li>
+  <li class="breadcrumb__element">Celulares y Smartphones</li>
+  <li class="breadcrumb__element">iPhone</li>
+  <li class="breadcrumb__element">"iphone 6"</li>
 </ul>
 ```
 
@@ -59,6 +59,35 @@ Modificar:
     <div class="header__suggest" data-js="suggest"></div>
   </form>
 </div>
+```
+
+**Layout:** 
+```html
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="cleartype" content="on"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="theme-color" content="#fff059"/>
+    <title>Mercado Libre | FrontEnd Test</title>
+    <link rel="shortcut icon" href="http://ui.mlstatic.com/navigation/1.2.0/mercadolibre/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet"/>
+    <link href="/assets/dist/styles/main.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header role="banner" id="header" class="header">
+      <Header />
+    </header>
+    <main role="main" class="main">
+      <Breadcrumb />
+      <div class="main__content">
+        <!-- Here goes the content -->
+      </div>
+    </main>
+  </body>
+</html>
+
 ```
 
 **SearchItem:** 
@@ -94,17 +123,17 @@ Modificar:
 <div class="error">
   <img class="error__img" src="https://www.mercadolibre.com/org-img/mkt/error/img/herramienta_es.jpg" alt="Destornillador">
   <h1 class="error__title">Detalle</h1>
-  <div class="error__detail">"{\"error\":\"{\\\"message\\\":\\\"Item with id asdasdasd not found.\\\",\\\"error\\\":\\\"not_found\\\",\\\"status\\\":404,\\\"cause\\\":[]}\"}"</div>
+  <div class="error__detail">{"error":"{"message":"Item with id asdasdasd not found.","error":"not_found","status":404,"cause":[]}"}"</div>
 </div>
 ```
 
 **Index:** 
 ```html
 <div class="search-hero">
-	<img class="seach-hero__image" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png" alt="Buscar">
-	<span class="seach-hero__title">
-		Ingresa en la barra de búsqueda el producto que estas buscando!
-	</span>
+  <img class="seach-hero__image" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png" alt="Buscar">
+  <span class="seach-hero__title">
+    Ingresa en la barra de búsqueda el producto que estas buscando!
+  </span>
 </div>
 ```
 

@@ -4,11 +4,12 @@ Se plantea una serie de ejercicios introductorios, y luego se avanza sobre un tr
 Se busca que los asistentes obtengan una compresión completa del stack, por lo que se inicia con una carpeta vacía, y clase a clase se va agregando funcionalidad, hasta lograr un proyecto completo deployado en la nube con una url productiva.  
 El proyecto incluirá módulos, servicios, middlewares, controllers, routers, ES6 en el cliente, mocks, test unitarios y funcionales, buildeo de assets, entre otros.  
 
-[Resultado Final](https://github.com/fallemand/workshop-nodejs/tree/complete/tp/resolution/final)  
-[Resultado Final (React)](https://github.com/fallemand/workshop-nodejs/tree/complete/tp/resolution/final-react)  
+[Resultado Final (React)](https://github.com/fallemand/workshop-nodejs/tree/complete/tp/parts/7-cloud/resolution-react)  
+[Resultado Final (Handlebars)](https://github.com/fallemand/workshop-nodejs/tree/complete/tp/parts/7-cloud/resolution-handlebars)  
 [Demo](https://workshop-node.herokuapp.com/)
 
 ## Requisitos Técnicos
+```NVM + Node 6.11.0```
 - [RESTful Apis](http://www.andrewhavens.com/posts/20/beginners-guide-to-creating-a-rest-api/)  
 - [Javascript Asicronico. Manejo de callbacks. Scopes](https://houssein.me/javascript/2016/05/10/asynchronous-javascript-callbacks.html)  
 - [ECMA 6](http://blog.teamtreehouse.com/get-started-ecmascript-6)  
@@ -41,15 +42,6 @@ El proyecto incluirá módulos, servicios, middlewares, controllers, routers, ES
       - [Unitarios](https://github.com/fallemand/workshop-nodejs/blob/master/tp/parts/6-testing#a-tests-unitarios-mocha)
       - [Funcionales](https://github.com/fallemand/workshop-nodejs/blob/master/tp/parts/6-testing#b-tests-funcionales-nightwatchjs)
   * [Deploy Cloud](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/7-cloud) 
-
-  
-## Configurando el entorno.
-NVM + Node 6.11.0  
-Modulos Sublime sugeridos:   
-- EditorConfig   
-- Sass   
-- Handlebars   
-- NodeJs   
 
 ## Mini intro
 [¿Que es Node?](https://www.netconsulting.es/blog/nodejs/)  
