@@ -30,7 +30,7 @@ class Layout extends React.Component {
       </main>
       <script dangerouslySetInnerHTML={{
         __html:
-          `window.__PRELOADED_STATE__ = ${serialize(this.props, {isJSON: true})};`
+          `window.__PRELOADED_STATE__ = ${serialize({query: this.props.query}, {isJSON: true})};`
       }}/>
       <script src="/assets/dist/scripts/header.js"></script>
       </body>
