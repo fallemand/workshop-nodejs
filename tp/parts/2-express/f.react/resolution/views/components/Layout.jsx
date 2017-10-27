@@ -19,10 +19,10 @@ class Layout extends React.Component {
         </head>
         <body>
             <header role="banner" id="header" className="header">
-              <Header query={this.props.query}/>
+              <Header query={this.props.query} />
             </header>
             <main role="main" className="main">
-                <Breadcrumb {...this.props}/>
+                <Breadcrumb query={this.props.query} category={this.props.category}/>
                 <div className="main__content">
                     {this.props.children}
                 </div>
