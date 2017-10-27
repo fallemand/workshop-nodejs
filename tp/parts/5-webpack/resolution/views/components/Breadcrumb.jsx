@@ -3,7 +3,7 @@ const React = require('react');
 class Breadcrumb extends React.Component {
 
   render() {
-    const { category, query } = this.props;
+    const {category, query} = this.props;
     return (
       <ul className="breadcrumb">
         <li className="breadcrumb__element"><a href="/">Inicio</a></li>

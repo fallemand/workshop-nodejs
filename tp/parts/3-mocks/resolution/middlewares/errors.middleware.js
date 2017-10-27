@@ -5,7 +5,7 @@ const logError = (err) => {
 
 module.exports.apiErrors = (err, req, res, next) => {
   logError(err);
-  if(err instanceof Error) {
+  if (err instanceof Error) {
     err = {
       status: 500,
       message: err.toString()
@@ -16,7 +16,7 @@ module.exports.apiErrors = (err, req, res, next) => {
 
 module.exports.appErrors = (err, req, res, next) => {
   logError(err);
-  if(err instanceof Error) {
+  if (err instanceof Error) {
     err = err.toString();
   }
   res.render('error', {

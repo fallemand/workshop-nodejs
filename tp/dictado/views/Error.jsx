@@ -5,7 +5,7 @@ class Error extends React.Component {
     return (
       <div>
         <h1> Error </h1>
-        <p>{ this.props.error }</p>
+        <p>{this.props.error}</p>
       </div>
     );
   }

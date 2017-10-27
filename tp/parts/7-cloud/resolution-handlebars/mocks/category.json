@@ -5,30 +5,30 @@
   "permalink": null,
   "total_items_in_this_category": 2326,
   "path_from_root": [
-  {
-    "id": "MLA1051",
-    "name": "Celulares y Teléfonos"
-  },
-  {
-    "id": "MLA1055",
-    "name": "Celulares y Smartphones"
-  },
-  {
-    "id": "MLA32089",
-    "name": "iPhone"
-  },
-  {
-    "id": "MLA352540",
-    "name": "iPhone 6"
-  },
-  {
-    "id": "MLA352542",
-    "name": "16GB"
-  }],
+    {
+      "id": "MLA1051",
+      "name": "Celulares y Teléfonos"
+    },
+    {
+      "id": "MLA1055",
+      "name": "Celulares y Smartphones"
+    },
+    {
+      "id": "MLA32089",
+      "name": "iPhone"
+    },
+    {
+      "id": "MLA352540",
+      "name": "iPhone 6"
+    },
+    {
+      "id": "MLA352542",
+      "name": "16GB"
+    }
+  ],
   "children_categories": [],
   "attribute_types": "attributes",
-  "settings":
-  {
+  "settings": {
     "adult_content": false,
     "buying_allowed": true,
     "buying_modes": [

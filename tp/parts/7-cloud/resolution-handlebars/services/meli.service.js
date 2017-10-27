@@ -2,7 +2,7 @@ const request = require('./request.service');
 
 const options = {
   method: 'GET',
-  headers: { 'Content-type': 'application/json' },
+  headers: {'Content-type': 'application/json'},
 };
 
 exports.itemSync = (id) => {

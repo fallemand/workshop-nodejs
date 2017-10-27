@@ -5,10 +5,10 @@ const logError = (err) => {
 
 exports.apiErrors = (err, req, res, next) => {
   logError(err);
-  res.status(err.status || 500).json({ error: err });
+  res.status(err.status || 500).json({error: err});
 };
 
 exports.appErrors = (err, req, res, next) => {
   logError(err);
-  res.render('error', { message: JSON.stringify(err, null, 4) });
+  res.render('error', {message: JSON.stringify(err, null, 4)});
 };

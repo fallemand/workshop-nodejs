@@ -1,7 +1,7 @@
 module.exports = (url, callback, error) => {
   var xhr = new XMLHttpRequest();
   xhr.open("GET", url, true);
-  xhr.onload = function(e) {
+  xhr.onload = function (e) {
     if (xhr.readyState === 4) {
       if (xhr.status === 200) {
         callback(xhr.responseText);
@@ -10,7 +10,7 @@ module.exports = (url, callback, error) => {
       }
     }
   };
-  xhr.onerror = function(e) {
+  xhr.onerror = function (e) {
     error(xhr.statusText);
   };
   xhr.send(null);

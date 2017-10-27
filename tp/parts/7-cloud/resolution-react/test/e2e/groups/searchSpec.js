@@ -10,13 +10,13 @@ function searchCellphone(client, query) {
 
 module.exports = {
 
-  'Should search Iphone': function(client) {
+  'Should search Iphone': function (client) {
     searchCellphone(client, 'iphone')
   },
-  beforeEach: function(client) {
+  beforeEach: function (client) {
     client.url(client.globals.site);
   },
-  after: function(client) {
+  after: function (client) {
     client.end();
   },
 

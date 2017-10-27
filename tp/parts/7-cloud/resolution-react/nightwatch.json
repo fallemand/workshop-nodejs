@@ -1,5 +1,7 @@
 {
-  "src_folders": ["./test/e2e/groups"],
+  "src_folders": [
+    "./test/e2e/groups"
+  ],
   "output_folder": "./test/e2e/reports",
   "globals_path": "./test/e2e/globals.js",
   "page_objects_path": "./test/e2e/pages",
@@ -8,18 +10,16 @@
     "workers": "auto"
   },
   "live_output": false,
-
   "selenium": {
     "start_process": true,
-    "host" : "127.0.0.1",
-    "port" : 4444,
+    "host": "127.0.0.1",
+    "port": 4444,
     "server_path": "./node_modules/selenium-standalone/.selenium/selenium-server/2.53.1-server.jar",
     "log_path": "",
     "cli_args": {
       "webdriver.chrome.driver": "./node_modules/selenium-standalone/.selenium/chromedriver/2.25-x64-chromedriver"
     }
   },
-
   "test_settings": {
     "default": {
       "skip_testcases_on_fail": true,
@@ -33,10 +33,9 @@
       "disable_colors": true,
       "desiredCapabilities": {
         "browserName": "chrome",
-        "javascriptEnabled" : true
+        "javascriptEnabled": true
       }
     },
-
     "xvfb_desktop": {
       "selenium_host": "localhost",
       "selenium_port": 4444,
@@ -49,7 +48,7 @@
       },
       "desiredCapabilities": {
         "browserName": "chrome",
-        "javascriptEnabled" : true,
+        "javascriptEnabled": true,
         "acceptSslCerts": true,
         "chromeOptions": {
           "args": [
@@ -60,7 +59,6 @@
         }
       }
     },
-
     "xvfb_mobile": {
       "selenium_host": "localhost",
       "selenium_port": 4444,
@@ -73,7 +71,7 @@
       },
       "desiredCapabilities": {
         "browserName": "chrome",
-        "javascriptEnabled" : true,
+        "javascriptEnabled": true,
         "acceptSslCerts": true,
         "chromeOptions": {
           "mobileEmulation": {
@@ -89,24 +87,27 @@
       }
     },
     "chrome-remote-desktop": {
-    "skip_testcases_on_fail": false,
-    "launch_url" : "http://localhost",
-    "selenium_host": "ondemand.saucelabs.com",
-    "selenium_port": 80,
-    "username": "e2e_homes_vip",
-    "access_key": "1e7ddf20-7625-4915-a734-db4116b6c8b5",
-    "use_ssl": false,
-    "silent": true,
-    "output": true,
-    "screenshots": {
-      "enabled": false,
-      "path": "./tests/screenshots"
-    },
-    "desiredCapabilities": {
-      "platform": "Windows XP",
-      "browserName": "chrome",
-      "version": "41",
-        "args": ["incognito", "disable-extensions"]
+      "skip_testcases_on_fail": false,
+      "launch_url": "http://localhost",
+      "selenium_host": "ondemand.saucelabs.com",
+      "selenium_port": 80,
+      "username": "e2e_homes_vip",
+      "access_key": "1e7ddf20-7625-4915-a734-db4116b6c8b5",
+      "use_ssl": false,
+      "silent": true,
+      "output": true,
+      "screenshots": {
+        "enabled": false,
+        "path": "./tests/screenshots"
+      },
+      "desiredCapabilities": {
+        "platform": "Windows XP",
+        "browserName": "chrome",
+        "version": "41",
+        "args": [
+          "incognito",
+          "disable-extensions"
+        ]
       }
     }
   }

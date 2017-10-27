@@ -6,7 +6,7 @@ exports.search = (req, res, next) => {
     data.query = req.query.q;
     res.render('search', data);
   })
-  .catch(next);
+    .catch(next);
 };
 
 exports.items = (req, res, next) => {
@@ -14,13 +14,13 @@ exports.items = (req, res, next) => {
   request(options).then((item) => {
     res.render('item', item);
   })
-  .catch(next);
+    .catch(next);
 };
 
 function getOptions(path) {
   return {
     method: 'GET',
-    headers: { 'Content-type': 'application/json' },
+    headers: {'Content-type': 'application/json'},
     hostname: global.address,
     port: global.port,
     protocol: 'http',

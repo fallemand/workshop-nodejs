@@ -8,19 +8,19 @@ router.init(app, __dirname);
 
 //Handlebars
 app.engine('.hbs', exphbs({
-    defaultLayout: 'main',
-    extname: '.hbs',
-    layoutsDir: 'views/layouts/',
-    partialsDir: 'views/partials/',
-    helpers: require('./views/helpers')
+  defaultLayout: 'main',
+  extname: '.hbs',
+  layoutsDir: 'views/layouts/',
+  partialsDir: 'views/partials/',
+  helpers: require('./views/helpers')
 }));
 app.set('views', 'views/pages/');
 app.set('view engine', '.hbs');
 
 //Use mocks
-if(process.env.NODE_ENV !== 'production') {
-    console.info('--- Using Mocks ---');
-    require('./mocks');
+if (process.env.NODE_ENV !== 'production') {
+  console.info('--- Using Mocks ---');
+  require('./mocks');
 }
 
 //Start Application
