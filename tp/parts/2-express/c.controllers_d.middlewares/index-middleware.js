@@ -25,7 +25,7 @@ const middlewareError = (err, req, res, next) => {
 
 const request = () => {
   return new Promise((resolve, reject) => {
-    if(true) {
+    if (true) {
       resolve('Todo joya pa');
     }
     else {

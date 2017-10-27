@@ -11,7 +11,7 @@ class Test extends React.Component {
           {this.props.tasks.map((task) =>
             <div key={task}>{task}</div>
           )}
-          <br />
+          <br/>
         </div>
       </Layout>
     );

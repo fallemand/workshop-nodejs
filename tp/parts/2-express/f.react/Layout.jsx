@@ -3,17 +3,17 @@ const PropTypes = require('prop-types');
 
 class Layout extends React.Component {
   render() {
-    const { title, subtitle, children } = this.props;
+    const {title, subtitle, children} = this.props;
     return (
       <html>
-        <head>
-          <title>{title}</title>
-        </head>
-        <body>
-          <h1>{title}</h1>
-          <h2>{subtitle}</h2>
-          {children}
-        </body>
+      <head>
+        <title>{title}</title>
+      </head>
+      <body>
+      <h1>{title}</h1>
+      <h2>{subtitle}</h2>
+      {children}
+      </body>
       </html>
     );
   }

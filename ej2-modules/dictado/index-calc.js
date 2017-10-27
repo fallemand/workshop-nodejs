@@ -18,7 +18,7 @@ console.log(CalculadoraStatic.dividir(2, 4));
 
 // Without static methods
 const Calculadora = require('./Calculadora');
-const calculadora = new Calculadora(2,4);
+const calculadora = new Calculadora(2, 4);
 
 console.log('------- NORMAL ----------');
 
