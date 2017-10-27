@@ -1,6 +1,8 @@
 // APP Controller
 
 module.exports.items = (req, res) => {
+  // let x = null;
+  // x.bla = 2;
   res.send('Acá vamos a retornar el item: ' + req.params.id);
 };
 
