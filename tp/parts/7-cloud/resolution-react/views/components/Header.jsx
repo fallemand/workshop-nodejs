@@ -13,36 +13,14 @@ class Header extends React.Component {
   handleSearchKeyUp(e) {
     let input = e.target;
     if (input.value.length > 2) {
-      const success = (data) => {
-        this.setState({results: JSON.parse(data).results});
-      };
-      const err = (err) => {
-        console.log(err);
-      };
-      if (input.value.length > 2) {
-        const url = `/api/suggest?q=${input.value}`;
-        this.request(url, success, err);
-      }
+      fetch(`/api/suggest?q=${input.value}`)
+        .then((response) => {
+          response.json().then((response) => {
+            this.setState({results: response.results});
+          });
+        });
     }
   }
-
-  request(url, callback, error) {
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", url, true);
-    xhr.onload = function (e) {
-      if (xhr.readyState === 4) {
-        if (xhr.status === 200) {
-          callback(xhr.responseText);
-        } else {
-          error(xhr.statusText)
-        }
-      }
-    };
-    xhr.onerror = function (e) {
-      error(xhr.statusText);
-    };
-    xhr.send(null);
-  };
 
   render() {
     return (
@@ -61,6 +39,5 @@ class Header extends React.Component {
     );
   }
 }
-
 
 module.exports = Header;

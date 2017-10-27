@@ -8,9 +8,8 @@ const Header = require('../../../views/components/Header');
 const props = window.__PRELOADED_STATE__;
 
 /**
- * i18n
+ * Render Header on browser
  */
-
 ReactDOM.render(
   <Header {...props} />,
   document.getElementById('header'),

@@ -2,19 +2,17 @@ const request = require('../services/request.service');
 
 exports.search = (req, res, next) => {
   const options = getOptions(`/api/search?q=${escape(req.query.q)}`);
-  request(options).then((data) => {
+  request(options).then(data => {
     data.query = req.query.q;
     res.render('search', data);
-  })
-    .catch(next);
+  }).catch(next);
 };
 
 exports.items = (req, res, next) => {
-  const options = getOptions(`/api/items/${req.params.id}`);
-  request(options).then((item) => {
+  const options = getOptions('/api/items/' + req.params.id);
+  request(options).then(item => {
     res.render('item', item);
-  })
-    .catch(next);
+  }).catch(next);
 };
 
 function getOptions(path) {
@@ -24,6 +22,6 @@ function getOptions(path) {
     hostname: global.address,
     port: global.port,
     protocol: 'http',
-    path,
-  };
+    path: path
+  }
 }
