@@ -5,15 +5,15 @@ const router = express.Router();
 //Define API Routes
 router.get('/api/items/:id', (req, res) => {
   const id = req.params.id;
-  res.json({ message: `Acá retornaremos el item: ${id}` })
+  res.json({message: `Acá retornaremos el item: ${id}`})
 });
 router.get('/api/search', (req, res) => {
   const query = req.query.q;
-  res.json({ message: `Acá buscaremos: ${query}` })
+  res.json({message: `Acá buscaremos: ${query}`})
 });
 router.get('/api/suggest', (req, res) => {
   const query = req.query.q;
-  res.json({ message: `Acá sugeriremos: ${query}` })
+  res.json({message: `Acá sugeriremos: ${query}`})
 });
 
 //Define APP Routes
