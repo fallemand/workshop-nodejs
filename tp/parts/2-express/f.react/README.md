@@ -9,7 +9,9 @@ Vamos a configurar react para utilizar en las vistas.
 [react-dom](https://github.com/facebook/react)  
 [express-react-views](https://github.com/reactjs/express-react-views)  
 [prop-types](https://github.com/facebook/prop-types)  
-`npm install react react-dom express-react-views prop-types --save`  
+```
+npm install react react-dom express-react-views prop-types --save
+```  
 
 #### Ejercicio Dictado:  
 -Crearemos un layout.  

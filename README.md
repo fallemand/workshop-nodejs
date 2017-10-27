@@ -46,3 +46,21 @@ El proyecto incluirá módulos, servicios, middlewares, controllers, routers, ES
 ## Mini intro
 [¿Que es Node?](https://www.netconsulting.es/blog/nodejs/)  
 ¿Para que lo usamos en MercadoLibre? [nordic](http://nordic.ml.com/docs)  
+
+## Diagrama de Clases
+Total: 28hs
+
+- **Clase 1:** 2hs: Introducción - Ej 1 - Ej 2
+- **Clase 2:** 2hs: Ej 3 - Ej 4
+- **Clase 3:** 2hs: Ej 5 - [Video Clase](https://www.youtube.com/watch?v=GFYj1PQ1r7s)
+- **Clase 4:** 2hs: TP: Package.json - NPM Scripts - [Video Clase](https://www.youtube.com/watch?v=ttrVe0_C6co)
+- **Clase 5:** 2hs: TP: Express: Server - Routes - Controllers - [Video Clase](https://www.youtube.com/watch?v=i9_lpj574FI)
+- **Clase 6:** 2hs: TP: Express: Middlewares - Servicios - [Video Clase](https://www.youtube.com/watch?v=2MmA-1XyPEU)
+- **Clase 7:** 2hs: TP: Express: React - [Video Clase](https://www.youtube.com/watch?v=eYR4GDV_CnA)
+- **Clase 8:** 2hs: TP: Express: React
+- **Clase 9:** 2hs: TP: Mocks - Environments
+- **Clase 10:** 2hs: TP: Webpack
+- **Clase 11:** 2hs: TP: Testing Unitario
+- **Clase 12:** 2hs: TP: Testing Funcional
+- **Clase 13:** 2hs: TP: Deploy Cloud - Arrancamos Nordic
+- **Clase 14:** 2hs: TP: Nordic - Cierre
