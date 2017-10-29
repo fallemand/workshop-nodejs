@@ -11,7 +11,7 @@ const writeStream = fs.createWriteStream("output.txt")
 readStream.on('data', textChunk => {
   output += textChunk.toString('utf8').replace(vowels, 'i');
   writeStream.write(output);
-  
+
   console.log(output)
 }).on('end', () => {
   console.log('terminé');
