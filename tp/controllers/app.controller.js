@@ -9,7 +9,7 @@ module.exports.search = (req, res) => {
 };
 
 module.exports.test = (req, res) => {
-  res.render('index', {
+  res.render('test', {
     title: 'Mi primera vista en React',
     subtitle: 'Learning...',
     tasks: [
@@ -18,4 +18,11 @@ module.exports.test = (req, res) => {
       'Estudiar Express'
     ]
   }); // Lo provee express y permite laburar con las vistas
+};
+
+
+module.exports.index = (req, res) => {
+  res.render('index', {
+
+  });
 };
