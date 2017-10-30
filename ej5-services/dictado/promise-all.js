@@ -2,7 +2,7 @@
 // ----------------------------------------
 const request1 = () => {
   return new Promise((resolve, reject) => {
-    setTimeout(function() {
+    setTimeout(function () {
       resolve('end p1');
     }, 1000);
   });
@@ -10,7 +10,7 @@ const request1 = () => {
 
 const request2 = () => {
   return new Promise((resolve, reject) => {
-    setTimeout(function() {
+    setTimeout(function () {
       resolve('end p2');
     }, 1200);
   });
@@ -18,7 +18,7 @@ const request2 = () => {
 
 const request3 = () => {
   return new Promise((resolve, reject) => {
-    setTimeout(function() {
+    setTimeout(function () {
       resolve('end p3');
     }, 500);
   });
@@ -26,7 +26,7 @@ const request3 = () => {
 
 const request4 = () => {
   return new Promise((resolve, reject) => {
-    setTimeout(function() {
+    setTimeout(function () {
       resolve('end p4');
     }, 2000);
   });

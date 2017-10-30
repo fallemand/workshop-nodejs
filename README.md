@@ -4,11 +4,12 @@ Se plantea una serie de ejercicios introductorios, y luego se avanza sobre un tr
 Se busca que los asistentes obtengan una compresión completa del stack, por lo que se inicia con una carpeta vacía, y clase a clase se va agregando funcionalidad, hasta lograr un proyecto completo deployado en la nube con una url productiva.  
 El proyecto incluirá módulos, servicios, middlewares, controllers, routers, ES6 en el cliente, mocks, test unitarios y funcionales, buildeo de assets, entre otros.  
 
-[Resultado Final](https://github.com/fallemand/workshop-nodejs/tree/complete/tp/resolution/final)  
-[Resultado Final (React)](https://github.com/fallemand/workshop-nodejs/tree/complete/tp/resolution/final-react)  
+[Resultado Final (React)](https://github.com/fallemand/workshop-nodejs/tree/complete/tp/parts/7-cloud/resolution-react)  
+[Resultado Final (Handlebars)](https://github.com/fallemand/workshop-nodejs/tree/complete/tp/parts/7-cloud/resolution-handlebars)  
 [Demo](https://workshop-node.herokuapp.com/)
 
 ## Requisitos Técnicos
+```NVM + Node 6.11.0```
 - [RESTful Apis](http://www.andrewhavens.com/posts/20/beginners-guide-to-creating-a-rest-api/)  
 - [Javascript Asicronico. Manejo de callbacks. Scopes](https://houssein.me/javascript/2016/05/10/asynchronous-javascript-callbacks.html)  
 - [ECMA 6](http://blog.teamtreehouse.com/get-started-ecmascript-6)  
@@ -26,30 +27,40 @@ El proyecto incluirá módulos, servicios, middlewares, controllers, routers, ES
 - [TP4-Promises](https://github.com/fallemand/workshop-nodejs/tree/master/ej4-promises)
 - [TP5-Services](https://github.com/fallemand/workshop-nodejs/tree/master/ej5-services)
 - [Trabajo Integrador](https://github.com/fallemand/workshop-nodejs/tree/master/tp)
-  * [Npm Scripts](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-1--npm-scripts) 
-  * [Express](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-2--express) 
-    - [Server](https://github.com/fallemand/workshop-nodejs/tree/master/tp#a-configurar-server)
-    - [Routes](https://github.com/fallemand/workshop-nodejs/tree/master/tp#b-router)
-    - [Controllers](https://github.com/fallemand/workshop-nodejs/tree/master/tp#c-controllers)
-    - [Middleware](https://github.com/fallemand/workshop-nodejs/tree/master/tp#d-middleware)
-    - [Services](https://github.com/fallemand/workshop-nodejs/tree/master/tp#e-services)
-    - [Handlebars](https://github.com/fallemand/workshop-nodejs/tree/master/tp#f-handlebars)
-  * [Mocks](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-3--mocks-nock) 
-  * [Environments](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-4--environments) 
-  * [ES6 Babel Webpack](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-6--es6---babel---webpack) 
-  * [Testing](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-7--testing) 
-    - [Unitarios](https://github.com/fallemand/workshop-nodejs/blob/master/tp/README.md#a-tests-unitarios-mocha)
-    - [Funcionales](https://github.com/fallemand/workshop-nodejs/blob/master/tp/README.md#b-tests-funcionales-nightwatchjs)
-  * [Deploy Cloud](https://github.com/fallemand/workshop-nodejs/tree/master/tp#parte-7--cloud-deploy-heroku) 
-  
-## Configurando el entorno.
-NVM + Node 6.11.0  
-Modulos Sublime sugeridos:   
-- EditorConfig   
-- Sass   
-- Handlebars   
-- NodeJs   
+  * [Npm Scripts](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/1-npm_scripts) 
+  * [Express](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express) 
+    - [Server](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/a.server_b.routes#a-configurar-server)
+    - [Routes](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/a.server_b.routes#b-router)
+    - [Controllers](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/c.controllers_d.middlewares#c-controllers)
+    - [Middlewares](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/c.controllers_d.middlewares#d-middleware)
+    - [Services](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/e.services)
+    - [React](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/f.react)
+  * [Mocks](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/3-mocks) 
+  * [Environments](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/4-environments) 
+  * [ES6 Babel Webpack](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/5-webpack) 
+  * [Testing](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/6-testing) 
+      - [Unitarios](https://github.com/fallemand/workshop-nodejs/blob/master/tp/parts/6-testing#a-tests-unitarios-mocha)
+      - [Funcionales](https://github.com/fallemand/workshop-nodejs/blob/master/tp/parts/6-testing#b-tests-funcionales-nightwatchjs)
+  * [Deploy Cloud](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/7-cloud) 
 
 ## Mini intro
 [¿Que es Node?](https://www.netconsulting.es/blog/nodejs/)  
 ¿Para que lo usamos en MercadoLibre? [nordic](http://nordic.ml.com/docs)  
+
+## Diagrama de Clases
+Total: 28hs
+
+- **Clase 1:** 2hs: Introducción - Ej 1 - Ej 2
+- **Clase 2:** 2hs: Ej 3 - Ej 4
+- **Clase 3:** 2hs: Ej 5 - [Video Clase](https://www.youtube.com/watch?v=GFYj1PQ1r7s)
+- **Clase 4:** 2hs: TP: Package.json - NPM Scripts - [Video Clase](https://www.youtube.com/watch?v=ttrVe0_C6co)
+- **Clase 5:** 2hs: TP: Express: Server - Routes - Controllers - [Video Clase](https://www.youtube.com/watch?v=i9_lpj574FI)
+- **Clase 6:** 2hs: TP: Express: Middlewares - Servicios - [Video Clase](https://www.youtube.com/watch?v=2MmA-1XyPEU)
+- **Clase 7:** 2hs: TP: Express: React - [Video Clase](https://www.youtube.com/watch?v=eYR4GDV_CnA)
+- **Clase 8:** 2hs: TP: Express: React
+- **Clase 9:** 2hs: TP: Mocks - Environments
+- **Clase 10:** 2hs: TP: Webpack
+- **Clase 11:** 2hs: TP: Testing Unitario
+- **Clase 12:** 2hs: TP: Testing Funcional
+- **Clase 13:** 2hs: TP: Deploy Cloud - Arrancamos Nordic
+- **Clase 14:** 2hs: TP: Nordic - Cierre

@@ -12,7 +12,7 @@ console.log('fin');
 // Async
 console.log('inicio');
 fs.readFile('../text.txt', 'utf8', (err, data) => {
-  if(err) {
+  if (err) {
     console.log('error al leer el archivo');
   }
   const result = data.replace(vowels, 'i');
@@ -21,25 +21,6 @@ fs.readFile('../text.txt', 'utf8', (err, data) => {
   });
 });
 console.log('fin');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // Sync
