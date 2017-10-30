@@ -1,5 +1,5 @@
 const json = {
-  'foo' : 'bar',
+  'foo': 'bar',
   'baz': 'qux'
 };
 
