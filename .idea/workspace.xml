@@ -2,70 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e0c41e4-53f1-4225-b10b-4dbf1ef4327e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tp/dictado/views/Index.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tp/dictado/views/components/Breadcrumb.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tp/dictado/views/components/Header.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tp/dictado/views/components/Layout.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tp/parts/1-npm_scripts/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tp/parts/2-express/a.server_b.routes/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tp/parts/2-express/a.server_b.routes/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tp/parts/2-express/c.controllers_d.middlewares/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tp/parts/2-express/e.services/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tp/parts/2-express/f.react/Layout.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tp/parts/2-express/f.react/MyFirstReactView.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tp/parts/2-express/f.react/MyFirstReactViewWithLayout.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tp/parts/2-express/f.react/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tp/parts/3-mocks/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tp/parts/4-environments/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tp/parts/5-webpack/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tp/parts/6-testing/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tp/parts/7-cloud/README.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tp/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tp/.eslintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tp/.npmrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tp/.sass-lint.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tp/dictado/views/Layout.jsx" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tp/dictado/index-middleware.js" afterPath="$PROJECT_DIR$/tp/parts/2-express/c.controllers_d.middlewares/index-middleware.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tp/views/Error.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ej0-requirement/assets/scripts/main.js" afterPath="$PROJECT_DIR$/ej0-requirement/assets/scripts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ej0-requirement/index.html" afterPath="$PROJECT_DIR$/ej0-requirement/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ej1-filesystem/dictado/forEachJson.js" afterPath="$PROJECT_DIR$/ej1-filesystem/dictado/forEachJson.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ej1-filesystem/dictado/index.js" afterPath="$PROJECT_DIR$/ej1-filesystem/dictado/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ej1-filesystem/dictado/resolution.js" afterPath="$PROJECT_DIR$/ej1-filesystem/dictado/resolution.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ej1-filesystem/replaces.json" afterPath="$PROJECT_DIR$/ej1-filesystem/replaces.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ej1-filesystem/resolution/dictado/async.js" afterPath="$PROJECT_DIR$/ej1-filesystem/resolution/dictado/async.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ej1-filesystem/resolution/dictado/sync-stream.js" afterPath="$PROJECT_DIR$/ej1-filesystem/resolution/dictado/sync-stream.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ej2-modules/dictado/index-calc.js" afterPath="$PROJECT_DIR$/ej2-modules/dictado/index-calc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ej3-request/dictado/get.js" afterPath="$PROJECT_DIR$/ej3-request/dictado/get.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ej3-request/dictado/index.js" afterPath="$PROJECT_DIR$/ej3-request/dictado/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ej3-request/dictado/request-example.js" afterPath="$PROJECT_DIR$/ej3-request/dictado/request-example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ej4-promises/dictado/index.js" afterPath="$PROJECT_DIR$/ej4-promises/dictado/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ej4-promises/dictado/readFileWithPromise.js" afterPath="$PROJECT_DIR$/ej4-promises/dictado/readFileWithPromise.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ej5-services/dictado/meli.service.js" afterPath="$PROJECT_DIR$/ej5-services/dictado/meli.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ej5-services/dictado/promise-all.js" afterPath="$PROJECT_DIR$/ej5-services/dictado/promise-all.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ej5-services/dictado/request.js" afterPath="$PROJECT_DIR$/ej5-services/dictado/request.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ej5-services/dictado/request.service.js" afterPath="$PROJECT_DIR$/ej5-services/dictado/request.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/README.md" afterPath="$PROJECT_DIR$/tp/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/dictado/.eslintrc" afterPath="$PROJECT_DIR$/tp/dictado/.eslintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/dictado/assets/src/styles/components/_breadcrumb.scss" afterPath="$PROJECT_DIR$/tp/dictado/assets/src/styles/components/_breadcrumb.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/dictado/assets/src/styles/components/_header.scss" afterPath="$PROJECT_DIR$/tp/dictado/assets/src/styles/components/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/dictado/assets/src/styles/components/_layout.scss" afterPath="$PROJECT_DIR$/tp/dictado/assets/src/styles/components/_layout.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/dictado/assets/src/styles/components/_suggest.scss" afterPath="$PROJECT_DIR$/tp/dictado/assets/src/styles/components/_suggest.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/dictado/assets/src/styles/pages/_error.scss" afterPath="$PROJECT_DIR$/tp/dictado/assets/src/styles/pages/_error.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/dictado/assets/src/styles/pages/_index.scss" afterPath="$PROJECT_DIR$/tp/dictado/assets/src/styles/pages/_index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/dictado/assets/src/styles/pages/_item.scss" afterPath="$PROJECT_DIR$/tp/dictado/assets/src/styles/pages/_item.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/dictado/assets/src/styles/pages/_search.scss" afterPath="$PROJECT_DIR$/tp/dictado/assets/src/styles/pages/_search.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/dictado/controllers/app.controller.js" afterPath="$PROJECT_DIR$/tp/dictado/controllers/app.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/dictado/index.js" afterPath="$PROJECT_DIR$/tp/dictado/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/dictado/middlewares/error.middleware.js" afterPath="$PROJECT_DIR$/tp/dictado/middlewares/error.middleware.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/dictado/package-lock.json" afterPath="$PROJECT_DIR$/tp/dictado/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/dictado/package.json" afterPath="$PROJECT_DIR$/tp/dictado/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/dictado/routers/app.router.js" afterPath="$PROJECT_DIR$/tp/dictado/routers/app.router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/dictado/routers/router.js" afterPath="$PROJECT_DIR$/tp/dictado/routers/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/dictado/services/meli.service.js" afterPath="$PROJECT_DIR$/tp/dictado/services/meli.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/dictado/services/meli.transform.js" afterPath="$PROJECT_DIR$/tp/dictado/services/meli.transform.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/dictado/services/request.service.js" afterPath="$PROJECT_DIR$/tp/dictado/services/request.service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/controllers/app.controller.js" afterPath="$PROJECT_DIR$/tp/controllers/app.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/middlewares/error.middleware.js" afterPath="$PROJECT_DIR$/tp/middlewares/error.middleware.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/routers/router.js" afterPath="$PROJECT_DIR$/tp/routers/router.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -77,11 +18,53 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ej0-requirement/index.html">
+      <file leaf-file-name="app.controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tp/controllers/app.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="72" column="7" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="72" selection-end-column="7" />
+            <state relative-caret-position="270">
+              <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+              <folding>
+                <element signature="n#!!doc;n#appController#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tp/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.router.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tp/dictado/routers/app.router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Error.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tp/views/Error.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tp/routers/router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -129,18 +112,22 @@
         <option value="$PROJECT_DIR$/tp/servicies/meli.transform.js" />
         <option value="$PROJECT_DIR$/tp/index-middle.js" />
         <option value="$PROJECT_DIR$/tp/middlewares/author.middleware.js" />
-        <option value="$PROJECT_DIR$/tp/routers/router.js" />
         <option value="$PROJECT_DIR$/tp/controllers/api.controller.js" />
         <option value="$PROJECT_DIR$/tp/package.json" />
         <option value="$PROJECT_DIR$/tp/index.js" />
-        <option value="$PROJECT_DIR$/tp/middlewares/error.middleware.js" />
         <option value="$PROJECT_DIR$/tp/views/index.jsx" />
         <option value="$PROJECT_DIR$/tp/views/Layout.jsx" />
         <option value="$PROJECT_DIR$/tp/routers/app.router.js" />
         <option value="$PROJECT_DIR$/tp/views/Index.jsx" />
         <option value="$PROJECT_DIR$/tp/views/components/Header.jsx" />
-        <option value="$PROJECT_DIR$/tp/controllers/app.controller.js" />
         <option value="$PROJECT_DIR$/tp/views/components/Breadcrumb.jsx" />
+        <option value="$PROJECT_DIR$/ej0-requirement/index.html" />
+        <option value="$PROJECT_DIR$/tp/dictado/views/Error.jsx" />
+        <option value="$PROJECT_DIR$/tp/dictado/middlewares/error.middleware.js" />
+        <option value="$PROJECT_DIR$/tp/routers/router.js" />
+        <option value="$PROJECT_DIR$/tp/views/Error.jsx" />
+        <option value="$PROJECT_DIR$/tp/controllers/app.controller.js" />
+        <option value="$PROJECT_DIR$/tp/middlewares/error.middleware.js" />
       </list>
     </option>
   </component>
@@ -223,7 +210,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -241,39 +228,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workshop-nodejs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workshop-nodejs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ej1-filesystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workshop-nodejs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workshop-nodejs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ej0-requirement" />
+              <option name="myItemId" value="routers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -302,16 +257,18 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/tp/views" />
-      <recent name="$PROJECT_DIR$/ej5-services" />
-      <recent name="$PROJECT_DIR$/ej4-promises" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tp/views" />
       <recent name="$PROJECT_DIR$/tp/servicies" />
       <recent name="$PROJECT_DIR$/tp" />
       <recent name="$PROJECT_DIR$/ej5-services" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tp/dictado/views/components" />
+      <recent name="$PROJECT_DIR$/tp/views" />
+      <recent name="$PROJECT_DIR$/tp" />
+      <recent name="$PROJECT_DIR$/ej5-services" />
+      <recent name="$PROJECT_DIR$/ej4-promises" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -748,7 +705,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55246000" />
+    <option name="totallyTimeSpent" value="56562000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="0" />
@@ -817,30 +774,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tp/assets/dist/styles/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tp/.sass-lint.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tp/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="103">
-            <caret line="28" column="62" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="62" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tp/assets/src/scripts/file1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1004,7 +937,6 @@
     <entry file="file://$PROJECT_DIR$/tp/middlewares/author.middleware.js" />
     <entry file="file://$PROJECT_DIR$/tp/index-middle.js" />
     <entry file="file://$PROJECT_DIR$/tp/routers/api.router.js" />
-    <entry file="file://$PROJECT_DIR$/tp/middlewares/error.middleware.js" />
     <entry file="file://$PROJECT_DIR$/tp/dictado/controllers/api.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1014,13 +946,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tp/dictado/views/Layout.jsx" />
     <entry file="file://$PROJECT_DIR$/tp/views/Layout-test.jsx" />
-    <entry file="file://$PROJECT_DIR$/tp/dictado/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tp/dictado/routers/api.router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1045,20 +970,10 @@
     <entry file="file://$PROJECT_DIR$/tp/views/Layout.jsx" />
     <entry file="file://$PROJECT_DIR$/tp/views/Index-test.jsx" />
     <entry file="file://$PROJECT_DIR$/tp/views/Index.jsx" />
-    <entry file="file://$PROJECT_DIR$/tp/index.js" />
-    <entry file="file://$PROJECT_DIR$/tp/routers/app.router.js" />
     <entry file="file://$PROJECT_DIR$/tp/controllers/api.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tp/routers/router.js" />
-    <entry file="file://$PROJECT_DIR$/tp/controllers/app.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1075,8 +990,82 @@
     <entry file="file://$PROJECT_DIR$/tp/views/components/Header.jsx" />
     <entry file="file://$PROJECT_DIR$/ej0-requirement/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="72" column="7" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="72" selection-end-column="7" />
+        <state relative-caret-position="-676">
+          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp/dictado/middlewares/error.middleware.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp/dictado/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp/dictado/routers/app.router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp/routers/app.router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp/controllers/app.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!doc;n#appController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp/middlewares/error.middleware.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp/routers/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp/views/Error.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>

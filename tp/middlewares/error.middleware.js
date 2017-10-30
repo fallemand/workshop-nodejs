@@ -15,4 +15,8 @@ module.exports.apiError = (err, req, res, next) => {
 
 module.exports.appError = (err, req, res, next) => {
   logError(err);
+  if (err instanceof Error) {
+    err = err.toString();
+  }
+  res.render('Error', {error: err});
 };

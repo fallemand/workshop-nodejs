@@ -11,7 +11,7 @@ const errorMiddleware = require('../middlewares/error.middleware');
 module.exports.init = (app, path) => {
 
 
-  app.use('/app', routerApp);
+  app.use('/app', routerApp, errorMiddleware.appError);
   app.use('/api', author, routerApi, errorMiddleware.apiError);
 
   app.use('/assets', static(`${path}/assets`));
