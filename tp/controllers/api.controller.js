@@ -18,8 +18,14 @@ module.exports.itemsPost = (req, res) => {
   });
 };
 
-module.exports.search = (req, res) => {
-  res.json({message: `Acá vamos a buscar en meli: ${req.query.q}`});
+module.exports.search = (req, res, next) => {
+  const query = req.query;
+  console.log(query);
+  meliService.search(query).then((query) => {
+      // query.author = res.locals.author;
+      res.json(query)
+  }).catch(next);
+  // res.json({message: `Acá vamos a buscar en meli: ${req.query.q}`});
 };
 
 module.exports.suggest = (req, res) => {

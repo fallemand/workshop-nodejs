@@ -9,6 +9,6 @@ router.get('/items/:id', apiController.items);
 router.post('/items/:id', apiController.itemsPost);
 router.get('/search', apiController.search);
 router.get('/suggest', apiController.suggest);
-router.use(errorMiddleware);
+router.use(errorMiddleware.apiError);
 
 module.exports = router;

@@ -1,12 +1,13 @@
 const serverAssets = require('express').static;
 const routerApi = require('./api.router');
 const routerApp = require('./app.router');
+const errorMiddleware = require('./../middlewares/error.middleware');
 
 module.exports.init = (app, path) => {
 
   // Set routers
-  app.use('/api', routerApi);
-  app.use('/app', routerApp);
+  app.use('/api', routerApi, errorMiddleware.apiError);
+  app.use('/app', routerApp, errorMiddleware.appError);
 
   // Set statics path
   app.use('/assets', serverAssets(`${path}/assets`));
