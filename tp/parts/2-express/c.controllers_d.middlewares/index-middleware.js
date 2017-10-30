@@ -25,7 +25,7 @@ const middlewareError = (err, req, res, next) => {
 
 const request = () => {
   return new Promise((resolve, reject) => {
-    if(true) {
+    if (true) {
       resolve('Todo joya pa');
     }
     else {
@@ -49,8 +49,8 @@ app.get('/bar', (req, res) => {
 
 app.use(middleware1);
 app.use(middleware2);
-app.use(middleware3);
 app.use(router);
+app.use(middleware3);
 app.use(middlewareError);
 
 app.listen('3000', 'localhost', () => {

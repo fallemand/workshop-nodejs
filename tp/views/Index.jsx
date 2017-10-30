@@ -6,15 +6,17 @@ const Layout = require('./Layout');
 class Index extends React.Component {
     render() {
         return (
-            <div>
-                <h1>{this.props.title}</h1>
-                {this.props.showSubtitle && <h2>{this.props.subtitle}</h2>}
-                <ul>
-                    {this.props.tasks.map((task) => 
-                        <li>{task}</li>
-                    )}
-                </ul>
-            </div>
+            <Layout {...this.props}>
+                <div>
+                    <h1>{this.props.title}</h1>
+                    {this.props.showSubtitle && <h2>{this.props.subtitle}</h2>}
+                    <ul>
+                        {this.props.tasks.map((task) => 
+                            <li>{task}</li>
+                        )}
+                    </ul>
+                </div>
+            </Layout>
         );
     }
 }

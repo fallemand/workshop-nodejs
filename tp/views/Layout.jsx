@@ -5,12 +5,12 @@ class Layout extends React.Component {
     render() {
         <html>
         <head>
-            {this.props.title}
         </head>
         <body>
             <h1>{this.props.title}</h1>
-            
         </body>
         </html>
     }
 }
+
+module.exports = Layout;

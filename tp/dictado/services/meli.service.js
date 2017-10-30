@@ -3,7 +3,7 @@ const meliTransform = require('./meli.transform');
 
 const options = {
   method: 'GET',
-  headers: { 'Content-type': 'application/json' },
+  headers: {'Content-type': 'application/json'},
 };
 
 exports.itemSync = (id) => {
