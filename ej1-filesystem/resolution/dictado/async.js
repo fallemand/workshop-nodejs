@@ -6,7 +6,7 @@ let output = '';
  * Manipulating a stream asynchronously
  */
 fs.readFile('../../text.txt', 'utf8', (err, data) => {
-   if (err) throw err;
+  if (err) throw err;
 
   output = data.replace(vowels, 'i');
   console.log(output);

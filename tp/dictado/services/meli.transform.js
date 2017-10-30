@@ -17,7 +17,7 @@ exports.item = (item) => {
 
 exports.search = (search) => {
   return {
-    query : search.query,
+    query: search.query,
     paging: search.paging,
     filters: search.filters,
     results: search.results.map((result) => {
