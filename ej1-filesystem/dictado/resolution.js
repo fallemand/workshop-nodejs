@@ -11,8 +11,6 @@ const text = fs.readFile(__dirname + '/text.txt', 'utf8', (err, data) => {
 });
 
 
-
-
 // let finalText = data;
 // Object.keys(replace).forEach(key => {
 //   finalText = finalText.replace(new RegExp(key, 'ig'), replace[key]);
