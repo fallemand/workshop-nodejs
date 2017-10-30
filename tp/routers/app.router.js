@@ -10,4 +10,6 @@ router.get('/items/:id', appController.items);
 
 router.get('/suggest', appController.suggest);
 
+router.get('/test', appController.test);
+
 module.exports = router;
