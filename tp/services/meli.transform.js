@@ -6,9 +6,10 @@ function getNumberDecimals(number) {
 
 function getCategories(searchResultFilters) {
   const categoryFilter = searchResultFilters.filter(obj => obj.id === 'category');
-
-  const catArr = categoryFilter[0].values[0].path_from_root.map((item, index) => item.name);
-
+  let catArr = [];
+  if (categoryFilter.length > 0) {
+    catArr = categoryFilter[0].values[0].path_from_root.map((item, index) => item.name);
+  }
   return catArr;
 }
 

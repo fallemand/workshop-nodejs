@@ -1,4 +1,5 @@
 const React = require('react');
+const PropTypes = require('prop-types');
 
 class Header extends React.Component {
   render() {
@@ -20,7 +21,7 @@ class Header extends React.Component {
             spellcheck="false"
             placeholder="Nunca dejes de buscar"
             data-js="search"
-            value="iphone"
+            value={this.props.query}
           />
           <button type="submit" class="header__search-btn" data-fastclick="" tabindex="3">
             <i class="header__search-icon">
@@ -33,5 +34,9 @@ class Header extends React.Component {
     );
   }
 }
+
+Header.propType = {
+  query: PropTypes.string,
+};
 
 module.exports = Header;
