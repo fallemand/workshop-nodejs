@@ -14,5 +14,12 @@ module.exports.apiError = (err, req, res, next) => {
 };
 
 module.exports.appError = (err, req, res, next) => {
-  //TODO
+  logError(err);
+  if(err instanceof Error) {
+    err = {
+      status: 500,
+      message: err.toString()
+    };
+  }
+  res.status(err.status || 500).json(err);
 };
