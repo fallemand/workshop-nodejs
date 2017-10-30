@@ -22,7 +22,5 @@ module.exports.test = (req, res) => {
 
 
 module.exports.index = (req, res) => {
-  res.render('index', {
-
-  });
+  res.render('Index');
 };
