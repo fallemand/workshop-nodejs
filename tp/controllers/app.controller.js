@@ -32,7 +32,7 @@ class AppController {
     };
         
     static index(req, res, next) {
-        res.render('index', {breadcrumb: ["Bre 1", "Bre 2", "Bre 3"]});
+        res.render('Index', {breadcrumb: ["Bre 1", "Bre 2", "Bre 3"]});
     };
 }
 
