@@ -1,6 +1,6 @@
 const React = require('react');
-const Header = require('./components/Header');
-const Breadcrumb = require('./components/Breadcrumb');
+const Header = require('./Header');
+const Breadcrumb = require('./Breadcrumb');
 
 class Layout extends React.Component {
   render() {
@@ -19,10 +19,10 @@ class Layout extends React.Component {
         </head>
         <body>
             <header role="banner" id="header" className="header">
-              <Header query={this.props.query}/>
+              <Header />
             </header>
             <main role="main" className="main">
-                <Breadcrumb {...this.props}/>
+                <Breadcrumb />
                 <div className="main__content">
                     {this.props.children}
                 </div>

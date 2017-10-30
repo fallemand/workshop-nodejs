@@ -9,6 +9,7 @@ router.get('/search', appController.search);
 
 router.get('/items/:id', appController.items);
 
+router.get('/', appController.index);
 // router.get('/items/:id', (req, res) => {
 //     const params = req.params;
 //     const query = req.query;

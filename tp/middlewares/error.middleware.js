@@ -8,5 +8,5 @@ module.exports.errorApi = (err, req, res, next) => {
 };
 
 module.exports.errorApp = (err, req, res, next) => {
-    // TODO
+    logError(err);
 };

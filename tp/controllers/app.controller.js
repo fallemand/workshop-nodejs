@@ -23,6 +23,10 @@ class appController {
             console.log('fallo la general:', err);
         });
     }
+
+    static index(req, res) {
+        res.render('Index');
+    }
 }
 
 module.exports = appController;
