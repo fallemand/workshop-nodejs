@@ -1,4 +1,5 @@
 const request = require('./request.service');
+const meliTransform = require('./meli.transform');
 
 module.exports.items = (id) => {
 
@@ -16,11 +17,24 @@ module.exports.items = (id) => {
 module.exports.search = (query) => {
 
     const searchOptions = {
+        protocol: 'https',
         method: 'GET',
         headers: {'Content-type': 'application/json'},
         hostname: 'api.mercadolibre.com',
         path: `/sites/MLA/search?q=${query}`
     };
 
-  return request(searchOptions);
+    return request(searchOptions, meliTransform.search);
+};
+
+module.exports.suggest = (query) => {
+    const suggestOptions = {
+        protocol: 'https',
+        method: 'GET',
+        headers: {'Content-type': 'application/json'},
+        hostname: 'api.mercadolibre.com',
+        path: `/resources/sites/MLA/autosuggest?q=${query}`
+    }
+
+    return request(suggestOptions, meliTransform.suggest);
 };
