@@ -6,14 +6,12 @@ const router = require('express').Router();
 
 const appController = require('../controllers/app.controller');
 
-  router.get('/', (req, res) => {
-    res.json({message: `Entró a nuestra app`});
-  });
+  router.get('/', appController.app);
 
   router.get('/search', appController.search);
 
   router.get('/items/:id', appController.items);
 
-router.get('/test', appController.test);
+  router.get('/test', appController.test);
 
 module.exports = router;

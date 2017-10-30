@@ -4,39 +4,21 @@ const Layout = require('./Layout');
 
 class Index extends React.Component {
 
-  upperCaseTask(task) {
-    return task.toString().toUpperCase();
-  }
-
   render() {
-   return  (
-     <Layout title="titulo">
-       <div>
-        <h1>{this.props.title}</h1>
-         {this.props.showSubtitle && <h2>{this.props.subtitle}</h2>}
-         <ul>
-           {this.props.tasks.map((task) =>
-             <li>{this.upperCaseTask(task)}</li>
-           )}
-         </ul>
-       </div>
-     </Layout>
-   )
+    return  (
+      <Layout title="titulo">
+        <div class="main__content">
+          <div class="search-hero">
+            <img class="seach-hero__image" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png" alt="Buscar">
+            </img>
+              <span class="seach-hero__title">
+        Ingresa en la barra de búsqueda el producto que estas buscando!
+        </span>
+          </div>
+        </div>
+      </Layout>
+    )
   }
 }
-
-Index.defaultProps = {
-  title: 'Titulo por defecto',
-  subtitle: 'Subtitulo por defecto',
-  tasks: [],
-  showSubtitle: true
-};
-
-Index.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  tasks: PropTypes.array,
-  showSubtitle: PropTypes.bool
-};
 
 module.exports = Index;

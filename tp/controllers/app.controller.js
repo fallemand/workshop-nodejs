@@ -12,7 +12,7 @@ class appController {
   };
 
   static test(req, res) {
-    res.render('index', {
+    res.render('index-test', {
       title: 'Lista de tareas',
       subtitle: "Recordar hacerlas",
       showSubtitle: true,
@@ -23,6 +23,10 @@ class appController {
         'Aprender React'
       ]
     });
+  }
+
+  static app(req, res) {
+    res.render('Index');
   }
 }
 
