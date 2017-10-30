@@ -4,11 +4,13 @@ const PropTypes = require('prop-types');
 class Breadcrumb extends React.Component {
 
   render() {
+    const { category, query } = this.props;
     return  (
-      <ul class="breadcrumb">
-        <li className="breadcrumb__element">Breadcrumb 1</li>
-        <li className="breadcrumb__element">Breadcrumb 2</li>
-        <li className="breadcrumb__element">Breadcrumb 3</li>
+      <ul className="breadcrumb">
+        {category && category.map((element) =>
+          <li className="breadcrumb__element"><a href="/">{element.name}</a></li>
+        )}
+        {query && <li className="breadcrumb__element">"{query}"</li>}
       </ul>
     )
   }

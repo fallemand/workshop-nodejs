@@ -100,9 +100,11 @@ class meliTransform {
 
     return new Promise((resolve, reject) => {
       requestPromise(optionsHttps).then((data) => {
-        let finalData = {};
+        const finalData = {};
         finalData.site_id = data.site_id;
-        finalData.path_from_root = data.filters[0].values[0].path_from_root;
+        finalData.category = data.filters.length > 0 && data.filters[0].values.length > 0
+          && data.filters[0].values[0].path_from_root;
+        finalData.query = data.query;
         const results = data.results;
         let results1 = [];
         results.forEach((result) => {
