@@ -1,12 +1,17 @@
 {
   "extends": [
-    'eslint-config-airbnb-base',
+    'eslint-config-airbnb-base'
   ],
   "parser": "babel-eslint",
   "rules": {
-    "max-len": [2, 120, 2, {
-      "ignoreUrls": true,
-      "ignoreComments": false
-    }],
+    "max-len": [
+      2,
+      120,
+      2,
+      {
+        "ignoreUrls": true,
+        "ignoreComments": false
+      }
+    ]
   }
 }
