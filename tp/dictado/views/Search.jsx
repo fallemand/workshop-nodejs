@@ -1,6 +1,6 @@
 const React = require('react');
-const Layout = require('./components/Layout');
 const SearchItem = require('./components/SearchItem');
+const Layout = require('./components/Layout');
 
 class Search extends React.Component {
 
@@ -8,10 +8,10 @@ class Search extends React.Component {
     return (
       <Layout {...this.props}>
         {this.props.results.map((item) =>
-          <SearchItem key={item.id} {...item} />
+          <SearchItem {...item} key={item.id}/>
         )}
       </Layout>
-    )
+    );
   }
 }
 

@@ -1,30 +1,20 @@
 const React = require('react');
 
 class SearchItem extends React.Component {
-
-  currencySymbol(currency) {
-    let symbol = '';
-    switch(currency) {
-      default: symbol = '$'
-    }
-    return symbol;
-  }
-
   render() {
-    const { id, thumbnail, title, price, address, free_shipping } = this.props;
     return (
-      <a className="search-item" href={`/app/items/${id}`}>
+      <a className="search-item" href={`/app/items/${this.props.id}`}>
         <div className="search-item__picture">
-          <img src={thumbnail} alt={title} />
+          <img src={this.props.thumbnail} alt={this.props.title}/>
         </div>
         <div className="search-item__description">
-          <span className="search-item__price">{this.currencySymbol(price.currency)} {price.amount}</span>
-          {free_shipping && <i className="search-item__freeshipment"></i>}
-          <p className="search-item__title">{title}</p>
+          <span className="search-item__price">$ {this.props.price.amount}</span>
+          {this.props.free_shipping && <i className="search-item__freeshipment"></i>}
+          <p className="search-item__title">{this.props.title}</p>
         </div>
-        <div className="search-item__location">{address.state_name}</div>
+        <div className="search-item__location">{this.props.address.state_name}</div>
       </a>
-    )
+    );
   }
 }
 

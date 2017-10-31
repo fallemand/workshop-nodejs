@@ -19,9 +19,7 @@ exports.search = (search) => {
   return {
     query: search.query,
     paging: search.paging,
-    category: search.filters.length > 0
-              && search.filters[0].values.length > 0
-              && search.filters[0].values[0].path_from_root,
+    category: search.filters.length > 0 && search.filters[0].values.length > 0 && search.filters[0].values[0].path_from_root,
     results: search.results.map((result) => {
       return {
         id: result.id,
