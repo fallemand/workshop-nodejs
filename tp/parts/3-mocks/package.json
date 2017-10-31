@@ -1,0 +1,14 @@
+{
+  "name": "mocks-example",
+  "version": "1.0.0",
+  "description": "-Vemos como generar mocks con Nock.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nock": "^9.0.27"
+  }
+}
