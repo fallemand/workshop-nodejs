@@ -60,7 +60,7 @@ exports.search = (query) => {
 };
 
 exports.suggest = (query) => {
-  options.hostname = 'http2.mlstatic.com';
-  options.path = `/resources/sites/MLA/autosuggest?q=${escape(query)}&v=1`;
+  options.hostname = 'api.mercadolibre.com';
+  options.path = `/sites/MLA/autosuggest?q=${escape(query)}&v=1`;
   return request(options, meliTransform.suggest);
 };
