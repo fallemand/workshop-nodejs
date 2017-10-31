@@ -1,38 +1,28 @@
-// APP Controller
-
 const request = require('../services/request.service');
 
-module.exports.items = (req, res) => {
-  // let x = null;
-  // x.bla = 2;
-  res.send('Acá vamos a retornar el item: ' + req.params.id);
+exports.search = (req, res, next) => {
+  const options = getOptions(`/api/search?q=${escape(req.query.q)}`);
+  request(options).then(data => {
+    res.render('Search', data);
+  })
+    .catch(next);
 };
 
-module.exports.search = (req, res, next) => {
-  const query = req.query.q;
-  const url = `/api/search?q=${query}`;
-  const options = {
+exports.items = (req, res, next) => {
+  const options = getOptions('/api/items/' + req.params.id);
+  request(options).then(item => {
+    res.render('Item', item);
+  })
+    .catch(next);
+};
+
+function getOptions(path) {
+  return {
     method: 'GET',
     headers: {'Content-type': 'application/json'},
-    hostname: 'localhost',
-    port: '3000',
+    hostname: global.address,
+    port: global.port,
     protocol: 'http',
-    path: url
-  };
-
-  request(options).then((results) => {
-    res.render('Search', results);
-  }).catch(next);
-
-};
-
-module.exports.test = (req, res) => {
-  res.render('test', {
-    tasks: ['Lavar el Auto', 'Bañar el perro', 'Aprender React', 'Cortar el pasto'],
-    enumProp: 'default'
-  });
-};
-
-module.exports.index = (req, res) => {
-  res.render('Index');
-};
+    path: path
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "node-workshop",
+  "name": "workshop-nodejs",
   "version": "1.0.0",
   "description": "Integrated exercise for the Node.js Workshop",
   "main": "index.js",
@@ -33,21 +33,20 @@
     "imagemin-cli": "^3.0.0",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0",
     "npm-run-all": "^2.1.1",
     "onchange": "^2.4.0",
     "postcss-cli": "^2.5.2",
     "rimraf": "^2.5.4",
     "sass-lint": "^1.10.2",
-    "uglify-js": "^2.6.2",
-    "nodemon": "^1.11.0"
+    "uglify-js": "^2.6.2"
   },
   "optionalDependencies": {
     "fsevents": "*"
   },
   "dependencies": {
-    "express": "^4.16.2",
+    "express": "^4.15.3",
     "express-react-views": "^0.10.4",
-    "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   }

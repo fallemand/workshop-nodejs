@@ -1,5 +1,10 @@
-console.log('File 2');
+console.log('Archivo JS');
+console.log('Archivo JS');
+console.log('Archivo JS');
+console.log('Archivo JS');
+console.log('Archivo JS');
 
-var file = "2";
 
-console.log(file);
+var tata = "tata";
+
+console.log(tata);
