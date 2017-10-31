@@ -3,7 +3,7 @@ const logError = (err) => {
   console.error(err);
 };
 
-module.exports.apiError = (err, req, res, next) => {
+module.exports.apiErrors = (err, req, res, next) => {
   logError(err);
   if (err instanceof Error) {
     err = {
@@ -14,10 +14,12 @@ module.exports.apiError = (err, req, res, next) => {
   res.status(err.status || 500).json(err);
 };
 
-module.exports.appError = (err, req, res, next) => {
+module.exports.appErrors = (err, req, res, next) => {
   logError(err);
   if (err instanceof Error) {
     err = err.toString();
   }
-  res.render('Error', { error: err });
+  res.render('Error', {
+    error: JSON.stringify(err),
+  });
 };
