@@ -17,4 +17,6 @@ router.init(app, __dirname);
  * Server
  */
 
-app.listen('3000', 'localhost', () => console.log('App started on port 3000.'));
+app.listen('3000', 'localhost', () => console.log(
+  'App started on port localhost:3000.'
+));
