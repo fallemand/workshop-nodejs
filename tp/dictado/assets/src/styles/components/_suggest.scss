@@ -9,7 +9,7 @@
   padding: 0;
 
   .suggest__item {
-    padding: 10px 20px;
+    padding: 0;
     cursor: pointer;
     font-size: 15px;
     font-weight: 100;
@@ -17,6 +17,14 @@
 
     &:hover {
       background-color: #eee;
+    }
+
+    a {
+      margin: 0px;
+      padding: 10px 20px;
+      display: block;
+      color: #999;
+      text-decoration: none;
     }
   }
 }
