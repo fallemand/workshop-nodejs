@@ -3,13 +3,26 @@
 const request = require('../services/request.service')
 
 module.exports.items = (req, res) => {
-  res.send('Acá vamos a retornar el item: ' + req.params.id);
+    res.render('Item', {id: req.params.id});
+    //res.send('Acá vamos a retornar el item: ' + req.params.id);
 };
 
-module.exports.search = (req, res) => {
-    // const.query = req.query.q;
-    // const url = /api/search?q${query}`;
-  res.send('Acá vamos a buscar en meli: ' + req.query.q);
+module.exports.search = (req, res, next) => {
+    const query = req.query.q;
+    const url = `/api/search?q=${query}`;
+    const options = {
+        protocol: 'http',
+        method: 'GET',
+        headers: {'Content-type': 'application/json'},
+        hostname: 'localhost',
+        port: 3333,
+        path: url
+    };
+
+    request(options).then(data => {
+        res.render('Search', data);
+    })
+    .catch(next);
 };
 
 module.exports.test = (req, res) => {
@@ -19,7 +32,5 @@ module.exports.test = (req, res) => {
 };
 
 module.exports.index = (req, res) => {
-    fruta = null;
-    fruta.algo();
     res.render('Index');
 };

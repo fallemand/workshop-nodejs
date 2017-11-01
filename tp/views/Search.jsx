@@ -1,19 +1,28 @@
 const React = require('react');
+const Layout = require('./Layout');
 
 class Search extends React.Component {
     render() {
         return(
-            <a class="search-item" href="/app/items/MLA672160044">
-              <div class="search-item__picture">
-                <img src="http://mla-s1-p.mlstatic.com/736895-MLA25705832447_062017-I.jpg" alt="Celular Libre Apple Iphone 6 Gris 32gb">
-              </div>
-              <div class="search-item__description">
-                <span class="search-item__price">$ 14999</span>
-                <i class="search-item__freeshipment"></i>
-                <p class="search-item__title">Celular Libre Apple Iphone 6 Gris 32gb</p>
-              </div>
-              <div class="search-item__location">Capital Federal</div>
-            </a>
+            <Layout {...this.props}>
+            {
+                this.props.results.map((item) =>
+                    <a className="search-item" href={`/app/items/${item.id}`}>
+                        <div className="search-item__picture">
+                            <img src={item.thumbnail} alt={item.title}/>
+                        </div>
+                        <div className="search-item__description">
+                            <span className="search-item__price">$ {item.price.amount}</span>
+                            <i className="search-item__freeshipment"></i>
+                            <p className="search-item__title">{item.title}</p>
+                        </div>
+                        <div className="search-item__location">{item.address.state_name}</div>
+                    </a>
+                )
+            }
+            </Layout>
         );
     }
 }
+
+module.exports = Search;

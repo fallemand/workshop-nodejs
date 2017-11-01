@@ -11,7 +11,8 @@
     "lint:styles": "sass-lint assets/src/styles/*.scss -v -q",
     "uglify": "uglifyjs assets/src/scripts/*.js -b -o assets/dist/scripts/app.js && uglifyjs assets/src/scripts/*.js -m -c -o assets/dist/scripts/app.min.js",
     "imagemin": "imagemin assets/src/images/* -o assets/dist/images",
-    "start": "./node_modules/.bin/nodemon index.js",
+    "start": "NODE_ENV=production node index.js",
+    "start:dev": "NODE_ENV=development ./node_modules/.bin/nodemon index.js",
     "build:styles": "npm run lint:styles && npm run scss && npm run autoprefixer",
     "build:scripts": "npm run lint:scripts && npm run uglify",
     "build:images": "npm run imagemin",
@@ -39,14 +40,15 @@
     "eslint-config-airbnb-base": "7.1.0",
     "eslint-plugin-import": "1.15.0",
     "imagemin-cli": "^3.0.0",
+    "nock": "^9.0.27",
     "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0",
     "npm-run-all": "^2.1.1",
     "onchange": "^2.4.0",
     "postcss-cli": "^2.5.2",
     "rimraf": "^2.5.4",
     "sass-lint": "^1.10.2",
-    "uglify-js": "^2.6.2",
-    "nodemon": "^1.11.0"
+    "uglify-js": "^2.6.2"
   },
   "optionalDependencies": {
     "fsevents": "*"

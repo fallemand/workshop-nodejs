@@ -15,6 +15,12 @@ app.use(bodyParser.json());
 // Define Routes
 router.init(app, __dirname);
 
+//Mocks
+// proccess.env ingresa a las variables de entorno
+if(process.env.NODE_ENV != 'production') {
+    require('./mocks');
+}
+
 // Start Server
 app.listen('3333', 'localhost', () => {
   console.log('app listen in port 3333');

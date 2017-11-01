@@ -14,6 +14,19 @@ module.exports.items = (id) => {
     return request(itemOptions);
 };
 
+module.exports.description = (id) => {
+
+    const itemOptions = {
+        protocol: 'https',
+        method: 'GET',
+        headers: {'Content-type': 'application/json'},
+        hostname: 'api.mercadolibre.com',
+        path: `/items/${id}/description`
+    };
+
+    return request(itemOptions);
+};
+
 module.exports.search = (query) => {
 
     const searchOptions = {
@@ -33,7 +46,7 @@ module.exports.suggest = (query) => {
         method: 'GET',
         headers: {'Content-type': 'application/json'},
         hostname: 'api.mercadolibre.com',
-        path: `/resources/sites/MLA/autosuggest?q=${query}`
+        path: `/sites/MLA/autosuggest?q=${query}`
     }
 
     return request(suggestOptions, meliTransform.suggest);
