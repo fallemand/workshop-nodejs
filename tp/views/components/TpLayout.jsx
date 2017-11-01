@@ -4,7 +4,6 @@ const Breadcrumb = require('./Breadcrumb');
 
 class TpLayout extends React.Component {
   render() {
-    console.log(this.props.showSubtitle);
     return (<html>
     <head>
       <meta charSet="utf-8"/>

@@ -139,8 +139,12 @@ class MeliService {
       request(options).then((data) => {
         let cleanData = {};
         let cleanResults = [];
+        cleanData.query = data.query;
         cleanData.site_id = data.site_id;
-        cleanData.path_from_root = data.filters[0].values[0].path_from_root;
+        cleanData.category = {};
+        cleanData.category.path_from_root = data.filters.length > 0
+        && data.filters[0].values.length > 0
+        && data.filters[0].values[0].path_from_root;
         const results = data.results;
         results.forEach((result) => {
           let res = {};

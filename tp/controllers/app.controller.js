@@ -1,9 +1,35 @@
+const request = require('../services/requestPromise');
+
 class AppController {
-  items(req, res)  {
-    res.send(`Item ${req.params.id}`);
+  items(req, res, next)  {
+    const item = req.params.id;
+    const url = `/api/items/${item}`;
+    const options = {
+      method: 'GET',
+      headers: {'Content-Type': 'application/json'},
+      hostname: 'localhost',
+      protocol: 'http',
+      port: '3000',
+      path: url
+    };
+    request(options).then((item) => {
+      res.render('Item', item);
+    }).catch(next);
   };
-  search(req, res) {
-    res.send(`Search item ${req.query.q}`);
+  search(req, res, next) {
+    const query = req.query.q;
+    const url = `/api/sites/${req.params.site}/search?q=${query}`;
+    const options = {
+      method: 'GET',
+      headers: {'Content-Type': 'application/json'},
+      hostname: 'localhost',
+      protocol: 'http',
+      port: '3000',
+      path: url
+    };
+    request(options).then((results) => {
+      res.render('Search', results);
+    }).catch(next);
   };
 
   test(req, res) {
@@ -11,7 +37,7 @@ class AppController {
   }
 
   home(req, res) {
-    res.render('Index', {breadcrumb: ['category3qreqwe1', 'cawfewstegory2']});
+    res.render('Index', {breadcrumb: ['Inicio', 'Ejemplo']});
   }
 }
 

@@ -6,7 +6,7 @@ const errorMiddleware = require('../middlewares/error.middleware');
 
 module.exports.init = (app, path) => {
   app.use('/api', authorMiddleware, routerApi, errorMiddleware.apiError);
-  app.use('/app', routerApp);
+  app.use('/app', routerApp, errorMiddleware.appError);
 
   //Set statics path
   app.use('/assets', assetsServer(`${path}/assets`));
