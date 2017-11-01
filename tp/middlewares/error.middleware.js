@@ -4,8 +4,11 @@ const ErrorMiddleware = {
   },
 
   appError(err, req, res, next) {
-    // TODO: implement!
-  }
+    res.status(err.status || 500).render('Error', {
+      status: err.status,
+      message: err,
+    });
+  },
 };
 
 module.exports = ErrorMiddleware;
