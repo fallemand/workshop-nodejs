@@ -1,0 +1,35 @@
+{
+  "q": "anil",
+  "suggested_queries": [
+    {
+      "q": "anillos",
+      "match_start": 0,
+      "match_end": 4
+    },
+    {
+      "q": "anillos oro",
+      "match_start": 0,
+      "match_end": 4
+    },
+    {
+      "q": "anillo corona",
+      "match_start": 0,
+      "match_end": 4
+    },
+    {
+      "q": "anilladora",
+      "match_start": 0,
+      "match_end": 4
+    },
+    {
+      "q": "anilladora espiraladora",
+      "match_start": 0,
+      "match_end": 4
+    },
+    {
+      "q": "perforadora anilladora",
+      "match_start": 12,
+      "match_end": 16
+    }
+  ]
+}

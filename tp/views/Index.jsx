@@ -1,11 +1,13 @@
 const React = require('react');
 const Layout = require('./components/Layout');
+const MessageSearch = require('./components/MessageSearch');
 
 class Index extends React.Component {
   render() {
     return (
-      <Layout></Layout>
-      /*<Layout {...this.props}></Layout>*/
+      <Layout>
+        <MessageSearch/>
+      </Layout>
     );
   }
 }

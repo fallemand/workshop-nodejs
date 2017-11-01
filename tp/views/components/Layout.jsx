@@ -1,9 +1,7 @@
 const React = require('react');
 const Header = require('./Header');
 const Breadcrumb = require('./Breadcrumb');
-const Search = require('./Search');
 
-const navigation = ['Celulares', 'Iphone'];
 class Layout extends React.Component {
   render() {
     return (
@@ -24,9 +22,8 @@ class Layout extends React.Component {
         <Header query={this.props.query} />
       </header>
       <main role="main" className="main">
-        <Breadcrumb elements={navigation} />
-        <Search/>
-        {/*<div className="main__content">{this.props.children}</div>*/}
+        <Breadcrumb category={this.props.category} query={this.props.query}/>
+        <div className="main__content">{this.props.children}</div>
       </main>
       {/*<script src="/assets/dist/scripts/main.js" />*/}
       </body>

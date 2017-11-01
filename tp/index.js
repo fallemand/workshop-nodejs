@@ -8,6 +8,9 @@ const expReact = require('express-react-views');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+// Use Mocks
+require('./mocks'); // Al requerir una carpeta, ejecuta el index de la misma
+
 // Configure React views
 app.engine('jsx', expReact.createEngine());
 app.set('views', __dirname + '/views/');

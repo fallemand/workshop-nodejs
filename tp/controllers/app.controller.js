@@ -1,11 +1,27 @@
 // APP Controller
 
+const request = require('../services/request.service.js');
+
 module.exports.items = (req, res) => {
-  res.send('Acá vamos a retornar el item: ' + req.params.id);
+  res.render('Vip', {id: req.params.id});
 };
 
-module.exports.search = (req, res) => {
-  res.send('Acá vamos a buscar en meli: ' + req.query.q);
+module.exports.search = (req, res, next) => {
+  const query = req.query.q;
+  const url = `/api/search?q=${query}`;
+  const options = {
+    method: 'GET',
+    headers: {'Content-type': 'application/json'},
+    hostname: 'localhost',
+    port: '3000',
+    protocol: 'http',
+    path: url
+  };
+
+  request(options).then((results) => {
+    //res.json(results);
+    res.render('Search', results); //results es mi this.props
+  }).catch(next);
 };
 
 module.exports.test = (req, res) => {
@@ -22,5 +38,9 @@ module.exports.test = (req, res) => {
 
 
 module.exports.index = (req, res) => {
+  //Emular un error:
+  /*let bla = null;
+  bla.index;*/
+
   res.render('Index');
 };

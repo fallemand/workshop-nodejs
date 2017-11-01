@@ -8,7 +8,7 @@ module.exports.init = (app, path) => {
 
   // Set routers
   app.use('/api', author, routerApi);
-  app.use('/app', routerApp);
+  app.use('/app', routerApp, error.appError);
 
   // Set statics path
   app.use('/assets', serverAssets(`${path}/assets`));
