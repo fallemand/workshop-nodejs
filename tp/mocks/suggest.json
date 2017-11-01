@@ -1,0 +1,40 @@
+{
+  "q": "gato",
+  "suggested_queries": [
+    {
+      "q": "gato",
+      "match_start": 0,
+      "match_end": 4
+    },
+    {
+      "q": "gatos",
+      "match_start": 0,
+      "match_end": 4
+    },
+    {
+      "q": "gato persa",
+      "match_start": 0,
+      "match_end": 4
+    },
+    {
+      "q": "gatos siameses",
+      "match_start": 0,
+      "match_end": 4
+    },
+    {
+      "q": "gato bengal",
+      "match_start": 0,
+      "match_end": 4
+    },
+    {
+      "q": "rascador gato",
+      "match_start": 9,
+      "match_end": 13
+    },
+    {
+      "q": "transportadora gatos",
+      "match_start": 15,
+      "match_end": 19
+    }
+  ]
+}

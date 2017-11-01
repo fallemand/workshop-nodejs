@@ -1,21 +1,44 @@
-const meliService = require('../services/meli.service')
+const meliService = require('../services/meli.service');
+const request = require('../services/requestPromise');
 
 class AppController {
     
     static search(req, res, next) {
         const site = req.params.site;
         const q = req.query.q;
+        const url = `/api/search/${site}?q=${q}`;
 
-        meliService.searchWithPromise(q, site).then((result) => {
-            res.send(result);
+        const options = {
+            method: 'GET',
+            headers: {'Content-type': 'application/json'},
+            hostname: 'localhost',
+            port: '3000',
+            protocol: 'http',
+            path: url
+        };
+
+        request(options).then((results) => {
+            results.query = q;
+            res.render('Search', results);
         }).catch(next);
     };
     
     static items(req, res, next) {
         const itemId = req.params.id;
 
-        meliService.itemWithPromise(itemId).then((result) => {
-            res.send(result);
+        const url = `/api/items/${itemId}`;
+        
+        const options = {
+            method: 'GET',
+            headers: {'Content-type': 'application/json'},
+            hostname: 'localhost',
+            port: '3000',
+            protocol: 'http',
+            path: url
+        };
+
+        request(options).then((results) => {
+            res.render('Item', results);
         }).catch(next);
     };
     
@@ -32,7 +55,7 @@ class AppController {
     };
         
     static index(req, res, next) {
-        res.render('Index', {breadcrumb: ["Bre 1", "Bre 2", "Bre 3"]});
+        res.render('Index');
     };
 }
 

@@ -9,9 +9,16 @@ class Transform {
     };
 
     static search(search) {
-        let transformedSearch = {};
 
-        transformedSearch = search;
+        let transformedSearch = {
+
+            categories: search.filters.length > 0
+            && search.filters[0].values.length > 0
+            && search.filters[0].values[0].path_from_root,
+
+            query: search.query,
+            results: search.results,
+        };
 
         return transformedSearch;
     };

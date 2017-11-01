@@ -1,4 +1,5 @@
 const request = require('./requestPromise');
+const Transform = require('./meli.transform');
 
 class MeliService {
 
@@ -58,11 +59,11 @@ class MeliService {
 
   static suggest(query, site, response) {
     const options = {
-      protocol: 'http',
+      protocol: 'https',
       method: 'GET',
       headers: {'Content-Type': 'application/json'},
-      hostname: 'http2.mlstatic.com',
-      path: `/resources/sites/${site}/autosuggest?q=${query}`
+      hostname: 'api.mercadolibre.com',
+      path: `/sites/${site}/autosuggest?q=${query}`
     };
 
     request(options).then((data) => {
@@ -119,16 +120,22 @@ class MeliService {
       path: `/sites/${site}/search?q=${query}`
     };
 
-    return request(options);
+    return new Promise((resolve, reject) => {
+      request(options).then((data) => {
+        resolve(Transform.search(data));
+      }).catch((err) => {
+        reject(err);
+      })
+    });
   }
 
   static suggestWithPromise(query, site) {
     const options = {
-      protocol: 'http',
+      protocol: 'https',
       method: 'GET',
       headers: {'Content-Type': 'application/json'},
-      hostname: 'http2.mlstatic.com',
-      path: `/resources/sites/${site}/autosuggest?q=${query}`
+      hostname: 'api.mercadolibre.com',
+      path: `/sites/${site}/autosuggest?q=${query}`
     };
 
     return request(options);

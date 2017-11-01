@@ -11,8 +11,8 @@ class Index extends React.Component {
 
     render() {
         return (
-            <Layout query="Query" breadcrumbList={this.props.breadcrumb}>
-                <Search></Search>
+            <Layout query={this.props.query} breadcrumbList={this.props.breadcrumb}>
+                <Search {...this.props}></Search>
             </Layout>
         )
     }

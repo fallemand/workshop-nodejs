@@ -9,4 +9,6 @@ router.get('/test', appController.test);
 
 router.get('/index', appController.index);
 
+router.get('/', appController.index);
+
 module.exports = router;
