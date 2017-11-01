@@ -1,0 +1,162 @@
+{
+  "id": "MLA680256068",
+  "site_id": "MLA",
+  "title": "Macbook Air 13.3 Apple Mqd32le/a",
+  "subtitle": null,
+  "seller_id": 221591137,
+  "category_id": "MLA373781",
+  "official_store_id": 738,
+  "price": 23999,
+  "base_price": 23999,
+  "original_price": null,
+  "currency_id": "ARS",
+  "initial_quantity": 38,
+  "available_quantity": 5,
+  "sold_quantity": 33,
+  "sale_terms": [
+  ],
+  "buying_mode": "buy_it_now",
+  "listing_type_id": "gold_special",
+  "start_time": "2017-08-25T18:24:16.000Z",
+  "stop_time": "2037-08-20T18:24:16.000Z",
+  "condition": "new",
+  "permalink": "http://articulo.mercadolibre.com.ar/MLA-680256068-macbook-air-133-apple-mqd32lea-_JM",
+  "thumbnail": "http://mla-s1-p.mlstatic.com/653612-MLA25913937371_082017-I.jpg",
+  "secure_thumbnail": "https://mla-s1-p.mlstatic.com/653612-MLA25913937371_082017-I.jpg",
+  "pictures": [
+    {
+      "id": "653612-MLA25913937371_082017",
+      "url": "http://mla-s1-p.mlstatic.com/653612-MLA25913937371_082017-O.jpg",
+      "secure_url": "https://mla-s1-p.mlstatic.com/653612-MLA25913937371_082017-O.jpg",
+      "size": "500x500",
+      "max_size": "1000x1000",
+      "quality": ""
+    },
+    {
+      "id": "743208-MLA25913937370_082017",
+      "url": "http://mla-s1-p.mlstatic.com/743208-MLA25913937370_082017-O.jpg",
+      "secure_url": "https://mla-s1-p.mlstatic.com/743208-MLA25913937370_082017-O.jpg",
+      "size": "500x500",
+      "max_size": "1000x1000",
+      "quality": ""
+    }
+  ],
+  "video_id": null,
+  "descriptions": [
+    {
+      "id": "MLA680256068-1425536526"
+    }
+  ],
+  "accepts_mercadopago": true,
+  "non_mercado_pago_payment_methods": [
+  ],
+  "shipping": {
+    "mode": "custom",
+    "methods": [
+    ],
+    "tags": [
+      "me2_available"
+    ],
+    "dimensions": null,
+    "local_pick_up": false,
+    "free_shipping": false,
+    "logistic_type": "custom",
+    "store_pick_up": false
+  },
+  "international_delivery_mode": "none",
+  "seller_address": {
+    "comment": "",
+    "address_line": "",
+    "zip_code": "",
+    "city": {
+      "id": "TUxBQkNIQTM5NjBa",
+      "name": "Chacarita"
+    },
+    "state": {
+      "id": "AR-C",
+      "name": "Capital Federal"
+    },
+    "country": {
+      "id": "AR",
+      "name": "Argentina"
+    },
+    "search_location": {
+      "neighborhood": {
+        "id": "TUxBQkNIQTM5NjBa",
+        "name": "Chacarita"
+      },
+      "city": {
+        "id": "TUxBQ0NBUGZlZG1sYQ",
+        "name": "Capital Federal"
+      },
+      "state": {
+        "id": "TUxBUENBUGw3M2E1",
+        "name": "Capital Federal"
+      }
+    },
+    "latitude": -34.5848,
+    "longitude": -58.454987,
+    "id": 189462368
+  },
+  "seller_contact": null,
+  "location": {
+  },
+  "geolocation": {
+    "latitude": -34.5848,
+    "longitude": -58.454987
+  },
+  "coverage_areas": [
+  ],
+  "attributes": [
+    {
+      "id": "LINE",
+      "name": "Línea",
+      "value_id": "365871",
+      "value_name": "MACBOOK AIR",
+      "value_struct": null,
+      "attribute_group_id": "DFLT",
+      "attribute_group_name": "Otros"
+    },
+    {
+      "id": "PROCESSOR",
+      "name": "Procesador",
+      "value_id": "98864",
+      "value_name": "Intel Core i5",
+      "value_struct": null,
+      "attribute_group_id": "DFLT",
+      "attribute_group_name": "Otros"
+    },
+    {
+      "id": "BRAND",
+      "name": "Marca",
+      "value_id": "9344",
+      "value_name": "Apple",
+      "value_struct": null,
+      "attribute_group_id": "MAIN",
+      "attribute_group_name": "Principales"
+    }
+  ],
+  "warnings": [
+  ],
+  "listing_source": "",
+  "variations": [
+  ],
+  "status": "active",
+  "sub_status": [
+  ],
+  "tags": [
+    "good_quality_thumbnail",
+    "good_quality_picture",
+    "immediate_payment"
+  ],
+  "warranty": "12 meses garantía oficial",
+  "catalog_product_id": null,
+  "domain_id": "MLA-NOTEBOOKS",
+  "parent_item_id": null,
+  "differential_pricing": null,
+  "deal_ids": [
+  ],
+  "automatic_relist": false,
+  "date_created": "2017-08-25T18:24:16.000Z",
+  "last_updated": "2017-11-01T14:26:36.000Z"
+}

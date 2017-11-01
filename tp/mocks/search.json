@@ -1,0 +1,5083 @@
+{
+  "site_id": "MLA",
+  "query": "macbook",
+  "paging": {
+    "total": 4252,
+    "offset": 0,
+    "limit": 50,
+    "primary_results": 1000
+  },
+  "results": [
+    {
+      "id": "MLA680256068",
+      "site_id": "MLA",
+      "title": "Macbook Air 13.3 Apple Mqd32le/a",
+      "seller": {
+        "id": 221591137,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 23999,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 5,
+      "sold_quantity": 33,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-08-20T18:24:16.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-680256068-macbook-air-133-apple-mqd32lea-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/653612-MLA25913937371_082017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 2532.29,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQkNIQTM5NjBa",
+        "city_name": "Chacarita"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "custom",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 189462368,
+        "comment": "",
+        "address_line": "Guevara 533",
+        "zip_code": "1427",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQkNIQTM5NjBa",
+          "name": "Chacarita"
+        },
+        "latitude": -34.5861491,
+        "longitude": -58.4522723
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373781",
+      "official_store_id": 738,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA682799894",
+      "site_id": "MLA",
+      "title": "Macbook Apple Mpxq2le/a Intel Core I5",
+      "seller": {
+        "id": 221591137,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 29999,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 5,
+      "sold_quantity": 16,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-09-07T15:01:57.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-682799894-macbook-apple-mpxq2lea-intel-core-i5-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/643519-MLA25984606227_092017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 3165.39,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQkNIQTM5NjBa",
+        "city_name": "Chacarita"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "custom",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 189462368,
+        "comment": "",
+        "address_line": "Guevara 533",
+        "zip_code": "1427",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQkNIQTM5NjBa",
+          "name": "Chacarita"
+        },
+        "latitude": -34.5861491,
+        "longitude": -58.4522723
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        }
+      ],
+      "original_price": 35999,
+      "category_id": "MLA373810",
+      "official_store_id": 738,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA653282516",
+      "site_id": "MLA",
+      "title": "Nuevo Modelo Macbook Air 2017 13 I5 8gb Entrega Inmediata",
+      "seller": {
+        "id": 225480741,
+        "power_seller_status": "gold",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 29999,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 26,
+      "sold_quantity": 26,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-08-19T19:02:51.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-653282516-nuevo-modelo-macbook-air-2017-13-i5-8gb-entrega-inmediata-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/988825-MLA25514279301_042017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 3165.39,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQkFMTTMwNTBa",
+        "city_name": "Almagro"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 191080237,
+        "comment": "",
+        "address_line": "Bartolome Mitre 3835",
+        "zip_code": "1201",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQkFMTTMwNTBa",
+          "name": "Almagro"
+        },
+        "latitude": -34.6097304,
+        "longitude": -58.4204148
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": "366162",
+          "value_name": "A1466",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373780",
+      "official_store_id": null,
+      "catalog_product_id": "MLA6282586",
+      "reviews": {
+        "rating_average": 4.9,
+        "total": 8
+      }
+    },
+    {
+      "id": "MLA630429349",
+      "site_id": "MLA",
+      "title": "Macbook Pro 13 /garantia 1año/ Stock Noviembre 2017",
+      "seller": {
+        "id": 114778930,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 27000,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 1,
+      "sold_quantity": 16,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2036-08-08T15:06:09.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-630429349-macbook-pro-13-garantia-1ano-stock-noviembre-2017-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/783684-MLA26015115564_092017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 2848.95,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQkNBQjM4MDda",
+        "city_name": "Caballito"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 178256251,
+        "comment": "piso 4 dept a",
+        "address_line": "Arengreen 681",
+        "zip_code": "1405",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQkNBQjM4MDda",
+          "name": "Caballito"
+        },
+        "latitude": -34.6107329,
+        "longitude": -58.4424796
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": "366026",
+          "value_name": "A1278",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373810",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+        "rating_average": 5,
+        "total": 2
+      }
+    },
+    {
+      "id": "MLA673178574",
+      "site_id": "MLA",
+      "title": "Apple Macbook Pro Mpxt2 13 Core I5 8gb Ssd 256gb Modelo 2017",
+      "seller": {
+        "id": 128885,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 43998,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 6,
+      "sold_quantity": 7,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-06-29T19:09:05.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-673178574-apple-macbook-pro-mpxt2-13-core-i5-8gb-ssd-256gb-modelo-2017-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/662254-MLA25726588161_072017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 4642.52,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "capital federal"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 100160186,
+        "comment": "local 489-490",
+        "address_line": "florida 537",
+        "zip_code": "1005",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "capital federal"
+        },
+        "latitude": -34.6015835,
+        "longitude": -58.3749042
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "MPXT2",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373810",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA624483710",
+      "site_id": "MLA",
+      "title": "Nueva Apple Macbook 12 Mid 2017 Todos Los Colores",
+      "seller": {
+        "id": 109480855,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 36490,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 14,
+      "sold_quantity": 10,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2036-06-13T00:48:47.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-624483710-nueva-apple-macbook-12-mid-2017-todos-los-colores-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/561815-MLA25295952638_012017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 3850.3,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQkFMTTMwNTBa",
+        "city_name": "Almagro"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 171562027,
+        "comment": "Torre 2 Piso 2 Depto 6 Referencia: Torres Abasto Entre: Lavalle y Guardia Vieja",
+        "address_line": "Gallo 606",
+        "zip_code": "1172",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQkFMTTMwNTBa",
+          "name": "Almagro"
+        },
+        "latitude": -34.6020232,
+        "longitude": -58.4129532
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "MNYM2Y MNYF2Y MNYK2Y MNYH2Y",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373761",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+        "rating_average": 5,
+        "total": 1
+      }
+    },
+    {
+      "id": "MLA682401231",
+      "site_id": "MLA",
+      "title": "Apple Macbook Air I5 8gb 256ssd 13.3 Hd Nueva Garantia",
+      "seller": {
+        "id": 69100290,
+        "power_seller_status": "gold",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 27999.99,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 1,
+      "sold_quantity": 4,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-09-04T15:20:56.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-682401231-apple-macbook-air-i5-8gb-256ssd-133-hd-nueva-garantia-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/697219-MLA25911235986_082017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 2954.47,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-X",
+        "state_name": "Córdoba",
+        "city_id": "TUxBQ0NBUGNiZGQx",
+        "city_name": "Córdoba"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 145338849,
+        "comment": "5a",
+        "address_line": "Lima 322",
+        "zip_code": "5000",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-X",
+          "name": "Córdoba"
+        },
+        "city": {
+          "id": "TUxBQ0NBUGNiZGQx",
+          "name": "Córdoba"
+        },
+        "latitude": -31.4138248,
+        "longitude": -64.1783147
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "MMGG2LL/A",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373780",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA633478246",
+      "site_id": "MLA",
+      "title": "Apple Macbook Air 13.3 Mqd32 I5 1.8ghz/8gb/128gb Nueva 2017",
+      "seller": {
+        "id": 109480855,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 27990,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 4,
+      "sold_quantity": 8,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2036-08-28T00:39:39.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-633478246-apple-macbook-air-133-mqd32-i5-18ghz8gb128gb-nueva-2017-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/552505-MLA25030771777_092016-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 2953.41,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQkFMTTMwNTBa",
+        "city_name": "Almagro"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 171562027,
+        "comment": "Torre 2 Piso 2 Depto 6 Referencia: Torres Abasto Entre: Lavalle y Guardia Vieja",
+        "address_line": "Gallo 606",
+        "zip_code": "1172",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQkFMTTMwNTBa",
+          "name": "Almagro"
+        },
+        "latitude": -34.6020232,
+        "longitude": -58.4129532
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "MQD32",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373780",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA673184694",
+      "site_id": "MLA",
+      "title": "Apple Macbook Pro 15 Mptr2 Touch Bar I7 16gb Ssd 256gb 2017",
+      "seller": {
+        "id": 128885,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 64998,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 27,
+      "sold_quantity": 2,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-06-29T19:50:24.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-673184694-apple-macbook-pro-15-mptr2-touch-bar-i7-16gb-ssd-256gb-2017-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/910222-MLA25899414453_082017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 6858.37,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "capital federal"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 100160186,
+        "comment": "local 489-490",
+        "address_line": "florida 537",
+        "zip_code": "1005",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "capital federal"
+        },
+        "latitude": -34.6015835,
+        "longitude": -58.3749042
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "MPTR2",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373816",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA607261553",
+      "site_id": "MLA",
+      "title": "Macbook Air 13.3/8gb/128gb/ Nueva/caja/2015-2016",
+      "seller": {
+        "id": 114778930,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 25500,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 3,
+      "sold_quantity": 9,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2036-04-28T02:08:28.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-607261553-macbook-air-1338gb128gb-nuevacaja2015-2016-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/734500-MLA26194482196_102017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 2690.68,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQkNBQjM4MDda",
+        "city_name": "Caballito"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 178256251,
+        "comment": "piso 4 dept a",
+        "address_line": "Arengreen 681",
+        "zip_code": "1405",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQkNBQjM4MDda",
+          "name": "Caballito"
+        },
+        "latitude": -34.6107329,
+        "longitude": -58.4424796
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "MMGF2ll/A",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373780",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+        "rating_average": 5,
+        "total": 1
+      }
+    },
+    {
+      "id": "MLA616175516",
+      "site_id": "MLA",
+      "title": "Macbook Pro 2017 13.3 Core I5 8g 256gb Touch Bar Mpxv2 Mpxx2",
+      "seller": {
+        "id": 109480855,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 47990,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 6,
+      "sold_quantity": 53,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2036-04-06T22:04:27.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-616175516-macbook-pro-2017-133-core-i5-8g-256gb-touch-bar-mpxv2-mpxx2-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/773633-MLA26136230158_102017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 5063.74,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQkFMTTMwNTBa",
+        "city_name": "Almagro"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 171562027,
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQkFMTTMwNTBa",
+          "name": "Almagro"
+        },
+        "latitude": -34.6020232,
+        "longitude": -58.4129532
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "MPXV2 MPXX2",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373810",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+        "rating_average": 4.8,
+        "total": 6
+      }
+    },
+    {
+      "id": "MLA673178385",
+      "site_id": "MLA",
+      "title": "Apple Macbook Pro Mpxq2 13 Core I5 8gb Ssd 128gb Modelo 2017",
+      "seller": {
+        "id": 128885,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 39997,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 6,
+      "sold_quantity": 4,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-06-29T19:07:20.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-673178385-apple-macbook-pro-mpxq2-13-core-i5-8gb-ssd-128gb-modelo-2017-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/664424-MLA25726579171_072017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 4220.35,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "capital federal"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 100160186,
+        "comment": "local 489-490",
+        "address_line": "florida 537",
+        "zip_code": "1005",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "capital federal"
+        },
+        "latitude": -34.6015835,
+        "longitude": -58.3749042
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "MPXQ2",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373810",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA668964950",
+      "site_id": "MLA",
+      "title": "Macbook 13 Late 2008 C2d 2.0ghz 4g Ram 500g Hd 256 Video",
+      "seller": {
+        "id": 164032151,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 10000,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 1,
+      "sold_quantity": 5,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-05-28T23:36:59.000Z",
+      "condition": "used",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-668964950-macbook-13-late-2008-c2d-20ghz-4g-ram-500g-hd-256-video-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/424111-MLA20494323282_112015-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 1055.17,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "CABA"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 185208306,
+        "comment": "2A",
+        "address_line": "juan b justo 4459",
+        "zip_code": "1416",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "CABA"
+        },
+        "latitude": -34.6076645,
+        "longitude": -58.4633468
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": "366026",
+          "value_name": "A1278",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373801",
+      "official_store_id": null,
+      "catalog_product_id": "MLA6282563",
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA675747313",
+      "site_id": "MLA",
+      "title": "Macbook Pro 15 Core 2 Duo 2.4 120 Ssd 4g Bateria Nueva !!",
+      "seller": {
+        "id": 164032151,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 9000,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 1,
+      "sold_quantity": 1,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-07-19T14:46:55.000Z",
+      "condition": "used",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-675747313-macbook-pro-15-core-2-duo-24-120-ssd-4g-bateria-nueva--_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/503815-MLA25312295862_012017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 949.65,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "CABA"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 185208306,
+        "comment": "2A",
+        "address_line": "juan b justo 4459",
+        "zip_code": "1416",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "CABA"
+        },
+        "latitude": -34.6076645,
+        "longitude": -58.4633468
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": "35868",
+          "value_name": "A1260",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373802",
+      "official_store_id": null,
+      "catalog_product_id": "MLA6282547",
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA615336204",
+      "site_id": "MLA",
+      "title": "Macbook Pro 13 Pulgadas",
+      "seller": {
+        "id": 136634823,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 10900,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 1,
+      "sold_quantity": 0,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2036-03-30T23:16:27.000Z",
+      "condition": "used",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-615336204-macbook-pro-13-pulgadas-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/534711-MLA20621680349_032016-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 1150.13,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "CABA"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "not_specified",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 163120838,
+        "comment": "local a la calle",
+        "address_line": "sanches de bustamante 2119",
+        "zip_code": "1425",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "CABA"
+        },
+        "latitude": -34.5878755,
+        "longitude": -58.4062631
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Atributos Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373801",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA614170975",
+      "site_id": "MLA",
+      "title": "Macbook Pro 13 Core 2 Duo 2.4gh 4g 250g Nvidia Geforce 320",
+      "seller": {
+        "id": 29227031,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 9800,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 2,
+      "sold_quantity": 3,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2036-03-23T14:17:27.000Z",
+      "condition": "used",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-614170975-macbook-pro-13-core-2-duo-24gh-4g-250g-nvidia-geforce-320-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/894645-MLA25824990166_072017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 1034.06,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-B",
+        "state_name": "Buenos Aires",
+        "city_id": "TUxBQ0FWRTc5OTQ1",
+        "city_name": "Avellaneda"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 71721811,
+        "comment": "",
+        "address_line": "Reconquista 1220",
+        "zip_code": "1870",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-B",
+          "name": "Buenos Aires"
+        },
+        "city": {
+          "id": "TUxBQ0FWRTc5OTQ1",
+          "name": "Avellaneda"
+        },
+        "latitude": -34.6832103,
+        "longitude": -58.3652904
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373801",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA635913328",
+      "site_id": "MLA",
+      "title": "Macbook Air 2017 13 I5 1.8 8gb 128gb Tec. Esp Caja Sellada!!",
+      "seller": {
+        "id": 97288243,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 22500,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 14,
+      "sold_quantity": 8,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2036-09-30T13:26:49.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-635913328-macbook-air-2017-13-i5-18-8gb-128gb-tec-esp-caja-sellada-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/319305-MLA20869038811_092016-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 2374.13,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "Capital Federal"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 99472969,
+        "comment": "",
+        "address_line": "Pacheco 1866",
+        "zip_code": "1431",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "Capital Federal"
+        },
+        "latitude": -34.5778128,
+        "longitude": -58.4786732
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "MQD32CI/A",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373780",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA629273347",
+      "site_id": "MLA",
+      "title": "Macbook 12 Pulgadas -1.3 Ghz-8 Gb - 512 Ssd New",
+      "seller": {
+        "id": 120191643,
+        "power_seller_status": "gold",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 46999.99,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 95,
+      "sold_quantity": 5,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2036-07-23T18:53:56.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-629273347-macbook-12-pulgadas-13-ghz-8-gb-512-ssd-new-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/548405-MLA25004015605_082016-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 4959.28,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "ciudad autonoma de buenos aires"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 103242417,
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "ciudad autonoma de buenos aires"
+        },
+        "latitude": -34.629302,
+        "longitude": -58.4607904
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "12 PULGADAS",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373761",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA647833773",
+      "site_id": "MLA",
+      "title": "New Macbook Air Mmgg2 13,3 - 1.6 Ghz 8 Gb 256 Ssd",
+      "seller": {
+        "id": 120191643,
+        "power_seller_status": "gold",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 33499.99,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 87,
+      "sold_quantity": 13,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2036-12-21T14:41:27.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-647833773-new-macbook-air-mmgg2-133-16-ghz-8-gb-256-ssd-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/531421-MLA20764985000_062016-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 3534.81,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "ciudad autonoma de buenos aires"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 103242417,
+        "comment": "oficina 604",
+        "address_line": "membrillar 74",
+        "zip_code": "1406",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "ciudad autonoma de buenos aires"
+        },
+        "latitude": -34.629302,
+        "longitude": -58.4607904
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "AIR",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373780",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+        "rating_average": 5,
+        "total": 2
+      }
+    },
+    {
+      "id": "MLA673185041",
+      "site_id": "MLA",
+      "title": "Macbook Pro 13 Mpxy2 Touch Bar I5 8gb 512gb Modelo 2017",
+      "seller": {
+        "id": 128885,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 54998,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 7,
+      "sold_quantity": 3,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-06-29T19:53:03.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-673185041-macbook-pro-13-mpxy2-touch-bar-i5-8gb-512gb-modelo-2017-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/615940-MLA25726729357_072017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 5803.21,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "capital federal"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 100160186,
+        "comment": "local 489-490",
+        "address_line": "florida 537",
+        "zip_code": "1005",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "capital federal"
+        },
+        "latitude": -34.6015835,
+        "longitude": -58.3749042
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "MPXY2",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373810",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA672236447",
+      "site_id": "MLA",
+      "title": "Macbook Air 13.3 I5 1.8 Ghz 8gb 128gb Mqd32 Español 2017",
+      "seller": {
+        "id": 96701054,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 24990,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 1,
+      "sold_quantity": 1,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-06-22T15:32:48.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-672236447-macbook-air-133-i5-18-ghz-8gb-128gb-mqd32-espanol-2017-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/634667-MLA25848948659_082017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 2636.86,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "Once - Belgrano"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 176956277,
+        "comment": "Piso 3, Departamento C",
+        "address_line": "Lavalle 2279",
+        "zip_code": "1051",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "Once - Belgrano"
+        },
+        "latitude": -34.6016835,
+        "longitude": -58.3684448
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "Macbook Air MQD32",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373780",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA673710229",
+      "site_id": "MLA",
+      "title": "Macbook Pro 2017 15.4 Touch Bar I7 16gb 1tb Ssd Zouc0003l",
+      "seller": {
+        "id": 65890166,
+        "power_seller_status": "silver",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 129969.99,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 66,
+      "sold_quantity": 0,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_pro",
+      "stop_time": "2037-08-11T15:51:33.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-673710229-macbook-pro-2017-154-touch-bar-i7-16gb-1tb-ssd-zouc0003l-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/612072-MLA25737977256_072017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 6,
+        "amount": 21661.67,
+        "rate": 0,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQlBBTDI1MTVa",
+        "city_name": "Palermo"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 159922714,
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQlBBTDI1MTVa",
+          "name": "Palermo"
+        },
+        "latitude": -34.5707163,
+        "longitude": -58.4441176
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "ZOUC0003L",
+          "value_struct": null
+        }
+      ],
+      "differential_pricing": {
+        "id": 33440180
+      },
+      "original_price": null,
+      "category_id": "MLA373816",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA639377990",
+      "site_id": "MLA",
+      "title": "Macbook Air 13 I5 Impecable",
+      "seller": {
+        "id": 669583,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 15699,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 1,
+      "sold_quantity": 0,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2036-11-09T16:58:53.000Z",
+      "condition": "used",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-639377990-macbook-air-13-i5-impecable-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/851015-MLA25112820488_102016-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 1656.51,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "CABA"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 158038957,
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "CABA"
+        },
+        "latitude": -34.605113,
+        "longitude": -58.4280292
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373780",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA678667577",
+      "site_id": "MLA",
+      "title": "New Macbook Air 2017 13' I5 8gb Garantia 12 Meses Factura",
+      "seller": {
+        "id": 225480741,
+        "power_seller_status": "gold",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 32999,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 34,
+      "sold_quantity": 5,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_pro",
+      "stop_time": "2037-08-26T07:27:42.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-678667577-new-macbook-air-2017-13-i5-8gb-garantia-12-meses-factura-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/992625-MLA25473999673_032017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 6,
+        "amount": 5499.83,
+        "rate": 0,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQkFMTTMwNTBa",
+        "city_name": "Almagro"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 191080237,
+        "comment": "",
+        "address_line": "Bartolome Mitre 3835",
+        "zip_code": "1201",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQkFMTTMwNTBa",
+          "name": "Almagro"
+        },
+        "latitude": -34.6097304,
+        "longitude": -58.4204148
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": "366162",
+          "value_name": "A1466",
+          "value_struct": null
+        }
+      ],
+      "differential_pricing": {
+        "id": 33440180
+      },
+      "original_price": null,
+      "category_id": "MLA373780",
+      "official_store_id": null,
+      "catalog_product_id": "MLA6282586",
+      "reviews": {
+        "rating_average": 4.9,
+        "total": 8
+      }
+    },
+    {
+      "id": "MLA631696688",
+      "site_id": "MLA",
+      "title": "Bateria Para Macbook Pro 13 A1278 Modelo A1322 Nueva Inst Sc",
+      "seller": {
+        "id": 164032151,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 2500,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 1,
+      "sold_quantity": 17,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2036-08-13T14:48:07.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-631696688-bateria-para-macbook-pro-13-a1278-modelo-a1322-nueva-inst-sc-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/206601-MLA20346696568_072015-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 263.79,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "CABA"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 185208306,
+        "comment": "2A",
+        "address_line": "juan b justo 4459",
+        "zip_code": "1416",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "CABA"
+        },
+        "latitude": -34.6076645,
+        "longitude": -58.4633468
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Atributos Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Atributos Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "A1322",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373801",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA684940427",
+      "site_id": "MLA",
+      "title": "Macbook Air 13 Core I5 1.6ghz 4gb 128gb 2015 Bata 130 Ciclos",
+      "seller": {
+        "id": 29227031,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 18500,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 1,
+      "sold_quantity": 1,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-09-21T16:40:13.000Z",
+      "condition": "used",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-684940427-macbook-air-13-core-i5-16ghz-4gb-128gb-2015-bata-130-ciclos-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/800273-MLA25980178548_092017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 1952.06,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-B",
+        "state_name": "Buenos Aires",
+        "city_id": "TUxBQ0FWRTc5OTQ1",
+        "city_name": "Avellaneda"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 71721811,
+        "comment": "",
+        "address_line": "Reconquista 1220",
+        "zip_code": "1870",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-B",
+          "name": "Buenos Aires"
+        },
+        "city": {
+          "id": "TUxBQ0FWRTc5OTQ1",
+          "name": "Avellaneda"
+        },
+        "latitude": -34.6832103,
+        "longitude": -58.3652904
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "Air 7,2",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373780",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA655308384",
+      "site_id": "MLA",
+      "title": "Apple Macbook Pro Mlh32 15,4 Touch Bar 2.6ghz 16gb Ssd 256g",
+      "seller": {
+        "id": 128885,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 59999,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 86,
+      "sold_quantity": 2,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-02-17T22:11:26.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-655308384-apple-macbook-pro-mlh32-154-touch-bar-26ghz-16gb-ssd-256g-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/588225-MLA25393720514_022017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 6330.89,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "capital federal"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 100160186,
+        "comment": "local 489-490",
+        "address_line": "florida 537",
+        "zip_code": "1005",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "capital federal"
+        },
+        "latitude": -34.6015835,
+        "longitude": -58.3749042
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "MLH32E",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373830",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA689185846",
+      "site_id": "MLA",
+      "title": "Apple Macbook Pro Md101 500gb 4gb I5 13.3 Osx 2017",
+      "seller": {
+        "id": 164032151,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 26000,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 1,
+      "sold_quantity": 0,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-10-20T04:48:15.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-689185846-apple-macbook-pro-md101-500gb-4gb-i5-133-osx-2017-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/120825-MLA25496660806_042017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 2743.43,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "CABA"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 185208306,
+        "comment": "2A",
+        "address_line": "juan b justo 4459",
+        "zip_code": "1416",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "CABA"
+        },
+        "latitude": -34.6076645,
+        "longitude": -58.4633468
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "Md101",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373810",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA673905688",
+      "site_id": "MLA",
+      "title": "Macbook Air 13 Apple Mmgf2e/a Core I5 Ram 8gb Memoria 128gb",
+      "seller": {
+        "id": 174568948,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 27999,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 26,
+      "sold_quantity": 2,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-07-05T14:33:38.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-673905688-macbook-air-13-apple-mmgf2ea-core-i5-ram-8gb-memoria-128gb-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/969439-MLA25741530385_072017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 2954.36,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "Pompeya"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 155735229,
+        "comment": "",
+        "address_line": "Aníbal Pedro Arbeletche 1580",
+        "zip_code": "1437",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "Pompeya"
+        },
+        "latitude": -34.608208,
+        "longitude": -58.4780168
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "Mmgf2e/a",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373780",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA658225289",
+      "site_id": "MLA",
+      "title": "Macbook Pro 2016 Mll42 (2.0 I5, 8gb, 256gb Ssd)",
+      "seller": {
+        "id": 163594810,
+        "power_seller_status": "silver",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 39490,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 5,
+      "sold_quantity": 5,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-03-11T14:47:42.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-658225289-macbook-pro-2016-mll42-20-i5-8gb-256gb-ssd-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/840525-MLA25437984226_032017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 4166.85,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "Belgrano"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 154505938,
+        "comment": "",
+        "address_line": "Olazabal 1715",
+        "zip_code": "1428",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "Belgrano"
+        },
+        "latitude": -34.5548701,
+        "longitude": -58.4494309
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "MLL42E/A",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373826",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA675364052",
+      "site_id": "MLA",
+      "title": "Macbook Air Modelo 2017 (mqd32)",
+      "seller": {
+        "id": 4748138,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 25000,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 1,
+      "sold_quantity": 1,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-07-16T05:15:29.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-675364052-macbook-air-modelo-2017-mqd32-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/902947-MLA25780220635_072017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 2637.92,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "Congreso"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 67039489,
+        "comment": "Entre: Bartolome Mitre y Presidente J.D. Peron",
+        "address_line": "Riobamba 124",
+        "zip_code": "1025",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "Congreso"
+        },
+        "latitude": -34.6098208,
+        "longitude": -58.3926061
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "MacBookAir7,2",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373780",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA668961214",
+      "site_id": "MLA",
+      "title": "Macbook Air 13,3 I5 1.8 8gb Ram 128gb Cerradas Liquido!",
+      "seller": {
+        "id": 97288243,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 22500,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 5,
+      "sold_quantity": 1,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-05-28T22:58:56.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-668961214-macbook-air-133-i5-18-8gb-ram-128gb-cerradas-liquido-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/327405-MLA20869039841_092016-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 2374.13,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "Capital Federal"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "not_specified",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 99472969,
+        "comment": "",
+        "address_line": "Pacheco 1866",
+        "zip_code": "1431",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "Capital Federal"
+        },
+        "latitude": -34.5778128,
+        "longitude": -58.4786732
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "MQD32CI/A",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373780",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA673184246",
+      "site_id": "MLA",
+      "title": "Macbook Pro Mptt2 I7 16 Gb, Ssd 512gb Touch Bar Modelo 2017",
+      "seller": {
+        "id": 128885,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 75998,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 9,
+      "sold_quantity": 1,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-06-29T19:47:37.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-673184246-macbook-pro-mptt2-i7-16-gb-ssd-512gb-touch-bar-modelo-2017-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/772725-MLA25726714510_072017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 8019.06,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "capital federal"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 100160186,
+        "comment": "local 489-490",
+        "address_line": "florida 537",
+        "zip_code": "1005",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "capital federal"
+        },
+        "latitude": -34.6015835,
+        "longitude": -58.3749042
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "MTTV2E/A",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373830",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA646335917",
+      "site_id": "MLA",
+      "title": "Macbook Pro 2016 Mll42 13.3' Core I5 8g Ssd 256gb Mf840",
+      "seller": {
+        "id": 128885,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 44998,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 81,
+      "sold_quantity": 7,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2036-12-08T19:17:50.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-646335917-macbook-pro-2016-mll42-133-core-i5-8g-ssd-256gb-mf840-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/780315-MLA25221083201_122016-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 4748.04,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "capital federal"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 100160186,
+        "comment": "local 489-490",
+        "address_line": "florida 537",
+        "zip_code": "1005",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "capital federal"
+        },
+        "latitude": -34.6015835,
+        "longitude": -58.3749042
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": "101918",
+          "value_name": "MF840",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373826",
+      "official_store_id": null,
+      "catalog_product_id": "MLA6333623",
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA672281762",
+      "site_id": "MLA",
+      "title": "Macbook Pro Mptt2e/a (i7 2.9ghz, 16 Gb, 512 Gb Ssd Touchbar)",
+      "seller": {
+        "id": 163594810,
+        "power_seller_status": "silver",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 73490,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 18,
+      "sold_quantity": 2,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-06-22T21:13:40.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-672281762-macbook-pro-mptt2ea-i7-29ghz-16-gb-512-gb-ssd-touchbar-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/922473-MLA25708376647_062017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 7754.42,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "Belgrano"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 154505938,
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "Belgrano"
+        },
+        "latitude": -34.5548701,
+        "longitude": -58.4494309
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "MPTT2E/A",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373830",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA685235822",
+      "site_id": "MLA",
+      "title": "Macbook Air Mqd42le-a Core I5",
+      "seller": {
+        "id": 143125485,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 26999,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 8,
+      "sold_quantity": 0,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-09-23T12:29:28.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-685235822-macbook-air-mqd42le-a-core-i5-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/711866-MLA26090830678_092017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 2848.84,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQkJBTDMxMDZa",
+        "city_name": "Balvanera"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "custom",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 154566437,
+        "comment": "",
+        "address_line": "Valentin Gomez 2813",
+        "zip_code": "1191",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQkJBTDMxMDZa",
+          "name": "Balvanera"
+        },
+        "latitude": -34.605524,
+        "longitude": -58.4058611
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373781",
+      "official_store_id": 229,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA611908611",
+      "site_id": "MLA",
+      "title": "Macbook Pro Touch Bar Core I5 512ssd 13.3 Retina Nuevas",
+      "seller": {
+        "id": 69100290,
+        "power_seller_status": "gold",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 47499,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 2,
+      "sold_quantity": 51,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2036-04-30T23:44:53.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-611908611-macbook-pro-touch-bar-core-i5-512ssd-133-retina-nuevas-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/647127-MLA26251650133_102017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 5011.94,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-X",
+        "state_name": "Córdoba",
+        "city_id": "TUxBQ0NBUGNiZGQx",
+        "city_name": "Córdoba"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 145338849,
+        "comment": "5a",
+        "address_line": "Lima 322",
+        "zip_code": "5000",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-X",
+          "name": "Córdoba"
+        },
+        "city": {
+          "id": "TUxBQ0NBUGNiZGQx",
+          "name": "Córdoba"
+        },
+        "latitude": -31.4138248,
+        "longitude": -64.1783147
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "Macbook Pro",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373810",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+        "rating_average": 4.5,
+        "total": 2
+      }
+    },
+    {
+      "id": "MLA652410486",
+      "site_id": "MLA",
+      "title": "Cable Cargador Apple Macbook Pro Magsafe 1 O 2 - Instalado",
+      "seller": {
+        "id": 42259661,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 650,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 976,
+      "sold_quantity": 43,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-01-27T14:24:17.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-652410486-cable-cargador-apple-macbook-pro-magsafe-1-o-2-instalado-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/202915-MLA25328657456_022017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 68.59,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQkJFTDcyNTJa",
+        "city_name": "Belgrano"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 173896819,
+        "comment": "5 A Referencia: Amenábar Entre: Ciudad de la Paz",
+        "address_line": "Blanco Encalada 2544",
+        "zip_code": "1428",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQkJFTDcyNTJa",
+          "name": "Belgrano"
+        },
+        "latitude": -34.5600466,
+        "longitude": -58.4604525
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "Magsafe 1 Y 2",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373761",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+        "rating_average": 5,
+        "total": 1
+      }
+    },
+    {
+      "id": "MLA673184058",
+      "site_id": "MLA",
+      "title": "Macbook Pro Mptv2 I7 16 Gb, Ssd 512gb Touchbar Modelo 2017",
+      "seller": {
+        "id": 128885,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 75998,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 7,
+      "sold_quantity": 1,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-06-29T19:45:56.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-673184058-macbook-pro-mptv2-i7-16-gb-ssd-512gb-touchbar-modelo-2017-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/734657-MLA25726713018_072017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 8019.06,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "capital federal"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 100160186,
+        "comment": "local 489-490",
+        "address_line": "florida 537",
+        "zip_code": "1005",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "capital federal"
+        },
+        "latitude": -34.6015835,
+        "longitude": -58.3749042
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "MPTV2E/A",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373830",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA673873701",
+      "site_id": "MLA",
+      "title": "Macbook Pro 13 Pulgadas 4gb Ram 500gb Disco Core 2 Duo 2.4 G",
+      "seller": {
+        "id": 99523689,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 11500,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 1,
+      "sold_quantity": 0,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-07-05T05:04:59.000Z",
+      "condition": "used",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-673873701-macbook-pro-13-pulgadas-4gb-ram-500gb-disco-core-2-duo-24-g-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/712806-MLA25740682103_072017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 1213.44,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-B",
+        "state_name": "Buenos Aires",
+        "city_id": "TUxBQ0lUVTNjNDFm",
+        "city_name": "Ituzaingó"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 229333440,
+        "comment": "Mundo Sidac",
+        "address_line": "Presidente Perón 7665",
+        "zip_code": "1714",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-B",
+          "name": "Buenos Aires"
+        },
+        "city": {
+          "id": "TUxBQ0lUVTNjNDFm",
+          "name": "Ituzaingó"
+        },
+        "latitude": -34.630812,
+        "longitude": -58.674229
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Atributos Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373801",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA645500318",
+      "site_id": "MLA",
+      "title": "Apple New Macbook Pro Retina Display Mlh32e/a 15,4 Touchbar",
+      "seller": {
+        "id": 120191643,
+        "power_seller_status": "gold",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 63999.99,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 97,
+      "sold_quantity": 3,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2036-12-01T13:45:05.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-645500318-apple-new-macbook-pro-retina-display-mlh32ea-154-touchbar-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/420315-MLA25214621395_122016-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 6753.07,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "ciudad autonoma de buenos aires"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 103242417,
+        "comment": "oficina 604",
+        "address_line": "membrillar 74",
+        "zip_code": "1406",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "ciudad autonoma de buenos aires"
+        },
+        "latitude": -34.629302,
+        "longitude": -58.4607904
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "MLH32E/A",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373816",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA618716571",
+      "site_id": "MLA",
+      "title": "Macbook Air Intel Core I5 8gb Ram-128gb Sdd 13,3 Nuevas",
+      "seller": {
+        "id": 104545743,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 22500,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 1,
+      "sold_quantity": 2,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2036-04-27T13:36:03.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-618716571-macbook-air-intel-core-i5-8gb-ram-128gb-sdd-133-nuevas-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/436021-MLA20695991997_052016-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 2374.13,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-B",
+        "state_name": "Buenos Aires",
+        "city_id": "TUxBQ1BJTDQ3NDE",
+        "city_name": "Pilar"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 100550533,
+        "comment": "Bajada Parque Industrial mano Derecha Entre: Granaderos M.Gelves interseccion Dolores",
+        "address_line": "Barrio La cañada de Pilar Los Robles 112",
+        "zip_code": "1629",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-B",
+          "name": "Buenos Aires"
+        },
+        "city": {
+          "id": "TUxBQ1BJTDQ3NDE",
+          "name": "Pilar"
+        },
+        "latitude": -34.4462645,
+        "longitude": -58.8964631
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "MMGF2CI/A",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373780",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA672264528",
+      "site_id": "MLA",
+      "title": "Macbook Pro Mpxt2e/a (i5 2.3ghz, 8 Gb, 256 Gb Ssd)",
+      "seller": {
+        "id": 163594810,
+        "power_seller_status": "silver",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 42190,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 18,
+      "sold_quantity": 2,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-06-22T19:05:13.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-672264528-macbook-pro-mpxt2ea-i5-23ghz-8-gb-256-gb-ssd-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/708501-MLA25707963437_062017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 4451.75,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "Belgrano"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 154505938,
+        "comment": "",
+        "address_line": "Olazabal 1715",
+        "zip_code": "1428",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "Belgrano"
+        },
+        "latitude": -34.5548701,
+        "longitude": -58.4494309
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "MPXT2E/A",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373810",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA678670144",
+      "site_id": "MLA",
+      "title": "Notebook Apple Macbook Pro Mf839ll/ A I5-27/ 8g/128 Gb",
+      "seller": {
+        "id": 171322208,
+        "power_seller_status": "silver",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 37000,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 11,
+      "sold_quantity": 1,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-08-09T17:47:20.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-678670144-notebook-apple-macbook-pro-mf839ll-a-i5-27-8g128-gb-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/784975-MLA25870307938_082017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 3904.12,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-N",
+        "state_name": "Misiones",
+        "city_id": "TUxBQ0NBUDNhM2Jh",
+        "city_name": "Posadas"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 164866578,
+        "comment": "",
+        "address_line": "Belgrano 1280",
+        "zip_code": "3300",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-N",
+          "name": "Misiones"
+        },
+        "city": {
+          "id": "TUxBQ0NBUDNhM2Jh",
+          "name": "Posadas"
+        },
+        "latitude": -27.3638706,
+        "longitude": -55.887697
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "macbook pro 13-inch",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373826",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA658229762",
+      "site_id": "MLA",
+      "title": "Macbook Pro 2016 Touchbar Mlw82 (2.7 I7, 16gb, 512gb Ssd)",
+      "seller": {
+        "id": 163594810,
+        "power_seller_status": "silver",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 67990,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 8,
+      "sold_quantity": 2,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-03-11T15:22:22.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-658229762-macbook-pro-2016-touchbar-mlw82-27-i7-16gb-512gb-ssd-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/569425-MLA25438076988_032017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 7174.08,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "Belgrano"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 154505938,
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "Belgrano"
+        },
+        "latitude": -34.5548701,
+        "longitude": -58.4494309
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "MLW82E/A",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373830",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA674773986",
+      "site_id": "MLA",
+      "title": "Adaptador Apple Usb-c Digital Av Multiport + Caja Sellada!",
+      "seller": {
+        "id": 19513293,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 2599.99,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 6,
+      "sold_quantity": 4,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-07-12T01:24:51.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-674773986-adaptador-apple-usb-c-digital-av-multiport-caja-sellada-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/755052-MLA25759707223_072017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 274.34,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "Palermo"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 117940222,
+        "comment": "",
+        "address_line": "Raul Scalabrini Ortiz 607",
+        "zip_code": "1414",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "Palermo"
+        },
+        "latitude": -34.5899688,
+        "longitude": -58.4235646
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Atributos Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Atributos Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "USBC",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373821",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA640294568",
+      "site_id": "MLA",
+      "title": "Apple Macbook Pro 5,4 Intel Core 2 Duo",
+      "seller": {
+        "id": 175830527,
+        "power_seller_status": "gold",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 17000,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 1,
+      "sold_quantity": 0,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2036-10-21T12:48:41.000Z",
+      "condition": "used",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-640294568-apple-macbook-pro-54-intel-core-2-duo-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/537905-MLA25126966556_102016-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 1793.78,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-B",
+        "state_name": "Buenos Aires",
+        "city_id": "",
+        "city_name": "Lanus Oeste"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 179101187,
+        "comment": "Nautica - Pesca - Camping",
+        "address_line": "diputado pedrera 1699",
+        "zip_code": "1824",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-B",
+          "name": "Buenos Aires"
+        },
+        "city": {
+          "id": "",
+          "name": "Lanus Oeste"
+        },
+        "latitude": -34.6867887,
+        "longitude": -58.4049688
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "Pro 5,4",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373802",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA626580253",
+      "site_id": "MLA",
+      "title": "Apple Macbook Air 2016 Mmgf2 13,3' 1.6ghz 8gb Ram 128gb",
+      "seller": {
+        "id": 65890166,
+        "power_seller_status": "silver",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 37669.99,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 62,
+      "sold_quantity": 4,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_pro",
+      "stop_time": "2037-08-11T15:25:20.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-626580253-apple-macbook-air-2016-mmgf2-133-16ghz-8gb-ram-128gb-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/977572-MLA25821104529_072017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 6,
+        "amount": 6278.33,
+        "rate": 0,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQlBBTDI1MTVa",
+        "city_name": "Palermo"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 159922714,
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQlBBTDI1MTVa",
+          "name": "Palermo"
+        },
+        "latitude": -34.5707163,
+        "longitude": -58.4441176
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Atributos Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple"
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Atributos Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "macbook air mmgf2e/a"
+        }
+      ],
+      "differential_pricing": {
+        "id": 33440180
+      },
+      "original_price": null,
+      "category_id": "MLA373780",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA646336419",
+      "site_id": "MLA",
+      "title": "Macbook Pro 2016 Mlvp2 13.3' Core I5 8g 256gb Touch Bar",
+      "seller": {
+        "id": 128885,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 52998,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 7,
+      "sold_quantity": 10,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2036-12-08T19:22:00.000Z",
+      "condition": "new",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-646336419-macbook-pro-2016-mlvp2-133-core-i5-8g-256gb-touch-bar-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/362315-MLA25221094162_122016-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 5592.17,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "capital federal"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 100160186,
+        "comment": "local 489-490",
+        "address_line": "florida 537",
+        "zip_code": "1005",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "capital federal"
+        },
+        "latitude": -34.6015835,
+        "longitude": -58.3749042
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "mlvp2",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373826",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    },
+    {
+      "id": "MLA632689713",
+      "site_id": "MLA",
+      "title": "Repuestos Macbook Air 2010 2011 . Leer Descripción",
+      "seller": {
+        "id": 85627761,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 3500,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 1,
+      "sold_quantity": 0,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2036-08-28T10:43:13.000Z",
+      "condition": "used",
+      "permalink": "http://articulo.mercadolibre.com.ar/MLA-632689713-repuestos-macbook-air-2010-2011-leer-descripcion-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/385405-MLA25020585450_082016-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 369.31,
+        "rate": 26.62,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-S",
+        "state_name": "Santa Fe",
+        "city_id": "",
+        "city_name": "Rosario"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+        ]
+      },
+      "seller_address": {
+        "id": 132133814,
+        "comment": "Piso 7 Dpto A",
+        "address_line": "Corrientes 1925",
+        "zip_code": "2000",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-S",
+          "name": "Santa Fe"
+        },
+        "city": {
+          "id": "",
+          "name": "Rosario"
+        },
+        "latitude": -32.9361821,
+        "longitude": -60.6748723
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "MAIN",
+          "attribute_group_name": "Principales",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373780",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "reviews": {
+      }
+    }
+  ],
+  "secondary_results": [
+  ],
+  "related_results": [
+  ],
+  "sort": {
+    "id": "relevance",
+    "name": "More relevant"
+  },
+  "available_sorts": [
+    {
+      "id": "price_asc",
+      "name": "Lower price"
+    },
+    {
+      "id": "price_desc",
+      "name": "Higher price"
+    }
+  ],
+  "filters": [
+    {
+      "id": "category",
+      "name": "Categories",
+      "type": "text",
+      "values": [
+        {
+          "id": "MLA9951",
+          "name": "Macbook",
+          "path_from_root": [
+            {
+              "id": "MLA1648",
+              "name": "Computación"
+            },
+            {
+              "id": "MLA1870",
+              "name": "Apple"
+            },
+            {
+              "id": "MLA9951",
+              "name": "Macbook"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "available_filters": [
+    {
+      "id": "official_store",
+      "name": "Tiendas oficiales",
+      "type": "text",
+      "values": [
+        {
+          "id": "all",
+          "name": "Todas las tiendas oficiales",
+          "results": 4
+        },
+        {
+          "id": "738",
+          "name": "Garbarino",
+          "results": 2
+        },
+        {
+          "id": "229",
+          "name": "Fravega",
+          "results": 1
+        }
+      ]
+    },
+    {
+      "id": "9999951-AMLA_9951_1",
+      "name": "Línea",
+      "type": "text",
+      "values": [
+        {
+          "id": "9999951-AMLA_9951_1-MMLA59060",
+          "name": "Macbook Pro",
+          "results": 1721
+        },
+        {
+          "id": "9999951-AMLA_9951_1-MMLA59013",
+          "name": "Macbook Air",
+          "results": 1114
+        },
+        {
+          "id": "9999951-AMLA_9951_1-MMLA59061",
+          "name": "Macbook Pro Retina",
+          "results": 897
+        },
+        {
+          "id": "9999951-AMLA_9951_1-MMLA59000",
+          "name": "Otras Líneas",
+          "results": 520
+        }
+      ]
+    },
+    {
+      "id": "9999951-AMLA_9951_2",
+      "name": "Procesador",
+      "type": "text",
+      "values": [
+        {
+          "id": "9999951-AMLA_9951_2-MMLA59008",
+          "name": "Intel Core i5",
+          "results": 2233
+        },
+        {
+          "id": "9999951-AMLA_9951_2-MMLA59009",
+          "name": "Intel Core i7",
+          "results": 901
+        },
+        {
+          "id": "9999951-AMLA_9951_2-MMLA59001",
+          "name": "Intel Core 2 Duo",
+          "results": 620
+        },
+        {
+          "id": "9999951-AMLA_9951_2-MMLA59007",
+          "name": "Intel Core Duo",
+          "results": 50
+        },
+        {
+          "id": "9999951-AMLA_9951_2-MMLA59012",
+          "name": "PowerPC / G3 / G4",
+          "results": 40
+        },
+        {
+          "id": "9999951-AMLA_9951_2-MMLA59010",
+          "name": "Otros Procesadores",
+          "results": 408
+        }
+      ]
+    },
+    {
+      "id": "9999951-AMLA_9951_3",
+      "name": "Pantalla",
+      "type": "text",
+      "values": [
+        {
+          "id": "9999951-AMLA_9951_3-MMLA59003",
+          "name": "13",
+          "results": 2697
+        },
+        {
+          "id": "9999951-AMLA_9951_3-MMLA59004",
+          "name": "15",
+          "results": 865
+        },
+        {
+          "id": "9999951-AMLA_9951_3-MMLA59002",
+          "name": "11",
+          "results": 225
+        },
+        {
+          "id": "9999951-AMLA_9951_3-MMLA59005",
+          "name": "17",
+          "results": 73
+        },
+        {
+          "id": "9999951-AMLA_9951_3-MMLA59072",
+          "name": "12",
+          "results": 48
+        },
+        {
+          "id": "9999951-AMLA_9951_3-MMLA59011",
+          "name": "14",
+          "results": 2
+        },
+        {
+          "id": "9999951-AMLA_9951_3-MMLA59006",
+          "name": "Otras Pulgadas",
+          "results": 342
+        }
+      ]
+    },
+    {
+      "id": "discount",
+      "name": "Discounts",
+      "type": "range",
+      "values": [
+        {
+          "id": "10-100",
+          "name": "From 10% off",
+          "results": 2
+        }
+      ]
+    },
+    {
+      "id": "state",
+      "name": "Location",
+      "type": "text",
+      "values": [
+        {
+          "id": "TUxBUENBUGw3M2E1",
+          "name": "Capital Federal",
+          "results": 2438
+        },
+        {
+          "id": "TUxBUEdSQWU4ZDkz",
+          "name": "Bs.As. G.B.A. Norte",
+          "results": 444
+        },
+        {
+          "id": "TUxBUEdSQXJlMDNm",
+          "name": "Bs.As. G.B.A. Sur",
+          "results": 253
+        },
+        {
+          "id": "TUxBUEdSQWVmNTVm",
+          "name": "Bs.As. G.B.A. Oeste",
+          "results": 189
+        },
+        {
+          "id": "TUxBUFNBTmU5Nzk2",
+          "name": "Santa Fe",
+          "results": 182
+        },
+        {
+          "id": "TUxBUFpPTmFpbnRl",
+          "name": "Buenos Aires Interior",
+          "results": 145
+        },
+        {
+          "id": "TUxBUENPUmFkZGIw",
+          "name": "Córdoba",
+          "results": 132
+        },
+        {
+          "id": "TUxBUE1FTmE5OWQ4",
+          "name": "Mendoza",
+          "results": 94
+        },
+        {
+          "id": "TUxBUENPU2ExMmFkMw",
+          "name": "Bs.As. Costa Atlántica",
+          "results": 66
+        },
+        {
+          "id": "TUxBUE1JU3MzNjIx",
+          "name": "Misiones",
+          "results": 31
+        },
+        {
+          "id": "TUxBUFLNT29iZmZm",
+          "name": "Río Negro",
+          "results": 20
+        },
+        {
+          "id": "TUxBUFRVQ244NmM3",
+          "name": "Tucumán",
+          "results": 19
+        },
+        {
+          "id": "TUxBUE5FVW4xMzMzNQ",
+          "name": "Neuquén",
+          "results": 18
+        },
+        {
+          "id": "TUxBUENIQW8xMTNhOA",
+          "name": "Chaco",
+          "results": 18
+        },
+        {
+          "id": "TUxBUENPUnM5MjI0",
+          "name": "Corrientes",
+          "results": 17
+        },
+        {
+          "id": "TUxBUEVOVHMzNTdm",
+          "name": "Entre Ríos",
+          "results": 13
+        },
+        {
+          "id": "TUxBUENIVXQxNDM1MQ",
+          "name": "Chubut",
+          "results": 9
+        },
+        {
+          "id": "TUxBUFNBTGFjMTJi",
+          "name": "Salta",
+          "results": 8
+        },
+        {
+          "id": "TUxBUEZPUmE1OTk5",
+          "name": "Formosa",
+          "results": 6
+        },
+        {
+          "id": "TUxBUFNBTm5lYjU4",
+          "name": "San Juan",
+          "results": 6
+        },
+        {
+          "id": "TUxBUEpVSnk3YmUz",
+          "name": "Jujuy",
+          "results": 4
+        },
+        {
+          "id": "TUxBUExBWmE1OWMy",
+          "name": "La Pampa",
+          "results": 4
+        },
+        {
+          "id": "TUxBUExBWmEyNzY0",
+          "name": "La Rioja",
+          "results": 3
+        },
+        {
+          "id": "TUxBUFNBTm9lOTlk",
+          "name": "Santiago del Estero",
+          "results": 3
+        },
+        {
+          "id": "TUxBUFNBTnM0ZTcz",
+          "name": "San Luis",
+          "results": 3
+        },
+        {
+          "id": "TUxBUFNBTno3ZmY5",
+          "name": "Santa Cruz",
+          "results": 3
+        }
+      ]
+    },
+    {
+      "id": "price",
+      "name": "Precio",
+      "type": "range",
+      "values": [
+        {
+          "id": "*-15000.0",
+          "name": "Up to $15.000",
+          "results": 1325
+        },
+        {
+          "id": "15000.0-25000.0",
+          "name": "$15.000 to $25.000",
+          "results": 1281
+        },
+        {
+          "id": "25000.0-*",
+          "name": "More than $25.000",
+          "results": 1646
+        }
+      ]
+    },
+    {
+      "id": "accepts_mercadopago",
+      "name": "MercadoPago filter",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "With MercadoPago",
+          "results": 4252
+        }
+      ]
+    },
+    {
+      "id": "installments",
+      "name": "Pago",
+      "type": "text",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Installments",
+          "results": 4247
+        },
+        {
+          "id": "no_interest",
+          "name": "Sin interés",
+          "results": 306
+        }
+      ]
+    },
+    {
+      "id": "condition",
+      "name": "Condición",
+      "type": "text",
+      "values": [
+        {
+          "id": "new",
+          "name": "New",
+          "results": 1304
+        },
+        {
+          "id": "used",
+          "name": "Used",
+          "results": 2924
+        }
+      ]
+    },
+    {
+      "id": "shipping",
+      "name": "Shipping",
+      "type": "text",
+      "values": [
+        {
+          "id": "mercadoenvios",
+          "name": "Mercado Envíos",
+          "results": 3006
+        },
+        {
+          "id": "free",
+          "name": "Free shipping",
+          "results": 605
+        },
+        {
+          "id": "sameday",
+          "name": "Moto Express",
+          "results": 3
+        }
+      ]
+    },
+    {
+      "id": "power_seller",
+      "name": "Seller quality filter",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Best sellers",
+          "results": 268
+        }
+      ]
+    },
+    {
+      "id": "buying_mode",
+      "name": "Buying mode filter",
+      "type": "text",
+      "values": [
+        {
+          "id": "buy_it_now",
+          "name": "Buy it now",
+          "results": 4247
+        },
+        {
+          "id": "auction",
+          "name": "Auction",
+          "results": 5
+        }
+      ]
+    },
+    {
+      "id": "since",
+      "name": "Auction start date filter",
+      "type": "text",
+      "values": [
+        {
+          "id": "today",
+          "name": "Publicados hoy",
+          "results": 72
+        }
+      ]
+    },
+    {
+      "id": "until",
+      "name": "Auction stop filter",
+      "type": "text",
+      "values": [
+        {
+          "id": "today",
+          "name": "Ending today",
+          "results": 21
+        }
+      ]
+    },
+    {
+      "id": "has_video",
+      "name": "Video publications filter",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Publications with video",
+          "results": 312
+        }
+      ]
+    },
+    {
+      "id": "has_pictures",
+      "name": "Items with images filter",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "With pictures",
+          "results": 4230
+        }
+      ]
+    },
+    {
+      "id": "product",
+      "name": "Product",
+      "type": "text",
+      "values": [
+        {
+          "id": "MLA6282586",
+          "name": "Apple MACBOOK AIR A1466",
+          "results": 77
+        },
+        {
+          "id": "MLA6282569",
+          "name": "Apple MACBOOK AIR A1237",
+          "results": 15
+        },
+        {
+          "id": "MLA6282563",
+          "name": "Apple MACBOOK A1278",
+          "results": 12
+        },
+        {
+          "id": "MLA6282547",
+          "name": "Apple MACBOOK PRO A1260",
+          "results": 10
+        },
+        {
+          "id": "MLA6333623",
+          "name": "Apple MF840",
+          "results": 10
+        },
+        {
+          "id": "MLA6282576",
+          "name": "Apple MACBOOK PRO A1286",
+          "results": 71
+        },
+        {
+          "id": "MLA6282575",
+          "name": "Apple MACBOOK PRO A1502",
+          "results": 69
+        },
+        {
+          "id": "MLA6282585",
+          "name": "Apple MACBOOK PRO A1398",
+          "results": 63
+        },
+        {
+          "id": "MLA6282544",
+          "name": "Apple MACBOOK A1181",
+          "results": 43
+        },
+        {
+          "id": "MLA6282556",
+          "name": "Apple MACBOOK A1534",
+          "results": 18
+        },
+        {
+          "id": "MLA6282555",
+          "name": "Apple MACBOOK PRO A1706",
+          "results": 17
+        },
+        {
+          "id": "MLA6282541",
+          "name": "Apple MACBOOK A1342",
+          "results": 15
+        },
+        {
+          "id": "MLA6282572",
+          "name": "Apple MACBOOK PRO A1425",
+          "results": 12
+        },
+        {
+          "id": "MLA6282540",
+          "name": "Apple MACBOOK AIR A1369",
+          "results": 11
+        },
+        {
+          "id": "MLA6282581",
+          "name": "Apple MACBOOK PRO A1151",
+          "results": 11
+        },
+        {
+          "id": "MLA6282554",
+          "name": "Apple MACBOOK PRO A1708",
+          "results": 9
+        },
+        {
+          "id": "MLA6282566",
+          "name": "Apple MACBOOK PRO A1707",
+          "results": 8
+        },
+        {
+          "id": "MLA6282584",
+          "name": "Apple MACBOOK PRO A1297",
+          "results": 8
+        },
+        {
+          "id": "MLA6282564",
+          "name": "Apple MACBOOK PRO A1226",
+          "results": 7
+        },
+        {
+          "id": "MLA6282573",
+          "name": "Apple MACBOOK PRO A1150",
+          "results": 7
+        },
+        {
+          "id": "MLA6282582",
+          "name": "Apple MACBOOK AIR A1465",
+          "results": 6
+        },
+        {
+          "id": "MLA6282549",
+          "name": "Apple MACBOOK AIR A1304",
+          "results": 5
+        },
+        {
+          "id": "MLA6282557",
+          "name": "Apple MACBOOK AIR A1370",
+          "results": 5
+        },
+        {
+          "id": "MLA6282589",
+          "name": "Apple POWERBOOK G4 A1010",
+          "results": 4
+        }
+      ]
+    }
+  ]
+}

@@ -7,6 +7,15 @@ app.engine('jsx', reactViews.createEngine());
 app.set('views', __dirname + '/views/');
 app.set('view engine', 'jsx');
 
+
+/**
+ * Mocks
+ */
+
+if (process.env.NODE_ENV !== 'production') {
+  require('./mocks');
+}
+
 /**
  * Router
  */

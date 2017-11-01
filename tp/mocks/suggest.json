@@ -1,0 +1,35 @@
+{
+  "q": "macbook",
+  "suggested_queries": [
+    {
+      "q": "macbook",
+      "match_start": 0,
+      "match_end": 7
+    },
+    {
+      "q": "macbook pro",
+      "match_start": 0,
+      "match_end": 7
+    },
+    {
+      "q": "macbook air",
+      "match_start": 0,
+      "match_end": 7
+    },
+    {
+      "q": "macbook 12",
+      "match_start": 0,
+      "match_end": 7
+    },
+    {
+      "q": "cargador macbook",
+      "match_start": 9,
+      "match_end": 16
+    },
+    {
+      "q": "apple macbook",
+      "match_start": 6,
+      "match_end": 13
+    }
+  ]
+}
