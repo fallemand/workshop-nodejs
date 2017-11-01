@@ -7,10 +7,7 @@ router.get('/items/:id', (req, res) => {
   res.send(req.params);
 });
 
-router.get('/search', (req, res) => {
-  console.log(req.query);
-  res.send(req.query);
-});
+router.get('/search', appController.search);
 
 
 module.exports = router;

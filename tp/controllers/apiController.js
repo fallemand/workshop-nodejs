@@ -1,4 +1,4 @@
-const meliService = require('../services/meli.service');
+const meliService = require('../services/transform.service');
 
 class ApiController {
   root (req, res) {
@@ -7,7 +7,7 @@ class ApiController {
 
   items (req, res, next) {
     console.log(req.params.id);
-    meliService.item(req.params.id).then( (data) => {
+    meliService.item(req.params.id).then((data) => {
       data.author = res.locals.author;
       res.json(data);
     }).catch(next);

@@ -1,6 +1,6 @@
 const React = require('react');
 const PropTypes = require('prop-types');
-const Layout = require('./Layout');
+const Layout = require('./components/Layout');
 const SearchCard = require('./components/SearchCard');
 
 class Index extends React.Component {

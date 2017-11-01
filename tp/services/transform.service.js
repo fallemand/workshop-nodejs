@@ -38,6 +38,7 @@ class MeliTransform {
 
           data.results.forEach( (currentValue,index) => {
             transformedData.results[index] = {
+              id: currentValue.id,
               thumbnail: currentValue.thumbnail,
               free_shipping: currentValue.shipping.free_shipping,
               title: currentValue.title,
