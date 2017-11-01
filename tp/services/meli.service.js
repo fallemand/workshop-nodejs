@@ -23,8 +23,7 @@ class MeliService {
   }
 
   static suggest(query, callback) {
-    options.hostname = 'http2.mlstatic.com';
-    options.path = `/resources/sites/MLA/autosuggest?q=${query}`;
+    options.path = `/sites/MLA/autosuggest?q=${query}`;
 
     return request(options, protocol);
   }
