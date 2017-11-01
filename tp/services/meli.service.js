@@ -15,14 +15,15 @@ module.exports.search = (query) => {
 };
 
 module.exports.suggest = (query) => {
+    console.log("djslkdjsk!!")
     const suggestOptions = {
-        protocol: 'http',
+        protocol: 'https',
         method: 'GET',
         headers: {
             'Content-type': 'application/json',
         },
-        hostname: 'http2.mlstatic.com',
-        path: `/resources/sites/MLA/autosuggest?q=${query}`
+        hostname: 'api.mercadolibre.com',
+        path: `/sites/MLA/autosuggest?q=${query}`
     }
 
     return request(suggestOptions).then((result) => transform.suggest(result));    

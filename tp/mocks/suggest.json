@@ -1,0 +1,35 @@
+{
+    "q": "tostadora",
+    "suggested_queries": [
+        {
+            "q": "tostadora",
+            "match_start": 0,
+            "match_end": 9
+        },
+        {
+            "q": "tostadora electrica",
+            "match_start": 0,
+            "match_end": 9
+        },
+        {
+            "q": "tostadora sandwichera",
+            "match_start": 0,
+            "match_end": 9
+        },
+        {
+            "q": "tostadora philips",
+            "match_start": 0,
+            "match_end": 9
+        },
+        {
+            "q": "sanguchera tostadora",
+            "match_start": 11,
+            "match_end": 20
+        },
+        {
+            "q": "sandwichera tostadora",
+            "match_start": 12,
+            "match_end": 21
+        }
+    ]
+}

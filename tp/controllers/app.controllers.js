@@ -1,30 +1,43 @@
+const request = require('../services/meli.service');
+
 class appControllers {
 
+    static search(req, res, next) {
+        const options = getOptions(`/api/search?q=${escape(req.query.q)}`);
+        request(options).then(data => {
+            res.render('Search', data);
+        })
+    }
+
     static suggest(req, res, next) {
-        res.send(`Entro a /app/suggest - Query = ${JSON.stringify(req.query)}`);
+        const options = getOptions(`/api/suggest?q=${escape(req.query.q)}`);
+        request(options).then(data => {
+            res.render('Suggest', data);
+        })
     }
 
     static items(req, res, next) {
-        res.send(`Entro a /app/items - id = ${req.params.id}`);
-    }
-
-    static test(req, res, next) {
-        res.render('index',{
-            title : 'Ingresa en la barra de búsqueda el producto que estas buscando!',
-            subtitle: 'Recordar!',
-            showSubtitle : true,
-            tasks : [
-                'Comprar la coca',
-                'Lavar el auto',
-                'ir de compras',
-                'aprender react'
-            ]
-        });
+        const options = getOptions('/api/items/' + req.params.id);
+        request(options).then(item => {
+            res.render('Item', item);
+        }).catch(next);
     }
 
     static index(req, res, next) {
         res.render('index');
     }
+}
+
+
+function getOptions(path) {
+  return {
+    method: 'GET',
+    headers: {'Content-type': 'application/json'},
+    hostname: global.address,
+    port: global.port,
+    protocol: 'http',
+    path: path
+  }
 }
 
 module.exports = appControllers;

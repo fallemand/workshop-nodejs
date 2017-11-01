@@ -17,7 +17,13 @@ app.use(bodyParser.json());
 // Define Routes
 router.init(app, __dirname);
 
-// Start Server
-app.listen('3000', 'localhost', () => {
+//mocks
+require('./mocks')
+
+//Start Application
+global.port = 3000;
+global.address = '0.0.0.0';
+
+app.listen(global.port, global.address, () => {
   console.log('app listen in port 3000');
 });

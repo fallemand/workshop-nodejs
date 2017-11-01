@@ -1,13 +1,19 @@
 const React = require('react');
 
 class Breadcrumb extends React.Component {
-    render() {        
-        return (
-            <h6>Breadcrumb 1 > Breadcrumb 2 > Breadcrumb 3</h6>
-        )
-    }
+
+  render() {
+    const {category, query} = this.props;
+    return (
+      <ul className="breadcrumb">
+        <li className="breadcrumb__element"><a href="/">Inicio</a></li>
+        {category && category.map((element) =>
+          <li key={element.id} className="breadcrumb__element">{element.name}</li>
+        )}
+        {query && <li className="breadcrumb__element">"{query}"</li>}
+      </ul>
+    );
+  }
 }
 
-
-
-module.exports = Breadcrumb
+module.exports = Breadcrumb;

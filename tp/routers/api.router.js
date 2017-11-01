@@ -5,9 +5,9 @@ const apiController = require('../controllers/api.controllers');
 */
 router.get('/search/', apiController.search);
 /* 
-    /api/suggest  
+    /api/autosuggest  
 */
-router.get('/suggest/', apiController.suggest);
+router.get('/autosuggest/', apiController.suggest);
 /* 
     /api/items  
 */
