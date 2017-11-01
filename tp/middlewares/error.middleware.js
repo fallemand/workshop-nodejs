@@ -5,13 +5,15 @@ const logError = (err) => {
 module.exports.apiError = (err, req, res, next) => {
   logError(err);
   try {
-    err
-  } catch (e) {
-    
-  }
-  res.status(err.status || 500).json({error: err.toString()});
+    err;
+  } catch (e) {}
+  res.status(err.status || 500).json({ error: err.toString() });
 };
 
 module.exports.appError = (err, req, res, next) => {
   logError(err);
+  if (err instanceof Error) {
+    err = err.toString();
+  }
+  res.render('error', {error: err});
 };

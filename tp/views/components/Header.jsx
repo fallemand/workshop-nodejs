@@ -20,7 +20,6 @@ class Header extends React.Component {
             spellCheck="false"
             placeholder="Nunca dejes de buscar"
             data-js="search"
-            value="iphone"
           />
           <button type="submit" className="header__search-btn" data-fastclick="" tabindex="3">
             <i className="header__search-icon">

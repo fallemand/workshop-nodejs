@@ -3,17 +3,18 @@ const React = require('react');
 class Breadcrumb extends React.Component {
   listBreadcrums(elements) {
     return elements.map((element) => {
-      return <li className="breadcrumb__element">{element}</li>;
+      return <li className="breadcrumb__element">{element.name}</li>;
     });
   }
-  
+
   render() {
     return (
       <ul class="breadcrumb">
         <li class="breadcrumb__element">
           <a href="/">Inicio</a>
         </li>
-        {this.listBreadcrums(this.props.elements)}
+        {this.props.categories && this.listBreadcrums(this.props.categories)}
+        {this.props.query ? <li class="breadcrumb__element">"{this.props.query}"</li> : ''}
       </ul>
     );
   }

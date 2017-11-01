@@ -1,0 +1,35 @@
+{
+  "q": "cam",
+  "suggested_queries": [
+    {
+      "q": "camiones usados",
+      "match_start": 0,
+      "match_end": 3
+    },
+    {
+      "q": "camionetas usadas",
+      "match_start": 0,
+      "match_end": 3
+    },
+    {
+      "q": "camperas hombre",
+      "match_start": 0,
+      "match_end": 3
+    },
+    {
+      "q": "camperas mujer",
+      "match_start": 0,
+      "match_end": 3
+    },
+    {
+      "q": "sillon cama",
+      "match_start": 7,
+      "match_end": 10
+    },
+    {
+      "q": "sofa cama",
+      "match_start": 5,
+      "match_end": 8
+    }
+  ]
+}

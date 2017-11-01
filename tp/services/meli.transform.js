@@ -11,9 +11,18 @@ class Transformer {
       itemObj = {
         id: data.itemData.id,
         title: data.itemData.title,
-        price: data.itemData.price,
-        pictures: data.itemData.pictures,
+        price: {
+          amount: data.itemData.price,
+          currency: data.itemData.currency_id,
+        },
+        condition: data.itemData.condition,
+        sold_quantity: data.itemData.sold_quantity,
+        free_shipping: data.itemData.shipping.free_shipping,
+        picture: data.itemData.pictures.length ? data.itemData.pictures[0].url : false,
+        description: data.descriptionData.text ? data.descriptionData.text : data.descriptionData.plain_text,
+        categories: data.categoryData.path_from_root,
       };
+      // itemObj = data;
     }
     return itemObj;
   }
@@ -24,6 +33,8 @@ class Transformer {
       query: data.query,
       paging: data.paging,
       filters: data.filters,
+      categories:
+        data.filters.length > 0 && data.filters[0].values.length > 0 && data.filters[0].values[0].path_from_root,
       results: data.results.map((product) => {
         return {
           id: product.id,

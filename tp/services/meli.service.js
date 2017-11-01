@@ -49,8 +49,7 @@ class MeliService {
           // Search for category
           requestPromise(categoryOptions)
             .then((catData) => {
-              // console.log('catdataaa', catData);
-              completeResponse.categoryData = catData;
+              completeResponse.categoryData = JSON.parse(catData);
               // Resolves (return) the complete object
               resolve(completeResponse);
             })

@@ -10,6 +10,10 @@ app.set('view engine', 'jsx');
 
 route.init(app, __dirname);
 
+if (process.env.NODE_ENV !== 'production') {
+  require('./mocks');
+}
+
 router.get('/', (req, res) => {
   res.send('Dentro de la app');
 });

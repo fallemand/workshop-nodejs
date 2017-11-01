@@ -23,7 +23,7 @@ class Layout extends React.Component {
             <Header query={this.props.query} />
           </header>
           <main role="main" className="main">
-            <Breadcrumb elements={test_breadCrumbElements} />
+            <Breadcrumb categories={this.props.categories} query={this.props.query}/>
             <div className="main__content">{this.props.children}</div>
           </main>
           <script src="/assets/dist/scripts/main.js" />
