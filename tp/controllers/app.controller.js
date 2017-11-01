@@ -23,11 +23,26 @@ class appController {
     //res.send(`Entró a la app search de `);
   };
 
-  static items(req, res) {
-    res.send(`Entró a la app item ${req.params.id}`);
+  static items(req, res, next) {
+    const url = `/api/items/${req.params.id}`;
+    const options = {
+      method: 'GET',
+      headers: {'Content-type': 'application/json'},
+      hostname: 'localhost',
+      port: '3000',
+      protocol: 'http',
+      path: url
+    };
+
+    request(options).then((results) => {
+      res.render('Item', results);
+    }).catch(next);
+
+
+    //res.send(`Entró a la app item ${req.params.id}`);
   };
 
-  static test(req, res) {
+  static test(req, res, next) {
     res.render('index-test', {
       title: 'Lista de tareas',
       subtitle: "Recordar hacerlas",

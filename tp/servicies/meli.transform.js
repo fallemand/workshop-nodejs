@@ -83,9 +83,11 @@ class meliTransform {
     dataFinal.description.text = data.description.text;
     dataFinal.description.plain_text = data.description.plain_text;
     dataFinal.category = {};
-    dataFinal.category.id = data.category.id;
-    dataFinal.category.name = data.category.name;
-    dataFinal.category.path_from_root = data.category.path_from_root;
+    //dataFinal.category.id = data.category.id;
+    //dataFinal.category.name = data.category.name;
+    //dataFinal.query = data.category.name;
+    dataFinal.category = data.category && data.category.path_from_root;
+    //dataFinal.category.path_from_root = data.category.path_from_root;
     return dataFinal;
   }
 
