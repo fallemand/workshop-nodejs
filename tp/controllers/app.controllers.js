@@ -16,9 +16,8 @@ class appControllers {
         })
     }
 
-    static items(req, res, next) {
-        const options = getOptions('/api/items/' + req.params.id);
-        request(options).then(item => {
+    static items(req, res, next) {        
+        request.item(req.params.id).then(item => {
             res.render('Item', item);
         }).catch(next);
     }

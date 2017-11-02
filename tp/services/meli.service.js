@@ -14,8 +14,7 @@ module.exports.search = (query) => {
     return request(searchOptions).then((result) => transform.search(result));    
 };
 
-module.exports.suggest = (query) => {
-    console.log("djslkdjsk!!")
+module.exports.suggest = (query) => {    
     const suggestOptions = {
         protocol: 'https',
         method: 'GET',

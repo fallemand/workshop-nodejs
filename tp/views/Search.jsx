@@ -6,10 +6,10 @@ class Search extends React.Component {
 
   render() {
     return (
-      <Layout {...this.props}>
-        {this.props.results.map((item) =>
-          <SearchItem {...item} key={item.id}/>
-        )}
+      <Layout>
+        <SearchItem />
+        <SearchItem />
+        <SearchItem />
       </Layout>
     );
   }

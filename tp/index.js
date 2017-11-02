@@ -18,7 +18,11 @@ app.use(bodyParser.json());
 router.init(app, __dirname);
 
 //mocks
-require('./mocks')
+if(process.env.NODE_ENV != 'production'){
+  console.log("---- Using Mocks ------")
+  require('./mocks')
+}
+
 
 //Start Application
 global.port = 3000;
