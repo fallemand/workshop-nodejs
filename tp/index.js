@@ -14,6 +14,7 @@ app.set('view engine', 'jsx');
 
 if (process.env.NODE_ENV !== 'production') {
   require('./mocks');
+  console.log('App is using mocks');
 }
 
 /**
@@ -27,5 +28,5 @@ router.init(app, __dirname);
  */
 
 app.listen('3000', 'localhost', () => console.log(
-  'App started on port localhost:3000.'
+  'App started on port localhost:3000'
 ));
