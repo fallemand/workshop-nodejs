@@ -171,8 +171,8 @@ class MeliService {
       protocol: 'http',
       method: 'GET',
       headers: {'Content-Type': 'application/json'},
-      hostname: 'http2.mlstatic.com',
-      path: `/resources/sites/${site}/autosuggest?q=${query}`
+      hostname: 'api.mercadolibre.com',
+      path: `/sites/${site}/autosuggest?q=${query}`
     };
 
     return new Promise((resolve, reject) => {

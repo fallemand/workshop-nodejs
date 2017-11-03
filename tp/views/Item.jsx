@@ -22,7 +22,7 @@ class Item extends React.Component {
             <span className="item__title">{item.title}</span>
             <span className="item__price">$ {item.price}<sup>00</sup></span>
             <a className="item__buy"
-               href={`https://buyingflow.mercadolibre.com.ar/bid/confirm?item_id=${item.id}amp;quantity=1`}>Comprar</a>
+               href={`https://buyingflow.mercadolibre.com.ar/bid/confirm?item_id=${item.id}&quantity=1`}>Comprar</a>
           </div>
           <div className="item__description">
             <h2 className="item__description-title">Descripción del producto</h2>

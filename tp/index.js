@@ -3,6 +3,11 @@ const app = express();
 const router = require('./routers/router');
 const expReact = require('express-react-views');
 
+if(process.env.NODE_ENV !== 'production') {
+  console.log('--- Using mocks ---')
+  require('./mocks');
+}
+
 router.init(app, __dirname);
 
 app.engine('jsx', expReact.createEngine());

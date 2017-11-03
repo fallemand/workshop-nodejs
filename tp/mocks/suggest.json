@@ -1,0 +1,35 @@
+{
+  "q": "iph",
+  "suggested_queries": [
+    {
+      "q": "iphone 6",
+      "match_start": 0,
+      "match_end": 3
+    },
+    {
+      "q": "iphone 7",
+      "match_start": 0,
+      "match_end": 3
+    },
+    {
+      "q": "iphone 5",
+      "match_start": 0,
+      "match_end": 3
+    },
+    {
+      "q": "iphone 5s",
+      "match_start": 0,
+      "match_end": 3
+    },
+    {
+      "q": "auriculares iphone",
+      "match_start": 12,
+      "match_end": 15
+    },
+    {
+      "q": "celulares iphone",
+      "match_start": 10,
+      "match_end": 13
+    }
+  ]
+}

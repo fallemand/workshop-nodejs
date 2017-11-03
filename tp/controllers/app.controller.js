@@ -28,6 +28,8 @@ class AppController {
       path: url
     };
     request(options).then((results) => {
+      results.query = query;
+
       res.render('Search', results);
     }).catch(next);
   };
