@@ -11,8 +11,10 @@ class Suggest extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     const query = nextProps.query;
+    // TODO Search for results -> see fetch: https://developers.google.com/web/updates/2015/03/introduction-to-fetch
+    const results = [query];
     this.setState({
-      results : [query]
+      results : results
     });
   }
 
