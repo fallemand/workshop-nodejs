@@ -2,14 +2,10 @@ var path = require('path');
 var webpack = require('webpack');
 
  module.exports = {
-     entry: {
- 		  'example-transpile': './js/example-transpile.js',
-     	'example-require': './js/example-require.js',
-     	'example-react': './js/example-react.js',
-     },
+     entry: './assets/src/scripts/header.js',
      output: {
-         path: path.resolve(__dirname, 'js/build'),
-         filename: '[name].bundle.js'
+         path: path.resolve(__dirname, 'assets/dist/scripts/'),
+         filename: 'header.bundle.js'
      },
      module: {
          loaders: [
@@ -17,7 +13,7 @@ var webpack = require('webpack');
                  test: /\.(js|jsx)$/,
                  loader: 'babel-loader',
                  query: {
-                     presets: ['es2015', "react"]
+                     presets: ['es2015', 'react']
                  }
              }
          ]
