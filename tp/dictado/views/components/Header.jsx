@@ -1,7 +1,6 @@
 const React = require('react');
 
 class Header extends React.Component {
-
   render() {
     return (
       <div className="header__container">
@@ -18,5 +17,6 @@ class Header extends React.Component {
     );
   }
 }
+
 
 module.exports = Header;
