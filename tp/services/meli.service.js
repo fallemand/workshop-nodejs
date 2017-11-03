@@ -26,12 +26,14 @@ module.exports.item = (id) => {
         hostname: 'api.mercadolibre.com',
         path: `/categories/${data[0].category_id}`
       });
-      resolve({json:'objeto armado'});
+      resolve({
+        item: data[0],
+        description: data[1],
+        category: data
+      });
     }).catch((err) => {
       reject(err);
     });
-  }).catch((err) => {
-    reject(err);
   });
 };
 
@@ -47,10 +49,10 @@ module.exports.search = (query) => {
 
 module.exports.suggest = (query) => {
   return request({
-    protocol:'http',
+    protocol:'https',
     method: 'GET',
     headers: {'Content-type': 'aplication/json'},
-    hostname: 'http2.mlstatic.com',
-    path: `/resources/sites/MLA/autosugest?q=${query}`
+    hostname: 'api.mercadolibre.com',
+    path: `/sites/MLA/autosuggest?q=${query}`
   });
 };

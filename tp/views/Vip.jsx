@@ -2,15 +2,14 @@ const React = require('react');
 const Layout = require('./components/Layout');
 const Item = require('./components/Item');
 
-class Search extends React.Component {
+class Vip extends React.Component {
   render () {
-    const item = this.props;
     return (
       <Layout>
-        <Item key={item.id} {...item}></Item>
+        <Item {...this.props}></Item>
       </Layout>
     );
   }
 }
 
-module.exports = Search;
+module.exports = Vip;

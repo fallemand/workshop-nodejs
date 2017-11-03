@@ -9,8 +9,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Use Mocks
-require('./mocks'); // Al requerir una carpeta, ejecuta el index de la misma
-
+if(process.env.NODE_ENV !== 'production') {
+  console.log('--------- Using Mocks --------');
+  require('./mocks'); // Al requerir una carpeta, ejecuta el index de la misma
+}
 // Configure React views
 app.engine('jsx', expReact.createEngine());
 app.set('views', __dirname + '/views/');
