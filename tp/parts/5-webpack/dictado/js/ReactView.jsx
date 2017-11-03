@@ -6,8 +6,8 @@ class ReactView extends React.Component {
 			<div>
 				<h1>{this.props.data.title}</h1>
 				<ul>
-					{this.props.data.tasks.map((task) => 
-						<li>{task}</li>
+					{this.props.data.tasks.map((task, index) => 
+						<li key={index}>{task}</li>
 					)}
 				</ul>
 			</div>
