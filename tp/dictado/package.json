@@ -45,6 +45,7 @@
     "postcss-cli": "^2.5.2",
     "rimraf": "^2.5.4",
     "sass-lint": "^1.10.2",
+    "serialize-javascript": "^1.4.0",
     "uglify-js": "^2.6.2",
     "webpack": "^3.8.1"
   },
