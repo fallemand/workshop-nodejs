@@ -57,8 +57,6 @@ class appController {
   }
 
   static app(req, res) {
-    let bla = null;
-    bla.index;
     res.render('Index');
   }
 }

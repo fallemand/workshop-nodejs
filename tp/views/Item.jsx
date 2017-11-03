@@ -16,7 +16,7 @@ class Item extends React.Component {
       <Layout {...this.props}>
       <div className="item">
           <div className="item__picture">
-            <img src={this.props.pictures[0].url} alt={this.props.title}/>
+            <img src={this.props.pictures.length && this.props.pictures[0].url} alt={this.props.title}/>
           </div>
         <div className="item__info">
         <span className="item__condition">
@@ -29,10 +29,7 @@ class Item extends React.Component {
         </div>
         <div className="item__description">
           <h2 className="item__description-title">Descripción del producto</h2>
-          {this.props.description.plain_text && <div className="item__description-content">
-            {this.props.description.plain_text}
-          </div>}
-          <div className="item__description-content" dangerouslySetInnerHTML={{ __html: this.props.description.text }} />
+          <div className="item__description-content" dangerouslySetInnerHTML={{ __html: this.props.description.text || this.props.description.plain_text }} />
         </div>
       </div>
       </Layout>
