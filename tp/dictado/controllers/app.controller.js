@@ -3,6 +3,7 @@ const request = require('../services/request.service');
 exports.search = (req, res, next) => {
   const options = getOptions(`/api/search?q=${escape(req.query.q)}`);
   request(options).then(data => {
+    data.query = req.query.q;
     res.render('Search', data);
   })
     .catch(next);
