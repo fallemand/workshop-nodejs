@@ -1,20 +1,29 @@
-// APP Controller
+const request = require('../services/request.service');
 
-module.exports.items = (req, res) => {
-  res.send('Acá vamos a retornar el item: ' + req.params.id);
+exports.search = (req, res, next) => {
+  const options = getOptions(`/api/search?q=${escape(req.query.q)}`);
+  request(options).then(data => {
+    data.query = req.query.q;
+    res.render('Search', data);
+  })
+    .catch(next);
 };
 
-module.exports.search = (req, res) => {
-  res.send('Acá vamos a buscar en meli: ' + req.query.q);
+exports.items = (req, res, next) => {
+  const options = getOptions('/api/items/' + req.params.id);
+  request(options).then(item => {
+    res.render('Item', item);
+  })
+    .catch(next);
 };
 
-module.exports.test = (req, res) => {
-  res.render('test', {
-    tasks: ['Lavar el Auto', 'Bañar el perro', 'Aprender React', 'Cortar el pasto'],
-    enumProp: 'default'
-  });
-};
-
-module.exports.index = (req, res) => {
-  res.render('index');
-};
+function getOptions(path) {
+  return {
+    method: 'GET',
+    headers: {'Content-type': 'application/json'},
+    hostname: global.address,
+    port: global.port,
+    protocol: 'http',
+    path: path
+  }
+}
