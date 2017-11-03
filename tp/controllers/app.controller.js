@@ -2,9 +2,20 @@
 
 const request = require('../services/request.service')
 
-module.exports.items = (req, res) => {
-    res.render('Item', {id: req.params.id});
-    //res.send('Acá vamos a retornar el item: ' + req.params.id);
+module.exports.items = (req, res, next) => {
+    const url = `/api/items/` + req.params.id;
+    const options = {
+        protocol: 'http',
+        method: 'GET',
+        headers: {'Content-type': 'application/json'},
+        hostname: 'localhost',
+        port: 3333,
+        path: url
+    }
+    request(options).then(data => {
+        res.render('Item', data);
+    })
+    .catch(next);
 };
 
 module.exports.search = (req, res, next) => {

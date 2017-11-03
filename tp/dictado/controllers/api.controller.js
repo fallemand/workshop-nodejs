@@ -20,6 +20,16 @@ exports.items = (req, res, next) => {
     .catch(next);
 };
 
+exports.description = (req, res, next) => {
+  const id = req.params.id;
+  meliService.item(id)
+    .then(item => {
+      item.author = res.locals.author;
+      res.json(item);
+    })
+    .catch(next);
+};
+
 exports.suggest = (req, res, next) => {
   const query = req.query.q;
   meliService.suggest(query)

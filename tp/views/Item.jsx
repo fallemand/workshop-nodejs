@@ -2,12 +2,14 @@ const React = require('react');
 const Layout = require('./Layout');
 
 class Item extends React.Component {
+
     render() {
+        console.log(this.props)
         return (
             <Layout {...this.props}>
                 <div className="item">
                     <div className="item__picture">
-                        <img src="http://mla-s1-p.mlstatic.com/953943-MLA25691799599_062017-O.jpg" alt={this.props.title} />
+                        <img src={this.props.picture} alt={this.props.title} />
                     </div>
                     <div className="item__info">
                         <span className="item__condition">
