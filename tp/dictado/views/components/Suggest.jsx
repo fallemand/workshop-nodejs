@@ -18,11 +18,17 @@ class Suggest extends React.Component {
 
   render() {
     return (
-      <ul className="suggest">
-        {this.state.results.map((element, index) =>
-          <li key={index} className="suggest__item">{element}</li>
-        )}
-      </ul>
+      <div>
+        {this.props.query &&
+          <ul className="suggest">
+            {this.state.results.map((element) =>
+              <li key={element} className="suggest__item">
+                <a href={`/app/search?q=${element}`}>{element}</a>
+              </li>
+            )}
+          </ul>
+        }
+      </div>
     )
   }
 }
