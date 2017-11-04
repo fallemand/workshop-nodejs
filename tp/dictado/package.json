@@ -60,7 +60,8 @@
     "express": "^4.15.3",
     "express-react-views": "^0.10.4",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "whatwg-fetch": "^2.0.3"
   },
   "jest": {
     "testRegex": "./test/unit/.*.js$"
