@@ -13,10 +13,11 @@ class Header extends React.Component {
 
   handleSearchKeyUp(e) {
     const query = e.target.value;
-    console.log(query);
-    this.setState({
-      query
-    });
+    if(query.length > 2) {
+      this.setState({
+        query
+      });
+    }
   }
 
   render() {

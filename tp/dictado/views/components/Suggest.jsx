@@ -11,20 +11,21 @@ class Suggest extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     const query = nextProps.query;
-    // TODO Search for results -> see fetch: https://developers.google.com/web/updates/2015/03/introduction-to-fetch
-    const results = [query];
-    this.setState({
-      results : results
-    });
+    fetch(`/api/suggest?q=${query}`)
+      .then((response) => {
+        response.json().then((response) => {
+          this.setState({results: response.results});
+        });
+      });
   }
 
   render() {
     return (
       <div>
-        {this.props.query &&
+        {this.state.results.length > 0 &&
           <ul className="suggest">
-            {this.state.results.map((element) =>
-              <li key={element} className="suggest__item">
+            {this.state.results.map((element, index) =>
+              <li key={index} className="suggest__item">
                 <a href={`/app/search?q=${element}`}>{element}</a>
               </li>
             )}
