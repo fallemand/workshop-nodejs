@@ -1,6 +1,8 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
-const Header = require('../../../views/components/Header');
+const Header  = require('../../../views/components/Header');
+
+const container = document.querySelector('[data-js=header]');
 
 /**
  * Get server state
@@ -12,5 +14,5 @@ const props = window.__PRELOADED_STATE__;
  */
 ReactDOM.render(
   <Header {...props} />,
-  document.getElementById('header'),
+  container
 );

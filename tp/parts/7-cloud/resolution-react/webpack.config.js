@@ -1,30 +1,35 @@
-const path = require('path');
-const webpack = require('webpack');
+var path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
-  entry: {
-    "header": './assets/src/scripts/header.js'
-  },
+  entry: './assets/src/scripts/header.js',
   output: {
-    path: path.resolve(__dirname, './assets/dist/scripts'),
-    filename: '[name].js'
+    path: path.resolve(__dirname, 'assets/dist/scripts/'),
+    filename: 'header.bundle.js'
   },
   module: {
-    loaders: [{
-      exclude: /node_modules/,
-      loader: 'babel-loader',
-      query: {
-        presets: ['es2015', 'react']
+    loaders: [
+      {
+        test: /\.(js|jsx)$/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015', 'react']
+        }
       }
-    }]
+    ]
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    // resolve file extensions
+    extensions: ['.jsx', '.js']
+  },
+  externals: {
+    // Use external version of React
+    'react': 'React',
+    'react-dom': 'ReactDOM'
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
-      minimize: true,
-      sourceMap: true
+      minimize: true
     })
   ],
   stats: {
