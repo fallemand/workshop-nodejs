@@ -3,25 +3,20 @@ const renderer = require('react-test-renderer');
 const Suggest = require('../../../views/components/Suggest');
 
 describe('Suggest (Snapshot)', () => {
-  it('Suggest renders', () => {
+  const component = renderer.create(<Suggest query="iph"/>);
 
-    const suggestResponse = {
-      "query": "iphone",
-      "results": [
-        "iphone",
-        "iphone 6",
-        "iphone 7",
-      ]
-    };
+  it('Suggest renders without results', () => {
+    const json = component.toJSON();
+    expect(json).toMatchSnapshot();
+  });
 
-    // Mock window.fetch
-    window.fetch = jest.fn().mockImplementation(() =>
-      Promise.resolve({
-        json: () => Promise.resolve(suggestResponse)
-      })
-    );
-
-    const component = renderer.create(<Suggest query="iph"/>);
+  it('Suggest renders results', () => {
+    const instance = component.getInstance();
+    instance.setState({ results: [
+      "iphone",
+      "iphone 6",
+      "iphone 7",
+    ]});
     const json = component.toJSON();
     expect(json).toMatchSnapshot();
   });

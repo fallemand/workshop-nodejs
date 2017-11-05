@@ -1,9 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Suggest (Snapshot) Suggest renders 1`] = `
+exports[`Suggest (Snapshot) Suggest renders results 1`] = `
 <div>
   <ul
     className="suggest"
-  />
+  >
+    <li
+      className="suggest__item"
+    >
+      <a
+        href="/app/search?q=iphone"
+      >
+        iphone
+      </a>
+    </li>
+    <li
+      className="suggest__item"
+    >
+      <a
+        href="/app/search?q=iphone 6"
+      >
+        iphone 6
+      </a>
+    </li>
+    <li
+      className="suggest__item"
+    >
+      <a
+        href="/app/search?q=iphone 7"
+      >
+        iphone 7
+      </a>
+    </li>
+  </ul>
 </div>
 `;
+
+exports[`Suggest (Snapshot) Suggest renders without results 1`] = `<div />`;
