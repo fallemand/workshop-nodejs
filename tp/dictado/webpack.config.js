@@ -2,14 +2,10 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: {
-    'example-transpile': './js/example-transpile.js',
-    'example-require': './js/example-require.js',
-    'example-react': './js/example-react.js',
-  },
+  entry: ['whatwg-fetch', './assets/src/scripts/header.js'],
   output: {
-    path: path.resolve(__dirname, 'js/build'),
-    filename: '[name].bundle.js'
+    path: path.resolve(__dirname, 'assets/dist/scripts/'),
+    filename: 'header.bundle.js'
   },
   module: {
     loaders: [
@@ -17,7 +13,7 @@ module.exports = {
         test: /\.(js|jsx)$/,
         loader: 'babel-loader',
         query: {
-          presets: ['es2015', "react"]
+          presets: ['es2015', 'react']
         }
       }
     ]
@@ -25,6 +21,11 @@ module.exports = {
   resolve: {
     // resolve file extensions
     extensions: ['.jsx', '.js']
+  },
+  externals: {
+    // Use external version of React
+    'react': 'React',
+    'react-dom': 'ReactDOM'
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
