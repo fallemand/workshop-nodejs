@@ -6,11 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass --output-style compressed -o assets/dist/styles assets/src/styles",
-    "uglify": "uglifyjs assets/src/scripts/**.js -b -o assets/dist/scripts/bundle.js && uglifyjs assets/src/scripts/**.js -c -m -o assets/dist/scripts/bundle.min.js",
+    "webpack": "webpack",
     "lint:styles": "sass-lint -v -q",
     "lint:scripts": "./node_modules/.bin/eslint -c .eslintrc assets/src/scripts || true",
     "build:styles": "npm run lint:styles && npm run scss",
-    "build:scripts": "npm run lint:scripts && npm run uglify",
+    "build:scripts": "npm run lint:scripts && npm run webpack",
     "watch:styles": "onchange \"assets/src/styles\" -- npm run build:styles",
     "watch:scripts": "onchange \"assets/src/scripts\" -- npm run build:scripts",
     "clean": "rimraf assets/dist/**/* && npm run mkdDistScript",
@@ -29,7 +29,11 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
+    "babel-core": "^6.26.0",
     "babel-eslint": "6.1.2",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "eslint": "3.5.0",
     "eslint-config-airbnb-base": "7.1.0",
     "eslint-plugin-import": "1.15.0",
@@ -42,7 +46,10 @@
     "postcss-cli": "^2.5.2",
     "rimraf": "^2.5.4",
     "sass-lint": "^1.10.2",
-    "uglify-js": "^2.6.2"
+    "serialize-javascript": "^1.4.0",
+    "uglify-js": "^2.6.2",
+    "webpack": "^3.8.1",
+    "whatwg-fetch": "^2.0.3"
   },
   "dependencies": {
     "express": "^4.16.2",

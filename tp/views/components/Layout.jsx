@@ -1,6 +1,7 @@
 const React = require('react');
 const Header = require('./Header');
 const Breadcrumb = require('./Breadcrumb');
+const serialize = require('serialize-javascript');
 
 const test_breadCrumbElements = ['elem1', 'elem2', 'elem3', 'elem4', 'elem5'];
 class Layout extends React.Component {
@@ -19,14 +20,21 @@ class Layout extends React.Component {
           <link href="/assets/dist/styles/main.css" rel="stylesheet" />
         </head>
         <body>
-          <header role="banner" id="header" className="header">
+          <header role="banner" data-js="header" className="header">
             <Header query={this.props.query} />
           </header>
           <main role="main" className="main">
-            <Breadcrumb categories={this.props.categories} query={this.props.query}/>
+            <Breadcrumb categories={this.props.categories} query={this.props.query} />
             <div className="main__content">{this.props.children}</div>
           </main>
-          <script src="/assets/dist/scripts/main.js" />
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.0.0/umd/react.production.min.js" />
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.0.0/umd/react-dom.production.min.js" />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `window.__PRELOADED_STATE__ = ${serialize(this.props, { isJSON: true })};`,
+            }}
+          />
+          <script src="/assets/dist/scripts/header.bundle.js" />
         </body>
       </html>
     );

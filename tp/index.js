@@ -11,6 +11,7 @@ app.set('view engine', 'jsx');
 route.init(app, __dirname);
 
 if (process.env.NODE_ENV !== 'production') {
+  console.log('----------Using Mocks----------');
   require('./mocks');
 }
 
