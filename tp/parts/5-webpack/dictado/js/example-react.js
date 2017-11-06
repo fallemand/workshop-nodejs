@@ -6,6 +6,6 @@ const data = require('./data.json');
 const container = document.querySelector('#react-app');
 
 ReactDom.render(
-  <ReactView data={data} />,
+  <ReactView data={data}/>,
   container,
 );
