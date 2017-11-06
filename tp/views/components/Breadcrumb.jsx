@@ -4,14 +4,12 @@ const PropTypes = require('prop-types');
 class Breadcrumb extends React.Component {
 
   render() {
-    console.log(this.props);
-    const {elements, query} = this.props ;
-
+    const {path_from_root, query} = this.props;
     return (
       <div className="breadcrumb-container">
         <ul className="breadcrumb">
           <li className="breadcrumb__element"><a href="/">Inicio</a></li>
-          { elements && elements.map((elem) => <li className="breadcrumb__element">{{elem}}</li>)}
+          { path_from_root && path_from_root.map((elem) => <li className="breadcrumb__element">{elem.name}</li>)}
           { query && <li className="breadcrumb__element">{query}</li>}
         </ul>
       </div>

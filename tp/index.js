@@ -18,6 +18,11 @@ app.set('view engine', 'jsx');
 
 router.init(app, __dirname);
 
+if(process.env.NODE_ENV === 'development') {
+  console.log('Using mocks');
+  require('./mocks');
+}
+
 app.listen('3000', 'localhost', () => {
   console.log('Server up on localhost:3000');
 });

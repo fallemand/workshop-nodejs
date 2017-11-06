@@ -5,8 +5,17 @@ class AppController {
     res.render('Index');
   }
 
-  items (req, res) {
-    res.send(req.params);
+  items (req, res, next) {
+    const options = {
+      protocol: 'http',
+      method: 'GET',
+      port: '3000',
+      headers: {'Content-type': 'application/json'},
+      hostname: 'localhost',
+      path: `/api/items/${req.params.id}`
+    };
+
+    request(options).then(data => res.render('Item', data)).catch(next);
   }
 
   search (req, res, next) {
@@ -21,9 +30,7 @@ class AppController {
 
     request(options).then(data => {
       res.render('Search', data) ;
-    }).catch(err => {
-      console.log("me rompi")
-    });
+    }).catch(next);
   }
 }
 

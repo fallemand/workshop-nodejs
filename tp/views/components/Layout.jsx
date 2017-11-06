@@ -23,7 +23,7 @@ class Layout extends React.Component {
         <Header query={this.props.query}/>
       </header>
       <main role="main" className="main">
-        {<Breadcrumb {...this.props.path_from_root}/>}
+        <Breadcrumb path_from_root={this.props.path_from_root} query={this.props.query}/>
         <div className="main__content">
           {this.props.children}
         </div>

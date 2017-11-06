@@ -3,9 +3,7 @@ const appController = require('../controllers/appController');
 
 router.get('/', appController.root);
 
-router.get('/items/:id', (req, res) => {
-  res.send(req.params);
-});
+router.get('/items/:id', appController.items);
 
 router.get('/search', appController.search);
 

@@ -8,14 +8,17 @@ class MeliTransform {
           let transformedData = {
             path_from_root: data.category.path_from_root,
             pictures: data.pictures,
-            condition: data.condition,
+            id: id,
+            condition: "",
             sold_quantity: data.sold_quantity,
             free_shipping: data.shipping.free_shipping,
             title: data.title,
+            currency_id: data.currency_id,
             price: data.price,
-            description: data.description
+            description: data.description.plain_text
           };
 
+          transformedData.condition = ( data.condition === 'new' ) ? "Nuevo" : "Usado" ;
           resolve (transformedData);
       }).catch((err) => {
           reject(err);
@@ -33,6 +36,7 @@ class MeliTransform {
           }
           let transformedData = {
             path_from_root,
+            query,
             results: []
           };
 

@@ -6,10 +6,8 @@ const SearchItem = require('./components/SearchItem');
 class Search extends React.Component {
   render() {
     return (
-      <Layout >
-        { this.props.results.map(item => {
-          <SearchItem {...item}/>
-        })}
+      <Layout {...this.props}>
+        { this.props.results.map(item => <SearchItem {...item}/>)}
       </Layout>
     )
   }

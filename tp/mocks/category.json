@@ -1,0 +1,92 @@
+{
+  "id": "MLA407252",
+  "name": "Otros",
+  "picture": null,
+  "permalink": null,
+  "total_items_in_this_category": 282,
+  "path_from_root": [
+    {
+      "id": "MLA1403",
+      "name": "Alimentos y Bebidas"
+    },
+    {
+      "id": "MLA1423",
+      "name": "Comestibles"
+    },
+    {
+      "id": "MLA410869",
+      "name": "Almacén"
+    },
+    {
+      "id": "MLA114008",
+      "name": "Aceites"
+    },
+    {
+      "id": "MLA407252",
+      "name": "Otros"
+    }
+  ],
+  "children_categories": [
+  ],
+  "attribute_types": "none",
+  "settings": {
+    "adult_content": false,
+    "buying_allowed": true,
+    "buying_modes": [
+      "buy_it_now",
+      "auction"
+    ],
+    "catalog_domain": null,
+    "coverage_areas": "not_allowed",
+    "currencies": [
+      "ARS"
+    ],
+    "fragile": false,
+    "immediate_payment": "required",
+    "item_conditions": [
+      "new"
+    ],
+    "items_reviews_allowed": false,
+    "listing_allowed": true,
+    "max_description_length": 50000,
+    "max_pictures_per_item": 12,
+    "max_pictures_per_item_var": 10,
+    "max_sub_title_length": 70,
+    "max_title_length": 60,
+    "maximum_price": null,
+    "minimum_price": null,
+    "mirror_category": null,
+    "mirror_master_category": null,
+    "mirror_slave_categories": [
+    ],
+    "price": "required",
+    "reservation_allowed": null,
+    "restrictions": [
+    ],
+    "rounded_address": false,
+    "seller_contact": "not_allowed",
+    "shipping_modes": [
+      "not_specified",
+      "custom",
+      "me1",
+      "me2"
+    ],
+    "shipping_options": [
+      "custom",
+      "carrier"
+    ],
+    "shipping_profile": "optional",
+    "show_contact_information": false,
+    "simple_shipping": "optional",
+    "stock": "required",
+    "sub_vertical": "food_beverages",
+    "subscribable": null,
+    "tags": [
+      "others"
+    ],
+    "vertical": "consumer_goods",
+    "vip_subdomain": "articulo"
+  },
+  "meta_categ_id": null,
+  "attributable": false
+}
