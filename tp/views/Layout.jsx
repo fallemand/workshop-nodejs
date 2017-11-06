@@ -19,7 +19,7 @@ class Layout extends React.Component {
         </head>
         <body>
             <header role="banner" id="header" className="header">
-              <Header query={this.props.query}/>
+              <Header query={this.props.query} data-js="header"/>
             </header>
             <main role="main" className="main">
                 <Breadcrumb {...this.props}/>
@@ -27,7 +27,7 @@ class Layout extends React.Component {
                     {this.props.children}
                 </div>
             </main>
-            <script src="/assets/dist/scripts/main.js"></script>
+            <script src="/assets/dist/scripts/header.bundle.js"></script>
         </body>
       </html>
     );
