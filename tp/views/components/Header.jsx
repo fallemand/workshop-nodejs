@@ -1,4 +1,5 @@
 const React = require('react');
+const Suggest = require('./suggest');
 
 class Header extends React.Component {
   render() {
@@ -20,6 +21,7 @@ class Header extends React.Component {
             </i>
           </button>
           <div className="header__suggest" data-js="suggest" />
+          <Suggest/>
         </form>
       </div>
     );

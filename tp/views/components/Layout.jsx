@@ -18,7 +18,7 @@ class Layout extends React.Component {
         <link href="/assets/dist/styles/main.css" rel="stylesheet" />
       </head>
       <body>
-      <header role="banner" id="header" className="header">
+      <header role="banner" id="header" data-js="header" className="header">
         <Header query={this.props.query} />
       </header>
       <main role="main" className="main">
