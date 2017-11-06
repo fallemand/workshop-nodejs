@@ -138,7 +138,13 @@ class MeliService {
       path: `/sites/${site}/autosuggest?q=${query}`
     };
 
-    return request(options);
+    return new Promise((resolve, reject) => {
+      request(options).then((data) => {
+        resolve(Transform.suggest(data));
+      }).catch((err) => {
+        reject(err);
+      })
+    });
   }
 }
 

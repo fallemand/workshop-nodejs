@@ -27,6 +27,8 @@ class Layout extends React.Component {
                     {this.props.children}
                 </div>
             </main>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.0.0/umd/react.production.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.0.0/umd/react-dom.production.min.js"></script>
             <script src="/assets/dist/scripts/header.bundle.js"></script>
         </body>
       </html>

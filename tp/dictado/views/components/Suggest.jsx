@@ -10,7 +10,6 @@ class Suggest extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    const query = nextProps.query;
     fetch(`/api/suggest?q=${query}`)
       .then((response) => {
         response.json().then((response) => {
@@ -20,11 +19,14 @@ class Suggest extends React.Component {
   }
 
   render() {
+
+    console.log("asdasdasdasdasd");
+
     return (
       <div>
-        {this.state.results.length > 0 &&
+        {this.state.results && this.state.results.length > 0 &&
           <ul className="suggest">
-            {this.state.results.map((element, index) =>
+            {this.state.results && this.state.results.map((element, index) =>
               <li key={index} className="suggest__item">
                 <a href={`/app/search?q=${element}`}>{element}</a>
               </li>
