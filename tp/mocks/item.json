@@ -1,0 +1,237 @@
+{
+  "id": "MLA635658063",
+  "site_id": "MLA",
+  "title": "Cafetera Espreso Oster Oemp50 15 Bar",
+  "subtitle": null,
+  "seller_id": 212439741,
+  "category_id": "MLA119706",
+  "official_store_id": null,
+  "price": 3649,
+  "base_price": 3649,
+  "original_price": null,
+  "currency_id": "ARS",
+  "initial_quantity": 1,
+  "available_quantity": 1,
+  "sold_quantity": 0,
+  "sale_terms": [
+  ],
+  "buying_mode": "buy_it_now",
+  "listing_type_id": "gold_special",
+  "start_time": "2016-09-19T19:03:41.000Z",
+  "stop_time": "2036-09-14T19:03:41.000Z",
+  "condition": "new",
+  "permalink": "http://articulo.mercadolibre.com.ar/MLA-635658063-cafetera-espreso-oster-oemp50-15-bar-_JM",
+  "thumbnail": "http://mla-s2-p.mlstatic.com/502421-MLA20765280071_062016-I.jpg",
+  "secure_thumbnail": "https://mla-s2-p.mlstatic.com/502421-MLA20765280071_062016-I.jpg",
+  "pictures": [
+    {
+      "id": "502421-MLA20765280071_062016",
+      "url": "http://mla-s2-p.mlstatic.com/502421-MLA20765280071_062016-O.jpg",
+      "secure_url": "https://mla-s2-p.mlstatic.com/502421-MLA20765280071_062016-O.jpg",
+      "size": "500x500",
+      "max_size": "800x800",
+      "quality": ""
+    },
+    {
+      "id": "973321-MLA20765280072_062016",
+      "url": "http://mla-s2-p.mlstatic.com/973321-MLA20765280072_062016-O.jpg",
+      "secure_url": "https://mla-s2-p.mlstatic.com/973321-MLA20765280072_062016-O.jpg",
+      "size": "500x500",
+      "max_size": "800x800",
+      "quality": ""
+    }
+  ],
+  "video_id": null,
+  "descriptions": [
+    {
+      "id": "MLA635658063-1178532544"
+    }
+  ],
+  "accepts_mercadopago": true,
+  "non_mercado_pago_payment_methods": [
+  ],
+  "shipping": {
+    "mode": "me2",
+    "methods": [
+    ],
+    "tags": [
+    ],
+    "dimensions": null,
+    "local_pick_up": true,
+    "free_shipping": false,
+    "logistic_type": "drop_off",
+    "store_pick_up": false
+  },
+  "international_delivery_mode": "none",
+  "seller_address": {
+    "comment": "",
+    "address_line": "",
+    "zip_code": "",
+    "city": {
+      "id": "",
+      "name": "Gregorio De Laferrere"
+    },
+    "state": {
+      "id": "AR-B",
+      "name": "Buenos Aires"
+    },
+    "country": {
+      "id": "AR",
+      "name": "Argentina"
+    },
+    "search_location": {
+      "neighborhood": {
+        "id": "TUxBQkdSRTEzMjJa",
+        "name": "Gregorio de Laferrere"
+      },
+      "city": {
+        "id": "TUxBQ0xBTWF0YW56",
+        "name": "La Matanza"
+      },
+      "state": {
+        "id": "TUxBUEdSQWVmNTVm",
+        "name": "Bs.As. G.B.A. Oeste"
+      }
+    },
+    "latitude": -34.74994,
+    "longitude": -58.588734,
+    "id": 195357048
+  },
+  "seller_contact": null,
+  "location": {
+  },
+  "geolocation": {
+    "latitude": -34.74994,
+    "longitude": -58.588734
+  },
+  "coverage_areas": [
+  ],
+  "attributes": [
+    {
+      "id": "COFFEE_MAKER_TYPE",
+      "name": "Tipo de cafetera",
+      "value_id": "288920",
+      "value_name": "Expreso",
+      "value_struct": null,
+      "attribute_group_id": "DFLT",
+      "attribute_group_name": "Otros"
+    },
+    {
+      "id": "CUPS_CAPACITY",
+      "name": "Capacidad de tazas",
+      "value_id": null,
+      "value_name": "2",
+      "value_struct": null,
+      "attribute_group_id": "DFLT",
+      "attribute_group_name": "Otros"
+    },
+    {
+      "id": "CUPS_WARMER",
+      "name": "Calienta tazas",
+      "value_id": "242084",
+      "value_name": "No",
+      "value_struct": null,
+      "attribute_group_id": "DFLT",
+      "attribute_group_name": "Otros"
+    },
+    {
+      "id": "DRIP_DEVICE",
+      "name": "Dispositivo antigoteo",
+      "value_id": "242084",
+      "value_name": "No",
+      "value_struct": null,
+      "attribute_group_id": "DFLT",
+      "attribute_group_name": "Otros"
+    },
+    {
+      "id": "FILTER_TYPE",
+      "name": "Tipo de filtro",
+      "value_id": "84217",
+      "value_name": "Removible",
+      "value_struct": null,
+      "attribute_group_id": "DFLT",
+      "attribute_group_name": "Otros"
+    },
+    {
+      "id": "TECHNOLOGY",
+      "name": "Tecnología",
+      "value_id": "199099",
+      "value_name": "Automática",
+      "value_struct": null,
+      "attribute_group_id": "DFLT",
+      "attribute_group_name": "Otros"
+    },
+    {
+      "id": "VAPOR_EMISSION",
+      "name": "Emisión de vapor",
+      "value_id": "242084",
+      "value_name": "No",
+      "value_struct": null,
+      "attribute_group_id": "DFLT",
+      "attribute_group_name": "Otros"
+    },
+    {
+      "id": "WATER_CAPACITY",
+      "name": "Capacidad de agua",
+      "value_id": null,
+      "value_name": "1.2 L",
+      "value_struct": {
+        "number": 1.2,
+        "unit": "L"
+      },
+      "attribute_group_id": "DFLT",
+      "attribute_group_name": "Otros"
+    },
+    {
+      "id": "WATER_INDICATOR",
+      "name": "Indicador de agua",
+      "value_id": "242085",
+      "value_name": "Sí",
+      "value_struct": null,
+      "attribute_group_id": "DFLT",
+      "attribute_group_name": "Otros"
+    },
+    {
+      "id": "BRAND",
+      "name": "Marca",
+      "value_id": "467",
+      "value_name": "Oster",
+      "value_struct": null,
+      "attribute_group_id": "MAIN",
+      "attribute_group_name": "Principales"
+    },
+    {
+      "id": "MODEL",
+      "name": "Modelo",
+      "value_id": "863",
+      "value_name": "OEMP50",
+      "value_struct": null,
+      "attribute_group_id": "MAIN",
+      "attribute_group_name": "Principales"
+    }
+  ],
+  "warnings": [
+  ],
+  "listing_source": "",
+  "variations": [
+  ],
+  "status": "active",
+  "sub_status": [
+  ],
+  "tags": [
+    "price_review",
+    "only_html_description",
+    "good_quality_picture",
+    "immediate_payment"
+  ],
+  "warranty": "Garantía de fabrica 1 año",
+  "catalog_product_id": "MLA805169",
+  "domain_id": "MLA-COFFEE_MAKERS",
+  "parent_item_id": null,
+  "differential_pricing": null,
+  "deal_ids": [
+  ],
+  "automatic_relist": false,
+  "date_created": "2016-09-19T19:03:41.000Z",
+  "last_updated": "2017-10-31T16:13:26.000Z"
+}
