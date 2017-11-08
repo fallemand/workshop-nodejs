@@ -54,6 +54,7 @@
     "eslint-plugin-import": "1.15.0",
     "imagemin-cli": "^3.0.0",
     "jest": "^21.2.1",
+    "nightwatch": "^0.9.16",
     "node-sass": "^4.5.3",
     "nodemon": "^1.12.1",
     "npm-run-all": "^2.1.1",
@@ -61,12 +62,14 @@
     "postcss-cli": "^2.5.2",
     "rimraf": "^2.5.4",
     "sass-lint": "^1.10.2",
+    "selenium-standalone": "^6.11.0",
     "serialize-javascript": "^1.4.0",
     "webpack": "^3.8.1"
   },
   "dependencies": {
     "express": "^4.16.2",
     "express-react-views": "^0.10.4",
+    "nock": "^9.1.0",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
