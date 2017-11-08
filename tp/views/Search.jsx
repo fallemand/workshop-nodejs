@@ -11,7 +11,7 @@ class Search extends React.Component {
     return (
       <Layout {...this.props}>
         {
-          results.data.map((result) =>
+          results.data.results.map((result) =>
             <SearchItem {...result} />
           )
         }
