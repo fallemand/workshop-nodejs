@@ -15,7 +15,7 @@ class Layout extends React.Component {
             <title>Mercado Libre | FrontEnd Test</title>
             <link rel="shortcut icon" href="http://ui.mlstatic.com/navigation/1.2.0/mercadolibre/favicon.ico"/>
             <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet" />
-            <link href="/statics/dist/styles/main.css" rel="stylesheet" />
+            <link href="/assets/dist/styles/main.css" rel="stylesheet" />
         </head>
         <body>
             <header role="banner" id="header" className="header">

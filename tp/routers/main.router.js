@@ -8,5 +8,5 @@ module.exports.init = (app, path) => {
   app.use('/api', authorMiddleware, apiRouter, errorMiddleware.apiError);
   app.use('/app', appRouter, errorMiddleware.appError);
 
-  app.use('/statics', staticsServer(`${path}/assets`));
+  app.use('/assets', staticsServer(`${path}/assets`));
 };
