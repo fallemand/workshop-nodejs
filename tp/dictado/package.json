@@ -12,6 +12,7 @@
     "setup-e2e": "selenium-standalone install",
     "test:unit": "jest",
     "test:e2e": "npm run setup-e2e && nightwatch",
+    "debug": "NODE_ENV=development node --inspect index.js",
     "webpack": "webpack",
     "imagemin": "imagemin assets/src/images/* -o assets/dist/images",
     "start": "NODE_ENV=production node index.js",
