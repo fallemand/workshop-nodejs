@@ -97,7 +97,7 @@ class meliTransform {
       method: 'GET',
       headers: {'Content-type': 'application/json'},
       hostname: 'api.mercadolibre.com',
-      path: `/sites/MLA/search?q=${query}`
+      path: `/sites/MLA/search?q=${escape(query)}`
     };
 
     return new Promise((resolve, reject) => {

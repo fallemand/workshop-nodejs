@@ -18,8 +18,8 @@ class Layout extends React.Component {
             <link href="/assets/dist/styles/main.css" rel="stylesheet" />
         </head>
         <body>
-            <header role="banner" id="header" className="header">
-              <Header query={this.props.query} data-js="header"/>
+            <header role="banner" data-js="header" className="header">
+              <Header query={this.props.query} />
             </header>
             <main role="main" className="main">
                 <Breadcrumb {...this.props}/>
@@ -27,6 +27,8 @@ class Layout extends React.Component {
                     {this.props.children}
                 </div>
             </main>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.0.0/umd/react.production.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.0.0/umd/react-dom.production.min.js"></script>
             <script src="/assets/dist/scripts/header.bundle.js"></script>
         </body>
       </html>

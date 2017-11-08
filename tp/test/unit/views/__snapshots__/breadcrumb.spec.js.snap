@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb (Snapshot) Render with query 1`] = `
+<ul
+  className="breadcrumb"
+>
+  <li
+    className="breadcrumb__element"
+  >
+    "
+    iph
+    "
+  </li>
+</ul>
+`;
+
+exports[`Breadcrumb (Snapshot) Render without query 1`] = `
+<ul
+  className="breadcrumb"
+/>
+`;
