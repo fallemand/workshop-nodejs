@@ -12,6 +12,7 @@
     "setup-e2e": "selenium-standalone install",
     "test:unit": "jest",
     "test:e2e": "npm run setup-e2e && nightwatch",
+    "debug": "NODE_ENV=development node --inspect index.js",
     "webpack": "webpack",
     "imagemin": "imagemin assets/src/images/* -o assets/dist/images",
     "start": "NODE_ENV=production node index.js",
@@ -53,6 +54,7 @@
     "react-test-renderer": "^16.0.0",
     "rimraf": "^2.5.4",
     "sass-lint": "^1.10.2",
+    "selenium-standalone": "^6.11.0",
     "serialize-javascript": "^1.4.0",
     "uglify-js": "^2.6.2",
     "webpack": "^3.8.1"
