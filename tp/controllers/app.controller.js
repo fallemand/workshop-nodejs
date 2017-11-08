@@ -2,16 +2,7 @@ const meliService = require('./../services/meli.service');
 const meliTransform = require('./../services/meli.transform');
 
 module.exports.root = (req, res) => {
-  res.render('Index', {
-    title: 'Lista de tareas',
-    subTitle: 'Acordate de hacerlas',
-    showSubTitles: true,
-    tasks: [
-      'Lavar el auto',
-      'Cortar el pasto',
-      'Aprender react',
-    ],
-  });
+  res.render('Index');
 };
 
 module.exports.search = (req, res, next) => {

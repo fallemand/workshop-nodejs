@@ -4,8 +4,6 @@ const Layout = require('./components/Layout');
 
 class Index extends React.Component {
   render() {
-    console.log(this.props);
-    const { title, subTitle, showSubTitle, tasks } = this.props;
     return (
       <Layout>
         <div class="search-hero">

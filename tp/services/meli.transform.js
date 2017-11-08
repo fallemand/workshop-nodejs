@@ -72,6 +72,15 @@ class MeliTrasnform {
 
     return parsedItem;
   }
+
+  suggest (results) {
+    return {
+      query: results.q,
+      results: results.suggested_queries.map((result) => {
+        return result.q;
+      }),
+    };
+  };
 }
 
 module.exports = new MeliTrasnform();

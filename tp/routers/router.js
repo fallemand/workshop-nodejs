@@ -8,6 +8,7 @@ const errorMiddleware = require('./../middlewares/error.middleware.js');
 
 
 module.exports.init = (app, path) => {
+
   // Set static path
   app.use('/assets', serverAssets(`${path}/assets`));
 

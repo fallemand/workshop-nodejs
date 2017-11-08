@@ -6,9 +6,6 @@ module.exports.root = (req, res) => {
 };
 
 module.exports.search = (req, res, next) => {
-  // Force syntax error
-  // const x = null;
-  // x.bla;
   meliService
     .search(req.query.q)
     .then((data) => {
@@ -21,17 +18,24 @@ module.exports.search = (req, res, next) => {
 
 module.exports.items = (req, res) => {
   meliService
-  .item(req.params.id)
-  .then((data) => {
-    const parsedData = meliTransform.getParsedItem(data.category, data.item, data.description);
-    parsedData.author = res.locals.author;
-    res.send(parsedData);
-  })
-  .catch((err) => {
-    res.status(err.status || 500).send(err);
-  });
+    .item(req.params.id)
+    .then((data) => {
+      const parsedData = meliTransform.getParsedItem(data.category, data.item, data.description);
+      parsedData.author = res.locals.author;
+      res.send(parsedData);
+    })
+    .catch((err) => {
+      res.status(err.status || 500).send(err);
+    });
 };
 
-module.exports.suggest = (req, res) => {
-  res.send(`Entra a suggest: ${req.params}`);
+module.exports.suggest = (req, res, next) => {
+  const query = req.query.q;
+  meliService
+    .suggest(query)
+    .then((results) => {
+      results.author = res.locals.author;
+      res.json(meliTransform.suggest(results));
+    })
+    .catch(next);
 };

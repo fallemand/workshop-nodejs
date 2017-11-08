@@ -8,4 +8,6 @@ router.get('/search', apiController.search);
 
 router.get('/items/:id', apiController.items);
 
+router.get('/suggest', apiController.suggest);
+
 module.exports = router;

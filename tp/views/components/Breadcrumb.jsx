@@ -9,7 +9,7 @@ class Breadcrumbs extends React.Component {
         {cats && cats.map((cat) =>
           <li class="breadcrumb__element">{cat}</li>
         )}
-        {query && <li class="breadcrumb__element">{query}</li>}
+        {query && <li class="breadcrumb__element">"{query}"</li>}
       </ul>
     );
   }
