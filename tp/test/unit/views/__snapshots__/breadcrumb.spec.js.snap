@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb (Snapshot) Breadcrumb renders 1`] = `
+<ul
+  className="breadcrumb"
+>
+  <li
+    className="breadcrumb__element"
+  >
+    Inicio
+  </li>
+  <li
+    className="breadcrumb__element"
+  />
+  <li
+    className="breadcrumb__element"
+  />
+  <li
+    className="breadcrumb__element"
+  />
+  <li
+    className="breadcrumb__element"
+  >
+    "
+    item
+    "
+  </li>
+</ul>
+`;

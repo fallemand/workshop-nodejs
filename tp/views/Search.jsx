@@ -14,8 +14,8 @@ class Search extends React.Component {
                 <div>
                     <h1> Resultados </h1>
                     <div>
-                        {this.props.results && this.props.results.map((item) => 
-                            <SearchItem item={item}></SearchItem>
+                        {this.props.results && this.props.results.map((item, index) => 
+                            <SearchItem key={index} item={item}></SearchItem>
                         )}
                     </div>
                 </div>

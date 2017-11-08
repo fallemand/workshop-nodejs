@@ -117,7 +117,7 @@ class MeliService {
       method: 'GET',
       headers: {'Content-Type': 'application/json'},
       hostname: 'api.mercadolibre.com',
-      path: `/sites/${site}/search?q=${query}`
+      path: `/sites/${site}/search?q=${encodeURIComponent(query)}`
     };
 
     return new Promise((resolve, reject) => {
@@ -135,7 +135,7 @@ class MeliService {
       method: 'GET',
       headers: {'Content-Type': 'application/json'},
       hostname: 'api.mercadolibre.com',
-      path: `/sites/${site}/autosuggest?q=${query}`
+      path: `/sites/${site}/autosuggest?q=${encodeURIComponent(query)}`
     };
 
     return new Promise((resolve, reject) => {
