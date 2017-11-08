@@ -10,7 +10,8 @@ class Suggest extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    fetch(`/api/suggest?q=${query}`)
+    const query = nextProps.query;
+    return fetch(`/api/suggest?q=${query}`)
       .then((response) => {
         response.json().then((response) => {
           this.setState({results: response.results});
