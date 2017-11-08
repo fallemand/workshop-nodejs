@@ -6,7 +6,7 @@ const request = require('../servicies/requestPromise');
 class appController {
 
   static search (req, res, next)  {
-    const url = `/api/search?q=${req.query.q}`;
+    const url = `/api/search?q=${escape(req.query.q)}`;
     const options = {
       method: 'GET',
       headers: {'Content-type': 'application/json'},
@@ -17,6 +17,7 @@ class appController {
     };
 
     request(options).then((results) => {
+      results.query = req.query.q;
       res.render('Search', results);
     }).catch(next);
 
