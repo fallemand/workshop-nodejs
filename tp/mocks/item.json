@@ -59,7 +59,7 @@
     ],
     "dimensions": null,
     "local_pick_up": false,
-    "free_shipping": false,
+    "free_shipping": true,
     "logistic_type": "custom",
     "store_pick_up": false
   },
