@@ -32,6 +32,9 @@ Modificar:
 #### Dependencias: 
 [nightwatch](http://nightwatchjs.org/)  
 [selenium-standalone](https://github.com/vvo/selenium-standalone)  
+```
+npm install --save-dev nightwatch selenium-standalone
+```
 
 #### Ejercicio Dictado:   
 -Configurar el entorno para poder generar una suite de test funcionales.  
