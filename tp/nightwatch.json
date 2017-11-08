@@ -1,0 +1,114 @@
+{
+  "src_folders": [
+    "./test/e2e/groups"
+  ],
+  "output_folder": "./test/e2e/reports",
+  "globals_path": "./test/e2e/globals.js",
+  "page_objects_path": "./test/e2e/pages",
+  "test_workers": {
+    "enabled": false,
+    "workers": "auto"
+  },
+  "live_output": false,
+  "selenium": {
+    "start_process": true,
+    "host": "127.0.0.1",
+    "port": 4444,
+    "server_path": "./node_modules/selenium-standalone/.selenium/selenium-server/3.6.0-server.jar",
+    "log_path": "",
+    "cli_args": {
+      "webdriver.chrome.driver": "./node_modules/selenium-standalone/.selenium/chromedriver/2.33-x64-chromedriver"
+    }
+  },
+  "test_settings": {
+    "default": {
+      "skip_testcases_on_fail": true,
+      "silent": true,
+      "screenshots": {
+        "enabled": false,
+        "on_failure": false,
+        "on_error": false,
+        "path": "./tests/screenshots"
+      },
+      "disable_colors": true,
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true
+      }
+    },
+    "xvfb_desktop": {
+      "selenium_host": "localhost",
+      "selenium_port": 4444,
+      "skip_testcases_on_fail": true,
+      "screenshots": {
+        "enabled": false,
+        "on_failure": false,
+        "on_error": false,
+        "path": "./test/screenshots"
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "chromeOptions": {
+          "args": [
+            "incognito",
+            "disable-extensions",
+            "--no-sandbox"
+          ]
+        }
+      }
+    },
+    "xvfb_mobile": {
+      "selenium_host": "localhost",
+      "selenium_port": 4444,
+      "skip_testcases_on_fail": true,
+      "screenshots": {
+        "enabled": false,
+        "on_failure": false,
+        "on_error": false,
+        "path": "./tests/screenshots"
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "chromeOptions": {
+          "mobileEmulation": {
+            "deviceName": "Google Nexus 5"
+          },
+          "args": [
+            "incognito",
+            "disable-extensions",
+            "--no-sandbox",
+            "disable-gpu"
+          ]
+        }
+      }
+    },
+    "chrome-remote-desktop": {
+      "skip_testcases_on_fail": false,
+      "launch_url": "http://localhost",
+      "selenium_host": "ondemand.saucelabs.com",
+      "selenium_port": 80,
+      "username": "e2e_homes_vip",
+      "access_key": "1e7ddf20-7625-4915-a734-db4116b6c8b5",
+      "use_ssl": false,
+      "silent": true,
+      "output": true,
+      "screenshots": {
+        "enabled": false,
+        "path": "./tests/screenshots"
+      },
+      "desiredCapabilities": {
+        "platform": "Windows XP",
+        "browserName": "chrome",
+        "version": "41",
+        "args": [
+          "incognito",
+          "disable-extensions"
+        ]
+      }
+    }
+  }
+}
