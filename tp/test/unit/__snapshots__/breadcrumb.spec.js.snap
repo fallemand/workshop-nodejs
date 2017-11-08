@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb (Snapshot) Breadcrumb renders with results 1`] = `
+<ul
+  class="breadcrumb"
+>
+  <li
+    class="breadcrumb__element"
+  >
+    <a
+      href="/"
+    >
+      Inicio
+    </a>
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    cat 1
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    cat 2
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    cat 3
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    cat 4
+  </li>
+  
+</ul>
+`;
+
+exports[`Breadcrumb (Snapshot) Breadcrumb renders without results 1`] = `
+<ul
+  class="breadcrumb"
+>
+  <li
+    class="breadcrumb__element"
+  >
+    <a
+      href="/"
+    >
+      Inicio
+    </a>
+  </li>
+  
+  
+</ul>
+`;

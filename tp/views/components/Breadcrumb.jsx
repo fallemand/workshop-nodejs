@@ -2,8 +2,8 @@ const React = require('react');
 
 class Breadcrumb extends React.Component {
   listBreadcrums(elements) {
-    return elements.map((element) => {
-      return <li className="breadcrumb__element">{element.name}</li>;
+    return elements.map((element, index) => {
+      return <li key={index} className="breadcrumb__element">{element.name}</li>;
     });
   }
 

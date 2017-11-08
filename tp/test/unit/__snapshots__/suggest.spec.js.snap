@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Suggest (Snapshot) Suggest renders with results [Change State] 1`] = `
+<div>
+  <ul
+    className="suggest"
+  >
+    <li
+      className="suggest__item"
+    >
+      <a
+        href="/app/search?q=iphone"
+      >
+        iphone
+      </a>
+    </li>
+    <li
+      className="suggest__item"
+    >
+      <a
+        href="/app/search?q=iphone 2"
+      >
+        iphone 2
+      </a>
+    </li>
+    <li
+      className="suggest__item"
+    >
+      <a
+        href="/app/search?q=iphone 3"
+      >
+        iphone 3
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Suggest (Snapshot) Suggest renders with results [componentWillReceiveProps] 1`] = `
+<div>
+  <ul
+    className="suggest"
+  >
+    <li
+      className="suggest__item"
+    >
+      <a
+        href="/app/search?q=iphone"
+      >
+        iphone
+      </a>
+    </li>
+    <li
+      className="suggest__item"
+    >
+      <a
+        href="/app/search?q=iphone 2"
+      >
+        iphone 2
+      </a>
+    </li>
+    <li
+      className="suggest__item"
+    >
+      <a
+        href="/app/search?q=iphone 3"
+      >
+        iphone 3
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Suggest (Snapshot) Suggest renders without results 1`] = `<div />`;
