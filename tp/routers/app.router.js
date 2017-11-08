@@ -7,6 +7,10 @@ const appController = require('../controllers/app.controllers');
 
 router.get('/', appController.index);
 /* 
+    /app/search  
+*/
+router.get('/search/', appController.search);
+/* 
     /app/suggest  
 */
 router.get('/suggest/', appController.suggest);

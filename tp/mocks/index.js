@@ -7,13 +7,14 @@ const itemMock = require('./item.json')
 const categoryMock = require('./categories.json')
 
 
-// Mock Suggest
+// Mock Suggest  
 melinock
   .get('/sites/MLA/autosuggest')
   .query(true)
   .reply(200, suggestMock);
 
-  // Mock Search
+
+// Mock Search
 melinock
   .get('/sites/MLA/search')
   .query(true)

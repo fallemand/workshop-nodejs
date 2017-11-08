@@ -1,16 +1,36 @@
 const React = require('react');
+const Suggest = require('./Suggest')
 
 class Header extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.handleSearchKeyUp = this.handleSearchKeyUp.bind(this);
+    this.state = {
+      query: this.props.query
+    }
+  }
+
+  handleSearchKeyUp(e) {
+    const query = e.target.value;    
+    this.setState({
+      query
+    });
+  }
+  
   render() {
     return (
       <div className="header__container">
-        <a className="header__logo" href="/" tabindex="1">MercadoLibre - Donde compras y vendes de todo</a>
+        <a className="header__logo" href="/" tabIndex="1">MercadoLibre - Donde compras y vendes de todo</a>
         <form className="header__search" action="/app/search" method="GET" role="search">
-          <input type="text" className="header__search-input" name="q" max-length="120" tabindex="2" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="Nunca dejes de buscar" data-js="search" value="iphone 6" />
-          <button type="submit" className="header__search-btn" tabindex="3">
+          <input type="text" onKeyUp={this.handleSearchKeyUp} className="header__search-input"
+            name="q" max-length="120" tabIndex="2" autoCapitalize="off"
+            autoComplete="off" autoCorrect="off" spellCheck="false"
+            placeholder="Nunca dejes de buscar" data-js="search" value={this.props.query} />
+          <button type="submit" className="header__search-btn" tabIndex="3">
             <i className="header__search-icon"><span>Buscar</span></i>
           </button>
-          <div className="header__suggest" data-js="suggest"></div>
+          <Suggest query={this.state.query}  />
         </form>
       </div>
     );

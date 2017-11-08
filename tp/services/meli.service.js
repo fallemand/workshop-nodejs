@@ -9,7 +9,7 @@ module.exports.search = (query) => {
             'Content-type': 'application/json',
         },
         hostname: 'api.mercadolibre.com',
-        path: `/sites/MLA/search?q=${query}`
+        path: `/sites/MLA/search?q=${encodeURIComponent(query)}`
     }
     return request(searchOptions).then((result) => transform.search(result));    
 };
@@ -22,7 +22,7 @@ module.exports.suggest = (query) => {
             'Content-type': 'application/json',
         },
         hostname: 'api.mercadolibre.com',
-        path: `/sites/MLA/autosuggest?q=${query}`
+        path: `/sites/MLA/autosuggest?q=${encodeURIComponent(query)}`
     }
 
     return request(suggestOptions).then((result) => transform.suggest(result));    
@@ -40,7 +40,7 @@ module.exports.item = (id) => {
             'Content-type': 'application/json',
         },
         hostname: 'api.mercadolibre.com',
-        path: `/items/${id}`
+        path: `/items/${encodeURIComponent(id)}`
     }
     //Search items
     promises.push(request(options));
@@ -59,7 +59,7 @@ module.exports.item = (id) => {
 
             //search category        
             options.protocol = 'https';
-            options.path = `/categories/${item.category_id}`
+            options.path = `/categories/${encodeURIComponent(item.category_id)}`
             request(options).then((category) => {
                 itemFull.category = category                
                 resolve(transform.item(itemFull));

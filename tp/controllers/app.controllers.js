@@ -1,15 +1,17 @@
-const request = require('../services/meli.service');
+const request = require('../rest/requestPromise');
 
 class appControllers {
 
     static search(req, res, next) {
         const options = getOptions(`/api/search?q=${escape(req.query.q)}`);
+
         request(options).then(data => {
+            data.query = req.query.q;
             res.render('Search', data);
         })
     }
 
-    static suggest(req, res, next) {
+    static suggest(req, res, next) {                                     
         const options = getOptions(`/api/suggest?q=${escape(req.query.q)}`);
         request(options).then(data => {
             res.render('Suggest', data);
@@ -17,7 +19,8 @@ class appControllers {
     }
 
     static items(req, res, next) {        
-        request.item(req.params.id).then(item => {
+        const options = getOptions(`/api/items/${escape(req.params.id)}`);
+        request(options).then(item => {            
             res.render('Item', item);
         }).catch(next);
     }

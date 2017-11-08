@@ -3,7 +3,9 @@ module.exports.search = (search) => {
     return {
         query: search.query,
         paging: search.paging,
-        filters: search.filters,
+        category: search.filters.length > 0
+            && search.filters[0].values.length > 0 
+            && search.filters[0].values[0].path_from_root,
         results: search.results.map((result) => {
             return {
                 id: result.id,
@@ -21,8 +23,10 @@ module.exports.search = (search) => {
 module.exports.suggest = (suggest) => {
 
     return {
-        query: suggest.q,
-        results: suggest.suggested_queries
+        query: suggest.q,        
+        results: suggest.suggested_queries.map((result) => {
+            return result.q;
+        })  
     }
 };
 
@@ -39,7 +43,7 @@ module.exports.item = (result) => {
         sold_quantity: result.item.sold_quantity,
         free_shipping: result.item.shipping.shipping,
         picture: result.item.pictures[0],
-        category: result.category,
+        category: result.category.path_from_root && result.category.path_from_root,
         description: result.description
     }
 

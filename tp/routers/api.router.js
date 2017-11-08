@@ -7,7 +7,7 @@ router.get('/search/', apiController.search);
 /* 
     /api/autosuggest  
 */
-router.get('/autosuggest/', apiController.suggest);
+router.get('/suggest/', apiController.suggest);
 /* 
     /api/items  
 */

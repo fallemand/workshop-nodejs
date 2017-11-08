@@ -1,18 +1,30 @@
 const React = require('react');
 
+
+
+
 class SearchItem extends React.Component {
   render() {
+    const { 
+      id,
+      title,
+      address,
+      price,
+      condition,
+      thumbnai 
+    } = this.props.item;
+
     return (
-      <a className="search-item" href="/app/items/MLA672160044">
+      <a className="search-item" href={`/app/items/${id}`}>
         <div className="search-item__picture">
-          <img src="http://mla-s1-p.mlstatic.com/736895-MLA25705832447_062017-I.jpg" alt="Celular Libre Apple Iphone 6 Gris 32gb" />
+          <img src={thumbnai} alt={title} />
         </div>
         <div className="search-item__description">
-          <span className="search-item__price">$ 14999</span>
+          <span className="search-item__price">${price}</span>
           <i className="search-item__freeshipment"></i>
-          <p className="search-item__title">Celular Libre Apple Iphone 6 Gris 32gb</p>
+          <p className="search-item__title">{title}</p>
         </div>
-        <div className="search-item__location">Capital Federal</div>
+        <div className="search-item__location">{address.state_name}</div>
       </a>
     );
   }

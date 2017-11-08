@@ -1,0 +1,23 @@
+const meliService = require('../../services/meli.service')
+require('../../mocks');
+
+describe('Test meli.service.js', () => {
+
+    test('it should search', () => {
+        return meliService.search('Tostadora').then((response) => {
+            expect(response.results).toDefined();
+            expect(response.results.length).toBeGreatherThen(2);
+        })
+    });
+
+    test('it should get item', ()=>{
+        return meliService.item('MLA12212122').then( (item) =>{
+            expect(item.id).toDefined();
+            expect(item.category).toDefined();
+            expect(item.category.length).toBeGreatherThen(2);
+        });
+    });
+
+    /* sumar test de suggest*/
+
+});

@@ -5,11 +5,12 @@ const Layout = require('./components/Layout');
 class Search extends React.Component {
 
   render() {
+
     return (
-      <Layout>
-        <SearchItem />
-        <SearchItem />
-        <SearchItem />
+      <Layout breadcrumb = {this.props.category} query={this.props.query}>
+        {this.props.results.map((item, index) =>          
+          <SearchItem key={index} item={item}/>
+        )}
       </Layout>
     );
   }
