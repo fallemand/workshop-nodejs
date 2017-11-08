@@ -9,21 +9,37 @@ class Suggest extends React.Component {
     };
   }
 
-  componentDidMount() {
-    const query = this.props.query;
-    this.setState({
-      results: [query]
-    });
+  // componentDidMount() {
+  //   const query = this.props.query;
+  //   this.setState({
+  //     results: [query]
+  //   });
+  // }
+
+  componentWillReceiveProps(nextProps) {
+    const query = nextProps.query;
+    return fetch(`/api/suggest?q=${query}`)
+      .then((response) => {
+        response.json().then((response) => {
+          this.setState({results: response.suggested_queries});
+        });
+      });
   }
 
   render() {
     return (
-      <ul className="suggest">
-        {this.state.results.map((element) =>
-          <li className="suggest__item">{element}</li>
-        )}
-      </ul>
-    );
+      <div>
+        {this.state.results.length > 0 &&
+          <ul className="suggest">
+            {this.state.results.map((element, index) =>
+              <li key={index} className="suggest__item">
+                <a href={`/app/search?q=${element.q}`}>{element.q}</a>
+              </li>
+            )}
+          </ul>
+        }
+      </div>
+    )
   }
 }
 

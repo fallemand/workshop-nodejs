@@ -4,4 +4,10 @@ const Header = require('../../../views/components/Header');
 
 const container = document.querySelector('[data-js=header]');
 
-ReactDom.render(<Header/>, container);
+/**
+ * Get server state
+ * Recibo lo seteado mediante el preloaded
+ */
+const props = window.__PRELOADED_STATE__;
+
+ReactDom.render(<Header {...props}/>, container);
