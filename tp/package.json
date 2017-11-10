@@ -10,6 +10,7 @@
     "lint:scripts": "./node_modules/.bin/eslint -c .eslintrc assets/src/scripts || true",
     "lint:styles": "sass-lint assets/src/styles/*.scss -v -q",
     "webpack": "webpack",
+    "test:unit": "jest",
     "imagemin": "imagemin assets/src/images/* -o assets/dist/images",
     "start": "NODE_ENV=production ./node_modules/.bin/nodemon index.js",
     "start-dev": "NODE_ENV=development ./node_modules/.bin/nodemon index.js",
@@ -48,9 +49,17 @@
     "webpack": "^3.8.1"
   },
   "dependencies": {
+    "babel-jest": "^21.2.0",
+    "express": "^4.16.2",
     "express-react-views": "^0.10.4",
+    "jest": "^21.2.1",
+    "nock": "^9.0.28",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
-  }
+    "react-dom": "^16.0.0",
+    "react-test-renderer": "^16.0.0"
+  },
+  "jest": {
+    "testRegex": "tp/test/unit/.*.js$"
+  }  
 }

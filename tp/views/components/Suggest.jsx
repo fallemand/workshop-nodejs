@@ -16,7 +16,7 @@ class Suggest extends React.Component {
             response.json().then((response) => {
               this.setState({results: response.suggestions});
             }).catch((err) => {
-                console.log(err.toString());
+                this.setState({results: []});
             });
           });
     }
@@ -24,7 +24,7 @@ class Suggest extends React.Component {
     render() {
         return(
             <ul className="suggest">
-            {this.state.results.map((element) => 
+            {this.state.results && this.state.results.map((element) => 
                 <li className="suggest__item"><a href={`/search?q=${element}`}>{element}</a></li>
             )}
             </ul>
