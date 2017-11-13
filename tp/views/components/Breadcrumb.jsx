@@ -2,6 +2,11 @@ const React = require('react');
 
 class Breadcrumb extends React.Component {
   render() {
+    const {
+      query,
+      categories,
+    } = this.props;
+
     return (
       <ul className="breadcrumb">
         <li className="breadcrumb__element">
@@ -9,9 +14,21 @@ class Breadcrumb extends React.Component {
             Inicio
           </a>
         </li>
-        <li className="breadcrumb__element">
-          Hardcoded
-        </li>
+
+        {
+          categories && categories.map((category) =>
+            <li className="breadcrumb__element">
+              {category}
+            </li>
+        )}
+
+        {
+          query &&
+          <li className="breadcrumb__element">
+            "{query}"
+          </li>
+        }
+
       </ul>
     );
   }
