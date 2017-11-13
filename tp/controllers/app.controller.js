@@ -1,12 +1,13 @@
 const request = require('../services/request');
+const config = require('../config');
 
 const options = {
   method: 'GET',
   headers: {
     'Content-type': 'application/json',
   },
-  hostname: 'localhost',
-  port: '3000',
+  hostname: config.host,
+  port: config.port,
   path: '',
 };
 const protocol = 'http';
