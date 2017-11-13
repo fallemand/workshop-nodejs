@@ -9,6 +9,7 @@ module.exports = {
   }],
   elements: {
     searchField: '.header__search-input',
-    searchButton: '.header__search-btn'
-  }
+    searchButton: '.header__search-btn',
+    suggestBox: '.suggest',
+  },
 };

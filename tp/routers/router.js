@@ -11,14 +11,13 @@ module.exports.init = (app, path) => {
 
   // Set static path
   app.use('/assets', serverAssets(`${path}/assets`));
-
   // Use author middleware
   app.use(authorMiddleware);
-
+  
   // Set routers
   app.use('/api', routerApi, errorMiddleware.api);
   app.use('/app', routerApp, errorMiddleware.app);
-
+  
   // Set default route
   app.use('*', (req, res, next) => {
     res.send('Default route');
