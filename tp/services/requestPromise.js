@@ -1,3 +1,7 @@
+/**
+ * Request promise permite hacer una llamada a una API mediante una promesa
+ */
+
 const https = require('https');
 const http = require('http');
 

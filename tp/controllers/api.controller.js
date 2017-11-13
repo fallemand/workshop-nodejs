@@ -1,5 +1,8 @@
 const meliService = require('../services/meli.service')
 
+/**
+ * Api controller contiene las funciones invocadas por los endpoints de api
+ */
 class ApiController {
 
   static search(req, res, next) {

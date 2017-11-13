@@ -1,3 +1,7 @@
+/**
+ * APP Routes
+ */
+
 const router = require('express').Router();
 const appController = require('../controllers/app.controller');
 

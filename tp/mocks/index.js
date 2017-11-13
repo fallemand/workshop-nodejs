@@ -1,3 +1,8 @@
+/**
+ * Mocks
+ * Al hacer require de mocks, se ejecuta este index
+ */
+
 const nock = require('nock');
 const melinock = nock('https://api.mercadolibre.com/').persist();
 const searchMock = require('./search')

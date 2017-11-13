@@ -4,7 +4,6 @@ require('../../../mocks');
 describe('Test meli.service.js', () => {
 
     test('It should search ', () => {
-
         return meliService.searchWithPromise('Tostadora', 'MLA').then((response) => {
 
             expect(response.results).toBeDefined();
@@ -16,7 +15,6 @@ describe('Test meli.service.js', () => {
     });
 
     test('It should item', () => {
-
         return meliService.itemWithPromise('MLA12312334').then((item) => {
 
             expect(item.id).toBeDefined();
@@ -25,7 +23,4 @@ describe('Test meli.service.js', () => {
             expect(item.picture).toEqual('url..');
         })
     });
-
-
-    // testear breadcrumb, meli service, suggest, transform
 });

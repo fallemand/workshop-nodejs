@@ -4,15 +4,6 @@ const Suggest = require('../../../views/components/Suggest');
 
 describe('Suggest (Snapshot)', () => {
   const component = renderer.create(<Suggest query="iph"/>);
-  /*const suggestResponse = {
-    "results": [
-      "iphone 6",
-      "iphone 7",
-      "iphone 5",
-    ],
-  };*/
-
-// it es lo mismo que it
 
   test('Suggest renders without results', () => {
     const json = component.toJSON();
@@ -70,7 +61,6 @@ describe('Suggest (Snapshot)', () => {
     });
   });
 
-/*
   it('Suggest renders resultssuggestResponse [change state]', () => {
     const instance = component.getInstance();
     instance.setState(suggestResponse);
@@ -84,5 +74,5 @@ describe('Suggest (Snapshot)', () => {
     instance.componentWillReceiveProps({query: 'iph'});
     const json = component.toJSON();
     expect(json).toMatchSnapshot();
-  });*/
+  });
 });

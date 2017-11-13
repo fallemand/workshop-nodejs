@@ -1,8 +1,10 @@
 const meliService = require('../services/meli.service');
 const request = require('../services/requestPromise');
 
+/**
+ * App controller contiene las funciones invocadas por los endpoints de app
+ */
 class AppController {
-
   static search(req, res, next) {
     const site = req.params.site;
     const q = req.query.q;
@@ -45,19 +47,7 @@ class AppController {
       res.render('Item', results);
     }).catch(next);
   };
-
-  static test(req, res, next) {
-    res.render('IndexEmi', {
-      title: 'Titulo!',
-      tasks: [
-          'task1',
-          'task2',
-          'task3'
-        ]
-        //subtitle: 'Subtitulo!'
-    });
-  };
-
+  
   static index(req, res, next) {
     res.render('Index');
   };

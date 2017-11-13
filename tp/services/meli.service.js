@@ -1,8 +1,10 @@
 const request = require('./requestPromise');
 const Transform = require('./meli.transform');
 
+/**
+ * Esta clase utiliza request para traer el contenido de las API's de MELI
+ */
 class MeliService {
-
   static item(id, response) {
     let item = {};
     const itemOptions = {
