@@ -1,6 +1,6 @@
 const React = require('react');
 const renderer = require('react-test-renderer');
-const Breadcrumb = require('../../../views/components/Breadcrumb');
+const Breadcrumb = require('../../views/components/Breadcrumb');
 
 const category = [
   {'id': '1', 'name': 'Celulares y Telefonía'},
