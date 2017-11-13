@@ -2,6 +2,7 @@
  * Created by cuanini on 10/20/17.
  */
 const request = require('../servicies/requestPromise');
+const config = require('../config')
 
 class appController {
 
@@ -10,8 +11,8 @@ class appController {
     const options = {
       method: 'GET',
       headers: {'Content-type': 'application/json'},
-      hostname: 'localhost',
-      port: '3000',
+      hostname: config.host,
+      port: config.port,
       protocol: 'http',
       path: url
     };
@@ -29,8 +30,8 @@ class appController {
     const options = {
       method: 'GET',
       headers: {'Content-type': 'application/json'},
-      hostname: 'localhost',
-      port: '3000',
+      hostname: config.host,
+      port: config.port,
       protocol: 'http',
       path: url
     };
