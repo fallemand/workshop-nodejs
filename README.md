@@ -2,11 +2,11 @@
 
 * Build assets with
 
-```npm run build``
+```npm run build```
 
 * Run with
 
-```npm run watch``
+```npm run watch```
 
 ```npm run start-dev```
 
