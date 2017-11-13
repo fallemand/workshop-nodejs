@@ -30,6 +30,9 @@
   },
   "author": "Facundo Allemand (facundo.allemand@mercadolibre.com)",
   "license": "ISC",
+  "engines": {
+    "node": "6.11.0"
+  },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel-core": "^6.26.0",
