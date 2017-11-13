@@ -15,7 +15,7 @@
     "lint:styles": "sass-lint assets/src/styles/*.scss -v -q",
     "imagemin": "imagemin assets/src/images/* -o assets/dist/images",
     "start": "NODE_ENV=production pm2 start index.js -i max --attach --name workshop",
-    "start": "pm2 stop workshop",
+    "stop": "pm2 stop workshop",
     "start:stage": "NODE_ENV=stage node index.js",
     "start:test": "NODE_ENV=test node index.js",
     "start:dev": "NODE_ENV=development ./node_modules/.bin/nodemon index.js",
