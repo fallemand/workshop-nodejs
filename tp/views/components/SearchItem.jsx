@@ -6,9 +6,9 @@ class SearchItem extends React.Component {
       id,
       title,
       price,
-      condition,
       free_shipping,
       picture,
+      address,
     } = this.props;
 
     return (
@@ -29,7 +29,7 @@ class SearchItem extends React.Component {
           </p>
         </div>
         <div className="search-item__location">
-          Hardcoded Location
+          {address.state}
         </div>
       </a>
     );
