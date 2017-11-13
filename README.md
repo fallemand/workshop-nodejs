@@ -50,7 +50,7 @@ El proyecto incluirá módulos, servicios, middlewares, controllers, routers, ES
 ¿Para que lo usamos en MercadoLibre? [nordic](http://nordic.ml.com/docs)  
 
 ## Diagrama de Clases
-Total: 28hs
+Total: 26hs
 
 - **Clase 1:** 2hs: Introducción - Ej 1 - Ej 2
 - **Clase 2:** 2hs: Ej 3 - Ej 4
@@ -62,10 +62,9 @@ Total: 28hs
 - **Clase 8:** 2hs: TP: Express: React - [Video Clase](https://www.youtube.com/watch?v=5fzSVx1rHBA) (Se corta minuto 5)
 - **Clase 9:** 2hs: TP: Mocks - Environments - [Video Clase](https://www.youtube.com/watch?v=AUYbK_hdxuA)
 - **Clase 10:** 2hs: TP: Webpack - [Video Clase](https://www.youtube.com/watch?v=rrOHhqd37gA)
-- **Clase 11:** 2hs: TP: Testing Unitario - [Video Clase](https://www.youtube.com/watch?v=2r-XrJUmwJ4)
+- **Clase 11:** 2hs: TP: Testing Unitario - [Video Clase](https://www.youtube.com/watch?v=2r-XrJUmwJ4) (Continúa siguiente clase)
 - **Clase 12:** 2hs: TP: Testing Funcional - [Video Clase](https://www.youtube.com/watch?v=CpkaFdAzSvo)
-- **Clase 13:** 2hs: TP: Deploy Cloud - Arrancamos Nordic - 
-- **Clase 14:** 2hs: TP: Nordic - Cierre - 
+- **Clase 13:** 2hs: TP: Deploy Cloud - [Video Clase](https://www.youtube.com/watch?v=rBwvaSti2u8) (Problemas conexión)
 
 ## Contact
 ```
