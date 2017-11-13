@@ -17,6 +17,6 @@ module.exports.init = (app, path) => {
   app.use('/assets', static(`${path}/assets`));
 
   app.use('*', (req, res) => {
-   res.send("Default route");
+   res.redirect('/app');
   })
 }
