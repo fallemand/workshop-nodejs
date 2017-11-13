@@ -1,5 +1,5 @@
 const React = require('react');
-const Suggest = require('./suggest');
+const Suggest = require('./Suggest');
 
 class Header extends React.Component {
 
