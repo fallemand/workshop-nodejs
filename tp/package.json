@@ -22,7 +22,7 @@
     "build-styles": "npm run lint:styles && npm run scss && npm run autoprefixer",
     "build-scripts": "npm run lint:scripts && npm run webpack",
     "build-images": "npm run imagemin",
-    "build": "npm run clean && npm run build:styles && npm run build-scripts && npm run build-images",
+    "build": "npm run clean && npm run build-styles && npm run build-scripts && npm run build-images",
     "watch-styles": "onchange \"assets/src/styles\" -- npm run build-styles",
     "watch-scripts": "onchange \"assets/src/scripts\" -- npm run build-scripts",
     "watch-images": "onchange \"assets/src/images\" -- npm run build-images",
