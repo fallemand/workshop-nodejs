@@ -1,4 +1,6 @@
-# Workshop Node.js
+![nodejs](https://user-images.githubusercontent.com/16105726/32727098-0b1fa8a8-c85a-11e7-9251-56540e0083dd.png)
+
+# Workshop Node.js (Node - Express - React)
 Este curso esta apuntado a personas que se estan iniciando en el mundo de Node.js    
 Se plantea una serie de ejercicios introductorios, y luego se avanza sobre un trabajo integrador que se va iterado y completando a medida se desarrolla el curso.  
 Se busca que los asistentes obtengan una compresión completa del stack, por lo que se inicia con una carpeta vacía, y clase a clase se va agregando funcionalidad, hasta lograr un proyecto completo deployado en la nube con una url productiva.  
@@ -64,3 +66,13 @@ Total: 28hs
 - **Clase 12:** 2hs: TP: Testing Funcional - [Video Clase](https://www.youtube.com/watch?v=CpkaFdAzSvo)
 - **Clase 13:** 2hs: TP: Deploy Cloud - Arrancamos Nordic - 
 - **Clase 14:** 2hs: TP: Nordic - Cierre - 
+
+## Contact
+```
+facundo.allemand@mercadolibre.com
+```
+
+
+Made with :heart: from ```Córdoba, Argentina```  
+
+© 2017 Mercado Libre
