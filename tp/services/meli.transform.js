@@ -10,16 +10,19 @@ module.exports.item = (item) => {
     sold_quantity: item.sold_quantity,
     free_shipping: item.shipping.free_shipping,
     picture: item.pictures[0] && item.pictures[0].url,
-    category: item.category,
+    category: item.category.path_from_root,
     description: item.description,
   }
 };
 
-exports.search = (search) => {
+module.exports.search = (search) => {
   return {
     query : search.query,
     paging: search.paging,
     filters: search.filters,
+    category: search.filters.length > 0
+              && search.filters[0].values.length > 0
+              && search.filters[0].values[0].path_from_root,
     results: search.results.map((result) => {
       return {
         id: result.id,
@@ -37,7 +40,7 @@ exports.search = (search) => {
   }
 };
 
-exports.suggest = (results) => {
+module.exports.suggest = (results) => {
   return {
     query: results.q,
     results: results.suggested_queries.map((result) => {

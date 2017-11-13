@@ -16,7 +16,6 @@ class apiController {
         meliService.suggest(query).then((results) => {
             results.author = res.locals.author;
             res.json(results);
-            console.log(results);
         }).catch(next);
     }
 
@@ -25,7 +24,6 @@ class apiController {
         const query = req.query;
 
         meliService.item(itemId).then((item) => {
-            console.log('este es el autor', res.locals.author);
             item.author = res.locals.author;
             res.json(item);
         }).catch(next);

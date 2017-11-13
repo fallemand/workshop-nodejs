@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb (Snapshot) Breadcrumb with query 1`] = `
+<ul
+  class="breadcrumb"
+>
+  <li
+    class="breadcrumb__element"
+  >
+    <a
+      href="/"
+    >
+      Inicio
+    </a>
+  </li>
+  <li
+    class="breadcrumb__element"
+  >
+    <a
+      href="/"
+    >
+      Electrónica, Audio y Video
+    </a>
+  </li>
+  <li
+    class="breadcrumb__element"
+  >
+    <a
+      href="/"
+    >
+      Audio
+    </a>
+  </li>
+  <li
+    class="breadcrumb__element"
+  >
+    <a
+      href="/"
+    >
+      Auriculares
+    </a>
+  </li>
+  <li
+    class="breadcrumb__element"
+  >
+    <a
+      href="/"
+    >
+      Con Vincha
+    </a>
+  </li>
+  <li
+    class="breadcrumb__element"
+  >
+    <a
+      href="/"
+    >
+      Sennheiser
+    </a>
+  </li>
+  <li
+    class="breadcrumb__element"
+  >
+    "
+    iph
+    "
+  </li>
+</ul>
+`;
+
+exports[`Breadcrumb (Snapshot) Breadcrumb without query 1`] = `
+<ul
+  class="breadcrumb"
+>
+  <li
+    class="breadcrumb__element"
+  >
+    <a
+      href="/"
+    >
+      Inicio
+    </a>
+  </li>
+  <li
+    class="breadcrumb__element"
+  >
+    <a
+      href="/"
+    >
+      Electrónica, Audio y Video
+    </a>
+  </li>
+  <li
+    class="breadcrumb__element"
+  >
+    <a
+      href="/"
+    >
+      Audio
+    </a>
+  </li>
+  <li
+    class="breadcrumb__element"
+  >
+    <a
+      href="/"
+    >
+      Auriculares
+    </a>
+  </li>
+  <li
+    class="breadcrumb__element"
+  >
+    <a
+      href="/"
+    >
+      Con Vincha
+    </a>
+  </li>
+  <li
+    class="breadcrumb__element"
+  >
+    <a
+      href="/"
+    >
+      Sennheiser
+    </a>
+  </li>
+</ul>
+`;

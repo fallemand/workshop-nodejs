@@ -1,0 +1,93 @@
+{
+  "id": "MLA73506",
+  "name": "Sennheiser",
+  "picture": null,
+  "permalink": null,
+  "total_items_in_this_category": 1023,
+  "path_from_root": [
+    {
+      "id": "MLA1000",
+      "name": "Electrónica, Audio y Video"
+    },
+    {
+      "id": "MLA409810",
+      "name": "Audio"
+    },
+    {
+      "id": "MLA3697",
+      "name": "Auriculares"
+    },
+    {
+      "id": "MLA10585",
+      "name": "Con Vincha"
+    },
+    {
+      "id": "MLA73506",
+      "name": "Sennheiser"
+    }
+  ],
+  "children_categories": [
+  ],
+  "attribute_types": "attributes",
+  "settings": {
+    "adult_content": false,
+    "buying_allowed": true,
+    "buying_modes": [
+      "buy_it_now",
+      "auction"
+    ],
+    "catalog_domain": "MLA-HEADPHONES",
+    "coverage_areas": "not_allowed",
+    "currencies": [
+      "ARS"
+    ],
+    "fragile": false,
+    "immediate_payment": "required",
+    "item_conditions": [
+      "used",
+      "new",
+      "not_specified"
+    ],
+    "items_reviews_allowed": false,
+    "listing_allowed": true,
+    "max_description_length": 50000,
+    "max_pictures_per_item": 12,
+    "max_pictures_per_item_var": 10,
+    "max_sub_title_length": 70,
+    "max_title_length": 60,
+    "maximum_price": null,
+    "minimum_price": null,
+    "mirror_category": null,
+    "mirror_master_category": null,
+    "mirror_slave_categories": [
+    ],
+    "price": "required",
+    "reservation_allowed": null,
+    "restrictions": [
+    ],
+    "rounded_address": false,
+    "seller_contact": "not_allowed",
+    "shipping_modes": [
+      "custom",
+      "not_specified",
+      "me2",
+      "me1"
+    ],
+    "shipping_options": [
+      "carrier",
+      "custom"
+    ],
+    "shipping_profile": "optional",
+    "show_contact_information": false,
+    "simple_shipping": "optional",
+    "stock": "required",
+    "sub_vertical": "electronics",
+    "subscribable": null,
+    "tags": [
+    ],
+    "vertical": "consumer_electronics",
+    "vip_subdomain": "articulo"
+  },
+  "meta_categ_id": 21769,
+  "attributable": false
+}

@@ -60,7 +60,9 @@ class meliService {
             path: `/sites/MLA/search?q=${query}`
         };
 
-        return request(optionsSearchHttps, meliTransform.search);
+        return request(optionsSearchHttps).then((res) => {
+            return meliTransform.search(res);
+        });
     }
 
     static suggest(query, callback) {
@@ -68,11 +70,13 @@ class meliService {
             protocol: 'https',
             method: 'GET',
             headers: {'Content-type': 'application/json'},
-            hostname: 'http2.mlstatic.com',
-            path: `/resources/sites/MLA/autosuggest?q=${query}`
+            hostname: 'api.mercadolibre.com',
+            path: `/sites/MLA/autosuggest?q=${query}`
         };
 
-        return request(optionsSuggestHttps, meliTransform.suggest);
+        return request(optionsSuggestHttps).then((res) => {
+            return meliTransform.suggest(res);
+        });
     }
 }
 

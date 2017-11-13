@@ -14,6 +14,6 @@ module.exports.init = (app, path) => {
 
     // Set default route
     app.use('*', (req, res, next) => {
-        console.log('404');
+        console.log('ruta no valida 404');
     });
 }

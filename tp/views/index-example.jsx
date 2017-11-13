@@ -9,7 +9,7 @@ class Index extends React.Component {
             <Layout title="tituloooo">
                  <div>
                     <h1>{this.props.title}</h1>
-                    <h2>{this.props.subtilte}</h2>
+                    {this.props.showSubtitle}<h2>{this.props.subtilte}</h2>
                 </div>
             </Layouy>
         )
@@ -19,14 +19,14 @@ class Index extends React.Component {
 Index.defaultProps = {
     title: 'Titulo por defecto',
     subtitle: 'Subtitulo por defetcto',
-    showTitle: false,
+    showSubtitle: false,
     tasks: []
 };
 
 Index.propTypes = {
     title: PropTypes.string,
     tasks: PropTypes.array,
-    showTitle: PropTypes.bool,
+    showSubtitle: PropTypes.bool,
     tasks: PropTypes.array
 }
 
