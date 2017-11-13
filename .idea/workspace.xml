@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e0c41e4-53f1-4225-b10b-4dbf1ef4327e" name="Default" comment="" />
+    <list default="true" id="7e0c41e4-53f1-4225-b10b-4dbf1ef4327e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tp/assets/dist/images/logo-ml.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tp/assets/dist/images/logo-ml@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tp/assets/dist/images/search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tp/assets/dist/images/search@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tp/assets/dist/images/shipping.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tp/assets/dist/images/shipping@2x.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp/assets/dist/scripts/header.bundle.js" afterPath="$PROJECT_DIR$/tp/assets/dist/scripts/header.bundle.js" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/tp/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="20" />
+              <caret line="40" column="20" lean-forward="false" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -105,9 +114,12 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tp/dictado/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="63" selection-end-column="4" />
-              <folding />
+            <state relative-caret-position="137">
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding>
+                <marker date="1510585339000" expanded="true" signature="153:874" ph="{&quot;clean&quot;: &quot;rimraf assets/dist/**/* &amp;&amp; mkdirp assets/dist/scripts assets/dist/styles&quot;...}" />
+                <marker date="1510585339000" expanded="true" signature="2891:2896" ph="{&quot;express&quot;: &quot;^4.15.3&quot;...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -761,12 +773,12 @@
       <workItem from="1510154987535" duration="6160000" />
       <workItem from="1510580224738" duration="3245000" />
       <workItem from="1510584051915" duration="129000" />
-      <workItem from="1510584373245" duration="843000" />
+      <workItem from="1510584373245" duration="1039000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126134000" />
+    <option name="totallyTimeSpent" value="126330000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1166,16 +1178,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tp/dictado/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="63" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="137">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <marker date="1510585339000" expanded="true" signature="153:874" ph="{&quot;clean&quot;: &quot;rimraf assets/dist/**/* &amp;&amp; mkdirp assets/dist/scripts assets/dist/styles&quot;...}" />
+            <marker date="1510585339000" expanded="true" signature="2891:2896" ph="{&quot;express&quot;: &quot;^4.15.3&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tp/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="20" />
+          <caret line="40" column="20" lean-forward="false" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="20" />
           <folding />
         </state>
       </provider>
