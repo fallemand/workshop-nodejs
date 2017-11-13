@@ -1,5 +1,7 @@
+const config = require('../../config');
+
 module.exports = {
-  'site': 'localhost:3000',
+  'site': `${config.host}:${config.port}`,
   'environment': "xvfb_desktop",
   'waitForConditionPollInterval': 50,
   'waitForConditionTimeout': 5000,

@@ -33,13 +33,6 @@ class ApiController {
       res.send(result);
     }).catch(next);
   };
-
-  /*
-  static itemsPost(req, res) {
-      const params = req.params;
-      res.send(params);
-  };
-  */
 }
 
 module.exports = ApiController;

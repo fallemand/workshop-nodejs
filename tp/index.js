@@ -2,11 +2,12 @@ const express = require('express');
 const app = express();
 const router = require('./routers/router');
 const expReact = require('express-react-views');
+const config = require('./config');
 
 /**
  * Si no es produccion, usamos mocks
  */
-if(process.env.NODE_ENV !== 'production') {
+if(config.useMocks) {
     console.log('----Using mocks----');
     require('./mocks');
 }
@@ -23,6 +24,6 @@ app.set('view engine', 'jsx');
 /**
  * App escuchando en el puerto 3000
  */
-app.listen('3000', 'localhost', () => {
-    console.log('App listen in port 3000');
+app.listen(config.port, config.host, () => {
+    console.log(`App started: ${config.host}:${config.port}`);
 });

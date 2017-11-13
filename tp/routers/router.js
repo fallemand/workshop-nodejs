@@ -8,7 +8,6 @@ const errorMiddleware = require('../middlewares/error.middleware');
 // const router = Router();
 
 module.exports.init = (app, path) => {
-    
     // Set statics paths
     app.use('/api', routerApi, errorMiddleware.apiError);
     app.use('/app', routerApp, errorMiddleware.appError);

@@ -1,5 +1,6 @@
 const meliService = require('../services/meli.service');
 const request = require('../services/requestPromise');
+const config = require('../config');
 
 /**
  * App controller contiene las funciones invocadas por los endpoints de app
@@ -15,8 +16,8 @@ class AppController {
       headers: {
         'Content-type': 'application/json'
       },
-      hostname: 'localhost',
-      port: '3000',
+      hostname: config.host,
+      port: config.port,
       protocol: 'http',
       path: url
     };
@@ -37,8 +38,8 @@ class AppController {
       headers: {
         'Content-type': 'application/json'
       },
-      hostname: 'localhost',
-      port: '3000',
+      hostname: config.host,
+      port: config.port,
       protocol: 'http',
       path: url
     };
