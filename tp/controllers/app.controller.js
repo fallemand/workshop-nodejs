@@ -1,5 +1,6 @@
 const request = require('../services/request.service.js');
 const meliTransform = require('../services/meli.transform.js');
+const config = require('../config');
 
 // APP Controller
 
@@ -8,8 +9,8 @@ module.exports.item = (req, res, next) => {
   const options = {
     method: 'GET',
     headers: {'Content-type': 'application/json'},
-    hostname: 'localhost',
-    port: '3000',
+    hostname: config.host,
+    port: config.port,
     protocol: 'http',
     path: url
   };
@@ -25,8 +26,8 @@ module.exports.search = (req, res, next) => {
   const options = {
     method: 'GET',
     headers: {'Content-type': 'application/json'},
-    hostname: 'localhost',
-    port: '3000',
+    hostname: config.host,
+    port: config.port,
     protocol: 'http',
     path: url
   };

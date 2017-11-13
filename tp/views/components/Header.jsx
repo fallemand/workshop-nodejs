@@ -21,8 +21,6 @@ class Header extends React.Component {
   }
 
   render() {
-    console.log('Header');
-    console.log(this.props);
     return (
       <div className="header__container">
         <a className="header__logo" href="/" tabIndex="1">
