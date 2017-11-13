@@ -23,7 +23,7 @@ meliNock
 
 // Suggest
 meliNock
-  .get('/sites/MLA/autosuggest')
+  .get(/\/sites\/(.+)*\/autosuggest/)
   .query(true)
   .reply(200, suggestMock);
 

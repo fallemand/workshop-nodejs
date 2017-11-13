@@ -11,10 +11,14 @@ class Suggest extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     const query = nextProps.query;
-    return fetch(`/api/suggest?q=${query}`)
+    console.log('The query is: ' + query);
+    return fetch(`/api/sites/MLA/suggest?q=${query}`)
       .then((response) => {
         response.json().then((response) => {
           this.setState({results: response.results});
+        }).catch((err) => {
+          console.log('Err en suggest: ' + err.toString());
+          this.setState({results: []);
         });
       });
   }
@@ -22,7 +26,7 @@ class Suggest extends React.Component {
   render() {
     return (
       <div>
-        {this.state.results.length > 0 &&
+        {this.state.results && this.state.results.length > 0 &&
           <ul className="suggest">
             {this.state.results.map((element, index) =>
               <li key={index} className="suggest__item">

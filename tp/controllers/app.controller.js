@@ -1,4 +1,5 @@
 const request = require('../services/requestPromise');
+const config = require('../config');
 
 class AppController {
   items(req, res, next)  {
@@ -7,9 +8,9 @@ class AppController {
     const options = {
       method: 'GET',
       headers: {'Content-Type': 'application/json'},
-      hostname: 'localhost',
+      hostname: config.host,
       protocol: 'http',
-      port: '3000',
+      port: config.port,
       path: url
     };
     request(options).then((item) => {
@@ -22,9 +23,9 @@ class AppController {
     const options = {
       method: 'GET',
       headers: {'Content-Type': 'application/json'},
-      hostname: 'localhost',
+      hostname: config.host,
       protocol: 'http',
-      port: '3000',
+      port: config.port,
       path: url
     };
     request(options).then((results) => {

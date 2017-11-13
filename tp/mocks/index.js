@@ -18,6 +18,12 @@ melinock
   .query(true)
   .reply(200, suggestMock)
 
+// Suggest
+melinock
+  .get(/\/sites\/(.+)*\/autosuggest/)
+  .query(true)
+  .reply(200, suggestMock)
+
 // Item
 melinock
   .get(/\/items\/(.+)*\/description/)
