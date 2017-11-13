@@ -1,14 +1,16 @@
 const request = require('../services/requestPromise');
+const config = require('../config');
+
 class AppController {
   search(req, res, next) {
     const query = req.query.q;
     const url = `/api/search?q=${query}`;
     const optionsHttp = {
       protocol: 'http',
-      port: '3000',
+      port: config.port,
       method: 'GET',
       headers: { 'Content-type': 'application/json' },
-      hostname: 'localhost',
+      hostname: config.host,
       path: url,
     };
 
@@ -25,10 +27,10 @@ class AppController {
     const url = `/api/items/${item}`;
     const optionsHttp = {
       protocol: 'http',
-      port: '3000',
+      port: config.port,
       method: 'GET',
       headers: { 'Content-type': 'application/json' },
-      hostname: 'localhost',
+      hostname: config.host,
       path: url,
     };
 

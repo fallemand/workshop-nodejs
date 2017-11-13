@@ -3,6 +3,7 @@ const app = express();
 const router = express.Router();
 const route = require('./routers/router');
 const expReact = require('express-react-views');
+const config = require('./config');
 
 app.engine('jsx', expReact.createEngine());
 app.set('views', __dirname + '/views/');
@@ -19,6 +20,6 @@ router.get('/', (req, res) => {
   res.send('Dentro de la app');
 });
 
-app.listen('3000', 'localhost', () => {
-  console.log('Server started at port 3000');
+app.listen(config.port, config.host, () => {
+  console.log(`Server started at port ${config.host}:${config.port}`);
 });
