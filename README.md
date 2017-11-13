@@ -67,10 +67,12 @@ Total: 28hs
 - **Clase 13:** 2hs: TP: Deploy Cloud - Arrancamos Nordic - 
 - **Clase 14:** 2hs: TP: Nordic - Cierre - 
 
-------
-Made with :heart: from ```Córdoba, Argentina```  
+## Contact
 ```
 facundo.allemand@mercadolibre.com
 ```
+------
+
+Made with :heart: from ```Córdoba, Argentina```  
 
 © 2017 Mercado Libre
