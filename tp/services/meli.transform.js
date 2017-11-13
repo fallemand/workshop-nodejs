@@ -12,7 +12,6 @@ class MeliTransform {
           amount: result.price,
           currency: result.currency_id,
         },
-        condition: result.condition,
         free_shipping: result.shipping.free_shipping,
         picture: result.thumbnail,
         address: {
