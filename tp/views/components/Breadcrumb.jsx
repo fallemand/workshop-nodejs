@@ -9,12 +9,12 @@ class Breadcrumb extends React.Component {
 
   render() {
     return (
-      <ul class="breadcrumb">
-        <li class="breadcrumb__element">
+      <ul className="breadcrumb">
+        <li className="breadcrumb__element">
           <a href="/">Inicio</a>
         </li>
         {this.props.categories && this.listBreadcrums(this.props.categories)}
-        {this.props.query ? <li class="breadcrumb__element">"{this.props.query}"</li> : ''}
+        {this.props.query ? <li className="breadcrumb__element">"{this.props.query}"</li> : ''}
       </ul>
     );
   }

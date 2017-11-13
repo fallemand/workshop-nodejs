@@ -10,7 +10,7 @@ describe('Breadcrumb (Snapshot)', () => {
     { id: 'cat4', name: 'cat 4' },
   ];
   
-  it('Breadcrumb renders without results', () => {
+  test('Breadcrumb renders without results', () => {
 
     const component = renderer.create(<Breadcrumb categories="" query="" />);
 
@@ -18,7 +18,7 @@ describe('Breadcrumb (Snapshot)', () => {
     expect(json).toMatchSnapshot();
   });
 
-  it('Breadcrumb renders with results', () => {
+  test('Breadcrumb renders with results', () => {
     const component = renderer.create(<Breadcrumb categories={catArray} query="" />);
 
     const json = component.toJSON();

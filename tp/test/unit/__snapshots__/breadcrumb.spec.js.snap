@@ -2,10 +2,10 @@
 
 exports[`Breadcrumb (Snapshot) Breadcrumb renders with results 1`] = `
 <ul
-  class="breadcrumb"
+  className="breadcrumb"
 >
   <li
-    class="breadcrumb__element"
+    className="breadcrumb__element"
   >
     <a
       href="/"
@@ -39,10 +39,10 @@ exports[`Breadcrumb (Snapshot) Breadcrumb renders with results 1`] = `
 
 exports[`Breadcrumb (Snapshot) Breadcrumb renders without results 1`] = `
 <ul
-  class="breadcrumb"
+  className="breadcrumb"
 >
   <li
-    class="breadcrumb__element"
+    className="breadcrumb__element"
   >
     <a
       href="/"

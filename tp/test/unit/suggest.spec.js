@@ -5,12 +5,12 @@ const Suggest = require('../../views/components/Suggest');
 describe('Suggest (Snapshot)', () => {
   const component = renderer.create(<Suggest query="iph" />);
 
-  it('Suggest renders without results', () => {
+  test('Suggest renders without results', () => {
     const json = component.toJSON();
     expect(json).toMatchSnapshot();
   });
 
-  it('Suggest renders with results [Change State]', () => {
+  test('Suggest renders with results [Change State]', () => {
     const instance = component.getInstance();
 
     instance.setState({
@@ -21,7 +21,7 @@ describe('Suggest (Snapshot)', () => {
     expect(json).toMatchSnapshot();
   });
 
-  it('Suggest renders with results [componentWillReceiveProps]', () => {
+  test('Suggest renders with results [componentWillReceiveProps]', () => {
     const instance = component.getInstance();
     const response = {
       results: ['iphone', 'iphone 5'],
