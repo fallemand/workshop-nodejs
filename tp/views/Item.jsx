@@ -11,8 +11,7 @@ class Item extends React.Component {
       free_shipping,
       picture,
       description,
-      categories,
-    } = this.props.item.data;
+    } = this.props.data.item;
 
     return (
       <Layout {...this.props}>
