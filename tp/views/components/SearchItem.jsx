@@ -2,11 +2,11 @@ const React = require('react');
 
 class SearchItem extends React.Component {
   render() {
-    const { id, thumbnail, title, free_shipping, address, price } = this.props;
+    const { id, picture, title, free_shipping, address, price } = this.props;
     return (
-      <a className="search-item" href={`/app/items/${id}`}>
+      <a className="search-item" href={`/app/item/${id}`}>
         <div className="search-item__picture">
-          <img src={thumbnail} alt={title}/>
+          <img src={picture} alt={title}/>
         </div>
         <div className="search-item__description">
           <span className="search-item__price">$ {price}</span>

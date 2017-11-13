@@ -1,32 +1,33 @@
 const meliService = require('../services/meli.service');
+const meliTransform = require('../services/meli.transform');
 
 // API Controller
 
 module.exports.item = (req, res, next) => {
-  const id = req.params.id;
-  console.log('entro en item');
-  meliService.item(id).then((item) => {
-    console.log('entro en la promesa');
-    item.author = res.locals.author;
-    res.send(item);
+  meliService.item(req.params.id)
+  .then((data) => {
+    let coolData = meliTransform.item(data);
+    coolData.author = res.locals.author;
+    res.send(coolData);
   }).catch(next);
 };
 
-module.exports.search = (req, res) => {
-  const query = req.query.q;
-  meliService.search(query).then((results) => {
-    results.author = res.locals.author;
-    res.send(results);
-  }).catch((err) => {
-    res.status(err.status || 500).send(err);
-  });
+module.exports.search = (req, res, next) => {
+  meliService.search(req.query.q)
+  .then((results) => {
+    let coolData = meliTransform.search(results);
+    coolData.author = res.locals.author;
+    res.json(coolData);
+  })
+  .catch(next);
 };
 
 module.exports.suggest = (req, res) => {
-  const query = req.query.q;
-  meliService.suggest(query).then((results) => {
-    results.author = res.locals.author;
-    res.send(results);
+  meliService.suggest(req.query.q)
+  .then((results) => {
+    let coolData = meliTransform.suggest(results);
+    coolData.author = res.locals.author;
+    res.send(coolData);
   }).catch((err) => {
     res.status(err.status || 500).send(err);
   });

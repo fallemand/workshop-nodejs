@@ -1,9 +1,10 @@
+const request = require('../services/request.service.js');
+const meliTransform = require('../services/meli.transform.js');
+
 // APP Controller
 
-const request = require('../services/request.service.js');
-
-module.exports.items = (req, res, next) => {
-  const url = `/api/items/${req.params.id}`;
+module.exports.item = (req, res, next) => {
+  const url = `/api/item/${req.params.id}`;
   const options = {
     method: 'GET',
     headers: {'Content-type': 'application/json'},
@@ -13,8 +14,8 @@ module.exports.items = (req, res, next) => {
     path: url
   };
 
-  request(options).then((results) => {
-    res.render('Vip', results); //results es mi this.props
+  request(options).then((item) => {
+    res.render('Vip', item);
   }).catch(next);
 };
 
@@ -31,8 +32,7 @@ module.exports.search = (req, res, next) => {
   };
 
   request(options).then((results) => {
-    //res.json(results);
-    res.render('Search', results); //results es mi this.props
+    res.render('Search', results);
   }).catch(next);
 };
 
@@ -53,6 +53,6 @@ module.exports.index = (req, res) => {
   //Emular un error:
   /*let bla = null;
   bla.index;*/
-
+  console.log('Index');
   res.render('Index');
 };

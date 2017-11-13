@@ -22,7 +22,6 @@ class Layout extends React.Component {
       <body>
       <header role="banner" id="header" data-js="header" className="header">
         <Header query={this.props.query} />
-        hola
       </header>
       <main role="main" className="main">
         <Breadcrumb category={this.props.category} query={this.props.query}/>

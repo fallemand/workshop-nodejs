@@ -1,11 +1,13 @@
 const https = require('https');
 const http = require('http');
 
-module.exports = (options, transform) => {
+module.exports = (options) => {
 
     const protocol = (options.protocol == 'http') ? http : https;
     delete options.protocol;
-
+    
+    options.path = encodeURI(options.path); // Para permitir espacios
+    
     return new Promise((resolve, reject) => {
       protocol.request(options, response => {
         let result = '';
@@ -18,9 +20,6 @@ module.exports = (options, transform) => {
           result = JSON.parse(result);
           // Handle http errors
           if (response.statusCode >= 200 && response.statusCode <= 299) {
-            if (transform) {
-              result = transform(result);
-            }
             resolve(result);
           }
           else {

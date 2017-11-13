@@ -13,7 +13,7 @@ describe('Test meli.service.js',() => {
     });
 
     test ('It should get item',() => {
-        return meliService.item('MLA 12819239119').then((item) => {
+        return meliService.item('MLA1281119').then((item) => {
             expect(item.id).toBeDefined();
             expect(item.category).toBeDefined();
             expect(item.results.length).toBeGreaterThan(2);

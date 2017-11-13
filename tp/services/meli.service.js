@@ -17,25 +17,46 @@ module.exports.item = (id) => {
     hostname: 'api.mercadolibre.com',
     path: `/items/${id}/description`
   };
+
   return new Promise((resolve,reject) => {
-    Promise.all([request(item), request(desc)]).then((data) => {
-      request({
+    let itemData, descriptionData, itemResponse, categ = '';
+
+    Promise.all([
+      request(item), // Busco itemData
+      request(desc) // Busco descriptionData
+    ])
+    .then((data) => {
+      itemData = data[0];
+      descriptionData = data[1];
+      itemResponse = {
+        itemData,
+        descriptionData,
+      };
+
+      categ = {
         protocol:'https',
         method: 'GET',
         headers: {'Content-type': 'aplication/json'},
         hostname: 'api.mercadolibre.com',
-        path: `/categories/${data[0].category_id}`
+        path: `/categories/${itemData.category_id}`
+      };
+
+      request(categ) // Busco categoryData
+    
+      .then((categoryData)=> {
+        itemResponse.categoryData = categoryData;
+        
+        resolve(itemResponse);// Devuelvo lo buscado
+      })
+      .catch((err) => {
+        reject(err);
       });
-      resolve({
-        item: data[0],
-        description: data[1],
-        category: data
-      });
-    }).catch((err) => {
+    })
+    .catch((err) => {
       reject(err);
     });
   });
-};
+}
 
 module.exports.search = (query) => {
   return request({
