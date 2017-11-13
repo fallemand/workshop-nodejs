@@ -6,7 +6,7 @@ class Search extends React.Component {
   render() {
     const {
       results,
-    } = this.props.results.data;
+    } = this.props.data;
 
     return (
       <Layout {...this.props}>
