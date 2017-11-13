@@ -15,7 +15,8 @@
     "test:e2e": "npm run setup-e2e && nightwatch",
     "imagemin": "imagemin assets/src/images/* -o assets/dist/images",
     "debug": "NODE_ENV=development node --inspect index.js",
-    "start": "NODE_ENV=production node index.js",
+    "start": "NODE_ENV=production pm2 start index.js -i max --attach --name workshop",
+    "stop": "pm2 stop workshop",
     "start:dev": "NODE_ENV=development ./node_modules/.bin/nodemon index.js",
     "start:test": "NODE_ENV=test node index.js",
     "build:styles": "npm run lint:styles && npm run scss && npm run autoprefixer",
@@ -36,6 +37,9 @@
   ],
   "author": "Constanza",
   "license": "ISC",
+  "engines": {
+    "node": "6.11.0"
+  },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel-core": "^6.26.0",
@@ -69,6 +73,9 @@
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
+  },
+  "optionalDependencies": {
+    "fsevents": "*"
   },
   "jest": {
     "testRegex": "tp/test/unit/.*.js$"
