@@ -1,9 +1,9 @@
 const router = require('express').Router();
 const apiController = require('../controllers/api.controller');
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 
 // create application/json parser
-const jsonParser = bodyParser.json();
+// const jsonParser = bodyParser.json();
 
 /**
  * API Routes
