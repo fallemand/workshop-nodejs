@@ -19,7 +19,7 @@ class AppController {
   };
   search(req, res, next) {
     const query = req.query.q;
-    const url = `/api/sites/${req.params.site}/search?q=${query}`;
+    const url = `/api/sites/${req.params.site}/search?q=${encodeURIComponent(query)}`;
     const options = {
       method: 'GET',
       headers: {'Content-Type': 'application/json'},
