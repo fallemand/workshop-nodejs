@@ -12,6 +12,7 @@ module.exports.init = (app, path) => {
   app.use('/assets', assetsServer(`${path}/assets`));
 
   app.use('*', (req, res) => {
-    res.send('Default route 404');
+    //res.send('Default route 404');
+    res.redirect('/app');
   });
 };
