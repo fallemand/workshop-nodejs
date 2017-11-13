@@ -17,6 +17,6 @@ router.get('/suggest', apiController.suggest);
 
 // 3: /api/items/MLA614202014
 router.get('/items/:item', apiController.items);
-router.post('/items/:item', jsonParser, apiController.postItem);
+router.post('/items/:item', apiController.postItem);
 
 module.exports = router;
