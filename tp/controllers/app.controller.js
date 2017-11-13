@@ -6,7 +6,7 @@ class AppController {
     static search(req, res, next) {
         const site = req.params.site;
         const q = req.query.q;
-        const url = `/api/search/${site}?q=${q}`;
+        const url = `/api/search/${site}?q=${encodeURIComponent(q)}`;
 
         const options = {
             method: 'GET',

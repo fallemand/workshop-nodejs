@@ -4,7 +4,7 @@ class ApiController {
 
     static search(req, res, next) {
         const site = req.params.site;
-        const q = req.query.q;
+        const q = encodeURIComponent(req.query.q);
 
         meliService.searchWithPromise(q, site).then((result) => {
             result.author = res.locals.author;
@@ -14,7 +14,7 @@ class ApiController {
     
     static suggest(req, res, next) {
         const site = req.params.site;
-        const q = req.query.q;
+        const q = encodeURIComponent(req.query.q);
 
         meliService.suggestWithPromise(q, site).then((result) => {
             result.author = res.locals.author;
