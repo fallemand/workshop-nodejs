@@ -1,4 +1,5 @@
 const request = require('../services/request.service');
+const config = require('../config');
 
 exports.search = (req, res, next) => {
   const options = getOptions(`/api/search?q=${encodeURIComponent(req.query.q)}`);
@@ -21,8 +22,8 @@ function getOptions(path) {
   return {
     method: 'GET',
     headers: {'Content-type': 'application/json'},
-    hostname: 'localhost',
-    port: '3000',
+    hostname: config.host,
+    port: config.port,
     protocol: 'http',
     path: path
   }
