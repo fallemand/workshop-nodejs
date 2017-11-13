@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const router = require('./routers/router');
 const expReact = require('express-react-views');
+const config = require('./config');
 
 app.engine('jsx', expReact.createEngine());
 app.set('views', __dirname + '/views/');
@@ -22,6 +23,6 @@ if(process.env.NODE_ENV != 'production') {
 }
 
 // Start Server
-app.listen('3333', 'localhost', () => {
-  console.log('app listen in port 3333');
+app.listen(config.port, config.host, () => {
+  console.log(`App started: ${config.host}:${config.port}`);
 });
