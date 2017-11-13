@@ -2,7 +2,9 @@ class MeliTransform {
   static results(search) {
     const data = {};
 
-    data.categories = search.filters[0].values[0].path_from_root.map((categ) => categ.name);
+    data.categories = (search.filters.length && search.filters[0].values.length)
+      ? search.filters[0].values[0].path_from_root.map((categ) => categ.name)
+      : null;
 
     data.results = search.results.map((result) => {
       return {
