@@ -1,10 +1,10 @@
 class MeliTransform {
   static results(search) {
-    const results = {
-      categories: search.filters[0].values[0].path_from_root.map((categ) => categ.name),
-    };
+    const data = {};
 
-    results.results = search.results.map((result) => {
+    data.categories = search.filters[0].values[0].path_from_root.map((categ) => categ.name);
+
+    data.results = search.results.map((result) => {
       return {
         id: result.id,
         title: result.title,
@@ -21,11 +21,15 @@ class MeliTransform {
       };
     });
 
-    return results;
+    return data;
   }
 
   static item(item, descs, categs) {
-    return {
+    const data = {};
+
+    data.categories = categs.path_from_root.map((categ) => categ.name);
+
+    data.item = {
       id: item.id,
       title: item.title,
       price: {
@@ -37,8 +41,9 @@ class MeliTransform {
       free_shipping: item.shipping.free_shipping,
       picture: item.pictures[0] && item.pictures[0].url,
       description: descs.plain_text,
-      categories: categs.path_from_root.map((categ) => categ.name),
     };
+
+    return data;
   }
 }
 
