@@ -1,3 +1,5 @@
+const config = require('../config');
+
 module.exports = {
     'site': 'localhost:3000',
     'environment': "xvfb_desktop",

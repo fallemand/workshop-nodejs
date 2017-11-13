@@ -1,5 +1,6 @@
 const meliService = require('../services/meli.service');
 const request = require('../services/requestPromise');
+const config = require('../config');
 
 class AppController {
     
@@ -11,8 +12,8 @@ class AppController {
         const options = {
             method: 'GET',
             headers: {'Content-type': 'application/json'},
-            hostname: 'localhost',
-            port: '3000',
+            hostname: config.host,
+            port: config.port,
             protocol: 'http',
             path: url
         };
@@ -31,8 +32,8 @@ class AppController {
         const options = {
             method: 'GET',
             headers: {'Content-type': 'application/json'},
-            hostname: 'localhost',
-            port: '3000',
+            hostname: config.host,
+            port: config.port,
             protocol: 'http',
             path: url
         };

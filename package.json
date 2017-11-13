@@ -22,7 +22,8 @@
     "eslint": "3.5.0",
     "eslint-config-airbnb-base": "7.1.0",
     "eslint-plugin-import": "1.15.0",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "pm2": "^2.7.2"
   },
   "devDependencies": {
     "nock": "^9.0.27"
