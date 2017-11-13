@@ -1,8 +1,10 @@
-# Workshop Node.js
+![nodejs](https://user-images.githubusercontent.com/16105726/32727098-0b1fa8a8-c85a-11e7-9251-56540e0083dd.png)
+
+# Workshop Node.js (Node - Express - React)
 Este curso esta apuntado a personas que se estan iniciando en el mundo de Node.js    
 Se plantea una serie de ejercicios introductorios, y luego se avanza sobre un trabajo integrador que se va iterado y completando a medida se desarrolla el curso.  
 Se busca que los asistentes obtengan una compresión completa del stack, por lo que se inicia con una carpeta vacía, y clase a clase se va agregando funcionalidad, hasta lograr un proyecto completo deployado en la nube con una url productiva.  
-El proyecto incluirá módulos, servicios, middlewares, controllers, routers, ES6 en el cliente, mocks, test unitarios y funcionales, buildeo de assets, entre otros.  
+El proyecto incluirá módulos, servicios, middlewares, controllers, routers, ES6 en el cliente, react, mocks, test unitarios y funcionales, buildeo de assets, entre otros.  
 
 [Resultado Final (React)](https://github.com/fallemand/workshop-nodejs/tree/complete/tp/parts/7-cloud/resolution-react)  
 [Resultado Final (Handlebars)](https://github.com/fallemand/workshop-nodejs/tree/complete/tp/parts/7-cloud/resolution-handlebars)  
@@ -57,10 +59,20 @@ Total: 28hs
 - **Clase 5:** 2hs: TP: Express: Server - Routes - Controllers - [Video Clase](https://www.youtube.com/watch?v=i9_lpj574FI)
 - **Clase 6:** 2hs: TP: Express: Middlewares - Servicios - [Video Clase](https://www.youtube.com/watch?v=2MmA-1XyPEU)
 - **Clase 7:** 2hs: TP: Express: React - [Video Clase](https://www.youtube.com/watch?v=eYR4GDV_CnA)
-- **Clase 8:** 2hs: TP: Express: React
-- **Clase 9:** 2hs: TP: Mocks - Environments
-- **Clase 10:** 2hs: TP: Webpack
-- **Clase 11:** 2hs: TP: Testing Unitario
-- **Clase 12:** 2hs: TP: Testing Funcional
-- **Clase 13:** 2hs: TP: Deploy Cloud - Arrancamos Nordic
-- **Clase 14:** 2hs: TP: Nordic - Cierre
+- **Clase 8:** 2hs: TP: Express: React - [Video Clase](https://www.youtube.com/watch?v=5fzSVx1rHBA) (Se corta minuto 5)
+- **Clase 9:** 2hs: TP: Mocks - Environments - [Video Clase](https://www.youtube.com/watch?v=AUYbK_hdxuA)
+- **Clase 10:** 2hs: TP: Webpack - [Video Clase](https://www.youtube.com/watch?v=rrOHhqd37gA)
+- **Clase 11:** 2hs: TP: Testing Unitario - [Video Clase](https://www.youtube.com/watch?v=2r-XrJUmwJ4)
+- **Clase 12:** 2hs: TP: Testing Funcional - [Video Clase](https://www.youtube.com/watch?v=CpkaFdAzSvo)
+- **Clase 13:** 2hs: TP: Deploy Cloud - Arrancamos Nordic - 
+- **Clase 14:** 2hs: TP: Nordic - Cierre - 
+
+## Contact
+```
+facundo.allemand@mercadolibre.com
+```
+
+
+Made with :heart: from ```Córdoba, Argentina```  
+
+© 2017 Mercado Libre
