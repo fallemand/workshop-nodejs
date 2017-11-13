@@ -6,12 +6,12 @@ class Search extends React.Component {
   render() {
     const {
       results,
-    } = this.props;
+    } = this.props.results.data;
 
     return (
       <Layout {...this.props}>
         {
-          results.data.results.map((result) =>
+          results.map((result) =>
             <SearchItem {...result} />
           )
         }
