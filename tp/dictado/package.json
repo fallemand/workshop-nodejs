@@ -15,7 +15,8 @@
     "debug": "NODE_ENV=development node --inspect index.js",
     "webpack": "webpack",
     "imagemin": "imagemin assets/src/images/* -o assets/dist/images",
-    "start": "NODE_ENV=production node index.js",
+    "start": "NODE_ENV=production pm2 start index.js -i max --attach --name workshop",
+    "stop": "pm2 stop workshop",
     "start:dev": "NODE_ENV=development ./node_modules/.bin/nodemon index.js",
     "start:test": "NODE_ENV=test node index.js",
     "build:styles": "npm run lint:styles && npm run scss && npm run autoprefixer",
@@ -25,8 +26,7 @@
     "watch:styles": "onchange \"assets/src/styles\" -- npm run build:styles",
     "watch:scripts": "onchange \"assets/src/scripts\" -- npm run build:scripts",
     "watch:images": "onchange \"assets/src/images\" -- npm run build:images",
-    "watch": "npm-run-all -p watch:styles watch:scripts watch:images",
-    "postinstall": "npm run build"
+    "watch": "npm-run-all -p watch:styles watch:scripts watch:images"
   },
   "author": "Facundo Allemand (facundo.allemand@mercadolibre.com)",
   "license": "ISC",
@@ -55,9 +55,9 @@
     "rimraf": "^2.5.4",
     "sass-lint": "^1.10.2",
     "selenium-standalone": "^6.11.0",
-    "serialize-javascript": "^1.4.0",
     "uglify-js": "^2.6.2",
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1",
+    "whatwg-fetch": "^2.0.3"
   },
   "optionalDependencies": {
     "fsevents": "*"
@@ -65,9 +65,10 @@
   "dependencies": {
     "express": "^4.15.3",
     "express-react-views": "^0.10.4",
+    "pm2": "^2.7.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "whatwg-fetch": "^2.0.3"
+    "serialize-javascript": "^1.4.0"
   },
   "jest": {
     "testRegex": "./test/unit/.*.js$"
