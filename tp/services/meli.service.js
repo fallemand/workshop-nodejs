@@ -52,12 +52,13 @@ class meliService {
     };
 
     static search(query, callback) {
+        const encondedQuery = encodeURIComponent(query);
         const optionsSearchHttps = {
             protocol: 'https',
             method: 'GET',
             headers: {'Content-type': 'application/json'},
             hostname: 'api.mercadolibre.com',
-            path: `/sites/MLA/search?q=${query}`
+            path: `/sites/MLA/search?q=${encondedQuery}`
         };
 
         return request(optionsSearchHttps).then((res) => {
@@ -66,12 +67,13 @@ class meliService {
     }
 
     static suggest(query, callback) {
+        const encondedQuery = encodeURIComponent(query);
         const optionsSuggestHttps = {
             protocol: 'https',
             method: 'GET',
             headers: {'Content-type': 'application/json'},
             hostname: 'api.mercadolibre.com',
-            path: `/sites/MLA/autosuggest?q=${query}`
+            path: `/sites/MLA/autosuggest?q=${encondedQuery}`
         };
 
         return request(optionsSuggestHttps).then((res) => {

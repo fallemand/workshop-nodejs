@@ -5,8 +5,8 @@ const config = require('./../config');
 class appController {
     static search(req, res, next) {
         const query = req.query.q;
-
-        const url = `/api/search?q=${query}`;
+        const encodedQuery = encodeURIComponent(query);
+        const url = `/api/search?q=${encodedQuery}`;
         const options = {
             protocol: 'http',
             method: 'GET',
