@@ -20,7 +20,13 @@ class AppController {
     options.path = `/api/search?q=${req.query.q}`;
 
     request(options, protocol)
-      .then((results) => res.render('Search', { results }))
+      .then((results) => {
+        const data = results;
+
+        data.query = req.query.q;
+
+        res.render('Search', results);
+      })
       .catch(next);
   }
 
@@ -28,7 +34,7 @@ class AppController {
     options.path = `/api/items/${req.params.id}`;
 
     request(options, protocol)
-      .then((item) => res.render('Item', { item }))
+      .then((item) => res.render('Item', item))
       .catch(next);
   }
 }
