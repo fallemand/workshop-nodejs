@@ -62,3 +62,5 @@ typings/
 
 dist/
 reports/
+.idea/workspace.xml
+.DS_Store

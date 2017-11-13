@@ -25,8 +25,7 @@
     "watch:styles": "onchange \"assets/src/styles\" -- npm run build:styles",
     "watch:scripts": "onchange \"assets/src/scripts\" -- npm run build:scripts",
     "watch:images": "onchange \"assets/src/images\" -- npm run build:images",
-    "watch": "npm-run-all -p watch:styles watch:scripts watch:images",
-    "postinstall": "npm run build"
+    "watch": "npm-run-all -p watch:styles watch:scripts watch:images"
   },
   "repository": {
     "type": "git",
@@ -66,6 +65,7 @@
   "dependencies": {
     "express": "^4.16.2",
     "express-react-views": "^0.10.4",
+    "pm2": "^2.7.2",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
