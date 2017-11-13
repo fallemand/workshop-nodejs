@@ -9,4 +9,8 @@ module.exports.init = (app, path) => {
   app.use('/app', appRouter, errorMiddleware.appError);
 
   app.use('/assets', staticsServer(`${path}/assets`));
+
+  app.use('*', (req, res) => {
+    res.redirect(301, '/app');
+  })
 };
