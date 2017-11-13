@@ -55,12 +55,12 @@ exports.item = (id) => {
 
 exports.search = (query) => {
   options.hostname = 'api.mercadolibre.com';
-  options.path = `/sites/MLA/search?limit=6&q=${escape(query)}`;
+  options.path = `/sites/MLA/search?limit=6&q=${encodeURIComponent(query)}`;
   return request(options, meliTransform.search);
 };
 
 exports.suggest = (query) => {
   options.hostname = 'api.mercadolibre.com';
-  options.path = `/sites/MLA/autosuggest?q=${escape(query)}&v=1`;
+  options.path = `/sites/MLA/autosuggest?q=${encodeURIComponent(query)}&v=1`;
   return request(options, meliTransform.suggest);
 };

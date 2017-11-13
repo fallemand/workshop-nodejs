@@ -60,7 +60,6 @@ typings/
 # dotenv environment variables file
 .idea/
 
-dist/
 reports/
 .idea/workspace.xml
 .DS_Store
