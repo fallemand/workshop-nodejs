@@ -18,7 +18,7 @@ class AppController {
   }
 
   static search(req, res, next) {
-    options.path = `/api/search?q=${escape(req.query.q)}`;
+    options.path = `/api/search?q=${encodeURIComponent(req.query.q)}`;
 
     request(options, protocol)
       .then((results) => {

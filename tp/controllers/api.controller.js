@@ -2,13 +2,13 @@ const service = require('../services/meli.service');
 
 class ApiController {
   static search(req, res, next) {
-    service.search(req.query.q)
+    service.search(encodeURIComponent(req.query.q))
       .then((data) => res.json({ data, author: res.locals.author }))
       .catch(next);
   }
 
   static suggest(req, res, next) {
-    service.suggest(req.query.q)
+    service.suggest(encodeURIComponent(req.query.q))
       .then((data) => res.json({ data, author: res.locals.author }))
       .catch(next);
   }
