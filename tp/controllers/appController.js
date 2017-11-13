@@ -1,4 +1,5 @@
 const request = require('../services/request');
+const config = require('../config');
 
 class AppController {
   root (req, res) {
@@ -9,9 +10,9 @@ class AppController {
     const options = {
       protocol: 'http',
       method: 'GET',
-      port: '3000',
+      port: config.port,
       headers: {'Content-type': 'application/json'},
-      hostname: 'localhost',
+      hostname: config.host,
       path: `/api/items/${req.params.id}`
     };
 
@@ -22,9 +23,9 @@ class AppController {
     const options = {
       protocol: 'http',
       method: 'GET',
-      port: '3000',
+      port: config.port,
       headers: {'Content-type': 'application/json'},
-      hostname: 'localhost',
+      hostname: config.host,
       path: `/api/search?q=${req.query.q}`
     };
 

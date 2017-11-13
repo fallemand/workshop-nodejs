@@ -1,6 +1,7 @@
 const React = require('react');
 
 class Suggest extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -8,17 +9,27 @@ class Suggest extends React.Component {
     }
   }
 
-  componentDidMount() {
-    this.setState({
-      results: ['iphone', 'iphone7']
-    })
+  componentWillReceiveProps(nextProps) {
+    const query = nextProps.query;
+    fetch(`/api/suggest?q=${query}`)
+      .then((response) => {
+        response.json().then((response) => {
+          this.setState({results: response.suggested_queries});
+        });
+      });
   }
 
   render() {
     return (
-      <ul className='suggest'>
-        {this.state.results.map(item => <li className='suggest__item'>{item.q}</li>)}
-      </ul>
+      <div>
+          <ul className="suggest">
+            {this.state.results.map((element, index) =>
+              <li key={index} className="suggest__item">
+                <a href={`/app/search?q=${element}`}>{element}</a>
+              </li>
+            )}
+          </ul>
+      </div>
     )
   }
 }

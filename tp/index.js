@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const router = require('./routers/router');
 const expReact = require('express-react-views');
+const config = require('./config');
 
 /* routes
   path: /api/search, accepts query param 'q'. Returns JSON.
@@ -18,12 +19,12 @@ app.set('view engine', 'jsx');
 
 router.init(app, __dirname);
 
-if(process.env.NODE_ENV === 'development') {
+if(config.useMocks) {
   console.log('Using mocks');
   require('./mocks');
 }
 
-app.listen('3000', 'localhost', () => {
-  console.log('Server up on localhost:3000');
+app.listen(config.port, config.host, () => {
+  console.log(`Server up on ${config.host}:${config.port}`);
 });
 

@@ -20,7 +20,7 @@ class ApiController {
   }
 
   suggest (req, res, next) {
-    meliService.search(req.query.q).then( (data) => {
+    meliService.suggest(req.query.q).then( (data) => {
       data.author = res.locals.author;
       res.json(data);
     }).catch(next);
