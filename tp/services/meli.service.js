@@ -28,7 +28,6 @@ class MeliService {
     return request(options, protocol);
   }
 
-  // TODO: calls to Currency and User.
   static item(id, callback) {
     let data;
 

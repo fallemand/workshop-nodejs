@@ -1,4 +1,5 @@
 const app = require('express')();
+const config = require('./config');
 const router = require('./routers/main.router');
 const reactViews = require('express-react-views');
 
@@ -12,7 +13,7 @@ app.set('view engine', 'jsx');
  * Mocks
  */
 
-if (process.env.NODE_ENV !== 'production') {
+if (config.useMocks) {
   require('./mocks');
   console.log('App is using mocks');
 }
@@ -27,6 +28,6 @@ router.init(app, __dirname);
  * Server
  */
 
-app.listen('3000', 'localhost', () => console.log(
-  'App started on port localhost:3000'
+app.listen(config.port, config.host, () => console.log(
+  `App started on port ${config.host}:${config.port}`
 ));
