@@ -66,3 +66,11 @@ Total: 28hs
 - **Clase 12:** 2hs: TP: Testing Funcional - [Video Clase](https://www.youtube.com/watch?v=CpkaFdAzSvo)
 - **Clase 13:** 2hs: TP: Deploy Cloud - Arrancamos Nordic - 
 - **Clase 14:** 2hs: TP: Nordic - Cierre - 
+
+------
+Made with :heart: from ```Córdoba, Argentina```  
+```
+facundo.allemand@mercadolibre.com
+```
+
+© 2017 Mercado Libre
