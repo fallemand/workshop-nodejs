@@ -25,7 +25,7 @@ class Suggest extends React.Component {
         return(
             <ul className="suggest">
             {this.state.results && this.state.results.map((element, index) => 
-                <li key={index} className="suggest__item"><a href={`/search?q=${element}`}>{element}</a></li>
+                <li key={index} className="suggest__item"><a href={`/app/sites/MLA/search?q=${element}`}>{element}</a></li>
             )}
             </ul>
         )
