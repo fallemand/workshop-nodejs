@@ -1,5 +1,3 @@
-### TP - Workshop Node JS
-
 * Build assets with
 
 ```npm run build```
