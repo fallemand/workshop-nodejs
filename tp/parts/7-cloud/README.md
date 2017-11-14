@@ -31,7 +31,7 @@ heroku login
 5- **Agregar remote heroku** Cambiar el valor de -a por el nombre de su aplicación
 ```
 cd workshop-nodejs 
-heroku git:clone -a workshop-fallemand
+heroku git:remote -a workshop-fallemand
 ```
 6- **Pushear cambios**  
 Pushear carpeta `tp` como root de otro branch:
