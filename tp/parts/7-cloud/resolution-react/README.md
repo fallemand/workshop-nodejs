@@ -39,7 +39,7 @@ npm run test:unit
 ```
 ### Fuctional tests
 ```
-npm run start-test
+npm run start:test
 ``` 
 ```
 npm run test:e2e
