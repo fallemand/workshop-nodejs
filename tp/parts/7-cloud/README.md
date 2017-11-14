@@ -2,6 +2,7 @@
 #### Ejercicio Dictado:   
 Explicamos como deployar nuestra aplicación en un servicio cloud, y obtener una url con la demo.
 - Explicamos el uso de [pm2](http://pm2.keymetrics.io/). Modificamos la tarea `npm run start`.
+- Revisamos dependencies vs devDependencies: Heroku solo instalará las dependencies.  
 - Generamos un archivo `config.js`, donde seteamos el host, port, etc por entorno.
 - Explicamos registro en [Heroku](https://heroku.com/)
 - Deployamos la aplicación
