@@ -1,16 +1,17 @@
-function searchCellphone(client, query) {
-  var homePage = client.page.HomePage();
+searchCellphone = (client, query) => {
+  const homePage = client.page.HomePage();
   homePage.search(query);
 
-  var searchPage = client.page.SearchPage();
+  const searchPage = client.page.SearchPage();
   searchPage.waitForElementVisible('@breadcrumb', 2000)
     .assert.containsText('@breadcrumb', '"' + query + '"');
-
-}
+};
 
 module.exports = {
-
-  'Should search Iphone': function (client) {
+  'Should search Iphone': (client) => {
+    searchCellphone(client, 'iphone')
+  },
+  'Should search Iphone': (client) => {
     searchCellphone(client, 'iphone')
   },
   beforeEach: function (client) {
@@ -19,5 +20,4 @@ module.exports = {
   after: function (client) {
     client.end();
   },
-
 };

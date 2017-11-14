@@ -3,6 +3,10 @@ const app = express();
 const router = require('./routers/router');
 const expReact = require('express-react-views');
 const config = require('./config');
+const helmet = require('helmet');
+
+//Helmet - For Security
+app.use(helmet());
 
 // React
 app.engine('jsx', expReact.createEngine());
