@@ -1,6 +1,6 @@
 const production = {
-  host: process.env.IP,
-  port: process.env.PORT,
+  host: process.env.IP || 'localhost',
+  port: process.env.PORT || '3000',
   useMocks: false,
 };
 const development = {
