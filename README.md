@@ -1,13 +1,12 @@
 ![nodejs](https://user-images.githubusercontent.com/16105726/32727098-0b1fa8a8-c85a-11e7-9251-56540e0083dd.png)
 
-# Workshop Node.js (Node - Express - React)
+# Workshop Node.js *(+express +react)*
 Este curso esta apuntado a personas que se estan iniciando en el mundo de Node.js    
 Se plantea una serie de ejercicios introductorios, y luego se avanza sobre un trabajo integrador que se va iterado y completando a medida se desarrolla el curso.  
 Se busca que los asistentes obtengan una compresión completa del stack, por lo que se inicia con una carpeta vacía, y clase a clase se va agregando funcionalidad, hasta lograr un proyecto completo deployado en la nube con una url productiva.  
 El proyecto incluirá módulos, servicios, middlewares, controllers, routers, ES6 en el cliente, react, mocks, test unitarios y funcionales, buildeo de assets, entre otros.  
 
-[Resultado Final (React)](https://github.com/fallemand/workshop-nodejs/tree/complete/tp/parts/7-cloud/resolution-react)  
-[Resultado Final (Handlebars)](https://github.com/fallemand/workshop-nodejs/tree/complete/tp/parts/7-cloud/resolution-handlebars)  
+[Resultado Final](https://github.com/fallemand/workshop-nodejs/tree/complete/tp/parts/7-cloud/resolution-react)  
 [Demo](https://workshop-node.herokuapp.com/)
 
 ## Requisitos Técnicos
