@@ -1,10 +1,10 @@
 const  fs = require('fs');
-const json = require('./replaces.json');
+const json = require('./keys.json');
 let result = '';
 
 console.log('Inicio de Lectura');
 
-fs.readFile('./text.txt', 'utf8', (err, data) => {
+fs.readFile('./archivoALeer.txt', 'utf8', (err, data) => {
     let finalText = data;
    Object.keys(json).forEach((keys) => {
        finalText = finalText.replace(new RegExp(keys, 'ig'), json[keys]);
