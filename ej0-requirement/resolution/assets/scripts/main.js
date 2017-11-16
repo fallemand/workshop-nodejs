@@ -15,7 +15,6 @@ function productsList(data) {
     data = JSON.parse(data);
     searchInput.value = '';
     apiUrl = 'https://api.mercadolibre.com/sites/MLA/search?q=';
-    console.log(data);
 
     const breadcrumbContainer = document.querySelector("[data-js=breadcrumb-container]");
     const breadcrumbTemplate = document.getElementById("breadcrumb-template");
@@ -29,7 +28,11 @@ function productsList(data) {
     let listItems = {};
 
     if (data.results.length > 0) {
-        listItems = { listItems: data.filters[0].values[0].path_from_root };
+        if (data.filters[0]) 
+            listItems = { listItems: data.filters[0].values[0].path_from_root };
+        else 
+            listItems = { listItems: [{name: 'Categorias varias' }]};
+        
         searchItems = { searchItems: data.results };
     }
 
@@ -51,11 +54,24 @@ function request(url, callback, error) {
                 callback(xhr.responseText);
             } else {
                 error(xhr.statusText)
+                searchContent.innerHTML = xhr.statusText;
             }
         }
     };
     xhr.onerror = function(e) {
         error(xhr.statusText);
+        searchContent.innerHTML = xhr.statusText;
     };
     xhr.send(null);
 }
+
+Handlebars.registerHelper('formatPrice', function(num) {
+    var price = num.toLocaleString('de-DE');
+    var priceArray = price.split(',');
+    if (priceArray[1]) 
+        price = new Handlebars.SafeString("<strong>$" + priceArray[0] + "<sup>" + priceArray[1] + "</sup></strong>");
+    else
+        price = new Handlebars.SafeString("<strong>$" + priceArray[0] + "<sup>00</sup></strong>");
+      
+    return price
+});

@@ -58,13 +58,15 @@
     <script id="search-template" type="text/x-handlebars-template">
         {{#if searchItems}}
         {{#each searchItems}}
-        <a class="search-item" href="#">
+        <a class="search-item" href={{permalink}}>
             <div class="search-item__picture">
                 <img src={{thumbnail}} alt={{title}}>
             </div>
             <div class="search-item__description">
-                <span class="search-item__price">$ {{price}}</span>
-                <i class="search-item__freeshipment"></i>
+                <span class="search-item__price">{{formatPrice price}}</span>
+                {{#if shipping.free_shipping}}
+                    <i class="search-item__freeshipment"></i>
+                {{/if}}
                 <p class="search-item__title">{{title}}</p>
             </div>
             <div class="search-item__location">{{address.city_name}}</div>
