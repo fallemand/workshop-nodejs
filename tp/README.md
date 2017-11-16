@@ -1,21 +1,48 @@
-# Ejercicio Final
-La idea de este ejercicio es armar un mini sitio de Mercado Libre con Home, Search, Vip, página de error, y Api.
-En cada parte vamos a ir agregando código que se integre al trabajo final.
-- **[Site Demo](https://workshop-node.herokuapp.com/)**
+# workshop-nodejs
 
-## Índice 
-- [Npm Scripts](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/1-npm_scripts) 
-- [Express](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express) 
-    * [Server](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/a.server_b.routes#a-configurar-server)
-    * [Routes](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/a.server_b.routes#b-router)
-    * [Controllers](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/c.controllers_d.middlewares#c-controllers)
-    * [Middlewares](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/c.controllers_d.middlewares#d-middleware)
-    * [Services](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/e.services)
-    * [React](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/f.react)
-- [Mocks](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/3-mocks) 
-- [Environments](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/4-environments) 
-- [ES6 Babel Webpack](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/5-webpack) 
-- [Testing](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/6-testing) 
-    * [Unitarios](https://github.com/fallemand/workshop-nodejs/blob/master/tp/parts/6-testing#a-tests-unitarios-mocha)
-    * [Funcionales](https://github.com/fallemand/workshop-nodejs/blob/master/tp/parts/6-testing#b-tests-funcionales-nightwatchjs)
-- [Deploy Cloud](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/7-cloud) 
+> This folder contains the expected result of the workshop's integrated exercise
+
+## Develop
+**Name:** Ariel Iván Mariani  
+**Email:** arial.mariani@mercadolibre.com  
+[Demo Website](http://workshop-amariani.herokuapp.com/)
+
+## Develop
+`Node: v6.11.0`  
+### 1) Install dependencies:
+```
+npm i
+```
+### 2) Compile  assets
+```
+npm run build
+```
+or
+```
+npm run watch
+```
+### 3) Start app:
+```
+npm run start-dev
+```
+### 4) Make sure to have this added to your etc/host file:
+```
+127.0.0.1	localhost
+```
+### 5) Navigate to:
+```
+http://localhost:3000/
+```
+
+## Run Tests
+### Unit tests
+```
+npm run test:unit
+```
+### Fuctional tests
+```
+npm run test:e2e
+``` 
+
+## License
+© 2017 Mercado Libre
