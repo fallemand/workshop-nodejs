@@ -1,4 +1,4 @@
-class Replacer  {
+class Operaciones  {
    static sumar (n1, n2) {
        return n1 + n2;
    };
@@ -13,4 +13,4 @@ class Replacer  {
    };
 }
 
-module.exports = Replacer;
+module.exports = Operaciones;

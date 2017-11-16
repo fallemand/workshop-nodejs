@@ -1,4 +1,4 @@
-const calculadora = require('./replacer');
+const calculadora = require('./operaciones');
 
 //Sumar:6
 console.log(calculadora.sumar(2,4));
