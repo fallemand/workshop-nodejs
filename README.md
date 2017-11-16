@@ -63,7 +63,7 @@ Total: 26hs
 - **Clase 8:** 2hs: TP: Express: React - [Video Clase](https://www.youtube.com/watch?v=5fzSVx1rHBA) (Se corta minuto 5)
 - **Clase 9:** 2hs: TP: Mocks - Environments - [Video Clase](https://www.youtube.com/watch?v=AUYbK_hdxuA)
 - **Clase 10:** 2hs: TP: Webpack - React en Cliente - [Video Clase](https://www.youtube.com/watch?v=rrOHhqd37gA)
-- **Clase 11:** 2hs: TP: Testing Unitario - [Video Clase](https://www.youtube.com/watch?v=2r-XrJUmwJ4) (Continúa siguiente clase)
+- **Clase 11:** 2hs: TP: Testing Unitario - [Video Clase](https://www.youtube.com/watch?v=2r-XrJUmwJ4&t=1h13m15s) (Continúa siguiente clase)
 - **Clase 12:** 2hs: TP: Testing Funcional - [Video Clase](https://www.youtube.com/watch?v=CpkaFdAzSvo)
 - **Clase 13:** 2hs: TP: Deploy Cloud - [Video Clase](https://www.youtube.com/watch?v=rBwvaSti2u8) (Problemas conexión)
 
