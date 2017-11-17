@@ -25,7 +25,7 @@ Workshop App - By ABRANA: https://workshop-abrana.herokuapp.com/app
 ### To run App with production env
 `npm run start`
 
-`URL: http://localhost:3000/app
+`URL: http://localhost:3000/app`
 
 # Tests
 
