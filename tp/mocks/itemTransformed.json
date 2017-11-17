@@ -1,0 +1,46 @@
+{
+  "category": [
+    {
+      "id": "MLA1000",
+      "name": "Electrónica, Audio y Video"
+    },
+    {
+      "id": "MLA409810",
+      "name": "Audio"
+    },
+    {
+      "id": "MLA3697",
+      "name": "Auriculares"
+    },
+    {
+      "id": "MLA10585",
+      "name": "Con Vincha"
+    },
+    {
+      "id": "MLA73506",
+      "name": "Sennheiser"
+    }
+  ],
+  "condition": "new",
+  "description": {
+    "date_created": "2016-09-28T20:01:13.000Z",
+    "last_updated": "2017-07-06T14:39:20.000Z",
+    "plain_text": "",
+    "snapshot": {
+      "height": 205,
+      "status": "OK",
+      "url": "http://descriptions.mlstatic.com/D-MLA636865531.jpg?hash=8520c3b8559cb08aa7e782b8f5334ffe_938x205",
+      "width": 938
+    },
+    "text": "Datos técnicos: Color black Impedancia 32 O Respuesta en frecuencia 17Hz - 21khz Nivel de presión sonora 118db Distorcion armonica total THD <0.5 % (1 kHz, 100 dB SPL) Conexión miniplug 3.5 mm con adaptador 6.5 mm Largo de cable 3 m Hacemos envíos por moto mensajería SIEMPRE DE UN DIA PARA EL OTRO solo de Lunes a viernes. No se hacen en el día. En caso que la publicación exprese ENVIO GRATIS, eso corresponde ÚNICAMENTE a Mercado Envíos. LOS ENVIOS POR MOTO SIEMPRE TENDRÁN UN COSTO. Para poder confirmar el envío debe comunicarse si o si a nuestro mail, después de ofertar, con todos los datos necesarios entre las 10 y las 16:30 Hs del día anterior. Los costos dentro de CABA son de $ 150 o $ 225 en caso de lluvias Por fuera de CABA: consulte costos por mail y día de entrega ya que dependiendo el destino la agencia puede demorar más de un día. Repetimos que en caso que la publicación de MercadoLibre exprese ENVIO GRATIS, eso corresponde ÚNICAMENTE a Mercado Envíos. LOS ENVIOS POR MOTO SIEMPRE TENDRÁN UN COSTO."
+  },
+  "free_shipping": false,
+  "id": "MLA636865531",
+  "picture": "http://mla-s2-p.mlstatic.com/855705-MLA25074487534_092016-O.jpg",
+  "price": {
+    "amount": 1023,
+    "currency": "ARS"
+  },
+  "sold_quantity": 166,
+  "title": "Auricular Sennheiser Hd202"
+}

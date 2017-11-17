@@ -9,7 +9,6 @@ module.exports.errorApi = (err, req, res, next) => {
 };
 
 module.exports.errorApp = (err, req, res, next) => {
-    // logError(err);
     if (err instanceof Error) {
         err = err.toString();
     }

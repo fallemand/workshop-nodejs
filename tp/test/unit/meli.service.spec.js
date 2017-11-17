@@ -20,7 +20,7 @@ describe('Test meli.service.js', () => {
         return meliService.item('MLA123123').then((item) => {
             expect(item.id).toBeDefined();
             expect(item.category).toBeDefined();
-            expect(item.picture).toEqual('http://mla-s2-p.mlstatic.com/855705-MLA25074487534_092016-O.jpg');
+            expect(item.thumbnail).toEqual('http://mla-s2-p.mlstatic.com/855705-MLA25074487534_092016-I.jpg');
         });
     });
 });

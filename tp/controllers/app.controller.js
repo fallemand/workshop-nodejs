@@ -19,13 +19,6 @@ class appController {
         request(options).then((results) => {
             res.render('Search', results);
         }).catch(next);
-
-        // meliService.search(query).then((results) => {
-        //     res.json(results);
-        // }).catch((err) => {
-        //     res.status(err.status || 500).json(err);
-        //     console.log(err);
-        // });
     }
 
     static items(req, res, next) {
@@ -44,13 +37,6 @@ class appController {
         request(options).then((item) => {
             res.render('Item', item);
         }).catch(next);
-
-        // meliService.item(itemId).then((item) => {
-        //     res.json(item);
-        // }).catch((err) => {
-        //     res.status(err.status || 500).json(err);
-        //     console.log('fallo la general:', err);
-        // });
     }
 
     static index(req, res) {

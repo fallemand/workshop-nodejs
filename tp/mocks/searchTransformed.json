@@ -1,0 +1,154 @@
+{
+  "query": "tostadora",
+  "paging": {
+    "total": 2606,
+    "offset": 0,
+    "limit": 6,
+    "primary_results": 1000
+  },
+  "filters": [
+    {
+      "id": "category",
+      "name": "Categories",
+      "type": "text",
+      "values": [
+        {
+          "id": "MLA10068",
+          "name": "Tostadoras",
+          "path_from_root": [
+            {
+              "id": "MLA5726",
+              "name": "Electrodomésticos y Aires Ac."
+            },
+            {
+              "id": "MLA10225",
+              "name": "Electrodomésticos de Cocina"
+            },
+            {
+              "id": "MLA10068",
+              "name": "Tostadoras"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "category": [
+    {
+      "id": "MLA5726",
+      "name": "Electrodomésticos y Aires Ac."
+    },
+    {
+      "id": "MLA10225",
+      "name": "Electrodomésticos de Cocina"
+    },
+    {
+      "id": "MLA10068",
+      "name": "Tostadoras"
+    }
+  ],
+  "results": [
+    {
+      "id": "MLA671553311",
+      "title": "Tostadora Eléctrica Acero Inoxid Atma To8022sse Envío Gratis",
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "Saavedra"
+      },
+      "price": {
+        "amount": 650,
+        "currency": "ARS"
+      },
+      "condition": "new",
+      "free_shipping": false,
+      "thumbnail": "http://mla-s2-p.mlstatic.com/869205-MLA25737578439_072017-I.jpg"
+    },
+    {
+      "id": "MLA660096993",
+      "title": "Tostadora 4 Ranuras Peabody - Pe-t386d",
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQlNBTjkwNTZa",
+        "city_name": "San Cristóbal"
+      },
+      "price": {
+        "amount": 1279,
+        "currency": "ARS"
+      },
+      "condition": "new",
+      "free_shipping": true,
+      "thumbnail": "http://mla-s2-p.mlstatic.com/932605-MLA25711103164_062017-I.jpg"
+    },
+    {
+      "id": "MLA675356035",
+      "title": "Tostadora Eléctrica Atma To8013e Envío Gratis",
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "Saavedra"
+      },
+      "price": {
+        "amount": 569,
+        "currency": "ARS"
+      },
+      "condition": "new",
+      "free_shipping": false,
+      "thumbnail": "http://mla-s2-p.mlstatic.com/802522-MLA25805637252_072017-I.jpg"
+    },
+    {
+      "id": "MLA635425827",
+      "title": "Tostadora Philips Hd2637/90 Viva Collection",
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQlNBQTM3Mzda",
+        "city_name": "Saavedra"
+      },
+      "price": {
+        "amount": 1199,
+        "currency": "ARS"
+      },
+      "condition": "new",
+      "free_shipping": false,
+      "thumbnail": "http://mla-s2-p.mlstatic.com/964705-MLA25056982175_092016-I.jpg"
+    },
+    {
+      "id": "MLA659903081",
+      "title": "Tostadora Philips Hd-263790",
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQkJBTDMxMDZa",
+        "city_name": "Balvanera"
+      },
+      "price": {
+        "amount": 839,
+        "currency": "ARS"
+      },
+      "condition": "new",
+      "free_shipping": false,
+      "thumbnail": "http://mla-s2-p.mlstatic.com/810160-MLA25561951703_052017-I.jpg"
+    },
+    {
+      "id": "MLA685475098",
+      "title": "Tostadora Eléctrica Atma Pro Cook To8030ssde Envío Gratis",
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "Saavedra"
+      },
+      "price": {
+        "amount": 1859,
+        "currency": "ARS"
+      },
+      "condition": "new",
+      "free_shipping": false,
+      "thumbnail": "http://mla-s1-p.mlstatic.com/643374-MLA26099040404_092017-I.jpg"
+    }
+  ]
+}
