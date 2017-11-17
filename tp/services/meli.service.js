@@ -34,7 +34,7 @@ module.exports.search = (query) => {
         method: 'GET',
         headers: {'Content-type': 'application/json'},
         hostname: 'api.mercadolibre.com',
-        path: `/sites/MLA/search?q=${query}`
+        path: `/sites/MLA/search?q=${escape(query)}`
     };
 
     return request(searchOptions, meliTransform.search);
@@ -46,7 +46,7 @@ module.exports.suggest = (query) => {
         method: 'GET',
         headers: {'Content-type': 'application/json'},
         hostname: 'api.mercadolibre.com',
-        path: `/sites/MLA/autosuggest?q=${query}`
+        path: `/sites/MLA/autosuggest?q=${escape(query)}`
     }
 
     return request(suggestOptions, meliTransform.suggest);

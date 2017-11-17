@@ -6,7 +6,7 @@ const errorMiddleware = require('../middlewares/error.middleware');
 // Api Routes
 router.use(authorMiddleware);
 router.get('/items/:id', apiController.items);
-router.post('/items/:id', apiController.itemsPost);
+// router.post('/items/:id', apiController.itemsPost);
 router.get('/search', apiController.search);
 router.get('/suggest', apiController.suggest);
 router.use(errorMiddleware.apiError);

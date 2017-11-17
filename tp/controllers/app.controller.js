@@ -20,7 +20,7 @@ module.exports.items = (req, res, next) => {
 
 module.exports.search = (req, res, next) => {
     const query = req.query.q;
-    const url = `/api/search?q=${query}`;
+    const url = `/api/search?q=${escape(query)}`;
     const options = {
         protocol: 'http',
         method: 'GET',

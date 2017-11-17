@@ -9,15 +9,16 @@ module.exports.items = (req, res, next) => {
     }).catch(next);
 }
 
-module.exports.itemsPost = (req, res) => {
-    res.json({
-    message: `Aca estamos en el post!!!`,
-        body: req.body
-    });
-};
+// module.exports.itemsPost = (req, res) => {
+//     res.json({
+//     message: `Aca estamos en el post!!!`,
+//         body: req.body
+//     });
+// };
 
 module.exports.search = (req, res, next) => {
     const query = req.query.q;
+    console.log(query);
     meliService.search(query).then((data) => {
         data.author = res.locals.author;
         res.json(data)
