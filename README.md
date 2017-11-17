@@ -13,11 +13,13 @@ El proyecto incluirá módulos, servicios, middlewares, controllers, routers, ES
 ```NVM + Node 6.11.0```
 - [RESTful Apis](http://www.andrewhavens.com/posts/20/beginners-guide-to-creating-a-rest-api/)  
 - [Javascript Asicronico. Manejo de callbacks. Scopes](https://houssein.me/javascript/2016/05/10/asynchronous-javascript-callbacks.html)  
-- [ECMA 6](http://blog.teamtreehouse.com/get-started-ecmascript-6) Arrow functions - Clases - const / let - Template strings
-- [React](https://reactjs.org/) (Entendimiento básico, [¿Qué es? ¿Para qué se usa?](https://thinkster.io/tutorials/what-exactly-is-react)  
-- [SASS](http://sass-lang.com/guide).  
 - Conocimiento básico de mocks (¿Que son? ¿Para que sirven?)
 - Tests (diferencias entre test funcionales y unitarios)
+
+Lecturas requeridas:  
+- [ECMA 6](http://blog.teamtreehouse.com/get-started-ecmascript-6) Arrow functions - Clases - const / let - Template strings
+- [React](https://reactjs.org/) (Entendimiento básico, [¿Qué es? ¿Para qué se usa?](https://thinkster.io/tutorials/what-exactly-is-react))  
+- [SASS](http://sass-lang.com/guide).  
 - [Npm](https://docs.nodejitsu.com/articles/getting-started/npm/what-is-npm/) (Manejo de dependencias en Node)
 
 ## Listado de Ejercicios
