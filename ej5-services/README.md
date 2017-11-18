@@ -35,7 +35,7 @@ Explicamos como hacer promises secuenciales y paralelas.
   "sold_quantity": 16,
   "free_shipping": false,
   "picture": "http://mla-s2-p.mlstatic.com/993111-MLA25605929559_052017-O.jpg",
-  "category": [],
+  "category": [{}, {}, {}],
   "description": "<p>...</p>"
 }
 ```
@@ -45,7 +45,7 @@ Explicamos como hacer promises secuenciales y paralelas.
 {
   "query": "iphone",
   "paging": {},
-  "filters": [],
+  "category": [{}, {}, {}],
   "results": [
     {
       "id": "MLA672160044",
