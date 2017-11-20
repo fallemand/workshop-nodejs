@@ -9,7 +9,7 @@ class SearchItem extends React.Component {
           <img src={picture} alt={title}/>
         </div>
         <div className="search-item__description">
-          <span className="search-item__price">$ {price}</span>
+          <span className="search-item__price">$ {price.amount}</span>
           {free_shipping && <i className="search-item__freeshipment"></i>}
           <p className="search-item__title">{title}</p>
         </div>

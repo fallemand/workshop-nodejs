@@ -2,37 +2,31 @@ const request = require('../services/request.service.js');
 const meliTransform = require('../services/meli.transform.js');
 const config = require('../config');
 
-// APP Controller
-
-module.exports.item = (req, res, next) => {
-  const url = `/api/item/${req.params.id}`;
-  const options = {
+function addOptions(url) {
+  return {
     method: 'GET',
     headers: {'Content-type': 'application/json'},
     hostname: config.host,
     port: config.port,
     protocol: 'http',
     path: url
-  };
+  }
+};
 
-  request(options).then((item) => {
+module.exports.item = (req, res, next) => {
+  const opt = addOptions(`/api/item/${req.params.id}`);
+
+  request(opt).then((item) => {
     res.render('Vip', item);
   }).catch(next);
 };
 
 module.exports.search = (req, res, next) => {
   const query = req.query.q;
-  const url = `/api/search?q=${query}`;
-  const options = {
-    method: 'GET',
-    headers: {'Content-type': 'application/json'},
-    hostname: config.host,
-    port: config.port,
-    protocol: 'http',
-    path: url
-  };
+  const opt = addOptions(`/api/search?q=${query}`);
 
-  request(options).then((results) => {
+  request(opt).then((results) => {
+    results.query = req.query.q;
     res.render('Search', results);
   }).catch(next);
 };
@@ -49,11 +43,9 @@ module.exports.test = (req, res) => {
   }); // Lo provee express y permite laburar con las vistas
 };
 
-
 module.exports.index = (req, res) => {
   //Emular un error:
   /*let bla = null;
   bla.index;*/
-  console.log('Index');
   res.render('Index');
 };

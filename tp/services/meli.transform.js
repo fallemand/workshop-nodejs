@@ -1,23 +1,18 @@
 exports.item = (item) => {
-  const toWork = item.itemData;
-    let itemTransformed = {};
-
-    itemTransformed = {
-      id: toWork.id,
-      title: toWork.title,
+  return {
+      id: item.id,
+      title: item.title,
       price: {
-        currency: toWork.currency_id,
-        amount: toWork.price
+        currency: item.currency_id,
+        amount: item.price
       },
-      condition: toWork.condition,
-      sold_quantity: toWork.sold_quantity,
-      free_shipping: toWork.shipping.free_shipping,
-      picture: toWork.pictures.length ? toWork.pictures[0] && toWork.pictures[0].url : false,
-      description: item.descriptionData.text ? item.descriptionData.text : item.descriptionData.plain_text,
-      category: item.categoryData.path_from_root,
-    };
-    
-    return itemTransformed;
+      condition: item.condition,
+      sold_quantity: item.sold_quantity,
+      free_shipping: item.shipping ? item.shipping.free_shipping : false,
+      picture: item.pictures.length ? item.pictures[0] && item.pictures[0].url : item.thumbnail, 
+      description: item.description,
+      category: item.category
+  }
 };
 
 exports.search = (search) => {
@@ -29,10 +24,18 @@ exports.search = (search) => {
       return {
         id: result.id,
         title: result.title,
-        address: result.address,
-        price: result.price,
+        address: {
+          state_id: result.address.state_id,
+          state_name: result.address.state_name,
+          city_id: result.address.city_id,
+          city_name: result.address.city_name
+        },
+        price: {
+          amount: result.price,
+          currency: result.currency_id
+        },
         condition: result.condition,
-        free_shipping: result.free_shipping,
+        free_shipping: result.shipping.free_shipping,
         picture: result.thumbnail
       }
     })

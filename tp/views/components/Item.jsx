@@ -1,6 +1,14 @@
 const React = require('react');
 
 class Item extends React.Component {
+
+  itemCondition(condition) {
+    return (condition == 'new') ? 'Nuevo' : 'Usado';
+  }
+
+  text(description) {
+    return (description) ? description : "El item no cuenta con una descripción."
+  }
   
   render() {
     const { id, picture, title, price, condition, free_shipping, description, sold_quantity } = this.props;
@@ -12,7 +20,7 @@ class Item extends React.Component {
         </div>
         <div className="item__info">
           <span className="item__condition">
-            {condition} - {sold_quantity} vendidos
+            {this.itemCondition(this.props.condition)} - {sold_quantity} vendidos
             {free_shipping && <i className="item__freeshipment"></i>}
           </span>
           <span className="item__title">{title}</span>
@@ -21,7 +29,8 @@ class Item extends React.Component {
         </div>
         <div className="item__description">
           <h2 className="item__description-title">Descripción del producto</h2>
-          <div className="item__description-content">{description}</div>
+          <div className="item__description-content"
+                 dangerouslySetInnerHTML={{__html: this.text(this.props.description)}}/>
         </div>
       </div>
     );

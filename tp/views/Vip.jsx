@@ -5,7 +5,7 @@ const Item = require('./components/Item');
 class Vip extends React.Component {
   render () {
     return (
-      <Layout>
+      <Layout {...this.props}>
         <Item {...this.props}></Item>
       </Layout>
     );
