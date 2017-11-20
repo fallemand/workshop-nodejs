@@ -13,7 +13,7 @@ class Header extends React.Component {
 
   handleSearchKeyUp(e) {
     const query = e.target.value;
-    if(query.length > 2) {
+    if(query.length > 1) {
       this.setState({
         query
       });
@@ -23,7 +23,7 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header__container">
-        <a className="header__logo" href="/" tabIndex="1">
+        <a className="header__logo" href="/app" tabIndex="1">
           MercadoLibre - Donde compras y vendes de todo
         </a>
         <form className="header__search" action="/app/search" method="GET" role="search">

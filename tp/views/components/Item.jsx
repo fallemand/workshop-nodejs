@@ -1,4 +1,5 @@
 const React = require('react');
+const Price = require('./PriceFormat');
 
 class Item extends React.Component {
 
@@ -8,19 +9,6 @@ class Item extends React.Component {
 
   text(description) {
     return (description) ? description : "El item no cuenta con una descripción."
-  }
-
-  formatUnity (price) {
-    var priceArray = price.toString().split('.');
-    return priceArray[0]
-  }
-
-  formatDecimals (price) {
-    var priceArray = price.toString().split('.');
-    if (priceArray[1]) 
-      return priceArray[1]
-    else
-      return '00'
   }
   
   render() {
@@ -37,10 +25,7 @@ class Item extends React.Component {
             {free_shipping && <i className="item__freeshipment"></i>}
           </span>
           <span className="item__title">{title}</span>
-          <span className="item__price">
-            <strong>${this.formatUnity(this.props.price.amount)}
-              <sup>{this.formatDecimals(this.props.price.amount)}</sup>
-            </strong></span>
+          <span className="item__price"><Price price={price.amount}/></span>
           <a className="item__buy" href={`https://buyingflow.mercadolibre.com.ar/bid/confirm?item_id=${id}amp;quantity=1`}>Comprar</a>
         </div>
         <div className="item__description">
