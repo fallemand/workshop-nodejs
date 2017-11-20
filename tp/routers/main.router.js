@@ -12,5 +12,5 @@ module.exports.init = (app, path) => {
 
   app.use('*', (req, res) => {
     res.redirect(301, '/app');
-  })
+  });
 };
