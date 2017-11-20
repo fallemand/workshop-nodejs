@@ -2,7 +2,12 @@
   "name": "workshop-nodejs",
   "version": "1.0.0",
   "description": "Integrated exercise for the Node.js Workshop",
+  "author": "Facundo Allemand (facundo.allemand@mercadolibre.com)",
+  "license": "ISC",
   "main": "index.js",
+  "engines": {
+    "node": "6.11.0"
+  },
   "scripts": {
     "clean": "rimraf assets/dist/**/* && mkdirp assets/dist/scripts assets/dist/styles",
     "autoprefixer": "postcss -u autoprefixer -r assets/dist/styles/*",
@@ -28,8 +33,14 @@
     "watch:images": "onchange \"assets/src/images\" -- npm run build:images",
     "watch": "npm-run-all -p watch:styles watch:scripts watch:images"
   },
-  "author": "Facundo Allemand (facundo.allemand@mercadolibre.com)",
-  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "express-react-views": "^0.10.4",
+    "pm2": "^2.7.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "serialize-javascript": "^1.4.0"
+  },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel-core": "^6.26.0",
@@ -61,14 +72,6 @@
   },
   "optionalDependencies": {
     "fsevents": "*"
-  },
-  "dependencies": {
-    "express": "^4.15.3",
-    "express-react-views": "^0.10.4",
-    "pm2": "^2.7.2",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "serialize-javascript": "^1.4.0"
   },
   "jest": {
     "testRegex": "./test/unit/.*.js$"
