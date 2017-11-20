@@ -19,5 +19,8 @@ module.exports.appError = (err, req, res, next) => {
   if(err instanceof Error) {
     err = err.toString();
   }
-  res.render('Error', { error: err });
+  res.render('Error', {
+    error: JSON.stringify(err),
+  });
 };
+ 

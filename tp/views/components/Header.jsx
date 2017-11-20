@@ -31,7 +31,7 @@ class Header extends React.Component {
             max-length="120" tabIndex="2" autoCapitalize="off" autoComplete="off" autoCorrect="off" 
             spellCheck="false" placeholder="Nunca dejes de buscar!" data-js="search" 
             defaultValue={this.props.query} />
-          <button type="submit" className="header__search-btn" data-fastclick="" tabindex="3">
+          <button type="submit" className="header__search-btn" data-fastclick="" tabIndex="3">
             <i className="header__search-icon">
               <span>Buscar</span>
             </i>
