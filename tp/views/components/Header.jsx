@@ -1,21 +1,29 @@
 const React = require('react');
+const PropTypes = require('prop-types');
 
 class Header extends React.Component {
   render() {
+    const {
+      linkText,
+      buttonText,
+      inputPlaceholderText,
+      query,
+    } = this.props;
+
     return (
       <div className="header__container">
           <a className="header__logo" href="/app/" tabIndex="1">
-            Mercado Libre - Donde compras y vendes de todo
+            {linkText}
           </a>
           <form className="header__search" action="/app/search" method="GET" role="search">
               <input type="text" className="header__search-input" name="q" max-length="120"
                 tabIndex="2" autoCapitalize="off" autoComplete="off" autoCorrect="off"
-                spellCheck="false" placeholder="Nunca dejes de buscar"
-                data-js="search" value={this.props.query} />
+                spellCheck="false" placeholder={inputPlaceholderText}
+                data-js="search" value={query} />
               <button type="submit" className="header__search-btn" tabIndex="3">
                 <i className="header__search-icon">
                   <span>
-                    Buscar
+                    {buttonText}
                   </span>
                 </i>
               </button>
@@ -24,5 +32,17 @@ class Header extends React.Component {
     );
   }
 }
+
+Header.defaultProps = {
+  linkText: 'Mercado Libre',
+  buttonText: 'Buscar',
+  inputPlaceholderText: 'Nunca dejes de buscar',
+};
+
+Header.propTypes = {
+  linkText: PropTypes.string,
+  buttonText: PropTypes.string,
+  inputPlaceholderText: PropTypes.string,
+};
 
 module.exports = Header;

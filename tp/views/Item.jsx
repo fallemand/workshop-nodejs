@@ -1,8 +1,35 @@
 const React = require('react');
+const PropTypes = require('prop-types');
 const Layout = require('./components/Layout');
 
 class Item extends React.Component {
+  getConditionText(condition) {
+    return (condition === 'new') ? 'Nuevo' : 'Usado';
+  }
+
+  getSoldQuantityText(quantity) {
+    return `${quantity} ${(quantity === 1) ? ' vendido' : 'vendidos'}`;
+  }
+
+  getPriceText(amount) {
+    const price = String(amount).split('.');
+    const integer = price[0];
+    const decimals = price[1];
+
+    return `$ ${integer}${(decimals) ? `<sup>${decimals}</sup>` : ''}`;
+  }
+
+  getDescriptionText(description) {
+    return description || 'Publicación sin descripción.';
+  }
+
   render() {
+    const {
+      buyButtonUrl,
+      buyButtonText,
+      descriptionHeading,
+    } = this.props;
+
     const {
       title,
       price,
@@ -21,9 +48,9 @@ class Item extends React.Component {
           </div>
           <div className="item__info">
             <span className="item__condition">
-              {(condition === 'new') ? 'Nuevo' : 'Usado'}
-              -
-              {sold_quantity} vendidos
+              {this.getConditionText(condition)}
+              {' — '}
+              {this.getSoldQuantityText(sold_quantity)}
               {
                 free_shipping &&
                 <i className="item__freeshipment"></i>
@@ -32,19 +59,18 @@ class Item extends React.Component {
             <span className="item__title">
               {title}
             </span>
-            <span className="item__price">
-              $ {price.amount}
-            </span>
-            <a className="item__buy" href="#buy">
-              Comprar
+            <span className="item__price"
+              dangerouslySetInnerHTML={{ __html: this.getPriceText(price.amount) }} />
+            <a className="item__buy" href={buyButtonUrl}>
+              {buyButtonText}
             </a>
           </div>
           <div className="item__description">
             <h2 className="item__description-title">
-              Descripción del producto
+              {descriptionHeading}
             </h2>
             <div className="item__description-content">
-              {description}
+              {this.getDescriptionText(description)}
             </div>
           </div>
         </div>
@@ -52,5 +78,17 @@ class Item extends React.Component {
     );
   }
 }
+
+Item.defaultProps = {
+  buyButtonUrl: '#fakeBuyUrlHash',
+  buyButtonText: 'Comprar',
+  descriptionHeading: 'Descripción la publicación',
+};
+
+Item.propTypes = {
+  buyButtonUrl: PropTypes.string,
+  buyButtonText: PropTypes.string,
+  descriptionHeading: PropTypes.string,
+};
 
 module.exports = Item;
