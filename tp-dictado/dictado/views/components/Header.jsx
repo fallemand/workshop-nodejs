@@ -23,7 +23,7 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header__container">
-        <a className="header__logo" href="/app" tabIndex="1">MercadoLibre - Donde compras y vendes de todo</a>
+        <a className="header__logo" href="/" tabIndex="1">MercadoLibre - Donde compras y vendes de todo</a>
         <form className="header__search" action="/app/search" method="GET" role="search">
           <input type="text" onKeyUp={this.handleSearchKeyUp} className="header__search-input" name="q" maxLength="120"
                  tabIndex="2" autoCapitalize="off" autoComplete="off" autoCorrect="off" spellCheck="false"
