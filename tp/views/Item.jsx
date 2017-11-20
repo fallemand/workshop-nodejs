@@ -8,7 +8,7 @@ class Item extends React.Component {
   }
 
   getSoldQuantityText(quantity) {
-    return `${quantity} ${(quantity === 1) ? ' vendido' : 'vendidos'}`;
+    return `${quantity} ${(quantity === 1) ? 'vendido' : 'vendidos'}`;
   }
 
   getPriceText(amount) {
