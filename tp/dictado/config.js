@@ -11,3 +11,12 @@ const development = {
 };
 
 module.exports = process.env.NODE_ENV === 'production' ? production : development;
+
+/* 
+* Remover el pipe opcional de production y pushear cambios.
+* Para deployar en Heroku:
+* Primero:
+* git subtree push --prefix tp heroku master
+* Luego:
+* git push heroku `git subtree split --prefix tp`:master --force
+*/
