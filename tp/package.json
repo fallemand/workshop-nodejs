@@ -29,7 +29,7 @@
     "watch": "npm-run-all -p watch:styles watch:scripts watch:images",
     "restart": "npm run stop && npm run build && npm run start"
   },
-  "author": "Facundo Allemand (facundo.allemand@mercadolibre.com)",
+  "author": "Jessica Pedernera (jessica.pedernera@mercadolibre.com)",
   "license": "ISC",
   "engines": {
     "node": "6.11.0"
