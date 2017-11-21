@@ -2,6 +2,7 @@ const React = require('react');
 const PropTypes = require('prop-types');
 const Header = require('./Header');
 const Breadcrumb = require('./Breadcrumb');
+const serialize = require('serialize-javascript');
 
 class Layout extends React.Component {
   render() {
@@ -9,7 +10,7 @@ class Layout extends React.Component {
       title,
       query,
       data,
-      children
+      children,
     } = this.props;
 
     return (
@@ -37,6 +38,13 @@ class Layout extends React.Component {
               {children}
             </div>
           </main>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.0.0/umd/react.production.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.0.0/umd/react-dom.production.min.js"></script>
+          <script dangerouslySetInnerHTML={{
+            __html:
+              `window.__PRELOADED_STATE__ = ${serialize(this.props, { isJSON: true })};`
+          }} />
+          <script src="/assets/dist/scripts/header.bundle.js"></script>
         </body>
     </html>
     );

@@ -1,13 +1,30 @@
 const React = require('react');
 const PropTypes = require('prop-types');
+const Suggest = require('./Suggest');
 
 class Header extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.handleSearchKeyUp = this.handleSearchKeyUp.bind(this);
+    this.state = {
+      query: this.props.query,
+    };
+  }
+
+  handleSearchKeyUp(event) {
+    let query = event.target.value;
+
+    if (query.length > 2) {
+      this.setState({ query });
+    }
+  }
+
   render() {
     const {
       linkText,
       buttonText,
       inputPlaceholderText,
-      query,
     } = this.props;
 
     return (
@@ -18,8 +35,8 @@ class Header extends React.Component {
           <form className="header__search" action="/app/search" method="GET" role="search">
               <input type="text" className="header__search-input" name="q" max-length="120"
                 tabIndex="2" autoCapitalize="off" autoComplete="off" autoCorrect="off"
-                spellCheck="false" placeholder={inputPlaceholderText}
-                data-js="search" value={query} />
+                spellCheck="false" placeholder={inputPlaceholderText} data-js="search"
+                defaultValue={this.props.query} onKeyUp={this.handleSearchKeyUp} />
               <button type="submit" className="header__search-btn" tabIndex="3">
                 <i className="header__search-icon">
                   <span>
@@ -27,6 +44,7 @@ class Header extends React.Component {
                   </span>
                 </i>
               </button>
+              <Suggest query={this.state.query} />
           </form>
       </div>
     );
