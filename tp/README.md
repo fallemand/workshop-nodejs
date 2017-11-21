@@ -29,8 +29,13 @@ or
 npm run watch
 ```
 ### 3) Start app:
+**Using mocks:** 
 ```
 npm run start:dev
+```
+**With real data:** 
+```
+npm run start
 ```
 ### 4) Navigate to:
 ```
@@ -43,9 +48,6 @@ http://localhost:3000/
 npm run test:unit
 ```
 ### Fuctional tests
-```
-npm run start-test
-``` 
 ```
 npm run test:e2e
 ``` 
