@@ -15,8 +15,6 @@ class apiController {
     }).catch(next);
   };
 
-
-
   static suggest(req, res, next) {
     //res.json({message: `Entró a la api suggest de ${req.query.q}`});
     meliTransform.suggest(`${req.query.q}`).then((results) => {

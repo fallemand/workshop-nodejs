@@ -15,7 +15,7 @@ module.exports = (options) => {
                 data += chunk;
             });
             resp.on('end', () => {
-                result = JSON.parse(data);
+                const result = JSON.parse(data);
                 //handle http error
                 if (resp.statusCode < 200 || resp.statusCode > 299) {
                     reject(result);
