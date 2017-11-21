@@ -21,7 +21,7 @@ class Breadcrumb extends React.Component {
         </li>
 
         {
-          categories.map((category, index) =>
+          categories && categories.map((category, index) =>
             <li className="breadcrumb__element" key={index + 1}>
               {category}
             </li>
