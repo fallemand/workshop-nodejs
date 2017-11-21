@@ -5,11 +5,8 @@ const Suggest = require('../../../views/components/Suggest');
 describe('Suggest (Snapshot)', () => {
   const component = renderer.create(<Suggest query="iph" />);
   const response = {
-    results: ['iphone', 'iphone 6']
+    suggestions: ['iphone', 'iphone 6']
   };
-  window.fetch = jest.fn().mockImplementation(
-    () => Promise.resolve({json: () => Promise.resolve(response)})
-  );
 
   afterEach(() => {
     const instance = component.getInstance();
@@ -33,9 +30,10 @@ describe('Suggest (Snapshot)', () => {
   });
 
   it('Suggest renders with results [componentwillReceiveProps]', () => {
-    const instance = component.getInstance();
     expect.assertions(1);
-    instance.componentWillReceiveProps({query: 'iph'}).then(() => {
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({json: () => Promise.resolve(response)}));
+    const instance = component.getInstance();
+    return instance.componentWillReceiveProps({query: 'iph'}).then(() => {
       const json = component.toJSON();
       expect(json).toMatchSnapshot();
     });

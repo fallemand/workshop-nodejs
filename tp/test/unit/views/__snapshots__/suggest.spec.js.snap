@@ -29,9 +29,7 @@ exports[`Suggest (Snapshot) Suggest renders with results [change state] 1`] = `
 </div>
 `;
 
-exports[`Suggest (Snapshot) Suggest renders with results [componentwillReceiveProps] 1`] = `null`;
-
-exports[`Suggest (Snapshot) Suggest renders with results 22 [componentwillReceiveProps] 1`] = `
+exports[`Suggest (Snapshot) Suggest renders with results [componentwillReceiveProps] 1`] = `
 <div>
   <ul
     className="suggest"
@@ -51,9 +49,9 @@ exports[`Suggest (Snapshot) Suggest renders with results 22 [componentwillReceiv
     >
        
       <a
-        href="/app/search?q=iphone2"
+        href="/app/search?q=iphone 6"
       >
-        iphone2
+        iphone 6
       </a>
     </li>
   </ul>

@@ -1,6 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Breadcrumb (Snapshot) Render with query 1`] = `
+exports[`Breadcrumb (Snapshot) Render with query and category 1`] = `
+<ul
+  className="breadcrumb"
+>
+  <li
+    className="breadcrumb__element"
+  >
+    <a
+      href="/"
+    >
+      Electrodomésticos y Aires Ac.
+    </a>
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    <a
+      href="/"
+    >
+      Electrodomésticos de Cocina
+    </a>
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    <a
+      href="/"
+    >
+      Tostadoras
+    </a>
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    "
+    iph
+    "
+  </li>
+</ul>
+`;
+
+exports[`Breadcrumb (Snapshot) Render with query only 1`] = `
 <ul
   className="breadcrumb"
 >
@@ -12,10 +53,4 @@ exports[`Breadcrumb (Snapshot) Render with query 1`] = `
     "
   </li>
 </ul>
-`;
-
-exports[`Breadcrumb (Snapshot) Render without query 1`] = `
-<ul
-  className="breadcrumb"
-/>
 `;
