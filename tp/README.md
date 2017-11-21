@@ -41,6 +41,10 @@ npm run start
 ```
 http://localhost:3000/
 ```
+### 3) Stop app:
+```
+npm run stop
+```
 
 ## Run Tests
 ### Unit tests
