@@ -15,7 +15,7 @@ module.exports.init = (app, path) => {
 
   // Default Route
   app.use('*', (req, res, next) => {
-    res.send('Default route 404');
+    res.render('Index');
   })
 
 };
