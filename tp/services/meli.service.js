@@ -7,30 +7,32 @@ const options = {
     'Content-type': 'application/json',
   },
   hostname: 'api.mercadolibre.com',
-  path: ''
+  path: '',
 };
 const protocol = 'https';
 
 class MeliService {
-  static search(query, callback) {
+  static search(query) {
     options.path = `/sites/MLA/search?q=${query}`;
 
     return new Promise((resolve, reject) => {
-      return request(options, protocol)
+      request(options, protocol)
         .then((res) => resolve(transform.results(res)))
         .catch((err) => reject(err));
     });
   }
 
-  static suggest(query, callback) {
+  static suggest(query) {
     options.path = `/sites/MLA/autosuggest?q=${query}`;
 
-    return request(options, protocol);
+    return new Promise((resolve, reject) => {
+      request(options, protocol)
+        .then((res) => resolve(transform.suggest(res)))
+        .catch((err) => reject(err));
+    });
   }
 
-  static item(id, callback) {
-    let data;
-
+  static item(id) {
     const getItem = (id) => {
       options.path = `/items/${id}`;
 
@@ -51,7 +53,7 @@ class MeliService {
 
     return Promise.all([
       getItem(id),
-      getDesc(id)
+      getDesc(id),
     ])
     .then(
       (ItemAndDescRes) => getCateg(ItemAndDescRes[0].category_id)

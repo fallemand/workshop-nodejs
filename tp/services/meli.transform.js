@@ -26,6 +26,16 @@ class MeliTransform {
     return data;
   }
 
+  static suggest(results) {
+    const data = {};
+
+    data.query = results.q;
+
+    data.results = results.suggested_queries.map((result) => result.q);
+
+    return data;
+  }
+
   static item(item, descs, categs) {
     const data = {};
 
