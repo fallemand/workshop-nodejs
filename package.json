@@ -18,10 +18,8 @@
   "homepage": "https://github.com/fallemand/workshop-nodejs#readme",
   "dependencies": {
     "babel-eslint": "^6.1.2",
-    "body-parser": "^1.18.2",
     "eslint": "3.5.0",
     "eslint-config-airbnb-base": "7.1.0",
-    "eslint-plugin-import": "1.15.0",
-    "pm2": "^2.7.2"
+    "eslint-plugin-import": "1.15.0"
   }
 }
