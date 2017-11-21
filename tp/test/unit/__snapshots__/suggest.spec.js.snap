@@ -1,8 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Suggest (Snapshot) Suggest render with results [change state] 1`] = `<div />`;
-
-exports[`Suggest (Snapshot) Suggest render with results [componentWillReceiveProps] 1`] = `
+exports[`Suggest (Snapshot) Suggest renders results [call componentWillReceiveProps] 1`] = `
 <div>
   <ul
     className="suggest"
@@ -11,13 +9,67 @@ exports[`Suggest (Snapshot) Suggest render with results [componentWillReceivePro
       className="suggest__item"
     >
       <a
-        href="/app/search?q=iphone 6"
+        href="/app/search?q=anillos"
       >
-        iphone 6
+        anillos
+      </a>
+    </li>
+    <li
+      className="suggest__item"
+    >
+      <a
+        href="/app/search?q=anillos oro"
+      >
+        anillos oro
+      </a>
+    </li>
+    <li
+      className="suggest__item"
+    >
+      <a
+        href="/app/search?q=anillos corona"
+      >
+        anillos corona
       </a>
     </li>
   </ul>
 </div>
 `;
 
-exports[`Suggest (Snapshot) Suggest render without results 1`] = `<div />`;
+exports[`Suggest (Snapshot) Suggest renders resultssuggestResponse [change state] 1`] = `
+<div>
+  <ul
+    className="suggest"
+  >
+    <li
+      className="suggest__item"
+    >
+      <a
+        href="/app/search?q=anillos"
+      >
+        anillos
+      </a>
+    </li>
+    <li
+      className="suggest__item"
+    >
+      <a
+        href="/app/search?q=anillos oro"
+      >
+        anillos oro
+      </a>
+    </li>
+    <li
+      className="suggest__item"
+    >
+      <a
+        href="/app/search?q=anillos corona"
+      >
+        anillos corona
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Suggest (Snapshot) Suggest renders without results 1`] = `<div />`;
