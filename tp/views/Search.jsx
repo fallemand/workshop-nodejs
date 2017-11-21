@@ -7,8 +7,8 @@ class Search extends React.Component {
   render () {
     return (
       <Layout {...this.props}>
-        {this.props.results.map((item) =>
-          <SearchItem item={item}>
+        {this.props.results.map((item, index) =>
+          <SearchItem item={item} key={index}>
           </SearchItem>
         )}
       </Layout>

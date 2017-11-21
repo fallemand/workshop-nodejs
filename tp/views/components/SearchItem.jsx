@@ -13,7 +13,7 @@ class SearchItem extends React.Component {
   render () {
     const { item } = this.props;
     return (
-        <a className="search-item" href={`items/${item.id}`}>
+        <a className="search-item" href={`items/${item.id}`} key={item.id}>
           <div className="search-item__picture">
             <img src={item.thumbnail} alt={item.title}></img>
           </div>
