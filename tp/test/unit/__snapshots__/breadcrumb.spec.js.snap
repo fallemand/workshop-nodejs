@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb (Snapshot) Breadcrumb renders with results 1`] = `
+<ul
+  className="breadcrumb"
+>
+  <li
+    className="breadcrumb__element"
+  >
+    <a
+      href="/"
+    >
+      Inicio
+    </a>
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    Joyas y Relojes
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    Joyas
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    Anillos
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    Acero
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    Otras Piedras
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    <a
+      href="/"
+    >
+      anil
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`Breadcrumb (Snapshot) Breadcrumb renders without results 1`] = `
+<ul
+  className="breadcrumb"
+>
+  <li
+    className="breadcrumb__element"
+  >
+    <a
+      href="/"
+    >
+      Inicio
+    </a>
+  </li>
+  
+  <li
+    className="breadcrumb__element"
+  >
+    <a
+      href="/"
+    >
+      anil
+    </a>
+  </li>
+</ul>
+`;
