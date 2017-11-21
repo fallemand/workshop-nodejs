@@ -12,7 +12,7 @@ class Search extends React.Component {
       <Layout {...this.props}>
         {
           results.map((result) =>
-            <SearchItem {...result} />
+            <SearchItem {...result} key={result.id} />
           )
         }
       </Layout>
