@@ -6,7 +6,7 @@ class SearchItem extends React.Component {
     const { item } = this.props;
     return (
       <div>
-        <a className="search-item" href={`/app/items/${item.id}`}>
+        <a className="search-item" href={`/items/${item.id}`}>
           <div className="search-item__picture">
             <img src={item.picture} alt={item.title} />
           </div>

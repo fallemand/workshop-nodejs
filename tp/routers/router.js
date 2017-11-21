@@ -15,8 +15,8 @@ module.exports.init = (app, path) => {
   app.use(authorMiddleware);
   
   // Set routers
+  app.use('/', routerApp, errorMiddleware.app);
   app.use('/api', routerApi, errorMiddleware.api);
-  app.use('/app', routerApp, errorMiddleware.app);
   
   // Set default route
   app.use('*', (req, res, next) => {

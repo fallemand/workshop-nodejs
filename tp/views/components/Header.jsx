@@ -25,7 +25,7 @@ class Header extends React.Component {
         <a className="header__logo" href="/" tabIndex="1">
           MercadoLibre - Donde compras y vendes de todo
         </a>
-        <form className="header__search" action="/app/search" method="GET" role="search">
+        <form className="header__search" action="/search" method="GET" role="search">
           <input
             type="text"
             onKeyUp={this.handleSearchKeyUp}

@@ -5,7 +5,6 @@ const SearchItem = require('./components/SearchItem');
 
 class Search extends React.Component {
   render() {
-    console.log(this.props);
     const { title, searchResults, query } = this.props;
     return (
       <Layout breadCrumbs={searchResults.categories} query={query}>

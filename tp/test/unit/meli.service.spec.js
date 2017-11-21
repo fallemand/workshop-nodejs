@@ -19,4 +19,12 @@ describe('Test meli.service.js', () => {
       expect(item.category.length).toBeGreaterThan(2);
     });
   });
+
+  test('it should suggest', () => {
+    return meliService.suggest('ipho').then((response) => {
+      expect(response.id).toBeDefined();
+      expect(response.category).toBeDefined();
+      expect(response.category.length).toBeGreaterThan(2);
+    });
+  });
 });

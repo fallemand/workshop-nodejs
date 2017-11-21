@@ -5,11 +5,11 @@ class Breadcrumbs extends React.Component {
     const { cats, query } = this.props;
     return (
       <ul className="breadcrumb">
-        <li class="breadcrumb__element"><a href="/">Inicio</a></li>
+        <li className="breadcrumb__element"><a href="/">Inicio</a></li>
         {cats && cats.map((cat) =>
-          <li class="breadcrumb__element">{cat}</li>
+          <li className="breadcrumb__element">{cat}</li>
         )}
-        {query && <li class="breadcrumb__element">"{query}"</li>}
+        {query && <li className="breadcrumb__element">"{query}"</li>}
       </ul>
     );
   }
