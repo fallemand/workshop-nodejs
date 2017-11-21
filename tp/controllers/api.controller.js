@@ -4,7 +4,9 @@ const meliService = require('../services/meli.service')
  * Api controller contiene las funciones invocadas por los endpoints de api
  */
 class ApiController {
-
+  /**
+   * Search invoca al meliService
+   */
   static search(req, res, next) {
     const site = req.params.site;
     const q = encodeURIComponent(req.query.q);
@@ -15,6 +17,9 @@ class ApiController {
     }).catch(next);
   };
 
+  /**
+   * Suggest invoca al meliService
+   */
   static suggest(req, res, next) {
     const site = req.params.site;
     const q = encodeURIComponent(req.query.q);
@@ -25,6 +30,9 @@ class ApiController {
     }).catch(next);
   };
 
+  /**
+   * Items invoca al meliService
+   */
   static items(req, res, next) {
     const itemId = req.params.id;
 

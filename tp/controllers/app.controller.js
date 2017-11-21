@@ -6,6 +6,9 @@ const config = require('../config');
  * App controller contiene las funciones invocadas por los endpoints de app
  */
 class AppController {
+  /**
+   * Search hace una llamada a API y luego muestra los resultados
+   */
   static search(req, res, next) {
     const site = req.params.site;
     const q = req.query.q;
@@ -28,6 +31,9 @@ class AppController {
     }).catch(next);
   };
 
+  /**
+   * Items hace una llamada a API y luego muestra los resultados
+   */
   static items(req, res, next) {
     const itemId = req.params.id;
 
@@ -49,6 +55,9 @@ class AppController {
     }).catch(next);
   };
   
+  /**
+   * Index
+   */
   static index(req, res, next) {
     res.render('Index');
   };

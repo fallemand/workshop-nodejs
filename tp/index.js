@@ -5,13 +5,16 @@ const expReact = require('express-react-views');
 const config = require('./config');
 
 /**
- * Si no es produccion, usamos mocks
+ * Validamos el uso de mocks
  */
 if(config.useMocks) {
     console.log('----Using mocks----');
     require('./mocks');
 }
 
+/**
+ * Inicializamos el router
+ */
 router.init(app, __dirname);
 
 /**

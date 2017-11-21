@@ -49,7 +49,7 @@ class MeliService {
       method: 'GET',
       headers: {'Content-Type': 'application/json'},
       hostname: 'api.mercadolibre.com',
-      path: `/sites/${site}/search?q=${query}`
+      path: `/sites/${site}/search?q=${encodeURIComponent(query)}`
     };
 
     request(options).then((data) => {
@@ -65,7 +65,7 @@ class MeliService {
       method: 'GET',
       headers: {'Content-Type': 'application/json'},
       hostname: 'api.mercadolibre.com',
-      path: `/sites/${site}/autosuggest?q=${query}`
+      path: `/sites/${site}/autosuggest?q=${encodeURIComponent(query)}`
     };
 
     request(options).then((data) => {
