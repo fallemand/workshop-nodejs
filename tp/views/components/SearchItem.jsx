@@ -11,11 +11,11 @@ class SearchItem extends React.Component {
             </div>
             <div className="search-item__description">
                 <span className="search-item__price">${item.price}</span>
-                {item.shipping.free_shipping && <i className="search-item__freeshipment"></i>} 
+                {item.free_shipping && <i className="search-item__freeshipment"></i>} 
                 <p className="search-item__title">{item.title}</p>
             </div>
             <div className="search-item__location">
-                {item.address.state_name}
+                {item.state_name}
             </div>
         </a>
     )

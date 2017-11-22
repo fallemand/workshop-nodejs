@@ -104,7 +104,7 @@ class MeliService {
       };
       request(categoryOptions).then((data) => {
         item.category = data;
-        resolve(item);
+        resolve(Transform.item(item));
       }).catch((err) => {
         reject(JSON.stringify(err));
       })

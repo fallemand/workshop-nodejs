@@ -4,9 +4,22 @@
 class Transform {
 
     static item(item) {
-        let transformedItem = {};
-
-        transformedItem = item;
+        let transformedItem = {
+            title: item.title,
+            price: item.price,
+            sold_quantity: item.sold_quantity,
+            free_shipping: item.shipping.free_shipping,
+            thumbnail: item.thumbnail,
+            state_name: item.seller_address.state.name,
+            category: {
+                path_from_root: item.category.path_from_root,
+            },
+            pictures: item.pictures,
+            description: {
+                text: item.description.text,
+                plain_text: item.description.plain_text,
+            },
+        };
 
         return transformedItem;
     };
