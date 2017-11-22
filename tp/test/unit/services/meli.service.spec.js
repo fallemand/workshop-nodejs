@@ -7,20 +7,24 @@ describe('Test meli.service.js', () => {
         return meliService.searchWithPromise('Tostadora', 'MLA').then((response) => {
 
             expect(response.results).toBeDefined();
-            expect(response.results.length).toBeGreaterThan();
+            expect(response.results.length).toBeGreaterThan(0);
             expect(response.results[0].title).toBeDefined();
             expect(response.results[0].price).toBeDefined();
-            expect(response.category).toBeDefined();
+            expect(response.categories).toBeDefined();
         })
     });
 
     test('It should item', () => {
         return meliService.itemWithPromise('MLA12312334').then((item) => {
 
-            expect(item.id).toBeDefined();
+            expect(item.title).toBeDefined();
+            expect(item.price).toBeDefined();
+            expect(item.sold_quantity).toBeDefined();
+            expect(item.thumbnail).toBeDefined();
+            expect(item.state_name).toBeDefined();
             expect(item.category).toBeDefined();
-            expect(item.category.length).toBeGreaterThan(2);
-            expect(item.picture).toEqual('url..');
+            expect(item.category.path_from_root.length).toBeGreaterThan(0);
+            expect(item.pictures.length).toBeGreaterThan(0);
         })
     });
 });

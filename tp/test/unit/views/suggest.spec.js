@@ -4,12 +4,19 @@ const Suggest = require('../../../views/components/Suggest');
 
 describe('Suggest (Snapshot)', () => {
   const component = renderer.create(<Suggest query="iph"/>);
+  const suggestResponse = {
+    "results": [
+      "iphone 6",
+      "iphone 7",
+      "iphone 5",
+    ],
+  };
 
   test('Suggest renders without results', () => {
     const json = component.toJSON();
     expect(json).toMatchSnapshot();
   });
-  
+
   afterEach(() => {
     const instance = component.getInstance();
     instance.setState({
@@ -25,7 +32,7 @@ describe('Suggest (Snapshot)', () => {
     const json = component.toJSON();
     expect(json).toMatchSnapshot();
   });
-  
+
   afterEach(() => {
     const instance = component.getInstance();
     instance.setState({

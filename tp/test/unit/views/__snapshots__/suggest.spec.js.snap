@@ -1,5 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Suggest (Snapshot) Suggest renders results [call componentWillReceiveProps] 1`] = `
+<ul
+  className="suggest"
+/>
+`;
+
+exports[`Suggest (Snapshot) Suggest renders resultssuggestResponse [change state] 1`] = `
+<ul
+  className="suggest"
+>
+  <li
+    className="suggest__item"
+  >
+    <a
+      href="/app/search/MLA?q=iphone 6"
+    >
+      iphone 6
+    </a>
+  </li>
+  <li
+    className="suggest__item"
+  >
+    <a
+      href="/app/search/MLA?q=iphone 7"
+    >
+      iphone 7
+    </a>
+  </li>
+  <li
+    className="suggest__item"
+  >
+    <a
+      href="/app/search/MLA?q=iphone 5"
+    >
+      iphone 5
+    </a>
+  </li>
+</ul>
+`;
+
 exports[`Suggest (Snapshot) Suggest renders with results [change state] 1`] = `
 <ul
   className="suggest"
@@ -8,7 +48,7 @@ exports[`Suggest (Snapshot) Suggest renders with results [change state] 1`] = `
     className="suggest__item"
   >
     <a
-      href="/search?q=iphone"
+      href="/app/search/MLA?q=iphone"
     >
       iphone
     </a>
@@ -17,7 +57,7 @@ exports[`Suggest (Snapshot) Suggest renders with results [change state] 1`] = `
     className="suggest__item"
   >
     <a
-      href="/search?q=iphone2"
+      href="/app/search/MLA?q=iphone2"
     >
       iphone2
     </a>
