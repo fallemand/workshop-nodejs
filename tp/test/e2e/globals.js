@@ -1,8 +1,7 @@
 const config = require('../../config');
 
 module.exports = {
-  'to_test_search': `${config.host}:${config.port}`,
-  'to_test_items': `${config.host}:${config.port}/app/items/MLA123456789`,
+  'url_home': `${config.host}:${config.port}`,
   'environment': "xvfb_desktop",
   'waitForConditionPollInterval': 50,
   'waitForConditionTimeout': 5000,
