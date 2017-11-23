@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Suggest test using snapshots Renders empty 1`] = `<div />`;
+
+exports[`Suggest test using snapshots Renders with results (componentWillReceiveProps) 1`] = `
+<div>
+  <ul
+    className="suggest"
+  >
+    <li
+      className="suggest__item"
+    >
+      <a
+        href="/app/search?q=macbook"
+      >
+        macbook
+      </a>
+    </li>
+    <li
+      className="suggest__item"
+    >
+      <a
+        href="/app/search?q=macbook pro"
+      >
+        macbook pro
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Suggest test using snapshots Renders with results (setState) 1`] = `
+<div>
+  <ul
+    className="suggest"
+  >
+    <li
+      className="suggest__item"
+    >
+      <a
+        href="/app/search?q=macbook"
+      >
+        macbook
+      </a>
+    </li>
+    <li
+      className="suggest__item"
+    >
+      <a
+        href="/app/search?q=macbook pro"
+      >
+        macbook pro
+      </a>
+    </li>
+  </ul>
+</div>
+`;

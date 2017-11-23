@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb test using snapshots Render categories 1`] = `
+<ul
+  className="breadcrumb"
+>
+  <li
+    className="breadcrumb__element"
+  >
+    <a
+      href="/app/"
+    >
+      Inicio
+    </a>
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    Computación
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    Apple
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    Macbook
+  </li>
+</ul>
+`;
+
+exports[`Breadcrumb test using snapshots Render categories with query 1`] = `
+<ul
+  className="breadcrumb"
+>
+  <li
+    className="breadcrumb__element"
+  >
+    <a
+      href="/app/"
+    >
+      Inicio
+    </a>
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    Computación
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    Apple
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    Macbook
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    "
+    macb
+    "
+  </li>
+</ul>
+`;
