@@ -11,6 +11,9 @@ module.exports = {
   'Should search Iphone': (client) => {
     searchCellphone(client, 'iphone')
   },
+  'Should search Iphone': (client) => {
+    searchCellphone(client, 'iphone')
+  },
   beforeEach: function (client) {
     client.url(client.globals.site);
   },

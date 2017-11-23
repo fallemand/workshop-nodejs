@@ -3,6 +3,9 @@
 
 #### Dependencias:
 [nock](https://github.com/node-nock/nock)  
+```
+npm install --save-dev nock
+```
 
 #### Ejercicio Dictado:  
 -Explicamos como crear mocks para el caso del search de forma genérica, es decir, que para cualquier búsqueda, retorne los resultados del mock.  
@@ -19,9 +22,10 @@
 
 #### Entregables:  
 `mocks/index.js`  
-`mocks/search.js`  
-`mocks/item.js`  
-`mocks/item-description.js`  
-`mocks/item-category.js`  
+`mocks/search.json`  
+`mocks/item.json`  
+`mocks/item-description.json`  
+`mocks/item-category.json`  
+`mocks/suggest.json`  
 Modificar:  
 `index.js` Agregar lógica para que use los mocks.   
