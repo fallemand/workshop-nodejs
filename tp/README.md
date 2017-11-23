@@ -1,21 +1,73 @@
-# Ejercicio Final
-La idea de este ejercicio es armar un mini sitio de Mercado Libre con Home, Search, Vip, página de error, y Api.
-En cada parte vamos a ir agregando código que se integre al trabajo final.
-- **[Site Demo](https://workshop-node.herokuapp.com/)**
+# Workshop Node & React
 
-## Índice 
-- [Npm Scripts](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/1-npm_scripts) 
-- [Express](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express) 
-    * [Server](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/a.server_b.routes#a-configurar-server)
-    * [Routes](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/a.server_b.routes#b-router)
-    * [Controllers](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/c.controllers_d.middlewares#c-controllers)
-    * [Middlewares](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/c.controllers_d.middlewares#d-middleware)
-    * [Services](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/e.services)
-    * [React](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/2-express/f.react)
-- [Mocks](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/3-mocks) 
-- [Environments](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/4-environments) 
-- [ES6 Babel Webpack](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/5-webpack) 
-- [Testing](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/6-testing) 
-    * [Unitarios](https://github.com/fallemand/workshop-nodejs/blob/master/tp/parts/6-testing#a-tests-unitarios-mocha)
-    * [Funcionales](https://github.com/fallemand/workshop-nodejs/blob/master/tp/parts/6-testing#b-tests-funcionales-nightwatchjs)
-- [Deploy Cloud](https://github.com/fallemand/workshop-nodejs/tree/master/tp/parts/7-cloud) 
+> Final result: [App](https://workshop-lb.herokuapp.com/app/) &
+[API](https://workshop-lb.herokuapp.com/api/search?q=node).
+
+## Development
+
+- Install dependencies:
+
+  ```sh
+  $ npm install
+  ```
+
+- Build assets:
+
+  ```sh
+  $ npm run build
+  ```
+
+  *Alternatively you could watch for changes:*
+
+  ```sh
+  $ npm run watch
+  ```
+
+- Start project:
+
+  ```sh
+  $ npm run start:dev
+  ```
+
+  *If you prefer not to use mocks, try using the stage envirorment:*
+
+  ```sh
+  $ npm run start:stage
+  ```
+
+### URLs & Enpoints
+
+By default the App and API will run locally on `localhost:3000`,
+on the following URLs and Enpoints:
+
+```
+# App
+localhost:3000/app
+localhost:3000/app/search?q={query}
+localhost:3000/app/items/{id}
+
+# API
+localhost:3000/api/search?q={query}
+localhost:3000/api/suggest?q={query}
+localhost:3000/api/items/{id}
+```
+
+## Tests
+
+- Run unit tests:
+
+  ```sh
+  $ npm run test:unit
+  ```
+
+- Run e2e tests:
+
+  ```sh
+  $ npm run test:e2e
+  ```
+
+  *Remember to setup the envirorment first:*
+
+  ```sh
+  $ npm run setup:e2e
+  ```
