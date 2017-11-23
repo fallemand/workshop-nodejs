@@ -18,5 +18,14 @@
         &:hover {
             background-color: #eee;
         }
+
+        .suggest__link {
+          margin: 0px;
+          padding: 10px 20px;
+          display: block;
+          color: #999;
+          text-decoration: none;
+        }
     }
+
 }

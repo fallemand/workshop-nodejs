@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchItem (snapshot) should render an item correctly when item data is provided 1`] = `
+<a
+  className="search-item"
+  href="/app/items/MLA622544573"
+>
+  <div
+    className="search-item__picture"
+  >
+    <img
+      alt="Papa Bastón Congelada - $ 32 /kg - Sin Aceite Agregado"
+      src="http://mla-s2-p.mlstatic.com/855221-MLA20747286710_062016-I.jpg"
+    />
+  </div>
+  <div
+    className="search-item__description"
+  >
+    <span
+      className="search-item__price"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<span class=\\"currency-symbol\\">A</span><span class=\\"amount\\">RS80</span><sup class=\\"fractional\\">00</sup>",
+        }
+      }
+    />
+    <p
+      className="search-item__title"
+    >
+      Papa Bastón Congelada - $ 32 /kg - Sin Aceite Agregado
+    </p>
+  </div>
+  <div
+    className="search-item__location"
+  />
+</a>
+`;

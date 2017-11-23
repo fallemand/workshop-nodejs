@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb (Snapshot) should only render the home link when no props are provided 1`] = `
+<div
+  className="breadcrumb-container"
+>
+  <ul
+    className="breadcrumb"
+  >
+    <li
+      className="breadcrumb__element"
+    >
+      <a
+        href="/"
+      >
+        Inicio
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Breadcrumb (Snapshot) should render breadcrumbs to final category when only path_from_root is provided 1`] = `
+<div
+  className="breadcrumb-container"
+>
+  <ul
+    className="breadcrumb"
+  >
+    <li
+      className="breadcrumb__element"
+    >
+      <a
+        href="/"
+      >
+        Inicio
+      </a>
+    </li>
+    <li
+      className="breadcrumb__element"
+    >
+      Alimentos y Bebidas
+    </li>
+    <li
+      className="breadcrumb__element"
+    >
+      Comestibles
+    </li>
+    <li
+      className="breadcrumb__element"
+    >
+      Almacén
+    </li>
+    <li
+      className="breadcrumb__element"
+    >
+      Aceites
+    </li>
+    <li
+      className="breadcrumb__element"
+    >
+      Otros
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Breadcrumb (Snapshot) should render search query string after home link when path_from_root is null 1`] = `
+<div
+  className="breadcrumb-container"
+>
+  <ul
+    className="breadcrumb"
+  >
+    <li
+      className="breadcrumb__element"
+    >
+      <a
+        href="/"
+      >
+        Inicio
+      </a>
+    </li>
+    <li
+      className="breadcrumb__element"
+    >
+      papa
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Breadcrumb (Snapshot) should render search query string at the end of the breadcrumb when query and path_from_root attribute are provided 1`] = `
+<div
+  className="breadcrumb-container"
+>
+  <ul
+    className="breadcrumb"
+  >
+    <li
+      className="breadcrumb__element"
+    >
+      <a
+        href="/"
+      >
+        Inicio
+      </a>
+    </li>
+    <li
+      className="breadcrumb__element"
+    >
+      Alimentos y Bebidas
+    </li>
+    <li
+      className="breadcrumb__element"
+    >
+      Comestibles
+    </li>
+    <li
+      className="breadcrumb__element"
+    >
+      Almacén
+    </li>
+    <li
+      className="breadcrumb__element"
+    >
+      Aceites
+    </li>
+    <li
+      className="breadcrumb__element"
+    >
+      Otros
+    </li>
+    <li
+      className="breadcrumb__element"
+    >
+      papa
+    </li>
+  </ul>
+</div>
+`;

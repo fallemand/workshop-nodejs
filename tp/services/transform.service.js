@@ -49,7 +49,7 @@ class MeliTransform {
               price: currentValue.price,
               location: currentValue.seller_address.city.name
             }
-          })
+          });
           resolve (transformedData);
         }).catch( (err) => {
           reject(err);

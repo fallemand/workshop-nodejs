@@ -7,7 +7,9 @@
     "node": "6.11.0"
   },
   "scripts": {
-    "test": "test/test.js",
+    "setup-e2e": "selenium-standalone install",
+    "test:unit": "jest",
+    "test:e2e": "nightwatch",
     "clean": "rimraf assets/dist/**/*",
     "autoprefixer": "postcss -u autoprefixer -r assets/dist/styles/*",
     "scss": "node-sass --output-style compressed -o assets/dist/styles assets/src/styles",
@@ -21,7 +23,7 @@
     "imagemin": "imagemin assets/src/images/* -o assets/dist/images",
     "build:images": "npm run imagemin",
     "watch:images": "onchange \"assets/src/images\" -- npm run build:images",
-    "build": "npm run clean && npm run build:styles && npm run build:scripts && npm run build:images",
+    "build": "npm run clean && npm run build:styles && npm run build:images && npm run webpack",
     "watch": "npm-run-all -p watch:styles watch:scripts watch:images",
     "webpack": "webpack",
     "start": "NODE_ENV=production pm2 start index.js -i max --attach --name workspace",
@@ -53,6 +55,7 @@
     "eslint-plugin-import": "1.15.0",
     "imagemin-cli": "^3.0.0",
     "jest": "^21.2.1",
+    "nightwatch": "^0.9.16",
     "nock": "^9.0.27",
     "node-sass": "^4.5.3",
     "nodemon": "^1.11.0",
@@ -61,18 +64,27 @@
     "postcss-cli": "^2.5.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-test-renderer": "^16.0.0",
+    "react-test-renderer": "^16.1.1",
     "rimraf": "^2.5.4",
     "sass-lint": "^1.12.1",
+    "selenium-standalone": "^6.11.0",
     "uglify-js": "^3.1.6",
     "webpack": "^3.8.1"
   },
   "dependencies": {
     "express": "^4.16.2",
     "express-react-views": "^0.10.4",
+    "intl": "^1.2.5",
     "pm2": "^2.7.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "serialize-javascript": "^1.4.0"
+  },
+  "jest": {
+    "testRegex": "/test/unit/.*.js$",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dictado/.*"
+    ]
   }
 }

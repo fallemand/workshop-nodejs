@@ -1,0 +1,35 @@
+{
+  "q": "pap",
+  "suggested_queries": [
+    {
+      "q": "kindle paperwhite",
+      "match_start": 7,
+      "match_end": 10
+    },
+    {
+      "q": "papeles empapelado",
+      "match_start": 0,
+      "match_end": 3
+    },
+    {
+      "q": "guillotina papel",
+      "match_start": 11,
+      "match_end": 14
+    },
+    {
+      "q": "papel muresco",
+      "match_start": 0,
+      "match_end": 3
+    },
+    {
+      "q": "bolsas papel",
+      "match_start": 7,
+      "match_end": 10
+    },
+    {
+      "q": "trituradora papel",
+      "match_start": 12,
+      "match_end": 15
+    }
+  ]
+}

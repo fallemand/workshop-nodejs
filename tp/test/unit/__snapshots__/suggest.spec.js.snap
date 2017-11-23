@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Suggest (Snapshot) should not render any items 1`] = `
+<div>
+  <ul
+    className="suggest"
+  />
+</div>
+`;
+
+exports[`Suggest (Snapshot) should render suggested items when query is not empty 1`] = `
+<div>
+  <ul
+    className="suggest"
+  >
+    <li
+      className="suggest__item"
+    >
+      <a
+        className="suggest__link"
+        href="/app/search?q=kindle paperwhite"
+      >
+        kindle paperwhite
+      </a>
+    </li>
+    <li
+      className="suggest__item"
+    >
+      <a
+        className="suggest__link"
+        href="/app/search?q=papeles empapelado"
+      >
+        papeles empapelado
+      </a>
+    </li>
+    <li
+      className="suggest__item"
+    >
+      <a
+        className="suggest__link"
+        href="/app/search?q=guillotina papel"
+      >
+        guillotina papel
+      </a>
+    </li>
+    <li
+      className="suggest__item"
+    >
+      <a
+        className="suggest__link"
+        href="/app/search?q=papel muresco"
+      >
+        papel muresco
+      </a>
+    </li>
+    <li
+      className="suggest__item"
+    >
+      <a
+        className="suggest__link"
+        href="/app/search?q=bolsas papel"
+      >
+        bolsas papel
+      </a>
+    </li>
+    <li
+      className="suggest__item"
+    >
+      <a
+        className="suggest__link"
+        href="/app/search?q=trituradora papel"
+      >
+        trituradora papel
+      </a>
+    </li>
+  </ul>
+</div>
+`;
