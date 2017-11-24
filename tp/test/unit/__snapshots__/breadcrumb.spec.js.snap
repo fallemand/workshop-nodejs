@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb (Snapshot) Breadcrumb renders item 1`] = `
+<ul
+  className="breadcrumb"
+>
+  <li
+    className="breadcrumb__element"
+  >
+    <a
+      href="/app"
+    >
+      Inicio
+    </a>
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    Celulares y Telefonía
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    Celulares
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    Iphone
+  </li>
+</ul>
+`;
+
+exports[`Breadcrumb (Snapshot) Breadcrumb renders search 1`] = `
+<ul
+  className="breadcrumb"
+>
+  <li
+    className="breadcrumb__element"
+  >
+    <a
+      href="/app"
+    >
+      Inicio
+    </a>
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    Celulares y Telefonía
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    Celulares
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    Iphone
+  </li>
+  <li
+    className="breadcrumb__element"
+  >
+    "
+    iphone 7
+    "
+  </li>
+</ul>
+`;
