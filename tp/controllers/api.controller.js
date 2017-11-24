@@ -6,6 +6,7 @@ module.exports.items = (req, res, next) => {
     meliService.items(id).then((data) => {
         data.author = res.locals.author;
         res.json(data)
+        console.log(data);
     }).catch(next);
 }
 
