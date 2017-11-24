@@ -1,5 +1,5 @@
 class MeliTransform {
-  static results(search) {
+  static search(search) {
     const data = {};
 
     data.categories = (search.filters.length && search.filters[0].values.length)

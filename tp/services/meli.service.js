@@ -17,7 +17,7 @@ class MeliService {
 
     return new Promise((resolve, reject) => {
       request(options, protocol)
-        .then((res) => resolve(transform.results(res)))
+        .then((res) => resolve(transform.search(res)))
         .catch((err) => reject(err));
     });
   }
