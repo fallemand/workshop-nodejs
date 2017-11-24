@@ -1,9 +1,23 @@
-const meliService = require('../../services/meli.service');
+const React = require('react');
+const renderer = require('react-test-renderer');
+const Breadcrumb = require('../../views/Breadcrumb');
 
-describe('test meli.service',() => {
+const category = [
+    {'id': '1', 'name': 'Celulares y Telefonía'},
+    {'id': '2','name': 'Celulares'},
+    {'id': '3', 'name': 'Iphone'}
+];
 
-    test('it should show the category tree', () => {
-        
+describe('Breadcrumb (Snapshot)', () => {
+    it('Breadcrumb renders item', () => {
+        const component = renderer.create(<Breadcrumb category={category} />);
+        const json = component.toJSON();
+        expect(json).toMatchSnapshot();
+});
+
+it('Breadcrumb renders search', () => {
+        const component = renderer.create(<Breadcrumb category={category} query="iphone 7" />);
+        const json = component.toJSON();
+        expect(json).toMatchSnapshot();
     });
-
 });

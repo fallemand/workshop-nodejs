@@ -1,4 +1,5 @@
 // En jest expect.html estan todas las assertions podemos hacer.
+// Acá no usamos snapshot, esperamos que traiga determinados resultados.
 
 const meliService = require('../../services/meli.service');
 require('../../mocks');
