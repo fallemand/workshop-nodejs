@@ -8,8 +8,8 @@ module.exports.items = (req, res, next) => {
         protocol: 'http',
         method: 'GET',
         headers: {'Content-type': 'application/json'},
-        hostname: 'localhost',
-        port: 3333,
+        hostname: config.host,
+        port: config.port,
         path: url
     }
     request(options).then(data => {
@@ -25,8 +25,8 @@ module.exports.search = (req, res, next) => {
         protocol: 'http',
         method: 'GET',
         headers: {'Content-type': 'application/json'},
-        hostname: 'localhost',
-        port: 3333,
+        hostname: config.host,
+        port: config.port,
         path: url
     };
 
