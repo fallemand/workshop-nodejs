@@ -26,7 +26,7 @@ class Item extends React.Component {
                     <div className="item__description">
                         <h2 className="item__description-title">Descripción del producto</h2>
                         <div className="item__description-content">
-                            {this.props.description.text}
+                            {this.props.description.plain_text}
                         </div>
                     </div>
                 </div>
