@@ -1,6 +1,7 @@
 // APP Controller
 
 const request = require('../services/request.service')
+const config = require('../config')
 
 module.exports.items = (req, res, next) => {
     const url = `/api/items/` + req.params.id;
