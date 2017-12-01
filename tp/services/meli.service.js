@@ -53,7 +53,7 @@ module.exports.item = (id) => {
     return new Promise((resolve, reject) => {
         Promise.all(promises).then((results) => {
             const item = results[0];
-            const description = results[1];
+            const description = results[1].text || results[1].plain_text;
             itemFull.item = item;
             itemFull.description = description
 

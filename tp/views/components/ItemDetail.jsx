@@ -22,7 +22,7 @@ class Search extends React.Component {
                 <div className="item__description">
                     <h2 className="item__description-title">Descripción del producto</h2>
                     <div className="item__description-content"
-                    dangerouslySetInnerHTML={{__html: item.description.text}}/>
+                    dangerouslySetInnerHTML={{__html: item.description}}/>
                 </div>
             </div>
         );
