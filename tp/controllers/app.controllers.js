@@ -1,4 +1,5 @@
 const request = require('../rest/requestPromise');
+const config = require('../config');
 
 class appControllers {
 
@@ -35,8 +36,8 @@ function getOptions(path) {
   return {
     method: 'GET',
     headers: {'Content-type': 'application/json'},
-    hostname: global.address,
-    port: global.port,
+    hostname: config.address,
+    port: config.port,
     protocol: 'http',
     path: path
   }

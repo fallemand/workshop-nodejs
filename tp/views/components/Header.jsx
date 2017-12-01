@@ -26,7 +26,7 @@ class Header extends React.Component {
           <input type="text" onKeyUp={this.handleSearchKeyUp} className="header__search-input"
             name="q" max-length="120" tabIndex="2" autoCapitalize="off"
             autoComplete="off" autoCorrect="off" spellCheck="false"
-            placeholder="Nunca dejes de buscar" data-js="search" value={this.props.query} />
+            placeholder="Nunca dejes de buscar" data-js="search" value={this.props.query}  onChange={this.handleSearchKeyUp} />
           <button type="submit" className="header__search-btn" tabIndex="3">
             <i className="header__search-icon"><span>Buscar</span></i>
           </button>
