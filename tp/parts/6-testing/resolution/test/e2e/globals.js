@@ -1,9 +1,6 @@
-var args = require('minimist')(process.argv),
-  site = args["site"] || "caca";
-environment = args["e"] || "xvfb_desktop";
 module.exports = {
-  'site': 'localhost:3000',
-  'environment': environment,
+  'site': `localhost:3000`,
+  'environment': "xvfb_desktop",
   'waitForConditionPollInterval': 50,
   'waitForConditionTimeout': 5000,
   'retryAssertionTimeout': 10000,

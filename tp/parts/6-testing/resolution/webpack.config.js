@@ -1,8 +1,8 @@
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
-  entry: './assets/src/scripts/header.js',
+  entry: ['whatwg-fetch', './assets/src/scripts/header.js'],
   output: {
     path: path.resolve(__dirname, 'assets/dist/scripts/'),
     filename: 'header.bundle.js'

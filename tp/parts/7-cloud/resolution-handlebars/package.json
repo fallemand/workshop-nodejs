@@ -4,7 +4,7 @@
   "description": "Integrated exercise for the Node.js Workshop",
   "main": "index.js",
   "scripts": {
-    "setup-e2e": "./node_modules/.bin/selenium-standalone install",
+    "setup-e2e": "selenium-standalone install --version=3.6.0 --drivers.chrome.version=2.33",
     "test:unit": "NODE_ENV=test mocha 'test/unit/**/*.js'",
     "test:e2e": "npm run setup-e2e && nightwatch",
     "webpack": "webpack",
