@@ -1,24 +1,25 @@
 ![nodejs](https://user-images.githubusercontent.com/16105726/32727098-0b1fa8a8-c85a-11e7-9251-56540e0083dd.png)
 
-# Workshop Node.js (Node - Express - React)
+# Workshop Node.js *(+express +react)*
 Este curso esta apuntado a personas que se estan iniciando en el mundo de Node.js    
 Se plantea una serie de ejercicios introductorios, y luego se avanza sobre un trabajo integrador que se va iterado y completando a medida se desarrolla el curso.  
 Se busca que los asistentes obtengan una compresión completa del stack, por lo que se inicia con una carpeta vacía, y clase a clase se va agregando funcionalidad, hasta lograr un proyecto completo deployado en la nube con una url productiva.  
 El proyecto incluirá módulos, servicios, middlewares, controllers, routers, ES6 en el cliente, react, mocks, test unitarios y funcionales, buildeo de assets, entre otros.  
 
-[Resultado Final (React)](https://github.com/fallemand/workshop-nodejs/tree/complete/tp/parts/7-cloud/resolution-react)  
-[Resultado Final (Handlebars)](https://github.com/fallemand/workshop-nodejs/tree/complete/tp/parts/7-cloud/resolution-handlebars)  
+[Resultado Final](https://github.com/fallemand/workshop-nodejs/tree/complete/tp/parts/7-cloud/resolution-react)  
 [Demo](https://workshop-node.herokuapp.com/)
 
 ## Requisitos Técnicos
 ```NVM + Node 6.11.0```
 - [RESTful Apis](http://www.andrewhavens.com/posts/20/beginners-guide-to-creating-a-rest-api/)  
 - [Javascript Asicronico. Manejo de callbacks. Scopes](https://houssein.me/javascript/2016/05/10/asynchronous-javascript-callbacks.html)  
-- [ECMA 6](http://blog.teamtreehouse.com/get-started-ecmascript-6) Arrow functions - Clases - const / let - Template strings
-- [React](https://reactjs.org/) (Entendimiento básico, [¿Qué es? ¿Para qué se usa?](https://thinkster.io/tutorials/what-exactly-is-react)  
-- [SASS](http://sass-lang.com/guide).  
 - Conocimiento básico de mocks (¿Que son? ¿Para que sirven?)
 - Tests (diferencias entre test funcionales y unitarios)
+
+Lecturas requeridas:  
+- [ECMA 6](http://blog.teamtreehouse.com/get-started-ecmascript-6) Arrow functions - Clases - const / let - Template strings
+- [React](https://reactjs.org/) (Entendimiento básico, [¿Qué es? ¿Para qué se usa?](https://thinkster.io/tutorials/what-exactly-is-react))  
+- [SASS](http://sass-lang.com/guide).  
 - [Npm](https://docs.nodejitsu.com/articles/getting-started/npm/what-is-npm/) (Manejo de dependencias en Node)
 
 ## Listado de Ejercicios
@@ -63,8 +64,8 @@ Total: 26hs
 - **Clase 7:** 2hs: TP: Express: React - [Video Clase](https://www.youtube.com/watch?v=eYR4GDV_CnA)
 - **Clase 8:** 2hs: TP: Express: React - [Video Clase](https://www.youtube.com/watch?v=5fzSVx1rHBA) (Se corta minuto 5)
 - **Clase 9:** 2hs: TP: Mocks - Environments - [Video Clase](https://www.youtube.com/watch?v=AUYbK_hdxuA)
-- **Clase 10:** 2hs: TP: Webpack - [Video Clase](https://www.youtube.com/watch?v=rrOHhqd37gA)
-- **Clase 11:** 2hs: TP: Testing Unitario - [Video Clase](https://www.youtube.com/watch?v=2r-XrJUmwJ4) (Continúa siguiente clase)
+- **Clase 10:** 2hs: TP: Webpack - React en Cliente - [Video Clase](https://www.youtube.com/watch?v=rrOHhqd37gA)
+- **Clase 11:** 2hs: TP: Testing Unitario - [Video Clase](https://www.youtube.com/watch?v=2r-XrJUmwJ4&t=1h13m15s) (Continúa siguiente clase)
 - **Clase 12:** 2hs: TP: Testing Funcional - [Video Clase](https://www.youtube.com/watch?v=CpkaFdAzSvo)
 - **Clase 13:** 2hs: TP: Deploy Cloud - [Video Clase](https://www.youtube.com/watch?v=rBwvaSti2u8) (Problemas conexión)
 
